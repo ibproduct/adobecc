@@ -1,1 +1,6627 @@
-var _0x14d782=_0x2fdc;(function(_0x3a3231,_0x16dd91){var _0x1c7d1d=_0x2fdc,_0x11f3d0=_0x3a3231();while(!![]){try{var _0x2a1046=-parseInt(_0x1c7d1d(0x24f))/0x1+-parseInt(_0x1c7d1d(0x1c0))/0x2*(-parseInt(_0x1c7d1d(0x1c3))/0x3)+parseInt(_0x1c7d1d(0x1f1))/0x4+parseInt(_0x1c7d1d(0x21a))/0x5*(parseInt(_0x1c7d1d(0x243))/0x6)+parseInt(_0x1c7d1d(0x2b4))/0x7+-parseInt(_0x1c7d1d(0x330))/0x8+-parseInt(_0x1c7d1d(0x260))/0x9*(parseInt(_0x1c7d1d(0x2c6))/0xa);if(_0x2a1046===_0x16dd91)break;else _0x11f3d0['push'](_0x11f3d0['shift']());}catch(_0x570df7){_0x11f3d0['push'](_0x11f3d0['shift']());}}}(_0x5842,0x4bdce));var fs=require('fs'),crypto=require(_0x14d782(0x257)),digestStream=require(_0x14d782(0x212)),FormData=require(_0x14d782(0x283)),https=require('https'),request=require(_0x14d782(0x237)),debug=![],_imagesDataObj={},_folderInfo={},_timeoutValue=0x3e8*0xa,_tooltipDelay=0x7d0,_totalPageItems=0x64,_useCustomUrl=![],allowedFileTypes={'IDSN':{'jpg':{'open':![],'place':!![]},'tiff':{'open':![],'place':!![]},'tif':{'open':![],'place':!![]},'gif':{'open':![],'place':!![]},'jpeg':{'open':![],'place':!![]},'bmp':{'open':![],'place':!![]},'eps':{'open':![],'place':!![]},'png':{'open':![],'place':!![]},'ai':{'open':![],'place':!![]},'psd':{'open':![],'place':!![]},'indd':{'open':!![],'place':![]},'indt':{'open':!![],'place':![]},'idml':{'open':!![],'place':![]},'pdf':{'open':![],'place':!![]},'svg':{'open':![],'place':!![]}},'ILST':{'tiff':{'open':![],'place':!![]},'tif':{'open':![],'place':!![]},'gif':{'open':![],'place':!![]},'jpg':{'open':![],'place':!![]},'jpeg':{'open':![],'place':!![]},'bmp':{'open':![],'place':!![]},'png':{'open':![],'place':!![]},'ai':{'open':!![],'place':!![]},'ait':{'open':!![],'place':![]},'eps':{'open':!![],'place':!![]},'psd':{'open':![],'place':!![]},'pdf':{'open':![],'place':!![]},'svg':{'open':!![],'place':!![]}},'PHXS':{'jpg':{'open':!![],'place':!![]},'tiff':{'open':!![],'place':!![]},'tif':{'open':!![],'place':!![]},'gif':{'open':!![],'place':!![]},'jpeg':{'open':!![],'place':!![]},'bmp':{'open':!![],'place':!![]},'eps':{'open':!![],'place':!![]},'png':{'open':!![],'place':!![]},'ai':{'open':![],'place':!![]},'psd':{'open':!![],'place':!![]},'pdf':{'open':![],'place':!![]},'svg':{'open':!![],'place':!![]}},'PHSP':{'jpg':{'open':!![],'place':!![]},'tiff':{'open':!![],'place':!![]},'tif':{'open':!![],'place':!![]},'gif':{'open':!![],'place':!![]},'jpeg':{'open':!![],'place':!![]},'bmp':{'open':!![],'place':!![]},'eps':{'open':!![],'place':!![]},'png':{'open':!![],'place':!![]},'ai':{'open':![],'place':!![]},'psd':{'open':!![],'place':!![]},'pdf':{'open':![],'place':!![]},'svg':{'open':!![],'place':!![]}}},csInterface=new CSInterface(),appName=csInterface[_0x14d782(0x218)]['appName'],extArray=[];for(var prop in allowedFileTypes[appName])extArray[_0x14d782(0x291)](prop);function convertDate(_0x18b7b3){var _0x5ee897=_0x14d782;_0x18b7b3=_0x18b7b3[_0x5ee897(0x364)](/[-:]/g,',')[_0x5ee897(0x364)]('T',',')[_0x5ee897(0x364)]('Z','')[_0x5ee897(0x327)](',');var _0x17861c=new Date();return _0x17861c[_0x5ee897(0x311)](Date[_0x5ee897(0x21d)](_0x18b7b3[0x0],_0x18b7b3[0x1]-0x1,_0x18b7b3[0x2],_0x18b7b3[0x3],_0x18b7b3[0x4],_0x18b7b3[0x5])),_0x17861c['toString']();}function platformUrl(_0x2e06c7){var _0x2ecf05=_0x14d782;if(_useCustomUrl)return _0x2e06c7;return _0x2e06c7+_0x2ecf05(0x2d9);}var IntelligenceApp=React[_0x14d782(0x252)]({'displayName':_0x14d782(0x32d),'updateState':function updateState(_0x4f86de){var _0x42e617=_0x14d782,_0xd69fdb=this['state'];for(var _0x21fe38 in _0x4f86de){_0xd69fdb[_0x21fe38]=_0x4f86de[_0x21fe38];}this[_0x42e617(0x2d7)](_0xd69fdb);},'getInitialState':function getInitialState(){var _0x2c73a1=_0x14d782,_0x35f0da=new CSInterface(),_0x2605d8=_0x35f0da[_0x2c73a1(0x218)][_0x2c73a1(0x2e6)];if(_0x2605d8==_0x2c73a1(0x341)||_0x2605d8=='PHXS'){var _0x57f0a6=_0x35f0da[_0x2c73a1(0x23b)](),_0x16365e=new CSEvent(_0x2c73a1(0x1d0),_0x2c73a1(0x312));_0x16365e[_0x2c73a1(0x2eb)]=_0x57f0a6;if(!debug)_0x35f0da['dispatchEvent'](_0x16365e);}var _0x130a4f={'activeScreen':_0x2c73a1(0x303),'username':'','password':'','company':'','apiUrl':'','sessionKey':'','apiKey':'','token':'','userUuid':'','folderUuid':'','searchTerm':'','loginError':'','hostName':_0x2605d8,'isCustomURL':![],'hideUnsupported':![],'placeOriginals':![],'showPlaceOptions':![],'showSettingsBar':![],'customFolder':_0x2c73a1(0x26d),'useCustomFolder':![]},_0x184184=readPrefs();if(_0x184184){for(var _0x5721d9 in _0x184184)if(_0x184184[_0x5721d9]!=undefined)_0x130a4f[_0x5721d9]=_0x184184[_0x5721d9];_0x130a4f[_0x2c73a1(0x1ae)]=![],_0x130a4f[_0x2c73a1(0x25a)]=![];}if(!_0x130a4f[_0x2c73a1(0x374)]||!_0x130a4f['sessionKey']||!_0x130a4f[_0x2c73a1(0x2ee)]||!_0x130a4f[_0x2c73a1(0x394)])_0x130a4f[_0x2c73a1(0x1ac)]=_0x2c73a1(0x38d);return _0x130a4f;},'logoutCallback':function logoutCallback(_0x540624){var _0x49225e=Number(_0x540624);if(!_0x49225e||isNaN(_0x49225e))return;setTimeout(this['logout'],_0x49225e*0x3c*0x3c*0x3e8);},'logout':function logout(){var _0x3a7a11=_0x14d782,_0x2c593a=this[_0x3a7a11(0x351)];_0x2c593a[_0x3a7a11(0x2de)]=_0x3a7a11(0x215),_0x2c593a[_0x3a7a11(0x34c)]='',_0x2c593a['sessionKey']='',_0x2c593a[_0x3a7a11(0x2ee)]='',_0x2c593a[_0x3a7a11(0x394)]='',savePrefs({'username':this[_0x3a7a11(0x351)]['username'],'company':this[_0x3a7a11(0x351)][_0x3a7a11(0x2af)],'apiUrl':this[_0x3a7a11(0x351)][_0x3a7a11(0x374)],'apiKey':'','sessionKey':'','userUuid':'','isCustomURL':this[_0x3a7a11(0x351)][_0x3a7a11(0x1a6)],'placeOriginals':this[_0x3a7a11(0x351)][_0x3a7a11(0x334)],'showPlaceOptions':this[_0x3a7a11(0x351)]['showPlaceOptions'],'hideUnsupported':this[_0x3a7a11(0x351)]['hideUnsupported'],'customFolder':this[_0x3a7a11(0x351)][_0x3a7a11(0x209)],'useCustomFolder':this['state'][_0x3a7a11(0x2b6)]}),_0x2c593a[_0x3a7a11(0x1ac)]=_0x3a7a11(0x38d),_0x2c593a[_0x3a7a11(0x1ae)]=![],this[_0x3a7a11(0x2d7)](_0x2c593a);},'render':function render(){var _0x5b7852=_0x14d782;switch(this['state'][_0x5b7852(0x1ac)]){case _0x5b7852(0x303):return React[_0x5b7852(0x1ba)](HomeScreen,{'appState':this[_0x5b7852(0x351)],'updateAppState':this[_0x5b7852(0x3a6)],'logout':this['logout']});break;case _0x5b7852(0x1b2):return React[_0x5b7852(0x1ba)](BrowserLoginScreen,{'appState':this[_0x5b7852(0x351)],'updateAppState':this[_0x5b7852(0x3a6)]});break;case _0x5b7852(0x38d):default:return React[_0x5b7852(0x1ba)](LoginScreen,{'appState':this[_0x5b7852(0x351)],'updateAppState':this[_0x5b7852(0x3a6)],'logoutCallback':this[_0x5b7852(0x1d5)]});}}}),HomeScreen=React[_0x14d782(0x252)]({'displayName':'HomeScreen','getInitialState':function getInitialState(){var _0x53384b=_0x14d782;return{'folderUuid':'','documentOpened':![],'selectedFolderUuid':'','folderName':'','documentLinks':[],'documentName':'','documentUuid':'','documentSaved':![],'documentFolderUuid':'','documentFolderPermission':{},'gridData':{'folder':[],'resource':[]},'searchGridData':[],'activeSearchPage':0x0,'activeResourcePage':0x0,'activeFolderPage':0x0,'history':[],'activeTab':_0x53384b(0x214),'prevActiveTab':_0x53384b(0x214),'requestsPending':0x0,'downloadsPending':0x0,'downloadsHDPending':0x0,'syncDownloadsPending':0x0,'requestError':'','downloadError':![],'downloadHDError':![],'defaultFolderSortOrder':_0x53384b(0x28f),'defaultOrder':_0x53384b(0x389)};},'componentDidMount':function componentDidMount(){var _0x1c2b3c=_0x14d782;this[_0x1c2b3c(0x304)](),this[_0x1c2b3c(0x1da)](),loadFolderData(this[_0x1c2b3c(0x29d)][_0x1c2b3c(0x216)][_0x1c2b3c(0x2ee)],this['props'][_0x1c2b3c(0x216)][_0x1c2b3c(0x394)],this[_0x1c2b3c(0x29d)]['appState']['sessionKey'],this['props'][_0x1c2b3c(0x216)][_0x1c2b3c(0x374)],this[_0x1c2b3c(0x1e0)],this[_0x1c2b3c(0x351)][_0x1c2b3c(0x1a7)],this[_0x1c2b3c(0x351)][_0x1c2b3c(0x201)]);},'setActivePage':function setActivePage(_0x5666f2){var _0x2ee5f4=_0x14d782,_0x4cc1ff=this[_0x2ee5f4(0x351)];switch(this[_0x2ee5f4(0x351)][_0x2ee5f4(0x1a5)]){case _0x2ee5f4(0x2ff):this[_0x2ee5f4(0x1da)](),_0x4cc1ff[_0x2ee5f4(0x1db)]=_0x5666f2,loadFilesData(this[_0x2ee5f4(0x29d)][_0x2ee5f4(0x216)]['apiKey'],this[_0x2ee5f4(0x29d)][_0x2ee5f4(0x216)]['userUuid'],this[_0x2ee5f4(0x29d)][_0x2ee5f4(0x216)][_0x2ee5f4(0x1c7)],this[_0x2ee5f4(0x29d)][_0x2ee5f4(0x216)][_0x2ee5f4(0x374)],this['loadFilesCallback'],this[_0x2ee5f4(0x351)]['folderUuid'],this['state']['activeResourcePage']);break;case _0x2ee5f4(0x214):this[_0x2ee5f4(0x1da)](),_0x4cc1ff[_0x2ee5f4(0x201)]=_0x5666f2,loadFolderData(this[_0x2ee5f4(0x29d)]['appState'][_0x2ee5f4(0x2ee)],this[_0x2ee5f4(0x29d)][_0x2ee5f4(0x216)][_0x2ee5f4(0x394)],this[_0x2ee5f4(0x29d)]['appState'][_0x2ee5f4(0x1c7)],this['props'][_0x2ee5f4(0x216)][_0x2ee5f4(0x374)],this[_0x2ee5f4(0x1e0)],this[_0x2ee5f4(0x351)][_0x2ee5f4(0x1a7)],this[_0x2ee5f4(0x351)][_0x2ee5f4(0x201)]);break;case'Search':_0x4cc1ff[_0x2ee5f4(0x221)]=_0x5666f2;break;default:break;}this[_0x2ee5f4(0x2d7)](_0x4cc1ff);},'tabCallback':function tabCallback(_0x5a66d7,_0x305434){var _0x2e4c08=_0x14d782,_0x203adf=this[_0x2e4c08(0x351)];if(_0x203adf[_0x2e4c08(0x1a5)]!='Search')_0x203adf[_0x2e4c08(0x2f6)]=_0x203adf[_0x2e4c08(0x1a5)];_0x203adf[_0x2e4c08(0x1a5)]=_0x5a66d7;if(_0x5a66d7==_0x2e4c08(0x232))this[_0x2e4c08(0x304)](_0x305434);_0x5a66d7==_0x2e4c08(0x2e8)&&(this[_0x2e4c08(0x1da)](),_0x203adf[_0x2e4c08(0x201)]=0x0,loadFolderData(this['props']['appState'][_0x2e4c08(0x2ee)],this['props']['appState'][_0x2e4c08(0x394)],this[_0x2e4c08(0x29d)]['appState']['sessionKey'],this[_0x2e4c08(0x29d)][_0x2e4c08(0x216)]['apiUrl'],this[_0x2e4c08(0x1e0)],this[_0x2e4c08(0x351)]['folderUuid'],0x0)),this[_0x2e4c08(0x29d)][_0x2e4c08(0x2f2)]({'showSettingsBar':![]}),this['setState'](_0x203adf);},'increaseRequestsCounter':function increaseRequestsCounter(_0x311313){var _0x42f7e4=_0x14d782;if(_0x311313==undefined)_0x311313=0x1;var _0x32720d=this[_0x42f7e4(0x351)];if(!_0x32720d[_0x42f7e4(0x1e1)])_0x32720d[_0x42f7e4(0x1e1)]=0x0;_0x32720d[_0x42f7e4(0x1e1)]+=_0x311313,this[_0x42f7e4(0x2d7)](_0x32720d);},'decreaseRequestsCounter':function decreaseRequestsCounter(_0x4fa52c){var _0xa42c21=_0x14d782;if(_0x4fa52c==undefined)_0x4fa52c=0x1;var _0x4e020e=this[_0xa42c21(0x351)];if(!_0x4e020e[_0xa42c21(0x1e1)])_0x4e020e[_0xa42c21(0x1e1)]=0x0;_0x4e020e['requestsPending']-=_0x4fa52c;if(_0x4e020e[_0xa42c21(0x1e1)]<0x0)_0x4e020e['requestsPending']=0x0;this[_0xa42c21(0x2d7)](_0x4e020e);},'increaseDownloadsCounter':function increaseDownloadsCounter(_0x55fd77){var _0x235a9d=_0x14d782;if(_0x55fd77==undefined)_0x55fd77=0x1;var _0x454238=this['state'];if(!_0x454238[_0x235a9d(0x298)])_0x454238[_0x235a9d(0x298)]=0x0;_0x454238['downloadsPending']+=_0x55fd77,this[_0x235a9d(0x2d7)](_0x454238);},'increaseDownloadsHDCounter':function increaseDownloadsHDCounter(_0x2405ec){var _0x56bd36=_0x14d782;if(_0x2405ec==undefined)_0x2405ec=0x1;var _0x1ccaa8=this[_0x56bd36(0x351)];if(!_0x1ccaa8[_0x56bd36(0x1f0)])_0x1ccaa8[_0x56bd36(0x1f0)]=0x0;_0x1ccaa8[_0x56bd36(0x1f0)]+=_0x2405ec,this[_0x56bd36(0x2d7)](_0x1ccaa8);},'increaseSyncDownloadsCounter':function(_0x71281){var _0x19206d=_0x14d782;if(_0x71281==undefined)_0x71281=0x1;var _0x10de5b=this[_0x19206d(0x351)];if(!_0x10de5b[_0x19206d(0x355)])_0x10de5b['syncDownloadsPending']=0x0;_0x10de5b[_0x19206d(0x355)]+=_0x71281,this[_0x19206d(0x2d7)](_0x10de5b);},'decreaseSyncDownloadsCounter':function(_0x39b394){var _0x38ec93=_0x14d782;if(_0x39b394==undefined)_0x39b394=0x1;var _0x2f041a=this[_0x38ec93(0x351)];if(!_0x2f041a[_0x38ec93(0x355)])_0x2f041a[_0x38ec93(0x355)]=0x0;_0x2f041a['syncDownloadsPending']-=_0x39b394;if(_0x2f041a[_0x38ec93(0x355)]<0x0)_0x2f041a[_0x38ec93(0x355)]=0x0;if(_0x2f041a[_0x38ec93(0x355)]==0x0){if(_0x2f041a[_0x38ec93(0x1ee)])Materialize['toast'](_0x38ec93(0x338),0xfa0,_0x38ec93(0x2df)),_0x2f041a[_0x38ec93(0x1ee)]=![];else Materialize[_0x38ec93(0x2ac)](_0x38ec93(0x2ca),0xfa0,_0x38ec93(0x2df));this[_0x38ec93(0x2d7)](_0x2f041a),this[_0x38ec93(0x206)]();}else this[_0x38ec93(0x2d7)](_0x2f041a);},'decreaseDownloadsCounter':function decreaseDownloadsCounter(_0x4a7e95){var _0x1d3ed7=_0x14d782;if(_0x4a7e95==undefined)_0x4a7e95=0x1;var _0x40c11c=this[_0x1d3ed7(0x351)];if(!_0x40c11c[_0x1d3ed7(0x298)])_0x40c11c[_0x1d3ed7(0x298)]=0x0;_0x40c11c['downloadsPending']-=_0x4a7e95;if(_0x40c11c[_0x1d3ed7(0x298)]<0x0)_0x40c11c['downloadsPending']=0x0;if(_0x40c11c[_0x1d3ed7(0x298)]==0x0){if(_0x40c11c[_0x1d3ed7(0x1ee)])Materialize[_0x1d3ed7(0x2ac)](_0x1d3ed7(0x27e),0xfa0,'toastFont'),_0x40c11c[_0x1d3ed7(0x1ee)]=![];else Materialize[_0x1d3ed7(0x2ac)]('The\x20document\x20is\x20up\x20to\x20date.',0xfa0,_0x1d3ed7(0x2df));this[_0x1d3ed7(0x2d7)](_0x40c11c),this[_0x1d3ed7(0x206)]();}else this[_0x1d3ed7(0x2d7)](_0x40c11c);},'decreaseDownloadsHDCounter':function decreaseDownloadsHDCounter(_0x3f8af3,_0x47fd43){var _0x39b49f=_0x14d782;if(_0x3f8af3==undefined)_0x3f8af3=0x1;if(!_0x47fd43)_0x47fd43='Pre-package';var _0x24c3ae=this[_0x39b49f(0x351)];if(!_0x24c3ae[_0x39b49f(0x1f0)])_0x24c3ae[_0x39b49f(0x1f0)]=0x0;_0x24c3ae[_0x39b49f(0x1f0)]-=_0x3f8af3;if(_0x24c3ae['downloadsHDPending']<0x0)_0x24c3ae[_0x39b49f(0x1f0)]=0x0;if(_0x24c3ae[_0x39b49f(0x1f0)]==0x0){if(_0x24c3ae['downloadHDError'])Materialize[_0x39b49f(0x2ac)](_0x47fd43+'\x20not\x20completed.\x20Assets\x20missing\x20or\x20you\x20don\x27t\x20have\x20permission.',0xfa0,_0x39b49f(0x2df)),_0x24c3ae[_0x39b49f(0x271)]=![];else Materialize[_0x39b49f(0x2ac)](_0x47fd43+_0x39b49f(0x344),0xfa0,_0x39b49f(0x2df));this[_0x39b49f(0x2d7)](_0x24c3ae),this['refreshDocumentInfo']();}else this[_0x39b49f(0x2d7)](_0x24c3ae);},'loadDocumentDataCallback':function loadDocumentDataCallback(_0x269e0c){var _0x1d436b=_0x14d782;this[_0x1d436b(0x24a)]();var _0x43706f=this[_0x1d436b(0x351)];_0x43706f[_0x1d436b(0x34b)]=_0x269e0c[_0x1d436b(0x354)],_0x43706f[_0x1d436b(0x1de)]=_0x269e0c['saved'],_0x43706f[_0x1d436b(0x2aa)]=_0x269e0c[_0x1d436b(0x37f)];if(_0x269e0c[_0x1d436b(0x37f)]!='')this[_0x1d436b(0x2ed)](_0x269e0c[_0x1d436b(0x37f)]);else _0x43706f[_0x1d436b(0x328)]='';_0x43706f[_0x1d436b(0x280)]=[];for(var _0x9c29ed in _0x269e0c[_0x1d436b(0x38f)]){var _0x2c494b=_0x269e0c[_0x1d436b(0x38f)][_0x9c29ed];if(_imagesDataObj[_0x9c29ed]&&_imagesDataObj[_0x9c29ed][_0x1d436b(0x39b)])_0x2c494b[_0x1d436b(0x273)]['deleted']=!![];_0x43706f[_0x1d436b(0x280)][_0x1d436b(0x291)](_0x2c494b['linkData']);}this[_0x1d436b(0x2d7)](_0x43706f);},'prePackageDocumentCallback':function prePackageDocumentCallback(_0x4df323){var _0x158876=_0x14d782;this['decreaseRequestsCounter']();var _0x1e3235=this[_0x158876(0x351)];_0x1e3235[_0x158876(0x34b)]=_0x4df323[_0x158876(0x354)],_0x1e3235['documentLinks']=[],_0x1e3235[_0x158876(0x1de)]=_0x4df323[_0x158876(0x336)];var _0x2bac0e=0x0;for(var _0x135c8f in _0x4df323[_0x158876(0x38f)]){var _0x396956=_0x4df323[_0x158876(0x38f)][_0x135c8f];if(_imagesDataObj[_0x135c8f]&&_imagesDataObj[_0x135c8f][_0x158876(0x39b)])_0x396956[_0x158876(0x273)][_0x158876(0x39b)]=!![],_0x1e3235[_0x158876(0x271)]=!![];else _0x2bac0e++;if(!_imagesDataObj[_0x135c8f]){_imagesDataObj[_0x135c8f]=_0x396956['linkData'],_imagesDataObj[_0x135c8f][_0x158876(0x2ab)]={};for(var _0x2400a4=0x0;_0x2400a4<_imagesDataObj[_0x135c8f][_0x158876(0x1b6)][_0x158876(0x267)];_0x2400a4++)_imagesDataObj[_0x135c8f][_0x158876(0x2ab)][_imagesDataObj[_0x135c8f]['allowedActions'][_0x2400a4]]=!![];}_0x1e3235[_0x158876(0x280)][_0x158876(0x291)](_0x396956[_0x158876(0x273)]);}this[_0x158876(0x2d7)](_0x1e3235);if(!_0x4df323[_0x158876(0x336)]){myAlert('Please\x20save\x20document\x20first');return;}this[_0x158876(0x398)](_0x2bac0e);var _0x1818e4='';if(this['props'][_0x158876(0x216)]['useCustomFolder'])_0x1818e4=this[_0x158876(0x29d)][_0x158876(0x216)][_0x158876(0x209)];for(var _0x135c8f in _0x4df323[_0x158876(0x38f)]){if(_imagesDataObj[_0x135c8f]&&_imagesDataObj[_0x135c8f]['deleted'])continue;var _0x396956=_0x4df323[_0x158876(0x38f)][_0x135c8f];placeHDFileToLinks(this[_0x158876(0x29d)][_0x158876(0x216)][_0x158876(0x2ee)],this[_0x158876(0x29d)][_0x158876(0x216)][_0x158876(0x394)],this[_0x158876(0x29d)][_0x158876(0x216)][_0x158876(0x1c7)],this[_0x158876(0x29d)][_0x158876(0x216)][_0x158876(0x374)],_0x1818e4,_0x135c8f,_0x396956[_0x158876(0x273)],_0x396956[_0x158876(0x2da)],this['hdFileDownloadCallback']);}if(_0x2bac0e==0x0){if(this[_0x158876(0x351)]['downloadHDError']){var _0x1e3235=this[_0x158876(0x351)];_0x1e3235[_0x158876(0x271)]=![],this[_0x158876(0x2d7)](_0x1e3235),Materialize[_0x158876(0x2ac)](_0x158876(0x353),0xfa0,_0x158876(0x2df));}else Materialize[_0x158876(0x2ac)]('Pre-package\x20completed.',0xfa0,_0x158876(0x2df));}},'prePackageDocumentEmbedCallback':function prePackageDocumentEmbedCallback(_0x354572){var _0x3d92d5=_0x14d782;this[_0x3d92d5(0x24a)]();var _0x30575f=this[_0x3d92d5(0x351)];_0x30575f[_0x3d92d5(0x34b)]=_0x354572[_0x3d92d5(0x354)],_0x30575f[_0x3d92d5(0x280)]=[],_0x30575f[_0x3d92d5(0x1de)]=_0x354572[_0x3d92d5(0x336)];var _0x53bdb8=0x0;for(var _0x4bc5a3 in _0x354572[_0x3d92d5(0x38f)]){var _0x242a17=_0x354572['links'][_0x4bc5a3];if(_imagesDataObj[_0x4bc5a3]&&_imagesDataObj[_0x4bc5a3][_0x3d92d5(0x39b)])_0x242a17[_0x3d92d5(0x273)][_0x3d92d5(0x39b)]=!![],_0x30575f[_0x3d92d5(0x271)]=!![];else _0x53bdb8++;if(!_imagesDataObj[_0x4bc5a3]){_imagesDataObj[_0x4bc5a3]=_0x242a17[_0x3d92d5(0x273)],_imagesDataObj[_0x4bc5a3][_0x3d92d5(0x2ab)]={};for(var _0x418a2a=0x0;_0x418a2a<_imagesDataObj[_0x4bc5a3][_0x3d92d5(0x1b6)][_0x3d92d5(0x267)];_0x418a2a++)_imagesDataObj[_0x4bc5a3][_0x3d92d5(0x2ab)][_imagesDataObj[_0x4bc5a3][_0x3d92d5(0x1b6)][_0x418a2a]]=!![];}_0x30575f[_0x3d92d5(0x280)]['push'](_0x242a17[_0x3d92d5(0x273)]);}this[_0x3d92d5(0x2d7)](_0x30575f),this[_0x3d92d5(0x398)](_0x53bdb8);var _0x229068='';if(this['props'][_0x3d92d5(0x216)]['useCustomFolder'])_0x229068=this[_0x3d92d5(0x29d)]['appState'][_0x3d92d5(0x209)];for(var _0x4bc5a3 in _0x354572[_0x3d92d5(0x38f)]){if(_imagesDataObj[_0x4bc5a3]&&_imagesDataObj[_0x4bc5a3]['deleted'])continue;var _0x242a17=_0x354572[_0x3d92d5(0x38f)][_0x4bc5a3];embedHDFile(this[_0x3d92d5(0x29d)][_0x3d92d5(0x216)]['apiKey'],this[_0x3d92d5(0x29d)]['appState'][_0x3d92d5(0x394)],this[_0x3d92d5(0x29d)][_0x3d92d5(0x216)][_0x3d92d5(0x1c7)],this['props'][_0x3d92d5(0x216)][_0x3d92d5(0x374)],_0x229068,_0x4bc5a3,_0x242a17[_0x3d92d5(0x273)],_0x242a17['linkIds'],this[_0x3d92d5(0x31f)]);}if(_0x53bdb8==0x0){if(this['state'][_0x3d92d5(0x271)]){var _0x30575f=this[_0x3d92d5(0x351)];_0x30575f['downloadHDError']=![],this[_0x3d92d5(0x2d7)](_0x30575f),Materialize[_0x3d92d5(0x2ac)](_0x3d92d5(0x30f),0xfa0,_0x3d92d5(0x2df));}else Materialize[_0x3d92d5(0x2ac)](_0x3d92d5(0x32a),0xfa0,_0x3d92d5(0x2df));}},'uploadDocumentCallback':function uploadDocumentCallback(_0x2610e2,_0x5ad9ed){var _0x243f87=_0x14d782;this[_0x243f87(0x24a)]();if(!_0x2610e2[_0x243f87(0x336)]){myAlert('Please\x20save\x20document\x20first');return;}var _0x19a73c=this[_0x243f87(0x351)][_0x243f87(0x36f)],_0x263dfc=![];if(this['state'][_0x243f87(0x328)]!='')_0x263dfc=!![],_0x19a73c=this[_0x243f87(0x351)]['documentFolderUuid'];else{if(this[_0x243f87(0x351)][_0x243f87(0x36f)]==''){Materialize[_0x243f87(0x2ac)](_0x243f87(0x1ea),0xfa0,_0x243f87(0x2df));return;}}if(_0x263dfc&&!this[_0x243f87(0x351)][_0x243f87(0x372)]['admin']&&!this[_0x243f87(0x351)]['documentFolderPermission'][_0x243f87(0x21e)]){Materialize[_0x243f87(0x2ac)](_0x243f87(0x225),0xfa0,_0x243f87(0x2df));return;}var _0x59b6a0=_0x2610e2[_0x243f87(0x354)],_0x3c6a83=_0x2610e2[_0x243f87(0x25f)],_0x16cf82=_0x2610e2[_0x243f87(0x354)];if(_imagesDataObj[_0x2610e2[_0x243f87(0x37f)]]){if(_imagesDataObj[_0x2610e2[_0x243f87(0x37f)]][_0x243f87(0x3ad)])_0x59b6a0=_imagesDataObj[_0x2610e2[_0x243f87(0x37f)]][_0x243f87(0x3ad)];if(_imagesDataObj[_0x2610e2[_0x243f87(0x37f)]][_0x243f87(0x354)])_0x16cf82=_imagesDataObj[_0x2610e2[_0x243f87(0x37f)]][_0x243f87(0x354)];_0x3c6a83=_0x16cf82+'.'+_0x2610e2[_0x243f87(0x2c1)];if(_imagesDataObj[_0x2610e2[_0x243f87(0x37f)]][_0x243f87(0x229)]&&_imagesDataObj[_0x2610e2['fileUuid']][_0x243f87(0x229)][_0x243f87(0x354)])_0x3c6a83=_imagesDataObj[_0x2610e2[_0x243f87(0x37f)]][_0x243f87(0x229)][_0x243f87(0x354)];}this[_0x243f87(0x1da)](),uploadFile(this['props'][_0x243f87(0x216)][_0x243f87(0x2ee)],this[_0x243f87(0x29d)][_0x243f87(0x216)][_0x243f87(0x394)],this[_0x243f87(0x29d)][_0x243f87(0x216)][_0x243f87(0x1c7)],this['props']['appState'][_0x243f87(0x374)],_0x2610e2['fullName'],_0x19a73c,_0x2610e2[_0x243f87(0x37f)],_0x3c6a83,_0x16cf82,_0x59b6a0,_0x263dfc,_0x5ad9ed,this[_0x243f87(0x1a2)]);},'uploadFinishedCallback':function uploadFinishedCallback(_0xd14fe5){var _0x5f52e9=_0x14d782;this[_0x5f52e9(0x24a)]();var _0xc7a6fe=undefined;if(_0xd14fe5==_0x5f52e9(0x2be)){Materialize[_0x5f52e9(0x2ac)](_0x5f52e9(0x383),0xfa0,'toastFont'),this[_0x5f52e9(0x361)](_0x5f52e9(0x232),!![]);return;}try{_0xc7a6fe=JSON[_0x5f52e9(0x39f)](_0xd14fe5);if(_0xc7a6fe[_0x5f52e9(0x348)]){Materialize[_0x5f52e9(0x2ac)](_0xc7a6fe[_0x5f52e9(0x348)],0xfa0,'toastFont'),this[_0x5f52e9(0x361)]('Document',!![]);return;}var _0x3d1aa0=this[_0x5f52e9(0x351)];_0x3d1aa0[_0x5f52e9(0x2aa)]=_0xc7a6fe[_0x5f52e9(0x3b1)]['_id'],_0x3d1aa0[_0x5f52e9(0x328)]=_0xc7a6fe[_0x5f52e9(0x3b1)][_0x5f52e9(0x38c)],this['setState'](_0x3d1aa0),setIds(_0x3d1aa0[_0x5f52e9(0x2aa)],_0x3d1aa0[_0x5f52e9(0x328)],this[_0x5f52e9(0x1f6)]),Materialize[_0x5f52e9(0x2ac)](_0x5f52e9(0x301),0xfa0,_0x5f52e9(0x2df));}catch(_0x85b98c){Materialize['toast'](_0x5f52e9(0x383),0xfa0,_0x5f52e9(0x2df)),this[_0x5f52e9(0x361)](_0x5f52e9(0x232),!![]);}},'setIdsCallback':function setIdsCallback(){var _0x1b6289=_0x14d782;this[_0x1b6289(0x361)](_0x1b6289(0x232),!![]);},'updateAllDocumentCallback':function updateAllDocumentCallback(_0x3aa414,_0x4db47c,_0x29838b){var _0x29436e=_0x14d782;this['decreaseRequestsCounter']();var _0x256ad4=this['state'];if(_0x3aa414[_0x29436e(0x1f3)]==![]){_0x256ad4[_0x29436e(0x34b)]='',_0x256ad4[_0x29436e(0x2aa)]='',_0x256ad4['documentSaved']=![],_0x256ad4[_0x29436e(0x280)]=[],_0x256ad4[_0x29436e(0x328)]='',_0x256ad4[_0x29436e(0x217)]=![];if(this['state'][_0x29436e(0x1a5)]==_0x29436e(0x232))_0x256ad4['activeTab']=_0x29436e(0x214);this[_0x29436e(0x2d7)](_0x256ad4);return;}_0x256ad4[_0x29436e(0x217)]=!![],_0x256ad4['documentName']=_0x3aa414[_0x29436e(0x354)],_0x256ad4[_0x29436e(0x2aa)]=_0x3aa414[_0x29436e(0x37f)],_0x256ad4[_0x29436e(0x1de)]=_0x3aa414[_0x29436e(0x336)],_0x256ad4['documentLinks']=[];if(_0x3aa414[_0x29436e(0x37f)]=='')_0x256ad4[_0x29436e(0x328)]='';if(_0x3aa414[_0x29436e(0x37f)]!='')this['getParentFolderForFileUUID'](_0x3aa414[_0x29436e(0x37f)]);for(var _0x2122df in _0x3aa414[_0x29436e(0x38f)]){var _0x1bad50=_0x3aa414['links'][_0x2122df];_imagesDataObj[_0x2122df]&&_imagesDataObj[_0x2122df][_0x29436e(0x39b)]&&(_0x1bad50[_0x29436e(0x273)][_0x29436e(0x39b)]=!![],_0x256ad4[_0x29436e(0x1ee)]=!![]);if(!_imagesDataObj[_0x2122df]){_imagesDataObj[_0x2122df]=_0x1bad50[_0x29436e(0x273)],_imagesDataObj[_0x2122df]['permissions']={};for(var _0x459ae7=0x0;_0x459ae7<_imagesDataObj[_0x2122df][_0x29436e(0x1b6)][_0x29436e(0x267)];_0x459ae7++)_imagesDataObj[_0x2122df][_0x29436e(0x2ab)][_imagesDataObj[_0x2122df]['allowedActions'][_0x459ae7]]=!![];}_0x256ad4[_0x29436e(0x280)][_0x29436e(0x291)](_0x1bad50[_0x29436e(0x273)]);}this[_0x29436e(0x2d7)](_0x256ad4);var _0x4b05a4='';if(this['props']['appState'][_0x29436e(0x2b6)])_0x4b05a4=this[_0x29436e(0x29d)][_0x29436e(0x216)][_0x29436e(0x209)];!_0x29838b&&(_0x3aa414['links']!={}||_0x3aa414[_0x29436e(0x37f)]!='')&&(this[_0x29436e(0x1da)](),syncRequest(this[_0x29436e(0x29d)][_0x29436e(0x216)][_0x29436e(0x2ee)],this[_0x29436e(0x29d)][_0x29436e(0x216)][_0x29436e(0x394)],this['props'][_0x29436e(0x216)][_0x29436e(0x1c7)],this[_0x29436e(0x29d)][_0x29436e(0x216)][_0x29436e(0x374)],_0x3aa414[_0x29436e(0x38f)],_0x3aa414['fileUuid'],this[_0x29436e(0x220)],![],_0x4b05a4));},'getParentFolderForFileUUID':function getParentFolderForFileUUID(_0xffd2eb){var _0xd30668=_0x14d782;parentFolderRequest(this[_0xd30668(0x29d)]['appState'][_0xd30668(0x2ee)],this[_0xd30668(0x29d)][_0xd30668(0x216)][_0xd30668(0x394)],this[_0xd30668(0x29d)]['appState'][_0xd30668(0x1c7)],this[_0xd30668(0x29d)][_0xd30668(0x216)][_0xd30668(0x374)],_0xffd2eb,this[_0xd30668(0x3ae)]);},'getParentFolderCallback':function getParentFolderCallback(_0x112ead){var _0xb12ac4=_0x14d782;try{_imagesDataObj[_0x112ead['body'][_0xb12ac4(0x3b1)][_0xb12ac4(0x37b)][0x0]['_id']]=_0x112ead[_0xb12ac4(0x1c9)][_0xb12ac4(0x3b1)]['rows'][0x0];var _0x5db938=_0x112ead[_0xb12ac4(0x1c9)][_0xb12ac4(0x3b1)][_0xb12ac4(0x37b)][0x0][_0xb12ac4(0x38c)],_0x553837=this[_0xb12ac4(0x351)];_0x553837['documentFolderUuid']=_0x5db938,_imagesDataObj[_0x112ead[_0xb12ac4(0x1c9)][_0xb12ac4(0x3b1)][_0xb12ac4(0x37b)][0x0][_0xb12ac4(0x1b1)]][_0xb12ac4(0x2ab)]={};for(var _0x169acc=0x0;_0x169acc<_imagesDataObj[_0x112ead[_0xb12ac4(0x1c9)][_0xb12ac4(0x3b1)][_0xb12ac4(0x37b)][0x0][_0xb12ac4(0x1b1)]][_0xb12ac4(0x1b6)][_0xb12ac4(0x267)];_0x169acc++)_imagesDataObj[_0x112ead[_0xb12ac4(0x1c9)][_0xb12ac4(0x3b1)][_0xb12ac4(0x37b)][0x0][_0xb12ac4(0x1b1)]][_0xb12ac4(0x2ab)][_imagesDataObj[_0x112ead['body'][_0xb12ac4(0x3b1)]['rows'][0x0][_0xb12ac4(0x1b1)]][_0xb12ac4(0x1b6)][_0x169acc]]=!![];_0x553837[_0xb12ac4(0x372)]=_imagesDataObj[_0x112ead['body'][_0xb12ac4(0x3b1)][_0xb12ac4(0x37b)][0x0][_0xb12ac4(0x1b1)]][_0xb12ac4(0x2ab)],this[_0xb12ac4(0x2d7)](_0x553837);}catch(_0x4ae1da){}},'syncRequestCallback':function syncRequestCallback(_0x17f12b){var _0x3fed8e=_0x14d782;this[_0x3fed8e(0x24a)]();if(_0x17f12b[_0x3fed8e(0x348)]&&(_0x17f12b[_0x3fed8e(0x348)]=='Invalid\x20request'||_0x17f12b[_0x3fed8e(0x348)]==_0x3fed8e(0x289)||_0x17f12b[_0x3fed8e(0x348)]==_0x3fed8e(0x28a)||_0x17f12b['error']==_0x3fed8e(0x2f9))){savePrefs({'username':this['props'][_0x3fed8e(0x216)]['username'],'company':this[_0x3fed8e(0x29d)]['appState'][_0x3fed8e(0x2af)],'apiUrl':this[_0x3fed8e(0x29d)]['appState']['apiUrl'],'apiKey':'','sessionKey':'','userUuid':'','isCustomURL':this[_0x3fed8e(0x29d)][_0x3fed8e(0x216)]['isCustomURL'],'placeOriginals':this[_0x3fed8e(0x29d)][_0x3fed8e(0x216)][_0x3fed8e(0x334)],'showPlaceOptions':this[_0x3fed8e(0x29d)]['appState'][_0x3fed8e(0x2cf)],'hideUnsupported':this['props'][_0x3fed8e(0x216)]['hideUnsupported'],'customFolder':this[_0x3fed8e(0x29d)][_0x3fed8e(0x216)][_0x3fed8e(0x209)],'useCustomFolder':this['props'][_0x3fed8e(0x216)][_0x3fed8e(0x2b6)]}),this['props'][_0x3fed8e(0x2f2)]({'activeScreen':_0x3fed8e(0x38d),'apiKey':''});return;}if(_0x17f12b[_0x3fed8e(0x348)]){var _0x3c70d9=_0x17f12b['error']+'.';if(_0x17f12b['error']==_0x3fed8e(0x23d))_0x3c70d9=_0x3fed8e(0x26f);Materialize[_0x3fed8e(0x2ac)](_0x3c70d9,0xfa0,'toastFont');return;}var _0x190698=_0x17f12b[_0x3fed8e(0x1c9)]['response'],_0x2b60d7=[],_0x23f724={};for(var _0x45a945=0x0;_0x45a945<_0x190698[_0x3fed8e(0x37b)][_0x3fed8e(0x267)];_0x45a945++){var _0x2bba00=_0x190698[_0x3fed8e(0x37b)][_0x45a945];_0x23f724[_0x2bba00[_0x3fed8e(0x1b1)]]=_0x2bba00;}var _0x430de4=![],_0x4f9d39=this['state'],_0x4c86ff=0x0;for(var _0xbfae53 in _0x17f12b[_0x3fed8e(0x38f)]){if(!_0x23f724[_0xbfae53]||_0x23f724[_0xbfae53][_0x3fed8e(0x1aa)]=='deleted'){_imagesDataObj[_0xbfae53][_0x3fed8e(0x2a4)]=![];if(_0x17f12b[_0x3fed8e(0x38f)][_0xbfae53]['status']!=_0x3fed8e(0x20e)&&_0x17f12b[_0x3fed8e(0x38f)][_0xbfae53]['status']!=_0x3fed8e(0x339))_imagesDataObj[_0xbfae53]['isPreview']=!![];if(_0x17f12b[_0x3fed8e(0x38f)][_0xbfae53][_0x3fed8e(0x1aa)]==_0x3fed8e(0x339))_imagesDataObj[_0xbfae53][_0x3fed8e(0x2a4)]=!![];_0x4f9d39[_0x3fed8e(0x1ee)]=!![],_imagesDataObj[_0xbfae53][_0x3fed8e(0x39b)]=!![],_0x430de4=!![];continue;}_imagesDataObj[_0xbfae53]=_0x23f724[_0xbfae53],_imagesDataObj[_0xbfae53][_0x3fed8e(0x2ab)]={};for(var _0x6d934f=0x0;_0x6d934f<_imagesDataObj[_0xbfae53][_0x3fed8e(0x1b6)][_0x3fed8e(0x267)];_0x6d934f++)_imagesDataObj[_0xbfae53][_0x3fed8e(0x2ab)][_imagesDataObj[_0xbfae53][_0x3fed8e(0x1b6)][_0x6d934f]]=!![];if(_0x17f12b['links'][_0xbfae53][_0x3fed8e(0x20a)]!=_0x23f724[_0xbfae53]['lastUpdateTime']||_0x17f12b[_0x3fed8e(0x38f)][_0xbfae53][_0x3fed8e(0x1aa)]!=_0x3fed8e(0x20e)&&_0x17f12b[_0x3fed8e(0x38f)][_0xbfae53][_0x3fed8e(0x1aa)]!=_0x3fed8e(0x339))_0x4c86ff++;}if(this[_0x3fed8e(0x351)][_0x3fed8e(0x2aa)]){var _0xe9ab66=_0x23f724[this[_0x3fed8e(0x351)][_0x3fed8e(0x2aa)]][_0x3fed8e(0x2b1)][_0x23f724[this['state'][_0x3fed8e(0x2aa)]][_0x3fed8e(0x2b1)]['length']-0x1]['_id'];_0x4f9d39[_0x3fed8e(0x328)]=_0xe9ab66,_0x4f9d39[_0x3fed8e(0x372)]={};var _0x4641db=_0x23f724[this[_0x3fed8e(0x351)][_0x3fed8e(0x2aa)]];for(var _0x6d934f=0x0;_0x6d934f<_0x4641db['allowedActions'][_0x3fed8e(0x267)];_0x6d934f++)_0x4f9d39[_0x3fed8e(0x372)][_0x4641db['allowedActions'][_0x6d934f]]=!![];}this[_0x3fed8e(0x2d7)](_0x4f9d39);if(this[_0x3fed8e(0x29d)]['appState'][_0x3fed8e(0x334)])this[_0x3fed8e(0x309)](_0x4c86ff);else this[_0x3fed8e(0x254)](_0x4c86ff);var _0x1df4d2='';if(this[_0x3fed8e(0x29d)][_0x3fed8e(0x216)][_0x3fed8e(0x2b6)])_0x1df4d2=this['props']['appState'][_0x3fed8e(0x209)];for(var _0xbfae53 in _0x17f12b['links']){if(!_0x23f724[_0xbfae53]||_0x23f724[_0xbfae53]['status']==_0x3fed8e(0x39b)){if(this[_0x3fed8e(0x29d)][_0x3fed8e(0x216)]['placeOriginals'])this['decreaseSyncDownloadsCounter']();else this[_0x3fed8e(0x305)]();continue;}(_0x17f12b[_0x3fed8e(0x38f)][_0xbfae53]['updatedat']!=_0x23f724[_0xbfae53][_0x3fed8e(0x347)]||_0x17f12b['links'][_0xbfae53][_0x3fed8e(0x1aa)]!=_0x3fed8e(0x20e)&&_0x17f12b['links'][_0xbfae53]['status']!=_0x3fed8e(0x339))&&(this[_0x3fed8e(0x29d)][_0x3fed8e(0x216)][_0x3fed8e(0x334)]?placeHDFileToLinks(this[_0x3fed8e(0x29d)][_0x3fed8e(0x216)]['apiKey'],this[_0x3fed8e(0x29d)][_0x3fed8e(0x216)][_0x3fed8e(0x394)],this[_0x3fed8e(0x29d)][_0x3fed8e(0x216)][_0x3fed8e(0x1c7)],this[_0x3fed8e(0x29d)][_0x3fed8e(0x216)][_0x3fed8e(0x374)],_0x1df4d2,_0xbfae53,_0x17f12b[_0x3fed8e(0x38f)][_0xbfae53]['linkData'],_0x17f12b['links'][_0xbfae53][_0x3fed8e(0x2da)],this[_0x3fed8e(0x21c)]):placePreviewFileToLinks(this[_0x3fed8e(0x29d)][_0x3fed8e(0x216)]['apiKey'],this[_0x3fed8e(0x29d)][_0x3fed8e(0x216)][_0x3fed8e(0x394)],this[_0x3fed8e(0x29d)][_0x3fed8e(0x216)][_0x3fed8e(0x1c7)],this[_0x3fed8e(0x29d)]['appState']['apiUrl'],_0xbfae53,_0x17f12b['links'][_0xbfae53][_0x3fed8e(0x2da)],this[_0x3fed8e(0x297)]));}if(_0x430de4)this[_0x3fed8e(0x206)]();if(_0x4c86ff==0x0){if(this[_0x3fed8e(0x351)][_0x3fed8e(0x1ee)]){var _0x4f9d39=this['state'];_0x4f9d39[_0x3fed8e(0x1ee)]=![],this['setState'](_0x4f9d39),Materialize[_0x3fed8e(0x2ac)](_0x3fed8e(0x27e),0xfa0,_0x3fed8e(0x2df));}else Materialize[_0x3fed8e(0x2ac)](_0x3fed8e(0x2b3),0xfa0,'toastFont');}},'loadCallback':function loadCallback(_0x282301){var _0x63ccc3=_0x14d782;this[_0x63ccc3(0x24a)]();if(_0x282301[_0x63ccc3(0x348)]&&(_0x282301[_0x63ccc3(0x348)]==_0x63ccc3(0x240)||_0x282301[_0x63ccc3(0x348)]==_0x63ccc3(0x289)||_0x282301[_0x63ccc3(0x348)]==_0x63ccc3(0x28a)||_0x282301[_0x63ccc3(0x348)]==_0x63ccc3(0x2f9))){savePrefs({'username':this[_0x63ccc3(0x29d)][_0x63ccc3(0x216)]['username'],'company':this[_0x63ccc3(0x29d)][_0x63ccc3(0x216)][_0x63ccc3(0x2af)],'apiUrl':this[_0x63ccc3(0x29d)][_0x63ccc3(0x216)][_0x63ccc3(0x374)],'apiKey':'','sessionKey':'','userUuid':'','isCustomURL':this[_0x63ccc3(0x29d)][_0x63ccc3(0x216)]['isCustomURL'],'placeOriginals':this[_0x63ccc3(0x29d)]['appState'][_0x63ccc3(0x334)],'showPlaceOptions':this['props'][_0x63ccc3(0x216)][_0x63ccc3(0x2cf)],'hideUnsupported':this[_0x63ccc3(0x29d)][_0x63ccc3(0x216)]['hideUnsupported'],'customFolder':this['props'][_0x63ccc3(0x216)][_0x63ccc3(0x209)],'useCustomFolder':this[_0x63ccc3(0x29d)]['appState']['useCustomFolder']}),this['props']['updateAppState']({'activeScreen':'Login','apiKey':''});return;}if(_0x282301['error']){var _0x3e15ff=_0x282301[_0x63ccc3(0x348)]+'.';if(_0x282301[_0x63ccc3(0x348)][_0x63ccc3(0x356)](_0x63ccc3(0x21f))==0x0)_0x3e15ff=_0x63ccc3(0x26f);Materialize[_0x63ccc3(0x2ac)](_0x3e15ff,0xfa0,_0x63ccc3(0x2df));return;}var _0x5ae6d6=this['state'],_0x15c5a9=_0x282301[_0x63ccc3(0x1c9)]['response'];_0x5ae6d6[_0x63ccc3(0x366)]['folder']=_0x15c5a9[_0x63ccc3(0x37b)];if(this['state']['folderUuid']=='')_folderInfo[_0x63ccc3(0x207)]={'folders':_0x15c5a9[_0x63ccc3(0x2d6)]};for(var _0x4a99b7=0x0;_0x4a99b7<_0x15c5a9[_0x63ccc3(0x37b)][_0x63ccc3(0x267)];_0x4a99b7++){var _0x3b0978=_0x15c5a9[_0x63ccc3(0x37b)][_0x4a99b7];_folderInfo[_0x3b0978[_0x63ccc3(0x1b1)]]={'folders':_0x3b0978[_0x63ccc3(0x238)],'resources':_0x3b0978[_0x63ccc3(0x27a)]};}this[_0x63ccc3(0x2d7)](_0x5ae6d6);},'loadFilesCallback':function loadFilesCallback(_0x429d55){var _0xd179a1=_0x14d782;this[_0xd179a1(0x24a)]();if(_0x429d55[_0xd179a1(0x348)]&&(_0x429d55['error']==_0xd179a1(0x240)||_0x429d55['error']==_0xd179a1(0x289))){savePrefs({'username':this[_0xd179a1(0x29d)][_0xd179a1(0x216)][_0xd179a1(0x326)],'company':this[_0xd179a1(0x29d)][_0xd179a1(0x216)][_0xd179a1(0x2af)],'apiUrl':this['props'][_0xd179a1(0x216)][_0xd179a1(0x374)],'apiKey':'','sessionKey':'','userUuid':'','isCustomURL':this[_0xd179a1(0x29d)][_0xd179a1(0x216)][_0xd179a1(0x1a6)],'placeOriginals':this[_0xd179a1(0x29d)]['appState'][_0xd179a1(0x334)],'showPlaceOptions':this[_0xd179a1(0x29d)][_0xd179a1(0x216)][_0xd179a1(0x2cf)],'hideUnsupported':this[_0xd179a1(0x29d)][_0xd179a1(0x216)][_0xd179a1(0x25a)],'customFolder':this[_0xd179a1(0x29d)]['appState'][_0xd179a1(0x209)],'useCustomFolder':this['props'][_0xd179a1(0x216)][_0xd179a1(0x2b6)]}),this[_0xd179a1(0x29d)]['updateAppState']({'activeScreen':_0xd179a1(0x38d),'apiKey':''});return;}if(_0x429d55[_0xd179a1(0x348)]){var _0x4ea2e5=_0x429d55[_0xd179a1(0x348)]+'.';if(_0x429d55['error'][_0xd179a1(0x356)](_0xd179a1(0x21f))==0x0)_0x4ea2e5=_0xd179a1(0x26f);Materialize[_0xd179a1(0x2ac)](_0x4ea2e5,0xfa0,'toastFont');return;}var _0x3c7db2=this[_0xd179a1(0x351)],_0x35a45e=_0x429d55[_0xd179a1(0x1c9)][_0xd179a1(0x3b1)];_0x3c7db2['gridData'][_0xd179a1(0x29f)]=_0x35a45e[_0xd179a1(0x37b)];for(var _0x431617=0x0;_0x431617<_0x35a45e[_0xd179a1(0x37b)][_0xd179a1(0x267)];_0x431617++){_imagesDataObj[_0x35a45e['rows'][_0x431617][_0xd179a1(0x1b1)]]=_0x35a45e[_0xd179a1(0x37b)][_0x431617],_imagesDataObj[_0x35a45e[_0xd179a1(0x37b)][_0x431617][_0xd179a1(0x1b1)]][_0xd179a1(0x2ab)]={};for(var _0x1758c4=0x0;_0x1758c4<_imagesDataObj[_0x35a45e[_0xd179a1(0x37b)][_0x431617][_0xd179a1(0x1b1)]]['allowedActions'][_0xd179a1(0x267)];_0x1758c4++)_imagesDataObj[_0x35a45e['rows'][_0x431617][_0xd179a1(0x1b1)]][_0xd179a1(0x2ab)][_imagesDataObj[_0x35a45e[_0xd179a1(0x37b)][_0x431617][_0xd179a1(0x1b1)]]['allowedActions'][_0x1758c4]]=!![];}this[_0xd179a1(0x2d7)](_0x3c7db2);},'searchCallback':function searchCallback(_0x42357a){var _0x55168d=_0x14d782;this['decreaseRequestsCounter']();if(_0x42357a['error']&&(_0x42357a['error']==_0x55168d(0x240)||_0x42357a[_0x55168d(0x348)]=='Invalid\x20response'||_0x42357a[_0x55168d(0x348)]==_0x55168d(0x28a)||_0x42357a['error']=='error.authentication.required')){savePrefs({'username':this['props'][_0x55168d(0x216)][_0x55168d(0x326)],'company':this[_0x55168d(0x29d)]['appState'][_0x55168d(0x2af)],'apiUrl':this[_0x55168d(0x29d)][_0x55168d(0x216)][_0x55168d(0x374)],'apiKey':'','sessionKey':'','userUuid':'','isCustomURL':this[_0x55168d(0x29d)]['appState'][_0x55168d(0x1a6)],'placeOriginals':this[_0x55168d(0x29d)]['appState'][_0x55168d(0x334)],'showPlaceOptions':this[_0x55168d(0x29d)][_0x55168d(0x216)][_0x55168d(0x2cf)],'hideUnsupported':this['props'][_0x55168d(0x216)]['hideUnsupported'],'customFolder':this[_0x55168d(0x29d)][_0x55168d(0x216)][_0x55168d(0x209)],'useCustomFolder':this[_0x55168d(0x29d)][_0x55168d(0x216)][_0x55168d(0x2b6)]}),this[_0x55168d(0x29d)][_0x55168d(0x2f2)]({'activeScreen':_0x55168d(0x38d),'apiKey':''});return;}if(_0x42357a['error']){var _0x4b8419=_0x42357a['error']+'.';if(_0x42357a[_0x55168d(0x348)]==_0x55168d(0x23d))_0x4b8419=_0x55168d(0x26f);Materialize['toast'](_0x4b8419,0xfa0,_0x55168d(0x2df));return;}var _0x515624=this['state'],_0x3359f5=_0x42357a[_0x55168d(0x1c9)]['response'];_0x515624[_0x55168d(0x36c)]=_0x3359f5[_0x55168d(0x37b)],_0x515624[_0x55168d(0x221)]=0x0;for(var _0x291d4a=0x0;_0x291d4a<_0x3359f5[_0x55168d(0x37b)][_0x55168d(0x267)];_0x291d4a++){_imagesDataObj[_0x3359f5[_0x55168d(0x37b)][_0x291d4a][_0x55168d(0x1b1)]]=_0x3359f5[_0x55168d(0x37b)][_0x291d4a],_imagesDataObj[_0x3359f5['rows'][_0x291d4a]['_id']][_0x55168d(0x2ab)]={};for(var _0x3463f7=0x0;_0x3463f7<_imagesDataObj[_0x3359f5[_0x55168d(0x37b)][_0x291d4a][_0x55168d(0x1b1)]][_0x55168d(0x1b6)]['length'];_0x3463f7++)_imagesDataObj[_0x3359f5['rows'][_0x291d4a][_0x55168d(0x1b1)]][_0x55168d(0x2ab)][_imagesDataObj[_0x3359f5[_0x55168d(0x37b)][_0x291d4a][_0x55168d(0x1b1)]]['allowedActions'][_0x3463f7]]=!![];}this[_0x55168d(0x2d7)](_0x515624);},'placePreviewCallback':function placePreviewCallback(_0x5bf491){var _0x1acff0=_0x14d782;this['decreaseRequestsCounter']();if(_0x5bf491[_0x1acff0(0x348)]&&(_0x5bf491['error']==_0x1acff0(0x240)||_0x5bf491['error']==_0x1acff0(0x289)||_0x5bf491[_0x1acff0(0x348)]==_0x1acff0(0x28a)||_0x5bf491[_0x1acff0(0x348)]==_0x1acff0(0x2f9))){savePrefs({'username':this[_0x1acff0(0x29d)][_0x1acff0(0x216)][_0x1acff0(0x326)],'company':this['props']['appState']['company'],'apiUrl':this[_0x1acff0(0x29d)]['appState']['apiUrl'],'apiKey':'','sessionKey':'','userUuid':'','isCustomURL':this[_0x1acff0(0x29d)]['appState'][_0x1acff0(0x1a6)],'placeOriginals':this[_0x1acff0(0x29d)]['appState']['placeOriginals'],'showPlaceOptions':this[_0x1acff0(0x29d)][_0x1acff0(0x216)][_0x1acff0(0x2cf)],'hideUnsupported':this[_0x1acff0(0x29d)][_0x1acff0(0x216)][_0x1acff0(0x25a)],'customFolder':this[_0x1acff0(0x29d)][_0x1acff0(0x216)]['customFolder'],'useCustomFolder':this[_0x1acff0(0x29d)]['appState']['useCustomFolder']}),this['props'][_0x1acff0(0x2f2)]({'activeScreen':_0x1acff0(0x38d),'apiKey':''});return;}if(_0x5bf491[_0x1acff0(0x348)]){var _0xf4e65f=_0x5bf491['error']+'.';if(_0x5bf491['error']==_0x1acff0(0x23d))_0xf4e65f=_0x1acff0(0x26f);Materialize[_0x1acff0(0x2ac)](_0xf4e65f,0xfa0,_0x1acff0(0x2df));return;}var _0x1e33ac=this[_0x1acff0(0x351)];_imagesDataObj[_0x5bf491[_0x1acff0(0x1a3)]][_0x1acff0(0x295)]=!![];var _0x6b4e=[];_0x6b4e[_0x1acff0(0x291)](_imagesDataObj[_0x5bf491['uuid']]);for(var _0x150502=0x0;_0x150502<_0x1e33ac[_0x1acff0(0x280)]['length'];_0x150502++)if(_0x1e33ac['documentLinks'][_0x150502][_0x1acff0(0x37f)]!=_0x5bf491['uuid'])_0x6b4e[_0x1acff0(0x291)](_0x1e33ac[_0x1acff0(0x280)][_0x150502]);_0x1e33ac['documentLinks']=_0x6b4e,this['setState'](_0x1e33ac),placeImageToLayout(_0x5bf491[_0x1acff0(0x2fb)],_0x5bf491[_0x1acff0(0x1a3)],_imagesDataObj[_0x5bf491[_0x1acff0(0x1a3)]],this[_0x1acff0(0x206)],this[_0x1acff0(0x29d)]['appState']['showPlaceOptions']);},'placeHDCallback':function placeHDCallback(_0x42434d){var _0x25ec9e=_0x14d782;this['decreaseRequestsCounter']();if(_0x42434d[_0x25ec9e(0x348)]&&(_0x42434d[_0x25ec9e(0x348)]==_0x25ec9e(0x240)||_0x42434d['error']==_0x25ec9e(0x289)||_0x42434d[_0x25ec9e(0x348)]==_0x25ec9e(0x28a)||_0x42434d[_0x25ec9e(0x348)]=='error.authentication.required')){savePrefs({'username':this[_0x25ec9e(0x29d)][_0x25ec9e(0x216)][_0x25ec9e(0x326)],'company':this[_0x25ec9e(0x29d)][_0x25ec9e(0x216)][_0x25ec9e(0x2af)],'apiUrl':this[_0x25ec9e(0x29d)][_0x25ec9e(0x216)]['apiUrl'],'apiKey':'','sessionKey':'','userUuid':'','isCustomURL':this[_0x25ec9e(0x29d)][_0x25ec9e(0x216)]['isCustomURL'],'placeOriginals':this[_0x25ec9e(0x29d)][_0x25ec9e(0x216)][_0x25ec9e(0x334)],'showPlaceOptions':this[_0x25ec9e(0x29d)][_0x25ec9e(0x216)][_0x25ec9e(0x2cf)],'hideUnsupported':this[_0x25ec9e(0x29d)][_0x25ec9e(0x216)][_0x25ec9e(0x25a)],'customFolder':this[_0x25ec9e(0x29d)]['appState'][_0x25ec9e(0x209)],'useCustomFolder':this[_0x25ec9e(0x29d)][_0x25ec9e(0x216)][_0x25ec9e(0x2b6)]}),this[_0x25ec9e(0x29d)][_0x25ec9e(0x2f2)]({'activeScreen':_0x25ec9e(0x38d),'apiKey':''});return;}if(_0x42434d[_0x25ec9e(0x348)]){var _0x1eb2b5=_0x42434d[_0x25ec9e(0x348)]+'.';if(_0x42434d['error']==_0x25ec9e(0x23d))_0x1eb2b5=_0x25ec9e(0x26f);var _0x1d1b20=_0x25ec9e(0x2df);if(_0x42434d[_0x25ec9e(0x348)]==_0x25ec9e(0x39a))_0x1d1b20=_0x25ec9e(0x1bc);Materialize[_0x25ec9e(0x2ac)](_0x1eb2b5,0xfa0,_0x1d1b20);return;}var _0x42cd11=this[_0x25ec9e(0x351)];_imagesDataObj[_0x42434d['uuid']][_0x25ec9e(0x295)]=![];var _0x322660=[];_0x322660[_0x25ec9e(0x291)](_imagesDataObj[_0x42434d['uuid']]);for(var _0x46d4a0=0x0;_0x46d4a0<_0x42cd11[_0x25ec9e(0x280)][_0x25ec9e(0x267)];_0x46d4a0++)if(_0x42cd11[_0x25ec9e(0x280)][_0x46d4a0]['fileUuid']!=_0x42434d[_0x25ec9e(0x1a3)])_0x322660[_0x25ec9e(0x291)](_0x42cd11[_0x25ec9e(0x280)][_0x46d4a0]);_0x42cd11[_0x25ec9e(0x280)]=_0x322660,this['setState'](_0x42cd11),placeImageToLayout(_0x42434d['filePath'],_0x42434d[_0x25ec9e(0x1a3)],_imagesDataObj[_0x42434d[_0x25ec9e(0x1a3)]],this['refreshDocumentInfo'],this[_0x25ec9e(0x29d)][_0x25ec9e(0x216)][_0x25ec9e(0x2cf)]);},'openFileCallback':function openFileCallback(_0xf94a06){var _0x23de2b=_0x14d782;this['decreaseRequestsCounter']();if(_0xf94a06[_0x23de2b(0x348)]&&(_0xf94a06[_0x23de2b(0x348)]==_0x23de2b(0x240)||_0xf94a06['error']==_0x23de2b(0x289)||_0xf94a06[_0x23de2b(0x348)]==_0x23de2b(0x28a)||_0xf94a06[_0x23de2b(0x348)]==_0x23de2b(0x2f9))){savePrefs({'username':this['props'][_0x23de2b(0x216)][_0x23de2b(0x326)],'company':this[_0x23de2b(0x29d)]['appState'][_0x23de2b(0x2af)],'apiUrl':this[_0x23de2b(0x29d)][_0x23de2b(0x216)][_0x23de2b(0x374)],'apiKey':'','sessionKey':'','userUuid':'','isCustomURL':this[_0x23de2b(0x29d)][_0x23de2b(0x216)]['isCustomURL'],'placeOriginals':this[_0x23de2b(0x29d)][_0x23de2b(0x216)][_0x23de2b(0x334)],'showPlaceOptions':this[_0x23de2b(0x29d)]['appState'][_0x23de2b(0x2cf)],'hideUnsupported':this[_0x23de2b(0x29d)]['appState'][_0x23de2b(0x25a)],'customFolder':this[_0x23de2b(0x29d)]['appState'][_0x23de2b(0x209)],'useCustomFolder':this['props']['appState'][_0x23de2b(0x2b6)]}),this[_0x23de2b(0x29d)][_0x23de2b(0x2f2)]({'activeScreen':_0x23de2b(0x38d),'apiKey':''});return;}if(_0xf94a06[_0x23de2b(0x348)]){var _0x5ea3d7=_0xf94a06[_0x23de2b(0x348)]+'.';if(_0xf94a06[_0x23de2b(0x348)]==_0x23de2b(0x23d))_0x5ea3d7=_0x23de2b(0x26f);var _0xc1125a=_0x23de2b(0x2df);if(_0xf94a06[_0x23de2b(0x348)]==_0x23de2b(0x39a))_0xc1125a=_0x23de2b(0x1bc);Materialize[_0x23de2b(0x2ac)](_0x5ea3d7,0xfa0,_0xc1125a);return;}var _0x95f42c=this['state'];_imagesDataObj[_0xf94a06[_0x23de2b(0x1a3)]]['isPreview']=![],_imagesDataObj[_0xf94a06[_0x23de2b(0x1a3)]][_0x23de2b(0x1a7)]=this[_0x23de2b(0x351)][_0x23de2b(0x1a7)],openImageAsLayout(_0xf94a06[_0x23de2b(0x2fb)],_0xf94a06['uuid'],_imagesDataObj[_0xf94a06[_0x23de2b(0x1a3)]],this[_0x23de2b(0x206)]);},'hdFileDownloadCallback':function hdFileDownloadCallback(_0x1b4e21){var _0x520682=_0x14d782;this[_0x520682(0x2c0)]();if(_0x1b4e21['error']&&(_0x1b4e21['error']==_0x520682(0x240)||_0x1b4e21[_0x520682(0x348)]==_0x520682(0x289)||_0x1b4e21[_0x520682(0x348)]==_0x520682(0x28a)||_0x1b4e21[_0x520682(0x348)]==_0x520682(0x2f9))){savePrefs({'username':this[_0x520682(0x29d)][_0x520682(0x216)][_0x520682(0x326)],'company':this[_0x520682(0x29d)]['appState'][_0x520682(0x2af)],'apiUrl':this[_0x520682(0x29d)]['appState'][_0x520682(0x374)],'apiKey':'','sessionKey':'','userUuid':'','isCustomURL':this['props'][_0x520682(0x216)][_0x520682(0x1a6)],'placeOriginals':this[_0x520682(0x29d)][_0x520682(0x216)][_0x520682(0x334)],'showPlaceOptions':this['props']['appState'][_0x520682(0x2cf)],'hideUnsupported':this[_0x520682(0x29d)][_0x520682(0x216)][_0x520682(0x25a)],'customFolder':this[_0x520682(0x29d)][_0x520682(0x216)][_0x520682(0x209)],'useCustomFolder':this['props']['appState'][_0x520682(0x2b6)]}),this[_0x520682(0x29d)][_0x520682(0x2f2)]({'activeScreen':'Login','apiKey':''});return;}if(_0x1b4e21[_0x520682(0x348)]){var _0x3d822f=_0x1b4e21[_0x520682(0x348)]+'.',_0x3d1462=this['state'];_0x3d1462[_0x520682(0x271)]=!![],this[_0x520682(0x2d7)](_0x3d1462);if(_0x1b4e21[_0x520682(0x348)]==_0x520682(0x23d))_0x3d822f=_0x520682(0x26f);var _0x3d5971=_0x520682(0x2df);if(_0x1b4e21[_0x520682(0x348)]==_0x520682(0x39a))_0x3d5971=_0x520682(0x1bc);Materialize[_0x520682(0x2ac)](_0x3d822f,0xfa0,_0x3d5971);return;}var _0x3d1462=this['state'];_imagesDataObj[_0x1b4e21[_0x520682(0x1a3)]][_0x520682(0x295)]=![];var _0x350057=[];_0x350057['push'](_imagesDataObj[_0x1b4e21[_0x520682(0x1a3)]]);for(var _0x5cd9f3=0x0;_0x5cd9f3<_0x3d1462[_0x520682(0x280)][_0x520682(0x267)];_0x5cd9f3++)if(_0x3d1462[_0x520682(0x280)][_0x5cd9f3]['fileUuid']!=_0x1b4e21[_0x520682(0x1a3)])_0x350057[_0x520682(0x291)](_0x3d1462['documentLinks'][_0x5cd9f3]);_0x3d1462['documentLinks']=_0x350057,this['setState'](_0x3d1462),updateLinks(_0x1b4e21['filePath'],_imagesDataObj[_0x1b4e21['uuid']],_0x1b4e21[_0x520682(0x2da)],this[_0x520682(0x206)]);},'hdFileDownloadSyncCallback':function(_0x7c41c3){var _0x1f32fd=_0x14d782;this[_0x1f32fd(0x25c)]();if(_0x7c41c3[_0x1f32fd(0x348)]&&(_0x7c41c3['error']=='Invalid\x20request'||_0x7c41c3[_0x1f32fd(0x348)]==_0x1f32fd(0x289)||_0x7c41c3[_0x1f32fd(0x348)]=='No\x20valid\x20session.\x20Authentication\x20is\x20required'||_0x7c41c3['error']==_0x1f32fd(0x2f9))){savePrefs({'username':this['props'][_0x1f32fd(0x216)][_0x1f32fd(0x326)],'company':this['props'][_0x1f32fd(0x216)]['company'],'apiUrl':this[_0x1f32fd(0x29d)][_0x1f32fd(0x216)][_0x1f32fd(0x374)],'apiKey':'','sessionKey':'','userUuid':'','isCustomURL':this[_0x1f32fd(0x29d)][_0x1f32fd(0x216)][_0x1f32fd(0x1a6)],'placeOriginals':this['props'][_0x1f32fd(0x216)][_0x1f32fd(0x334)],'showPlaceOptions':this[_0x1f32fd(0x29d)][_0x1f32fd(0x216)][_0x1f32fd(0x2cf)],'hideUnsupported':this[_0x1f32fd(0x29d)][_0x1f32fd(0x216)]['hideUnsupported'],'customFolder':this[_0x1f32fd(0x29d)][_0x1f32fd(0x216)]['customFolder'],'useCustomFolder':this[_0x1f32fd(0x29d)][_0x1f32fd(0x216)][_0x1f32fd(0x2b6)]}),this[_0x1f32fd(0x29d)][_0x1f32fd(0x2f2)]({'activeScreen':_0x1f32fd(0x38d),'apiKey':''});return;}if(_0x7c41c3['error']){var _0x134ceb=_0x7c41c3[_0x1f32fd(0x348)]+'.',_0x2ff75f=this[_0x1f32fd(0x351)];_0x2ff75f[_0x1f32fd(0x271)]=!![],this[_0x1f32fd(0x2d7)](_0x2ff75f);if(_0x7c41c3[_0x1f32fd(0x348)]==_0x1f32fd(0x23d))_0x134ceb=_0x1f32fd(0x26f);var _0x42fe51=_0x1f32fd(0x2df);if(_0x7c41c3[_0x1f32fd(0x348)]==_0x1f32fd(0x39a))_0x42fe51=_0x1f32fd(0x1bc);Materialize[_0x1f32fd(0x2ac)](_0x134ceb,0xfa0,_0x42fe51);return;}var _0x2ff75f=this['state'];_imagesDataObj[_0x7c41c3[_0x1f32fd(0x1a3)]][_0x1f32fd(0x295)]=![];var _0x4aef69=[];_0x4aef69[_0x1f32fd(0x291)](_imagesDataObj[_0x7c41c3[_0x1f32fd(0x1a3)]]);for(var _0x229419=0x0;_0x229419<_0x2ff75f['documentLinks']['length'];_0x229419++)if(_0x2ff75f[_0x1f32fd(0x280)][_0x229419][_0x1f32fd(0x37f)]!=_0x7c41c3['uuid'])_0x4aef69[_0x1f32fd(0x291)](_0x2ff75f[_0x1f32fd(0x280)][_0x229419]);_0x2ff75f[_0x1f32fd(0x280)]=_0x4aef69,this[_0x1f32fd(0x2d7)](_0x2ff75f),updateLinks(_0x7c41c3[_0x1f32fd(0x2fb)],_imagesDataObj[_0x7c41c3[_0x1f32fd(0x1a3)]],_0x7c41c3[_0x1f32fd(0x2da)],this[_0x1f32fd(0x206)]);},'hdFileDownloadEmbedCallback':function hdFileDownloadEmbedCallback(_0x17f19b){var _0x23006b=_0x14d782;this['decreaseDownloadsHDCounter'](0x1,_0x23006b(0x2b7));if(_0x17f19b[_0x23006b(0x348)]&&(_0x17f19b[_0x23006b(0x348)]==_0x23006b(0x240)||_0x17f19b[_0x23006b(0x348)]==_0x23006b(0x289)||_0x17f19b[_0x23006b(0x348)]==_0x23006b(0x28a)||_0x17f19b['error']==_0x23006b(0x2f9))){savePrefs({'username':this[_0x23006b(0x29d)][_0x23006b(0x216)][_0x23006b(0x326)],'company':this[_0x23006b(0x29d)][_0x23006b(0x216)][_0x23006b(0x2af)],'apiUrl':this[_0x23006b(0x29d)][_0x23006b(0x216)][_0x23006b(0x374)],'apiKey':'','sessionKey':'','userUuid':'','isCustomURL':this['props'][_0x23006b(0x216)][_0x23006b(0x1a6)],'placeOriginals':this[_0x23006b(0x29d)]['appState'][_0x23006b(0x334)],'showPlaceOptions':this[_0x23006b(0x29d)][_0x23006b(0x216)][_0x23006b(0x2cf)],'hideUnsupported':this['props'][_0x23006b(0x216)][_0x23006b(0x25a)],'customFolder':this[_0x23006b(0x29d)]['appState'][_0x23006b(0x209)],'useCustomFolder':this['props']['appState'][_0x23006b(0x2b6)]}),this[_0x23006b(0x29d)][_0x23006b(0x2f2)]({'activeScreen':_0x23006b(0x38d),'apiKey':''});return;}if(_0x17f19b[_0x23006b(0x348)]){var _0x1358c5=_0x17f19b[_0x23006b(0x348)]+'.',_0x351f58=this['state'];_0x351f58['downloadHDError']=!![],this[_0x23006b(0x2d7)](_0x351f58);if(_0x17f19b[_0x23006b(0x348)]==_0x23006b(0x23d))_0x1358c5=_0x23006b(0x26f);var _0x50357d=_0x23006b(0x2df);if(_0x17f19b[_0x23006b(0x348)]==_0x23006b(0x39a))_0x50357d=_0x23006b(0x1bc);Materialize['toast'](_0x1358c5,0xfa0,_0x50357d);return;}var _0x351f58=this['state'];_imagesDataObj[_0x17f19b[_0x23006b(0x1a3)]]['isPreview']=![];var _0xa93a2=[];_0xa93a2[_0x23006b(0x291)](_imagesDataObj[_0x17f19b[_0x23006b(0x1a3)]]);for(var _0x33bfb6=0x0;_0x33bfb6<_0x351f58[_0x23006b(0x280)][_0x23006b(0x267)];_0x33bfb6++)if(_0x351f58[_0x23006b(0x280)][_0x33bfb6][_0x23006b(0x37f)]!=_0x17f19b[_0x23006b(0x1a3)])_0xa93a2[_0x23006b(0x291)](_0x351f58[_0x23006b(0x280)][_0x33bfb6]);_0x351f58[_0x23006b(0x280)]=_0xa93a2,this[_0x23006b(0x2d7)](_0x351f58),updateLinksEmbed(_0x17f19b['filePath'],_imagesDataObj[_0x17f19b[_0x23006b(0x1a3)]],_0x17f19b[_0x23006b(0x2da)],this[_0x23006b(0x206)]);},'previewFileDownloadCallback':function previewFileDownloadCallback(_0x55b006){var _0x4614a3=_0x14d782;this[_0x4614a3(0x305)]();if(_0x55b006[_0x4614a3(0x348)]&&(_0x55b006['error']==_0x4614a3(0x240)||_0x55b006['error']=='Invalid\x20response'||_0x55b006[_0x4614a3(0x348)]==_0x4614a3(0x28a)||_0x55b006[_0x4614a3(0x348)]=='error.authentication.required')){savePrefs({'username':this['props'][_0x4614a3(0x216)][_0x4614a3(0x326)],'company':this[_0x4614a3(0x29d)]['appState'][_0x4614a3(0x2af)],'apiUrl':this[_0x4614a3(0x29d)][_0x4614a3(0x216)][_0x4614a3(0x374)],'apiKey':'','sessionKey':'','userUuid':'','isCustomURL':this[_0x4614a3(0x29d)][_0x4614a3(0x216)][_0x4614a3(0x1a6)],'placeOriginals':this[_0x4614a3(0x29d)][_0x4614a3(0x216)][_0x4614a3(0x334)],'showPlaceOptions':this[_0x4614a3(0x29d)][_0x4614a3(0x216)][_0x4614a3(0x2cf)],'hideUnsupported':this[_0x4614a3(0x29d)][_0x4614a3(0x216)]['hideUnsupported'],'customFolder':this[_0x4614a3(0x29d)][_0x4614a3(0x216)][_0x4614a3(0x209)],'useCustomFolder':this['props'][_0x4614a3(0x216)][_0x4614a3(0x2b6)]}),this[_0x4614a3(0x29d)][_0x4614a3(0x2f2)]({'activeScreen':_0x4614a3(0x38d),'apiKey':''});return;}if(_0x55b006['error']){var _0x107d2e=_0x55b006[_0x4614a3(0x348)]+'.',_0x429285=this[_0x4614a3(0x351)];_0x429285[_0x4614a3(0x1ee)]=!![],this['setState'](_0x429285);if(_0x55b006[_0x4614a3(0x348)]==_0x4614a3(0x23d))_0x107d2e=_0x4614a3(0x26f);Materialize[_0x4614a3(0x2ac)](_0x107d2e,0xfa0,_0x4614a3(0x2df));return;}var _0x429285=this[_0x4614a3(0x351)];_imagesDataObj[_0x55b006['uuid']]['isPreview']=!![];var _0x39751a=[];_0x39751a[_0x4614a3(0x291)](_imagesDataObj[_0x55b006[_0x4614a3(0x1a3)]]);for(var _0x3e86b6=0x0;_0x3e86b6<_0x429285[_0x4614a3(0x280)][_0x4614a3(0x267)];_0x3e86b6++)if(_0x429285['documentLinks'][_0x3e86b6][_0x4614a3(0x37f)]!=_0x55b006[_0x4614a3(0x1a3)])_0x39751a['push'](_0x429285[_0x4614a3(0x280)][_0x3e86b6]);_0x429285[_0x4614a3(0x280)]=_0x39751a,this[_0x4614a3(0x2d7)](_0x429285),updateLinks(_0x55b006[_0x4614a3(0x2fb)],_imagesDataObj[_0x55b006[_0x4614a3(0x1a3)]],_0x55b006[_0x4614a3(0x2da)],this[_0x4614a3(0x206)]);},'refreshDocumentInfo':function refreshDocumentInfo(){var _0x24a50b=_0x14d782;this['increaseRequestsCounter'](),loadDocumentData(this[_0x24a50b(0x245)]);},'prePackageDocument':function prePackageDocument(){var _0x1525eb=_0x14d782;if(this[_0x1525eb(0x351)]['requestsPending']+this['state'][_0x1525eb(0x298)]+this[_0x1525eb(0x351)][_0x1525eb(0x1f0)]>0x0)return;this[_0x1525eb(0x1da)](),loadDocumentData(this[_0x1525eb(0x30b)]);},'prePackageDocumentEmbed':function prePackageDocumentEmbed(){var _0x392839=_0x14d782;if(this['state'][_0x392839(0x1e1)]+this[_0x392839(0x351)][_0x392839(0x298)]+this[_0x392839(0x351)][_0x392839(0x1f0)]>0x0)return;this[_0x392839(0x1da)](),loadDocumentData(this[_0x392839(0x359)]);},'updateAllDocument':function updateAllDocument(_0x4881c8){var _0x1920e8=_0x14d782;this[_0x1920e8(0x1da)](),loadDocumentData(this[_0x1920e8(0x332)],undefined,_0x4881c8);},'uploadDocument':function uploadDocument(_0x479daa){var _0x4abe50=_0x14d782;this['increaseRequestsCounter'](),loadDocumentData(this[_0x4abe50(0x35e)],_0x479daa);},'search':function search(_0xa767e){var _0x34b574=_0x14d782;if(_0xa767e=='')return;this[_0x34b574(0x1da)](),loadSearchData(this[_0x34b574(0x29d)][_0x34b574(0x216)][_0x34b574(0x2ee)],this['props']['appState'][_0x34b574(0x394)],this[_0x34b574(0x29d)][_0x34b574(0x216)][_0x34b574(0x1c7)],this[_0x34b574(0x29d)]['appState'][_0x34b574(0x374)],this['searchCallback'],_0xa767e,this[_0x34b574(0x351)]['folderUuid']);},'openFolder':function openFolder(_0x57bc63,_0x22b5fe,_0x5b4d25,_0x751e9c,_0x5aa314){var _0x2dce9f=_0x14d782;if(!_0x5b4d25&&!_0x751e9c)return;var _0xf9622e=this[_0x2dce9f(0x351)],_0x1be622=_0xf9622e[_0x2dce9f(0x2b0)];_0xf9622e[_0x2dce9f(0x366)][_0x2dce9f(0x38c)]=[],_0xf9622e['gridData'][_0x2dce9f(0x29f)]=[],_0x1be622[_0x2dce9f(0x291)]({'folderUuid':this[_0x2dce9f(0x351)][_0x2dce9f(0x1a7)],'folderName':this[_0x2dce9f(0x351)][_0x2dce9f(0x33c)],'activeResourcePage':this[_0x2dce9f(0x351)]['activeResourcePage'],'activeFolderPage':this[_0x2dce9f(0x351)]['activeFolderPage'],'activeTab':this[_0x2dce9f(0x351)][_0x2dce9f(0x1a5)]}),_0xf9622e['history']=_0x1be622,_0xf9622e[_0x2dce9f(0x1a7)]=_0x57bc63,_0xf9622e[_0x2dce9f(0x33c)]=_0x22b5fe,_0xf9622e['activeResourcePage']=0x0,_0xf9622e[_0x2dce9f(0x201)]=0x0;if(_0x751e9c)_0xf9622e['activeTab']='Files';else _0xf9622e[_0x2dce9f(0x1a5)]=_0x2dce9f(0x214);this[_0x2dce9f(0x2d7)](_0xf9622e),_0x5b4d25&&(this['increaseRequestsCounter'](),loadFolderData(this[_0x2dce9f(0x29d)][_0x2dce9f(0x216)][_0x2dce9f(0x2ee)],this['props'][_0x2dce9f(0x216)][_0x2dce9f(0x394)],this[_0x2dce9f(0x29d)][_0x2dce9f(0x216)][_0x2dce9f(0x1c7)],this['props']['appState'][_0x2dce9f(0x374)],this[_0x2dce9f(0x1e0)],_0x57bc63,this[_0x2dce9f(0x351)][_0x2dce9f(0x201)])),_0x751e9c&&(this[_0x2dce9f(0x1da)](),loadFilesData(this[_0x2dce9f(0x29d)][_0x2dce9f(0x216)]['apiKey'],this[_0x2dce9f(0x29d)][_0x2dce9f(0x216)][_0x2dce9f(0x394)],this[_0x2dce9f(0x29d)][_0x2dce9f(0x216)][_0x2dce9f(0x1c7)],this[_0x2dce9f(0x29d)][_0x2dce9f(0x216)][_0x2dce9f(0x374)],this['loadFilesCallback'],_0x57bc63,this['state'][_0x2dce9f(0x1db)]));},'openSelectFolder':function openSelectFolder(_0x35c1a9,_0x5d278b,_0x2d71a6){var _0x100c5a=_0x14d782,_0x61f0c4=this[_0x100c5a(0x351)],_0x1b45ba=_0x61f0c4[_0x100c5a(0x2b0)];_0x61f0c4[_0x100c5a(0x366)][_0x100c5a(0x38c)]=[],_0x61f0c4['gridData'][_0x100c5a(0x29f)]=[],_0x1b45ba[_0x100c5a(0x291)]({'folderUuid':this[_0x100c5a(0x351)]['folderUuid'],'folderName':this[_0x100c5a(0x351)]['folderName']}),_0x61f0c4[_0x100c5a(0x2b0)]=_0x1b45ba,_0x61f0c4['folderUuid']=_0x35c1a9,_0x61f0c4[_0x100c5a(0x33c)]=_0x5d278b,_0x61f0c4['defaultOrder']=_0x2d71a6,_0x61f0c4[_0x100c5a(0x1db)]=0x0,_0x61f0c4[_0x100c5a(0x201)]=0x0,_0x61f0c4[_0x100c5a(0x1a5)]=_0x100c5a(0x2e8),this[_0x100c5a(0x2d7)](_0x61f0c4),this[_0x100c5a(0x1da)](),loadFolderData(this[_0x100c5a(0x29d)]['appState']['apiKey'],this[_0x100c5a(0x29d)][_0x100c5a(0x216)][_0x100c5a(0x394)],this['props'][_0x100c5a(0x216)][_0x100c5a(0x1c7)],this[_0x100c5a(0x29d)]['appState'][_0x100c5a(0x374)],this['loadCallback'],_0x35c1a9,0x0,_0x2d71a6);},'selectFolder':function selectFolder(_0x268f04){var _0x9301fe=_0x14d782,_0x1df180=this['state'];_0x1df180[_0x9301fe(0x36f)]=_0x268f04,this[_0x9301fe(0x2d7)](_0x1df180);},'placeFile':function placeFile(_0x188ed0){var _0x4efc55=_0x14d782;placeFileCheck(_0x188ed0,this[_0x4efc55(0x325)]);},'openFile':function openFile(_0xa48ab8){var _0x2aada8=_0x14d782;openFileCheck(_0xa48ab8,this[_0x2aada8(0x2a6)]);},'placeFileChecked':function placeFileChecked(_0x3c6c47){var _0x4b60d5=_0x14d782;if(_0x3c6c47==_0x4b60d5(0x379)){var _0x576c17=_0x4b60d5(0x2b9);Materialize[_0x4b60d5(0x2ac)](_0x576c17,0xfa0,_0x4b60d5(0x2df));return;}var _0x47ea33=_0x3c6c47;this[_0x4b60d5(0x1da)]();var _0x5bd0bb='';if(this[_0x4b60d5(0x29d)][_0x4b60d5(0x216)][_0x4b60d5(0x2b6)])_0x5bd0bb=this[_0x4b60d5(0x29d)][_0x4b60d5(0x216)]['customFolder'];if(this[_0x4b60d5(0x29d)][_0x4b60d5(0x216)][_0x4b60d5(0x334)])placeHDFile(this[_0x4b60d5(0x29d)][_0x4b60d5(0x216)][_0x4b60d5(0x2ee)],this[_0x4b60d5(0x29d)][_0x4b60d5(0x216)][_0x4b60d5(0x394)],this['props'][_0x4b60d5(0x216)][_0x4b60d5(0x1c7)],this[_0x4b60d5(0x29d)][_0x4b60d5(0x216)]['apiUrl'],_0x47ea33,this[_0x4b60d5(0x329)],_0x5bd0bb);else placePreviewFile(this['props'][_0x4b60d5(0x216)][_0x4b60d5(0x2ee)],this['props'][_0x4b60d5(0x216)][_0x4b60d5(0x394)],this[_0x4b60d5(0x29d)][_0x4b60d5(0x216)][_0x4b60d5(0x1c7)],this[_0x4b60d5(0x29d)][_0x4b60d5(0x216)]['apiUrl'],_0x47ea33,this[_0x4b60d5(0x1a8)]);},'openFileChecked':function openFileChecked(_0xaf09d9){var _0x130449=_0x14d782;if(_0xaf09d9==_0x130449(0x379)){var _0x347068=_0x130449(0x3a0);Materialize[_0x130449(0x2ac)](_0x347068,0xfa0,_0x130449(0x1bc));return;}var _0x47d631='';if(this[_0x130449(0x29d)][_0x130449(0x216)]['useCustomFolder'])_0x47d631=this[_0x130449(0x29d)][_0x130449(0x216)][_0x130449(0x209)];var _0x296b10=_0xaf09d9;this['increaseRequestsCounter'](),openHDFile(this['props'][_0x130449(0x216)][_0x130449(0x2ee)],this[_0x130449(0x29d)][_0x130449(0x216)][_0x130449(0x394)],this['props'][_0x130449(0x216)][_0x130449(0x1c7)],this[_0x130449(0x29d)]['appState'][_0x130449(0x374)],_0x296b10,this[_0x130449(0x281)],_0x47d631);},'selectDestination':function selectDestination(){var _0x3f2756=_0x14d782,_0x12877d=this['state'];_0x12877d[_0x3f2756(0x1a7)]='',_0x12877d[_0x3f2756(0x328)]='',_0x12877d[_0x3f2756(0x33c)]='',_0x12877d[_0x3f2756(0x1db)]=0x0,_0x12877d[_0x3f2756(0x201)]=0x0,this[_0x3f2756(0x2d7)](_0x12877d),this[_0x3f2756(0x1da)](),loadFolderData(this['props'][_0x3f2756(0x216)]['apiKey'],this['props'][_0x3f2756(0x216)][_0x3f2756(0x394)],this[_0x3f2756(0x29d)]['appState'][_0x3f2756(0x1c7)],this[_0x3f2756(0x29d)][_0x3f2756(0x216)]['apiUrl'],this[_0x3f2756(0x1e0)],_0x12877d[_0x3f2756(0x1a7)],0x0),this[_0x3f2756(0x361)](_0x3f2756(0x2e8));},'back':function back(_0x484d14){var _0x306a9f=_0x14d782;try{var _0x3a62cd=this[_0x306a9f(0x351)],_0x50d20e=_0x3a62cd[_0x306a9f(0x2b0)];if(_0x3a62cd[_0x306a9f(0x1a5)]!=_0x306a9f(0x2e8))_0x3a62cd[_0x306a9f(0x1a5)]=_0x306a9f(0x214);if(_0x484d14)_0x50d20e=[],_0x3a62cd[_0x306a9f(0x1a7)]='',_0x3a62cd[_0x306a9f(0x33c)]='',_0x3a62cd['activeResourcePage']=0x0,_0x3a62cd['activeFolderPage']=0x0;else{if(_0x50d20e['length']){var _0xc885f3=_0x50d20e['pop']();_0x3a62cd[_0x306a9f(0x1a7)]=_0xc885f3[_0x306a9f(0x1a7)],_0x3a62cd[_0x306a9f(0x33c)]=_0xc885f3[_0x306a9f(0x33c)],_0x3a62cd[_0x306a9f(0x201)]=_0xc885f3[_0x306a9f(0x201)],_0x3a62cd[_0x306a9f(0x1db)]=_0xc885f3['activeResourcePage'];if(_0x50d20e[_0x306a9f(0x267)]&&_0x3a62cd['activeTab']!=_0x306a9f(0x2e8))_0x3a62cd[_0x306a9f(0x1a5)]=_0xc885f3[_0x306a9f(0x1a5)];}}_0x3a62cd[_0x306a9f(0x2b0)]=_0x50d20e,_0x3a62cd['gridData'][_0x306a9f(0x38c)]=[],_0x3a62cd[_0x306a9f(0x366)][_0x306a9f(0x29f)]=[],this[_0x306a9f(0x2d7)](_0x3a62cd),this['increaseRequestsCounter']();if(!_0xc885f3||_0xc885f3[_0x306a9f(0x1a5)]==_0x306a9f(0x214))loadFolderData(this[_0x306a9f(0x29d)][_0x306a9f(0x216)][_0x306a9f(0x2ee)],this[_0x306a9f(0x29d)][_0x306a9f(0x216)][_0x306a9f(0x394)],this[_0x306a9f(0x29d)][_0x306a9f(0x216)][_0x306a9f(0x1c7)],this[_0x306a9f(0x29d)][_0x306a9f(0x216)][_0x306a9f(0x374)],this[_0x306a9f(0x1e0)],_0x3a62cd[_0x306a9f(0x1a7)],this[_0x306a9f(0x351)][_0x306a9f(0x201)]);else{if(_0xc885f3[_0x306a9f(0x1a5)]==_0x306a9f(0x2ff))loadFilesData(this[_0x306a9f(0x29d)][_0x306a9f(0x216)][_0x306a9f(0x2ee)],this[_0x306a9f(0x29d)][_0x306a9f(0x216)]['userUuid'],this['props'][_0x306a9f(0x216)][_0x306a9f(0x1c7)],this[_0x306a9f(0x29d)]['appState'][_0x306a9f(0x374)],this['loadFilesCallback'],_0x3a62cd['folderUuid'],this[_0x306a9f(0x351)][_0x306a9f(0x201)]);}}catch(_0xce35dd){}},'toggleSettingsBar':function toggleSettingsBar(){var _0x7ea193=_0x14d782;this[_0x7ea193(0x29d)]['updateAppState']({'showSettingsBar':!this[_0x7ea193(0x29d)][_0x7ea193(0x216)][_0x7ea193(0x1ae)]});},'render':function render(){var _0x5eaae0=_0x14d782,_0x4244ad=[];if(this[_0x5eaae0(0x351)][_0x5eaae0(0x1a5)]==_0x5eaae0(0x2e8)){var _0x2a7c97=this[_0x5eaae0(0x351)][_0x5eaae0(0x366)][_0x5eaae0(0x38c)],_0xc26a29=0x0,_0x3097c6=_0x2a7c97[_0x5eaae0(0x267)];for(var _0x537855=_0xc26a29;_0x537855<_0x3097c6;_0x537855++){var _0x36dd70=_0x2a7c97[_0x537855],_0x904824={};for(var _0x359819=0x0;_0x359819<_0x36dd70[_0x5eaae0(0x1b6)][_0x5eaae0(0x267)];_0x359819++)_0x904824[_0x36dd70[_0x5eaae0(0x1b6)][_0x359819]]=!![];_0x4244ad[_0x5eaae0(0x291)](React[_0x5eaae0(0x1ba)](SelectFolderCard,{'image':_0x36dd70[_0x5eaae0(0x1f9)],'uuid':_0x36dd70[_0x5eaae0(0x1b1)],'name':_0x36dd70[_0x5eaae0(0x354)],'folders':_0x36dd70[_0x5eaae0(0x238)],'images':_0x36dd70[_0x5eaae0(0x27a)],'key':_0x36dd70[_0x5eaae0(0x1b1)],'perm':_0x904824,'openFolder':this['openSelectFolder'],'selectFolder':this[_0x5eaae0(0x36b)],'selectedFolderUuid':this[_0x5eaae0(0x351)][_0x5eaae0(0x36f)]}));}}var _0x3a8ac7=[];if(this[_0x5eaae0(0x351)][_0x5eaae0(0x1a5)]==_0x5eaae0(0x214)){var _0x2a7c97=this[_0x5eaae0(0x351)][_0x5eaae0(0x366)][_0x5eaae0(0x38c)],_0xc26a29=0x0,_0x3097c6=_0x2a7c97['length'];_0x2a7c97[_0x5eaae0(0x267)]>_totalPageItems&&(_0xc26a29=this['state']['activeFolderPage']*_totalPageItems,_0x3097c6=Math[_0x5eaae0(0x203)](_0x3097c6,_0xc26a29+_totalPageItems));for(var _0x537855=_0xc26a29;_0x537855<_0x3097c6;_0x537855++){var _0x36dd70=_0x2a7c97[_0x537855],_0x904824={};for(var _0x359819=0x0;_0x359819<_0x36dd70['allowedActions'][_0x5eaae0(0x267)];_0x359819++)_0x904824[_0x36dd70['allowedActions'][_0x359819]]=!![];_0x3a8ac7[_0x5eaae0(0x291)](React[_0x5eaae0(0x1ba)](FolderCard,{'image':_0x36dd70[_0x5eaae0(0x1f9)],'uuid':_0x36dd70[_0x5eaae0(0x1b1)],'name':_0x36dd70[_0x5eaae0(0x354)],'folders':_0x36dd70['folders_count'],'images':_0x36dd70[_0x5eaae0(0x27a)],'key':_0x36dd70[_0x5eaae0(0x1b1)],'perm':_0x904824,'onClick':this['openFolder']}));}}var _0x5728e5=[];if(this[_0x5eaae0(0x351)]['activeTab']=='Files'||this[_0x5eaae0(0x351)][_0x5eaae0(0x1a5)]==_0x5eaae0(0x333))try{var _0x596098=this[_0x5eaae0(0x351)][_0x5eaae0(0x366)][_0x5eaae0(0x29f)],_0x28794d=this[_0x5eaae0(0x351)]['activeResourcePage'];this[_0x5eaae0(0x351)][_0x5eaae0(0x1a5)]=='Search'&&(_0x596098=this['state'][_0x5eaae0(0x36c)],_0x28794d=this[_0x5eaae0(0x351)][_0x5eaae0(0x221)]);var _0xc26a29=0x0,_0x3097c6=_0x596098['length'];_0x596098[_0x5eaae0(0x267)]>_totalPageItems&&(_0xc26a29=_0x28794d*_totalPageItems,_0x3097c6=Math[_0x5eaae0(0x203)](_0x3097c6,_0xc26a29+_totalPageItems));for(var _0x537855=_0xc26a29;_0x537855<_0x3097c6;_0x537855++){var _0x2cd0f5=_0x596098[_0x537855],_0x34e7d5=!![],_0x59e8bd=![],_0x115e89=![];if(!_0x2cd0f5[_0x5eaae0(0x229)])continue;allowedFileTypes[this['props']['appState'][_0x5eaae0(0x219)]][fileExtension(_0x2cd0f5[_0x5eaae0(0x229)]['name'])]&&(_0x34e7d5=![],_0x115e89=allowedFileTypes[this[_0x5eaae0(0x29d)]['appState'][_0x5eaae0(0x219)]][fileExtension(_0x2cd0f5[_0x5eaae0(0x229)][_0x5eaae0(0x354)])][_0x5eaae0(0x35f)],_0x59e8bd=allowedFileTypes[this[_0x5eaae0(0x29d)][_0x5eaae0(0x216)]['hostName']][fileExtension(_0x2cd0f5[_0x5eaae0(0x229)][_0x5eaae0(0x354)])][_0x5eaae0(0x2a9)]);if(this[_0x5eaae0(0x29d)][_0x5eaae0(0x216)][_0x5eaae0(0x25a)]&&_0x34e7d5)continue;_0x5728e5[_0x5eaae0(0x291)](React[_0x5eaae0(0x1ba)](ImageCard,{'image':_0x2cd0f5[_0x5eaae0(0x1f9)],'uuid':_0x2cd0f5[_0x5eaae0(0x1b1)],'name':_0x2cd0f5[_0x5eaae0(0x354)],'description':_0x2cd0f5['fancyFileSize']+',\x20'+_0x2cd0f5[_0x5eaae0(0x36e)],'key':_0x2cd0f5[_0x5eaae0(0x1b1)],'disabled':_0x34e7d5,'placeFile':this[_0x5eaae0(0x276)],'openFile':this[_0x5eaae0(0x1a4)],'useOpen':_0x115e89,'usePlace':_0x59e8bd,'checkout':_0x2cd0f5[_0x5eaae0(0x38a)],'checkoutUserName':_0x2cd0f5[_0x5eaae0(0x2d0)],'checkoutTime':_0x2cd0f5[_0x5eaae0(0x2a8)]}));}}catch(_0x3f0c79){}var _0x46a21d=[];if(this['state'][_0x5eaae0(0x1a5)]==_0x5eaae0(0x232)){var _0x596098=this[_0x5eaae0(0x351)]['documentLinks'];for(var _0x537855=0x0;_0x537855<_0x596098[_0x5eaae0(0x267)];_0x537855++){var _0x2cd0f5=_0x596098[_0x537855];_0x46a21d[_0x5eaae0(0x291)](React[_0x5eaae0(0x1ba)](LinkCard,{'image':_0x2cd0f5[_0x5eaae0(0x1f9)],'uuid':_0x2cd0f5[_0x5eaae0(0x1b1)],'name':_0x2cd0f5['name'],'description':_0x2cd0f5[_0x5eaae0(0x2bb)]+',\x20'+_0x2cd0f5['fancyFileType'],'isPreview':_0x2cd0f5['isPreview'],'isEmbedded':_0x2cd0f5['isEmbedded'],'key':_0x2cd0f5[_0x5eaae0(0x295)]+'_'+_0x2cd0f5['isEmbedded']+'_'+_0x2cd0f5[_0x5eaae0(0x1b1)],'deleted':_0x2cd0f5['deleted']}));}}var _0x17cea3=![],_0xc200fa=0x0;switch(this['state'][_0x5eaae0(0x1a5)]){case _0x5eaae0(0x214):if(this[_0x5eaae0(0x351)][_0x5eaae0(0x1a7)]==''&&_folderInfo[_0x5eaae0(0x207)])_0xc200fa=_folderInfo[_0x5eaae0(0x207)][_0x5eaae0(0x2d1)];else{if(_folderInfo[this[_0x5eaae0(0x351)][_0x5eaae0(0x1a7)]])_0xc200fa=_folderInfo[this[_0x5eaae0(0x351)][_0x5eaae0(0x1a7)]]['folders'];}break;case'Files':if(_folderInfo[this[_0x5eaae0(0x351)][_0x5eaae0(0x1a7)]])_0xc200fa=_folderInfo[this[_0x5eaae0(0x351)][_0x5eaae0(0x1a7)]][_0x5eaae0(0x277)];break;case _0x5eaae0(0x333):var _0xc200fa=this[_0x5eaae0(0x351)]['searchGridData'][_0x5eaae0(0x267)];break;default:break;};return _0x17cea3=_0xc200fa>_totalPageItems,React[_0x5eaae0(0x1ba)]('div',null,this[_0x5eaae0(0x351)][_0x5eaae0(0x1e1)]+this[_0x5eaae0(0x351)][_0x5eaae0(0x298)]+this[_0x5eaae0(0x351)][_0x5eaae0(0x1f0)]>0x0?React[_0x5eaae0(0x1ba)](ProgressBar,{'homeState':this['state'],'appState':this['props']['appState']}):null,React[_0x5eaae0(0x1ba)](HomeHeader,{'back':this[_0x5eaae0(0x266)],'homeState':this['state'],'tabCallback':this[_0x5eaae0(0x361)],'toggleSettingsBar':this[_0x5eaae0(0x27d)],'search':this[_0x5eaae0(0x2f4)],'appState':this['props']['appState'],'updateAppState':this[_0x5eaae0(0x29d)][_0x5eaae0(0x2f2)]}),this[_0x5eaae0(0x351)][_0x5eaae0(0x1a5)]=='Options'?null:React[_0x5eaae0(0x1ba)](NavBar,{'homeState':this[_0x5eaae0(0x351)],'tabCallback':this[_0x5eaae0(0x361)]}),this[_0x5eaae0(0x351)]['activeTab']==_0x5eaae0(0x232)&&this[_0x5eaae0(0x351)][_0x5eaae0(0x217)]?React[_0x5eaae0(0x1ba)](DocumentBar,{'homeState':this[_0x5eaae0(0x351)],'appState':this[_0x5eaae0(0x29d)]['appState'],'prePackageDocument':this[_0x5eaae0(0x23e)],'prePackageDocumentEmbed':this[_0x5eaae0(0x236)],'updateAllDocument':this[_0x5eaae0(0x304)]}):null,this['props'][_0x5eaae0(0x216)]['showSettingsBar']?React['createElement'](SettingsBar,{'appState':this[_0x5eaae0(0x29d)]['appState'],'tabCallback':this['tabCallback'],'logout':this[_0x5eaae0(0x29d)][_0x5eaae0(0x2ea)],'activeTab':this['state'][_0x5eaae0(0x1a5)]}):null,this['state'][_0x5eaae0(0x1a5)]=='Options'?React[_0x5eaae0(0x1ba)](SettingsScreen,{'appState':this[_0x5eaae0(0x29d)]['appState'],'updateAppState':this[_0x5eaae0(0x29d)][_0x5eaae0(0x2f2)]}):null,this[_0x5eaae0(0x351)][_0x5eaae0(0x1a5)]==_0x5eaae0(0x1c4)?null:React[_0x5eaae0(0x1ba)](Grid,{'homeState':this[_0x5eaae0(0x351)],'selectFolderCells':_0x4244ad,'folderCells':_0x3a8ac7,'imageCells':_0x5728e5,'linkCells':_0x46a21d}),this[_0x5eaae0(0x351)][_0x5eaae0(0x1a5)]=='Folder'&&_0x17cea3?React[_0x5eaae0(0x1ba)](Paginator,{'homeState':this['state'],'totalItems':_0xc200fa,'activePage':this[_0x5eaae0(0x351)]['activeFolderPage'],'setActivePage':this[_0x5eaae0(0x288)],'type':_0x5eaae0(0x2d1)}):null,this[_0x5eaae0(0x351)][_0x5eaae0(0x1a5)]==_0x5eaae0(0x2ff)&&_0x17cea3?React[_0x5eaae0(0x1ba)](Paginator,{'homeState':this['state'],'totalItems':_0xc200fa,'activePage':this[_0x5eaae0(0x351)]['activeResourcePage'],'setActivePage':this[_0x5eaae0(0x288)],'type':_0x5eaae0(0x277)}):null,this[_0x5eaae0(0x351)][_0x5eaae0(0x1a5)]=='Search'&&_0x17cea3?React[_0x5eaae0(0x1ba)](Paginator,{'homeState':this[_0x5eaae0(0x351)],'totalItems':_0xc200fa,'activePage':this[_0x5eaae0(0x351)][_0x5eaae0(0x221)],'setActivePage':this['setActivePage']}):null,this[_0x5eaae0(0x351)][_0x5eaae0(0x1a5)]==_0x5eaae0(0x232)&&this[_0x5eaae0(0x351)][_0x5eaae0(0x217)]?React[_0x5eaae0(0x1ba)](DocumentUploadBar,{'selectDestination':this[_0x5eaae0(0x282)],'uploadDocument':this['uploadDocument'],'documentUuid':this[_0x5eaae0(0x351)]['documentUuid'],'documentSaved':this['state']['documentSaved'],'permission':this['state'][_0x5eaae0(0x372)]}):null,this[_0x5eaae0(0x351)][_0x5eaae0(0x1a5)]=='SelectDestination'&&this['state'][_0x5eaae0(0x217)]?React[_0x5eaae0(0x1ba)](DocumentUploadSelectBar,{'uploadDocument':this[_0x5eaae0(0x38b)],'tabCallback':this[_0x5eaae0(0x361)],'selectedFolderUuid':this[_0x5eaae0(0x351)][_0x5eaae0(0x36f)]}):null);}}),CircularPreLoader=React[_0x14d782(0x252)]({'displayName':_0x14d782(0x1cb),'render':function render(){var _0xb97d6a=_0x14d782;return React['createElement'](_0xb97d6a(0x2bd),{'className':_0xb97d6a(0x2f7)},React[_0xb97d6a(0x1ba)]('div',{'className':_0xb97d6a(0x1d8)},React['createElement'](_0xb97d6a(0x2bd),{'className':_0xb97d6a(0x396)},React[_0xb97d6a(0x1ba)](_0xb97d6a(0x2bd),{'className':_0xb97d6a(0x27b)},React[_0xb97d6a(0x1ba)](_0xb97d6a(0x2bd),{'className':_0xb97d6a(0x269)},React[_0xb97d6a(0x1ba)](_0xb97d6a(0x2bd),{'className':'circle'})),React[_0xb97d6a(0x1ba)]('div',{'className':_0xb97d6a(0x20d)},React['createElement'](_0xb97d6a(0x2bd),{'className':_0xb97d6a(0x397)})),React['createElement'](_0xb97d6a(0x2bd),{'className':'circle-clipper\x20right'},React[_0xb97d6a(0x1ba)]('div',{'className':_0xb97d6a(0x397)}))))));}}),ProgressBar=React['createClass']({'displayName':_0x14d782(0x23c),'render':function render(){var _0x350dd3=_0x14d782;return React[_0x350dd3(0x1ba)](_0x350dd3(0x2bd),{'className':_0x350dd3(0x287)},React[_0x350dd3(0x1ba)](_0x350dd3(0x2bd),{'className':'progress'},React[_0x350dd3(0x1ba)]('div',{'className':_0x350dd3(0x1e5)})));}}),DocumentUploadBar=React[_0x14d782(0x252)]({'displayName':'DocumentUploadBar','render':function render(){var _0x35864a=_0x14d782,_0xafe7b4=this,_0x3e39e7='';if(this[_0x35864a(0x29d)]['documentUuid']=='')_0x3e39e7='You\x20can\x20save\x20this\x20document\x20to\x20your\x20platform';else{if(!this[_0x35864a(0x29d)][_0x35864a(0x1de)])_0x3e39e7=_0x35864a(0x399);}return React[_0x35864a(0x1ba)](_0x35864a(0x2bd),{'className':_0x35864a(0x331)},React[_0x35864a(0x1ba)]('p',{'className':'footer_text'},_0x3e39e7),React[_0x35864a(0x1ba)](_0x35864a(0x2bd),{'className':_0x35864a(0x28b)},this[_0x35864a(0x29d)][_0x35864a(0x2aa)]!=''&&(this['props'][_0x35864a(0x1b8)][_0x35864a(0x1c6)]||this['props'][_0x35864a(0x1b8)][_0x35864a(0x21e)])?React[_0x35864a(0x1ba)](_0x35864a(0x2bd),{'className':_0x35864a(0x264),'data-position':_0x35864a(0x205),'data-tooltip':_0x35864a(0x2d2),'onClick':function _0x111553(_0x292e4b){var _0x55eeb4=_0x35864a;return _0xafe7b4[_0x55eeb4(0x29d)][_0x55eeb4(0x38b)](![]);}},React[_0x35864a(0x1ba)]('i',{'className':_0x35864a(0x1cd)},_0x35864a(0x2e4)),_0x35864a(0x391)):null,this[_0x35864a(0x29d)][_0x35864a(0x2aa)]!=''&&(this[_0x35864a(0x29d)][_0x35864a(0x1b8)][_0x35864a(0x1c6)]||this[_0x35864a(0x29d)]['permission']['publish'])?React[_0x35864a(0x1ba)](_0x35864a(0x2bd),{'className':_0x35864a(0x264),'data-position':'top','data-tooltip':'Click\x20to\x20save\x20changes\x20made\x20to\x20this\x20file\x20as\x20a\x20new\x20version','onClick':function _0x3737ea(_0x11f08f){var _0x5a8cdb=_0x35864a;return _0xafe7b4['props'][_0x5a8cdb(0x38b)](!![]);}},React[_0x35864a(0x1ba)]('i',{'className':'material-icons\x20left'},'exposure_plus_1'),'New\x20Version'):null,React[_0x35864a(0x1ba)](_0x35864a(0x2bd),{'className':_0x35864a(0x264),'data-position':_0x35864a(0x205),'data-tooltip':_0x35864a(0x3b0),'onClick':function _0x4da2a6(_0x21d136){var _0xfe3abe=_0x35864a;return _0xafe7b4[_0xfe3abe(0x29d)]['selectDestination']();}},React['createElement']('i',{'className':'material-icons\x20left'},'folder'),this[_0x35864a(0x29d)][_0x35864a(0x2aa)]==''||this[_0x35864a(0x29d)]['permission']['admin']&&this[_0x35864a(0x29d)][_0x35864a(0x1b8)][_0x35864a(0x21e)]?_0x35864a(0x33b):_0x35864a(0x34f))));}}),DocumentUploadSelectBar=React[_0x14d782(0x252)]({'displayName':_0x14d782(0x31e),'render':function render(){var _0x2cdf9b=_0x14d782,_0x55e272=this;return React[_0x2cdf9b(0x1ba)](_0x2cdf9b(0x2bd),{'className':'footer_upload'},React[_0x2cdf9b(0x1ba)]('div',{'className':this['props']['selectedFolderUuid']!=''?_0x2cdf9b(0x264):'button\x20disabled\x20btn_pre\x20tooltipped','data-position':_0x2cdf9b(0x205),'data-tooltip':_0x2cdf9b(0x1e9),'disabled':this['props']['selectedFolderUuid']=='','onClick':function _0x203c0b(_0x5c2603){var _0x579b4c=_0x2cdf9b;if(_0x55e272[_0x579b4c(0x29d)][_0x579b4c(0x36f)]!='')return _0x55e272[_0x579b4c(0x29d)]['uploadDocument'](![]);}},React[_0x2cdf9b(0x1ba)]('i',{'className':_0x2cdf9b(0x1cd)},'cloud_upload'),'Upload\x20Document'),React['createElement'](_0x2cdf9b(0x2bd),{'className':_0x2cdf9b(0x264),'data-position':'top','data-tooltip':_0x2cdf9b(0x1e9),'onClick':function _0x20fd1d(_0x1682d5){var _0x59acb8=_0x2cdf9b;return _0x55e272[_0x59acb8(0x29d)]['tabCallback'](_0x59acb8(0x232));}},React['createElement']('i',{'className':_0x2cdf9b(0x1cd)},'block'),_0x2cdf9b(0x23f)));}}),Footer=React[_0x14d782(0x252)]({'displayName':_0x14d782(0x31c),'render':function render(){var _0x4791e8=_0x14d782;return React[_0x4791e8(0x1ba)](_0x4791e8(0x2bd),{'className':'footer'},this[_0x4791e8(0x29d)][_0x4791e8(0x2ad)][_0x4791e8(0x1a5)]==_0x4791e8(0x232)?React[_0x4791e8(0x1ba)]('p',null,this[_0x4791e8(0x29d)]['homeState'][_0x4791e8(0x280)][_0x4791e8(0x267)]==0x1?'This\x20document\x20has\x20'+this[_0x4791e8(0x29d)][_0x4791e8(0x2ad)]['documentLinks'][_0x4791e8(0x267)]+_0x4791e8(0x308):'The\x20current\x20document\x20has\x20'+this[_0x4791e8(0x29d)][_0x4791e8(0x2ad)][_0x4791e8(0x280)]['length']+_0x4791e8(0x1e8)):null,this['props']['homeState'][_0x4791e8(0x1a5)]==_0x4791e8(0x2ff)||this['props']['homeState']['activeTab']=='Search'?React['createElement']('p',null,_0x4791e8(0x231)):null);}}),Paginator=React[_0x14d782(0x252)]({'displayName':'Paginator','render':function render(){var _0x1b911f=_0x14d782,_0x50c4d0=this,_0x28e6be=this[_0x1b911f(0x29d)][_0x1b911f(0x346)],_0x4a30d5=Math['ceil'](_0x28e6be/_totalPageItems),_0x26bfaf=_0x1b911f(0x323);return React[_0x1b911f(0x1ba)](_0x1b911f(0x2bd),{'className':_0x1b911f(0x1a0)},React['createElement'](_0x1b911f(0x2e7),{'className':_0x26bfaf,'disabled':this[_0x1b911f(0x29d)][_0x1b911f(0x307)]==0x0||this[_0x1b911f(0x29d)][_0x1b911f(0x2ad)][_0x1b911f(0x1e1)]!=0x0,'onClick':function _0x4287cc(){var _0x3ebdb2=_0x1b911f;_0x50c4d0[_0x3ebdb2(0x29d)][_0x3ebdb2(0x288)](0x0);}},'First'),React[_0x1b911f(0x1ba)](_0x1b911f(0x2e7),{'className':_0x26bfaf,'disabled':this['props']['activePage']==0x0||this['props'][_0x1b911f(0x2ad)]['requestsPending']!=0x0,'onClick':function _0x2e0fcb(){var _0x371e0e=_0x1b911f;_0x50c4d0[_0x371e0e(0x29d)][_0x371e0e(0x288)](Math[_0x371e0e(0x2f3)](_0x50c4d0['props'][_0x371e0e(0x307)]-0x1,0x0));}},_0x1b911f(0x2d5)),React[_0x1b911f(0x1ba)]('p',null,_0x1b911f(0x233)+(this[_0x1b911f(0x29d)][_0x1b911f(0x307)]+0x1)+_0x1b911f(0x371)+_0x4a30d5),React[_0x1b911f(0x1ba)]('button',{'className':_0x26bfaf,'disabled':this[_0x1b911f(0x29d)]['activePage']==_0x4a30d5-0x1||this[_0x1b911f(0x29d)]['homeState'][_0x1b911f(0x1e1)]!=0x0,'onClick':function _0x2b7c78(){var _0xc90efb=_0x1b911f;_0x50c4d0[_0xc90efb(0x29d)]['setActivePage'](Math['min'](_0x50c4d0[_0xc90efb(0x29d)][_0xc90efb(0x307)]+0x1,_0x4a30d5-0x1));}},_0x1b911f(0x320)),React['createElement'](_0x1b911f(0x2e7),{'className':_0x26bfaf,'disabled':this[_0x1b911f(0x29d)][_0x1b911f(0x307)]==_0x4a30d5-0x1||this[_0x1b911f(0x29d)]['homeState']['requestsPending']!=0x0,'onClick':function _0x50c6db(){var _0x205c2b=_0x1b911f;_0x50c4d0[_0x205c2b(0x29d)]['setActivePage'](_0x4a30d5-0x1);}},_0x1b911f(0x1b7)));}}),DocumentBar=React[_0x14d782(0x252)]({'displayName':_0x14d782(0x1bf),'componentDidMount':function componentDidMount(){var _0x3542e8=_0x14d782;$(_0x3542e8(0x2c9))[_0x3542e8(0x3b4)]({'delay':_tooltipDelay});},'componentWillUpdate':function componentWillUpdate(){var _0x1f665e=_0x14d782;$(_0x1f665e(0x2c9))[_0x1f665e(0x3b4)](_0x1f665e(0x384));},'componentWillUnmount':function componentWillUnmount(){var _0x37b090=_0x14d782;$(_0x37b090(0x2c9))['tooltip'](_0x37b090(0x384));},'componentDidUpdate':function componentDidUpdate(){var _0x234ba8=_0x14d782;$(_0x234ba8(0x2c9))['tooltip']({'delay':_tooltipDelay});},'render':function render(){var _0x3d443a=_0x14d782,_0x498ac0=this,_0x4c0d4b=this['props'][_0x3d443a(0x2ad)]['documentName'];return this['props']['homeState'][_0x3d443a(0x2aa)]!=''&&_imagesDataObj[this['props'][_0x3d443a(0x2ad)][_0x3d443a(0x2aa)]]&&(_0x4c0d4b=_imagesDataObj[this['props'][_0x3d443a(0x2ad)][_0x3d443a(0x2aa)]][_0x3d443a(0x354)]),this[_0x3d443a(0x29d)]['homeState'][_0x3d443a(0x217)]?React[_0x3d443a(0x1ba)](_0x3d443a(0x2bd),{'className':_0x3d443a(0x230)},React['createElement'](_0x3d443a(0x2bd),{'className':_0x3d443a(0x2d4)},_0x4c0d4b),React[_0x3d443a(0x1ba)](_0x3d443a(0x2bd),{'className':'button\x20waves-effect\x20waves-light\x20btn_ref\x20hand_cursor\x20tooltipped','data-position':_0x3d443a(0x205),'data-tooltip':_0x3d443a(0x2c8),'onClick':function _0x4486ba(_0x402504){var _0x91744d=_0x3d443a;return _0x498ac0[_0x91744d(0x29d)][_0x91744d(0x304)]();}},React[_0x3d443a(0x1ba)]('i',{'className':_0x3d443a(0x1cd)},'cached'),_0x3d443a(0x3ac)),React[_0x3d443a(0x1ba)]('div',{'className':_0x3d443a(0x264),'data-position':_0x3d443a(0x205),'data-tooltip':_0x3d443a(0x21b),'onClick':function _0x2175d6(_0x46496f){var _0x1e0740=_0x3d443a;return _0x498ac0[_0x1e0740(0x29d)]['prePackageDocument']();}},React[_0x3d443a(0x1ba)]('i',{'className':_0x3d443a(0x1cd)},_0x3d443a(0x343)),_0x3d443a(0x20f)),this['props'][_0x3d443a(0x216)][_0x3d443a(0x219)]!=_0x3d443a(0x263)?React[_0x3d443a(0x1ba)](_0x3d443a(0x2bd),{'className':_0x3d443a(0x264),'data-position':'top','data-tooltip':_0x3d443a(0x367),'onClick':function _0x2dff8e(_0x3a8ba5){var _0x2c06f2=_0x3d443a;return _0x498ac0[_0x2c06f2(0x29d)]['prePackageDocumentEmbed']();}},React[_0x3d443a(0x1ba)]('i',{'className':_0x3d443a(0x1cd)},_0x3d443a(0x343)),_0x3d443a(0x2b7)):null):null;}}),HomeHeader=React[_0x14d782(0x252)]({'displayName':_0x14d782(0x376),'handleChange':function handleChange(_0x3af744,_0x21f62a){var _0xc12a5e=_0x14d782;if(_0x3af744[_0xc12a5e(0x357)]==0xd)return this[_0xc12a5e(0x29d)][_0xc12a5e(0x2f4)](this[_0xc12a5e(0x351)][_0xc12a5e(0x349)]);var _0x2c6c0e=this[_0xc12a5e(0x351)];_0x2c6c0e[_0x21f62a]=_0x3af744[_0xc12a5e(0x2dd)][_0xc12a5e(0x2ec)],this[_0xc12a5e(0x2d7)](_0x2c6c0e);},'getInitialState':function getInitialState(){return{'searchTerm':''};},'render':function render(){var _0x5c160b=_0x14d782,_0x31be6d=this;switch(this[_0x5c160b(0x29d)]['homeState']['activeTab']){case'Folder':case _0x5c160b(0x2e8):return React['createElement'](_0x5c160b(0x2bd),{'className':_0x5c160b(0x24e)},this[_0x5c160b(0x29d)][_0x5c160b(0x2ad)][_0x5c160b(0x2b0)]['length']==0x0?React['createElement'](_0x5c160b(0x2bd),{'className':_0x5c160b(0x2d8)},React[_0x5c160b(0x1ba)](_0x5c160b(0x3a4),{'src':'./images/logo.png'})):null,this[_0x5c160b(0x29d)][_0x5c160b(0x2ad)][_0x5c160b(0x2b0)]['length']!=0x0?React[_0x5c160b(0x1ba)](_0x5c160b(0x2bd),{'className':_0x5c160b(0x1ff),'onClick':function _0x4d43b7(_0x221b1f){var _0x516229=_0x5c160b;return _0x31be6d['props'][_0x516229(0x266)](!![]);}},React[_0x5c160b(0x1ba)]('i',{'className':'material-icons'},_0x5c160b(0x35d))):null,this[_0x5c160b(0x29d)][_0x5c160b(0x2ad)][_0x5c160b(0x2b0)]['length']!=0x0?React[_0x5c160b(0x1ba)]('div',{'className':_0x5c160b(0x33f),'onClick':function _0x23ac9e(_0x28c774){var _0x4c79db=_0x5c160b;return _0x31be6d[_0x4c79db(0x29d)]['back'](![]);}},React['createElement']('i',{'className':'material-icons'},_0x5c160b(0x2cc))):null,this[_0x5c160b(0x29d)][_0x5c160b(0x2ad)][_0x5c160b(0x2b0)][_0x5c160b(0x267)]!=0x0?React['createElement'](_0x5c160b(0x2bd),{'className':_0x5c160b(0x3b3)},this[_0x5c160b(0x29d)][_0x5c160b(0x2ad)][_0x5c160b(0x33c)]):null,React['createElement'](_0x5c160b(0x2bd),{'className':_0x5c160b(0x35a),'onClick':function _0x54905f(_0x573157){var _0x1576a8=_0x5c160b;return _0x31be6d[_0x1576a8(0x29d)][_0x1576a8(0x361)]('Search');}},React['createElement']('i',{'className':'material-icons'},_0x5c160b(0x2f4))),React[_0x5c160b(0x1ba)](_0x5c160b(0x2bd),{'className':_0x5c160b(0x2e0),'onClick':function _0x2180f4(_0x3ac407){var _0x4a2a10=_0x5c160b;return _0x31be6d[_0x4a2a10(0x29d)][_0x4a2a10(0x27d)]();}},React[_0x5c160b(0x1ba)]('i',{'className':_0x5c160b(0x3a8)},_0x5c160b(0x36d))));case _0x5c160b(0x2ff):return React[_0x5c160b(0x1ba)](_0x5c160b(0x2bd),{'className':_0x5c160b(0x24e)},React[_0x5c160b(0x1ba)](_0x5c160b(0x2bd),{'className':_0x5c160b(0x1ff),'onClick':function _0x58f193(_0x1bd1cf){var _0x17b6d4=_0x5c160b;return _0x31be6d['props'][_0x17b6d4(0x266)](!![]);}},React['createElement']('i',{'className':_0x5c160b(0x3a8)},_0x5c160b(0x35d))),React[_0x5c160b(0x1ba)](_0x5c160b(0x2bd),{'className':'search_arrow\x20hand_cursor','onClick':function _0x27fab1(_0x323f63){var _0x13e7d3=_0x5c160b;return _0x31be6d['props'][_0x13e7d3(0x266)](![]);}},React['createElement']('i',{'className':_0x5c160b(0x3a8)},'chevron_left')),React[_0x5c160b(0x1ba)](_0x5c160b(0x2bd),{'className':_0x5c160b(0x3b3)},this[_0x5c160b(0x29d)][_0x5c160b(0x2ad)][_0x5c160b(0x33c)]),React[_0x5c160b(0x1ba)](_0x5c160b(0x2bd),{'className':_0x5c160b(0x35a),'onClick':function _0xdfc7b1(_0x4f1237){var _0x1fa4e8=_0x5c160b;return _0x31be6d[_0x1fa4e8(0x29d)][_0x1fa4e8(0x361)](_0x1fa4e8(0x333));}},React[_0x5c160b(0x1ba)]('i',{'className':'material-icons'},_0x5c160b(0x2f4))),React[_0x5c160b(0x1ba)]('div',{'className':_0x5c160b(0x2e0),'onClick':function _0x2d8877(_0x28bdf1){var _0xba9efd=_0x5c160b;return _0x31be6d[_0xba9efd(0x29d)][_0xba9efd(0x27d)]();}},React[_0x5c160b(0x1ba)]('i',{'className':_0x5c160b(0x3a8)},_0x5c160b(0x36d))));case _0x5c160b(0x1c4):return React[_0x5c160b(0x1ba)](_0x5c160b(0x2bd),{'className':_0x5c160b(0x24e)},React[_0x5c160b(0x1ba)](_0x5c160b(0x2bd),{'className':_0x5c160b(0x1ff),'onClick':function _0x2b2f19(_0x25aa26){var _0x379379=_0x5c160b;return _0x31be6d[_0x379379(0x29d)]['back'](!![]);}},React[_0x5c160b(0x1ba)]('i',{'className':_0x5c160b(0x3a8)},'home')),React[_0x5c160b(0x1ba)](_0x5c160b(0x2bd),{'className':_0x5c160b(0x33f),'onClick':function _0x4d457e(_0x48cfc3){var _0x1e1458=_0x5c160b;return _0x31be6d[_0x1e1458(0x29d)][_0x1e1458(0x361)](_0x31be6d[_0x1e1458(0x29d)]['homeState']['prevActiveTab']);}},React[_0x5c160b(0x1ba)]('i',{'className':'material-icons'},_0x5c160b(0x2cc))),React[_0x5c160b(0x1ba)](_0x5c160b(0x2bd),{'className':'folder_name'},_0x5c160b(0x1b4)),React[_0x5c160b(0x1ba)](_0x5c160b(0x2bd),{'className':_0x5c160b(0x35a),'onClick':function _0x3f658b(_0x2f47b2){var _0x3bb40d=_0x5c160b;return _0x31be6d['props']['tabCallback'](_0x3bb40d(0x333));}},React[_0x5c160b(0x1ba)]('i',{'className':'material-icons'},_0x5c160b(0x2f4))),React[_0x5c160b(0x1ba)](_0x5c160b(0x2bd),{'className':_0x5c160b(0x2e0),'onClick':function _0x57fbe8(_0x1a4078){var _0x36ff6b=_0x5c160b;return _0x31be6d[_0x36ff6b(0x29d)][_0x36ff6b(0x27d)]();}},React[_0x5c160b(0x1ba)]('i',{'className':'material-icons'},_0x5c160b(0x36d))));case _0x5c160b(0x333):return React[_0x5c160b(0x1ba)]('div',{'className':_0x5c160b(0x24e)},React[_0x5c160b(0x1ba)](_0x5c160b(0x2bd),{'className':_0x5c160b(0x1ff),'onClick':function _0x54b6ff(_0x597ddc){var _0x49bafa=_0x5c160b;return _0x31be6d[_0x49bafa(0x29d)][_0x49bafa(0x266)](!![]);}},React[_0x5c160b(0x1ba)]('i',{'className':_0x5c160b(0x3a8)},_0x5c160b(0x35d))),React['createElement'](_0x5c160b(0x2bd),{'className':'search_arrow\x20hand_cursor','onClick':function _0x16b89a(_0x5147f6){var _0x58f6c5=_0x5c160b;return _0x31be6d[_0x58f6c5(0x29d)][_0x58f6c5(0x361)](_0x31be6d[_0x58f6c5(0x29d)]['homeState'][_0x58f6c5(0x2f6)]);}},React[_0x5c160b(0x1ba)]('i',{'className':_0x5c160b(0x3a8)},_0x5c160b(0x2cc))),React[_0x5c160b(0x1ba)](_0x5c160b(0x2bd),{'className':_0x5c160b(0x30e)},React[_0x5c160b(0x1ba)]('input',{'type':_0x5c160b(0x335),'placeholder':_0x5c160b(0x2cb),'onChange':function _0x5cdd1b(_0x2b3b8c){var _0x1996f5=_0x5c160b;return _0x31be6d['handleChange'](_0x2b3b8c,_0x1996f5(0x349));},'onKeyPress':function _0x2943f4(_0x41349a){var _0x5ede0b=_0x5c160b;if(_0x41349a[_0x5ede0b(0x357)]==0xd)return _0x31be6d[_0x5ede0b(0x29d)][_0x5ede0b(0x2f4)](_0x31be6d['state'][_0x5ede0b(0x349)]);},'value':this['state']['searchTerm']})),React[_0x5c160b(0x1ba)](_0x5c160b(0x2bd),{'className':'search_btn\x20hand_cursor','onClick':function _0x42e77d(_0x566194){var _0x5cae8f=_0x5c160b;return _0x31be6d[_0x5cae8f(0x29d)][_0x5cae8f(0x2f4)](_0x31be6d[_0x5cae8f(0x351)][_0x5cae8f(0x349)]);}},React['createElement']('i',{'className':'material-icons'},_0x5c160b(0x2f4))));case _0x5c160b(0x232):return React[_0x5c160b(0x1ba)]('div',{'className':_0x5c160b(0x24e)},this[_0x5c160b(0x29d)][_0x5c160b(0x2ad)][_0x5c160b(0x2b0)]['length']==0x0?React[_0x5c160b(0x1ba)](_0x5c160b(0x2bd),{'className':_0x5c160b(0x2d8)},React[_0x5c160b(0x1ba)](_0x5c160b(0x3a4),{'src':_0x5c160b(0x253)})):null,this[_0x5c160b(0x29d)][_0x5c160b(0x2ad)][_0x5c160b(0x2b0)]['length']!=0x0?React['createElement'](_0x5c160b(0x2bd),{'className':_0x5c160b(0x1ff),'onClick':function _0x10219c(_0x3e85e2){var _0x4e7d3a=_0x5c160b;return _0x31be6d['props'][_0x4e7d3a(0x266)](!![]);}},React[_0x5c160b(0x1ba)]('i',{'className':_0x5c160b(0x3a8)},'home')):null,this[_0x5c160b(0x29d)]['homeState'][_0x5c160b(0x2b0)][_0x5c160b(0x267)]!=0x0?React[_0x5c160b(0x1ba)]('div',{'className':_0x5c160b(0x33f),'onClick':function _0xf6317a(_0x266ba0){var _0x3bd807=_0x5c160b;return _0x31be6d[_0x3bd807(0x29d)][_0x3bd807(0x266)](![]);}},React[_0x5c160b(0x1ba)]('i',{'className':_0x5c160b(0x3a8)},'chevron_left')):null,this['props'][_0x5c160b(0x2ad)]['history'][_0x5c160b(0x267)]!=0x0?React[_0x5c160b(0x1ba)]('div',{'className':'folder_name'},this['props'][_0x5c160b(0x2ad)][_0x5c160b(0x33c)]):null,React[_0x5c160b(0x1ba)](_0x5c160b(0x2bd),{'className':_0x5c160b(0x35a)},React[_0x5c160b(0x1ba)]('i',{'className':_0x5c160b(0x3a8),'onClick':function _0x4c5017(_0x3c0e2d){var _0x269c86=_0x5c160b;return _0x31be6d[_0x269c86(0x29d)][_0x269c86(0x361)](_0x269c86(0x333));}},_0x5c160b(0x2f4))),React['createElement'](_0x5c160b(0x2bd),{'className':'logout\x20hand_cursor','onClick':function _0x309388(_0x430df3){var _0x4fc6e5=_0x5c160b;return _0x31be6d[_0x4fc6e5(0x29d)][_0x4fc6e5(0x27d)]();}},React[_0x5c160b(0x1ba)]('i',{'className':_0x5c160b(0x3a8)},'more_vert')));}}}),NavBar=React['createClass']({'displayName':_0x14d782(0x25b),'render':function render(){var _0x287978=_0x14d782,_0x54a4ea=this,_0x184fe4=this[_0x287978(0x29d)]['homeState'][_0x287978(0x366)]['resource'][_0x287978(0x267)],_0x1925ce=this[_0x287978(0x29d)][_0x287978(0x2ad)][_0x287978(0x366)]['folder'][_0x287978(0x267)];_folderInfo[this[_0x287978(0x29d)][_0x287978(0x2ad)][_0x287978(0x1a7)]]&&(_0x1925ce=_folderInfo[this[_0x287978(0x29d)][_0x287978(0x2ad)][_0x287978(0x1a7)]][_0x287978(0x2d1)],_0x184fe4=_folderInfo[this[_0x287978(0x29d)][_0x287978(0x2ad)][_0x287978(0x1a7)]][_0x287978(0x277)]);if(this[_0x287978(0x29d)][_0x287978(0x2ad)][_0x287978(0x1a7)]==''&&_folderInfo[_0x287978(0x207)])_0x1925ce=_folderInfo[_0x287978(0x207)]['folders'];switch(this[_0x287978(0x29d)][_0x287978(0x2ad)][_0x287978(0x1a5)]){case _0x287978(0x2e8):return React[_0x287978(0x1ba)](_0x287978(0x2bd),{'className':_0x287978(0x1ef)},React[_0x287978(0x1ba)]('div',{'className':'block_docs\x20select_destination_text'},React[_0x287978(0x1ba)]('p',null,_0x287978(0x1d9))));break;case'Folder':case'Options':return React[_0x287978(0x1ba)](_0x287978(0x2bd),{'className':_0x287978(0x1ef)},React['createElement'](_0x287978(0x2bd),{'className':'block_docs'},this[_0x287978(0x29d)][_0x287978(0x2ad)]['history']['length']==0x0?React['createElement']('a',{'href':'#','className':_0x287978(0x1d4),'onClick':function _0x2cf2f5(_0x5b1962){var _0x24adca=_0x287978;return _0x54a4ea[_0x24adca(0x29d)]['tabCallback']('Folder');}},React['createElement'](_0x287978(0x224),null,_0x287978(0x1ec)),React[_0x287978(0x1ba)]('span',{'className':_0x287978(0x274)},_0x1925ce)):null,this[_0x287978(0x29d)][_0x287978(0x2ad)]['history'][_0x287978(0x267)]==0x0?null:React[_0x287978(0x1ba)]('a',{'href':'#','className':_0x287978(0x275),'onClick':function _0x29f689(_0x3bf494){var _0x4a3694=_0x287978;return _0x54a4ea[_0x4a3694(0x29d)][_0x4a3694(0x361)](_0x4a3694(0x2ff));}},React['createElement'](_0x287978(0x224),null,_0x287978(0x2ff)),React[_0x287978(0x1ba)](_0x287978(0x26c),{'className':_0x287978(0x274)},_0x184fe4)),this[_0x287978(0x29d)][_0x287978(0x2ad)][_0x287978(0x2b0)][_0x287978(0x267)]!=0x0?React[_0x287978(0x1ba)]('a',{'href':'#','className':'active\x20hand_cursor','onClick':function _0x3d0637(_0x315956){var _0x1a51e0=_0x287978;return _0x54a4ea['props'][_0x1a51e0(0x361)]('Folder');}},React[_0x287978(0x1ba)]('nobr',null,_0x287978(0x1fc)),React[_0x287978(0x1ba)]('span',{'className':_0x287978(0x274)},_0x1925ce)):null,React[_0x287978(0x1ba)]('a',{'href':'#','className':_0x287978(0x275),'onClick':function _0x1f88c6(_0x430b6a){var _0x7c813d=_0x287978;return _0x54a4ea[_0x7c813d(0x29d)][_0x7c813d(0x361)](_0x7c813d(0x232));}},React[_0x287978(0x1ba)](_0x287978(0x224),null,_0x287978(0x242)),React[_0x287978(0x1ba)](_0x287978(0x26c),{'className':_0x287978(0x274)},this[_0x287978(0x29d)]['homeState'][_0x287978(0x280)]['length']))));case'Files':return React[_0x287978(0x1ba)]('div',{'className':_0x287978(0x1ef)},React[_0x287978(0x1ba)](_0x287978(0x2bd),{'className':_0x287978(0x1d6)},this['props'][_0x287978(0x2ad)][_0x287978(0x2b0)][_0x287978(0x267)]==0x0?React[_0x287978(0x1ba)]('a',{'href':'#','className':_0x287978(0x275),'onClick':function _0x455a57(_0x3902de){var _0x1ac852=_0x287978;return _0x54a4ea['props'][_0x1ac852(0x361)](_0x1ac852(0x214));}},React[_0x287978(0x1ba)](_0x287978(0x224),null,_0x287978(0x1ec)),React[_0x287978(0x1ba)](_0x287978(0x26c),{'className':'bullet'},_0x1925ce)):null,React['createElement']('a',{'href':'#','className':_0x287978(0x1d4),'onClick':function _0x5d7764(_0x19a959){var _0x3debf2=_0x287978;return _0x54a4ea[_0x3debf2(0x29d)][_0x3debf2(0x361)](_0x3debf2(0x2ff));}},React[_0x287978(0x1ba)]('nobr',null,_0x287978(0x2ff)),React['createElement'](_0x287978(0x26c),{'className':_0x287978(0x274)},_0x184fe4)),this[_0x287978(0x29d)][_0x287978(0x2ad)][_0x287978(0x2b0)][_0x287978(0x267)]!=0x0?React[_0x287978(0x1ba)]('a',{'href':'#','className':_0x287978(0x275),'onClick':function _0x24229c(_0x5d8855){var _0x48a010=_0x287978;return _0x54a4ea[_0x48a010(0x29d)][_0x48a010(0x361)](_0x48a010(0x214));}},React[_0x287978(0x1ba)](_0x287978(0x224),null,_0x287978(0x1fc)),React['createElement']('span',{'className':_0x287978(0x274)},_0x1925ce)):null,React[_0x287978(0x1ba)]('a',{'href':'#','className':_0x287978(0x275),'onClick':function _0x29c42a(_0x59a6ff){var _0x381c8e=_0x287978;return _0x54a4ea[_0x381c8e(0x29d)][_0x381c8e(0x361)](_0x381c8e(0x232));}},React['createElement'](_0x287978(0x224),null,_0x287978(0x242)),React[_0x287978(0x1ba)](_0x287978(0x26c),{'className':_0x287978(0x274)},this['props']['homeState']['documentLinks']['length']))));case'Search':return React['createElement'](_0x287978(0x2bd),{'className':'navigation\x20row'},React[_0x287978(0x1ba)]('div',{'className':_0x287978(0x1d6)},React['createElement']('a',{'href':'#'},React[_0x287978(0x1ba)](_0x287978(0x224),null,_0x287978(0x365)),React[_0x287978(0x1ba)](_0x287978(0x26c),{'className':'bullet'},this[_0x287978(0x29d)]['homeState'][_0x287978(0x36c)][_0x287978(0x267)]))));case _0x287978(0x232):return React[_0x287978(0x1ba)](_0x287978(0x2bd),{'className':_0x287978(0x1ef)},React['createElement'](_0x287978(0x2bd),{'className':_0x287978(0x1d6)},this['props'][_0x287978(0x2ad)][_0x287978(0x2b0)]['length']==0x0?React['createElement']('a',{'href':'#','className':_0x287978(0x275),'onClick':function _0x47b204(_0x50b148){var _0x4dd991=_0x287978;return _0x54a4ea['props'][_0x4dd991(0x361)](_0x4dd991(0x214));}},React['createElement'](_0x287978(0x224),null,_0x287978(0x1ec)),React['createElement']('span',{'className':_0x287978(0x274)},_0x1925ce)):null,this[_0x287978(0x29d)]['homeState'][_0x287978(0x2b0)][_0x287978(0x267)]==0x0?null:React[_0x287978(0x1ba)]('a',{'href':'#','className':'hand_cursor','onClick':function _0x513bab(_0x8901a7){var _0x532c23=_0x287978;return _0x54a4ea[_0x532c23(0x29d)]['tabCallback'](_0x532c23(0x2ff));}},React['createElement']('nobr',null,'Files'),React[_0x287978(0x1ba)](_0x287978(0x26c),{'className':_0x287978(0x274)},_0x184fe4)),this[_0x287978(0x29d)][_0x287978(0x2ad)][_0x287978(0x2b0)][_0x287978(0x267)]!=0x0?React[_0x287978(0x1ba)]('a',{'href':'#','className':_0x287978(0x275),'onClick':function _0x219850(_0x51cdbf){var _0x1e98bf=_0x287978;return _0x54a4ea[_0x1e98bf(0x29d)]['tabCallback'](_0x1e98bf(0x214));}},React[_0x287978(0x1ba)](_0x287978(0x224),null,_0x287978(0x1fc)),React[_0x287978(0x1ba)](_0x287978(0x26c),{'className':_0x287978(0x274)},_0x1925ce)):null,React[_0x287978(0x1ba)]('a',{'href':'#','className':_0x287978(0x382)},React['createElement']('nobr',null,_0x287978(0x242)),React[_0x287978(0x1ba)]('span',{'className':_0x287978(0x274)},this[_0x287978(0x29d)][_0x287978(0x2ad)][_0x287978(0x280)][_0x287978(0x267)]))));}}}),Grid=React[_0x14d782(0x252)]({'displayName':_0x14d782(0x2a3),'render':function render(){var _0x340ff5=_0x14d782;return React[_0x340ff5(0x1ba)](_0x340ff5(0x2bd),{'className':this[_0x340ff5(0x29d)][_0x340ff5(0x2ad)][_0x340ff5(0x1a5)]=='Document'?_0x340ff5(0x342):_0x340ff5(0x37e)},React['createElement'](_0x340ff5(0x2bd),{'className':_0x340ff5(0x33a)},this['props'][_0x340ff5(0x363)],this[_0x340ff5(0x29d)][_0x340ff5(0x318)],this[_0x340ff5(0x29d)][_0x340ff5(0x2c2)],this['props'][_0x340ff5(0x39d)]));}}),LinkCard=React['createClass']({'displayName':_0x14d782(0x294),'componentDidMount':function componentDidMount(){var _0x532158=_0x14d782;$(_0x532158(0x2c9))[_0x532158(0x3b4)]({'delay':_tooltipDelay});},'render':function render(){var _0x2005e2=_0x14d782,_0xe923f0=this,_0x327855=_0x2005e2(0x1eb);if(this[_0x2005e2(0x29d)]['isEmbedded'])_0x327855=_0x2005e2(0x2dc);return React[_0x2005e2(0x1ba)](_0x2005e2(0x2bd),{'className':_0x2005e2(0x1fd)},React[_0x2005e2(0x1ba)]('div',{'className':_0x2005e2(0x239)},React[_0x2005e2(0x1ba)](_0x2005e2(0x247),{'data':this[_0x2005e2(0x29d)]['image'],'type':_0x2005e2(0x362)},React[_0x2005e2(0x1ba)]('img',{'src':_0x2005e2(0x250)}))),React['createElement'](_0x2005e2(0x2bd),{'className':_0x2005e2(0x227)},React[_0x2005e2(0x1ba)]('p',{'className':_0x2005e2(0x302)},this[_0x2005e2(0x29d)]['name']),React[_0x2005e2(0x1ba)]('p',{'className':_0x2005e2(0x1e2)},this[_0x2005e2(0x29d)]['description'])),React[_0x2005e2(0x1ba)](_0x2005e2(0x2bd),{'className':_0x2005e2(0x293)},React[_0x2005e2(0x1ba)]('i',{'className':this['props'][_0x2005e2(0x295)]?_0x2005e2(0x316):_0x2005e2(0x1b9),'data-position':_0x2005e2(0x205),'data-tooltip':this[_0x2005e2(0x29d)][_0x2005e2(0x295)]?_0x2005e2(0x321):_0x327855},_0x2005e2(0x343)),this[_0x2005e2(0x29d)][_0x2005e2(0x39b)]?React[_0x2005e2(0x1ba)]('i',{'className':'material-icons\x20tooltipped\x20hand_cursor','data-position':'top','data-tooltip':_0x2005e2(0x296)},_0x2005e2(0x34d)):null));}}),SelectFolderCard=React[_0x14d782(0x252)]({'displayName':'SelectFolderCard','render':function render(){var _0x4951b3=_0x14d782,_0x53730c=this;return React[_0x4951b3(0x1ba)](_0x4951b3(0x2bd),{'className':!this['props'][_0x4951b3(0x249)]['admin']&&!this[_0x4951b3(0x29d)][_0x4951b3(0x249)][_0x4951b3(0x21e)]?'col\x20s6\x20m4\x20l3\x20valign-wrapper\x20block_topfolder_item\x20grayedSelectFolder':_0x4951b3(0x2bf)},React[_0x4951b3(0x1ba)]('a',{'className':'hand_cursor','href':'#'},React[_0x4951b3(0x1ba)](_0x4951b3(0x2bd),{'className':'row'},React[_0x4951b3(0x1ba)]('div',{'className':'block_img\x20valign-wrapper'},React[_0x4951b3(0x1ba)](_0x4951b3(0x2bd),{'className':_0x4951b3(0x1ed)},React[_0x4951b3(0x1ba)]('object',{'data':this[_0x4951b3(0x29d)][_0x4951b3(0x3b2)],'type':_0x4951b3(0x362)},React['createElement'](_0x4951b3(0x3a4),{'src':_0x4951b3(0x32c)})))),React[_0x4951b3(0x1ba)]('div',{'className':_0x4951b3(0x2fc)},React[_0x4951b3(0x1ba)]('h3',{'onClick':function _0x46b2e1(_0x27372){var _0x49fa8a=_0x4951b3;if(_0x53730c[_0x49fa8a(0x29d)]['folders']!=0x0)return _0x53730c[_0x49fa8a(0x29d)][_0x49fa8a(0x28c)](_0x53730c['props'][_0x49fa8a(0x1a3)],_0x53730c[_0x49fa8a(0x29d)][_0x49fa8a(0x354)]);}},this[_0x4951b3(0x29d)][_0x4951b3(0x354)]),this['props'][_0x4951b3(0x2d1)]!=0x0?React[_0x4951b3(0x1ba)]('p',null,this[_0x4951b3(0x29d)][_0x4951b3(0x2d1)],'\x20sub-folders'):null,this[_0x4951b3(0x29d)][_0x4951b3(0x249)]['admin']||this[_0x4951b3(0x29d)]['perm'][_0x4951b3(0x21e)]?React[_0x4951b3(0x1ba)](_0x4951b3(0x2fd),{'type':_0x4951b3(0x2db),'className':'checkbox-green\x20filled-in','id':'cb'+this[_0x4951b3(0x29d)][_0x4951b3(0x1a3)],'checked':this[_0x4951b3(0x29d)][_0x4951b3(0x1a3)]==this[_0x4951b3(0x29d)][_0x4951b3(0x36f)],'onClick':function _0x117f6f(_0x38a8d7){var _0x336aa9=_0x4951b3;if(_0x53730c[_0x336aa9(0x29d)][_0x336aa9(0x1a3)]!=_0x53730c[_0x336aa9(0x29d)][_0x336aa9(0x36f)])return _0x53730c[_0x336aa9(0x29d)][_0x336aa9(0x36b)](_0x53730c[_0x336aa9(0x29d)]['uuid']);else return _0x53730c[_0x336aa9(0x29d)]['selectFolder']('');}}):null,this[_0x4951b3(0x29d)]['perm']['admin']||this[_0x4951b3(0x29d)][_0x4951b3(0x249)][_0x4951b3(0x21e)]?React[_0x4951b3(0x1ba)](_0x4951b3(0x33d),{'htmlFor':'cb'+this[_0x4951b3(0x29d)][_0x4951b3(0x1a3)]},''):null))));}}),FolderCard=React[_0x14d782(0x252)]({'displayName':_0x14d782(0x259),'render':function render(){var _0x269390=_0x14d782,_0x110647=this;return React[_0x269390(0x1ba)]('div',{'className':_0x269390(0x2bf)},React[_0x269390(0x1ba)]('a',{'className':_0x269390(0x275),'href':'#','onClick':function _0x3da1b4(_0xc98346){var _0x34e39a=_0x269390;return _0x110647[_0x34e39a(0x29d)][_0x34e39a(0x2a1)](_0x110647[_0x34e39a(0x29d)][_0x34e39a(0x1a3)],_0x110647[_0x34e39a(0x29d)]['name'],_0x110647[_0x34e39a(0x29d)][_0x34e39a(0x2d1)],_0x110647[_0x34e39a(0x29d)][_0x34e39a(0x2e2)]);}},React[_0x269390(0x1ba)]('div',{'className':_0x269390(0x33a)},React['createElement'](_0x269390(0x2bd),{'className':_0x269390(0x1dd)},React['createElement'](_0x269390(0x2bd),{'className':_0x269390(0x1ed)},React[_0x269390(0x1ba)](_0x269390(0x247),{'data':this[_0x269390(0x29d)][_0x269390(0x3b2)],'type':_0x269390(0x362)},React[_0x269390(0x1ba)]('img',{'src':_0x269390(0x32c)})))),React[_0x269390(0x1ba)](_0x269390(0x2bd),{'className':'block_descript'},React[_0x269390(0x1ba)]('h3',null,this[_0x269390(0x29d)][_0x269390(0x354)]),this['props'][_0x269390(0x2d1)]!=0x0?React[_0x269390(0x1ba)]('p',null,this['props'][_0x269390(0x2d1)],'\x20sub-folders'):null,this['props'][_0x269390(0x2e2)]!=0x0?React[_0x269390(0x1ba)]('p',null,this['props'][_0x269390(0x2e2)],_0x269390(0x208)):null))));}}),ImageCard=React[_0x14d782(0x252)]({'displayName':_0x14d782(0x350),'componentDidMount':function componentDidMount(){var _0x838c4f=_0x14d782;$(_0x838c4f(0x2c9))['tooltip']({'delay':_tooltipDelay});},'render':function render(){var _0x24719a=_0x14d782,_0x48e158=this,_0x5f520d=_0x24719a(0x22f),_0x151f17=_0x24719a(0x1f4);return this[_0x24719a(0x29d)]['disabled']&&(_0x5f520d+=_0x24719a(0x200),_0x151f17=_0x24719a(0x1bd)),React['createElement']('div',{'className':_0x5f520d},this[_0x24719a(0x29d)][_0x24719a(0x38a)]?React[_0x24719a(0x1ba)]('i',{'className':_0x24719a(0x1b9),'style':{'color':_0x24719a(0x235),'position':_0x24719a(0x34e),'top':0x0,'right':0x0},'data-position':'top','data-tooltip':'Resource\x20checked\x20out\x20by\x20'+this[_0x24719a(0x29d)][_0x24719a(0x2d0)]+_0x24719a(0x1a1)+convertDate(this[_0x24719a(0x29d)][_0x24719a(0x2a8)])},'lock_outline'):null,React[_0x24719a(0x1ba)](_0x24719a(0x2bd),{'className':_0x24719a(0x1ed)},React[_0x24719a(0x1ba)](_0x24719a(0x247),{'data':this[_0x24719a(0x29d)][_0x24719a(0x3b2)],'type':_0x24719a(0x362),'style':{'background':_0x24719a(0x22c)}},React['createElement'](_0x24719a(0x3a4),{'src':_0x24719a(0x250)}))),React[_0x24719a(0x1ba)]('h3',null,this[_0x24719a(0x29d)][_0x24719a(0x354)]),React[_0x24719a(0x1ba)]('p',null,this['props'][_0x24719a(0x3ad)]),React['createElement'](_0x24719a(0x2e7),{'className':_0x24719a(0x324),'disabled':!this[_0x24719a(0x29d)][_0x24719a(0x1e7)],'onClick':this[_0x24719a(0x29d)][_0x24719a(0x1e7)]?function _0x512d62(_0x54cc11){var _0x42b9bd=_0x24719a;return _0x48e158[_0x42b9bd(0x29d)][_0x42b9bd(0x1a4)](_0x48e158['props'][_0x42b9bd(0x1a3)]);}:null},_0x24719a(0x1b3)),React[_0x24719a(0x1ba)](_0x24719a(0x2e7),{'className':_0x24719a(0x28e),'disabled':!this[_0x24719a(0x29d)][_0x24719a(0x202)],'onClick':this[_0x24719a(0x29d)][_0x24719a(0x202)]?function _0x180b2f(_0x18770b){var _0x20c722=_0x24719a;return _0x48e158[_0x20c722(0x29d)]['placeFile'](_0x48e158['props'][_0x20c722(0x1a3)]);}:null},'Place'));}}),LoginScreen=React[_0x14d782(0x252)]({'displayName':_0x14d782(0x2b8),'componentDidMount':function componentDidMount(){var _0xeda04=_0x14d782;Materialize[_0xeda04(0x22e)]();},'handleSubmit':function handleSubmit(_0x414dfe){var _0x241e41=_0x14d782;_0x414dfe[_0x241e41(0x29c)]();var _0x16ae97=this[_0x241e41(0x351)];if(this[_0x241e41(0x351)]['company']==''){var _0x1a38e9=_0x241e41(0x1b0);this[_0x241e41(0x29d)][_0x241e41(0x2f2)]({'loginError':_0x1a38e9});return;}_0x16ae97['requestInProcess']=!![],this[_0x241e41(0x2d7)](_0x16ae97),getApiUrl(this[_0x241e41(0x351)][_0x241e41(0x2af)],this['apiCallback'],this[_0x241e41(0x351)][_0x241e41(0x1a6)]);},'browserLoginPressed':function browserLoginPressed(){var _0x5143a4=_0x14d782;if(this[_0x5143a4(0x351)][_0x5143a4(0x2af)]==''){var _0x530272=_0x5143a4(0x1b0);this[_0x5143a4(0x29d)][_0x5143a4(0x2f2)]({'loginError':_0x530272});return;}var _0x36f19e=this[_0x5143a4(0x351)][_0x5143a4(0x2af)];if(!this['state'][_0x5143a4(0x1a6)])_0x36f19e+='.intelligencebank.com';this[_0x5143a4(0x29d)][_0x5143a4(0x2f2)]({'company':this['state'][_0x5143a4(0x2af)],'isCustomURL':this[_0x5143a4(0x351)][_0x5143a4(0x1a6)]}),getToken(_0x36f19e,this[_0x5143a4(0x38e)]);},'getTokenCallback':function getTokenCallback(_0x46e39c){var _0x252495=_0x14d782;if(_0x46e39c[_0x252495(0x348)]||_0x46e39c[_0x252495(0x1c9)][_0x252495(0x26a)]!=undefined){var _0x38880=_0x252495(0x1b0);if(_0x46e39c[_0x252495(0x348)]=='Timeout')var _0x38880=_0x252495(0x26f);this[_0x252495(0x29d)]['updateAppState']({'loginError':_0x38880});return;}var _0x315a89=this[_0x252495(0x351)][_0x252495(0x2af)];if(!this[_0x252495(0x351)][_0x252495(0x1a6)])_0x315a89+=_0x252495(0x2d9);var _0x1ea0c1=new CSInterface();_0x1ea0c1[_0x252495(0x299)](_0x252495(0x3aa)+_0x315a89+_0x252495(0x30c)+_0x46e39c['body'][_0x252495(0x377)]),this[_0x252495(0x29d)][_0x252495(0x2f2)]({'activeScreen':'BrowserLogin','token':_0x46e39c[_0x252495(0x1c9)][_0x252495(0x377)]});},'apiCallback':function apiCallback(_0x35a557){var _0x5ce92c=_0x14d782,_0x339fbb=this[_0x5ce92c(0x351)];_0x339fbb[_0x5ce92c(0x358)]=!![];if(_0x35a557['error']||_0x35a557[_0x5ce92c(0x1c9)][_0x5ce92c(0x26a)]!=undefined){var _0x424162=_0x5ce92c(0x24b);if(_0x35a557['error']==_0x5ce92c(0x21f))var _0x424162=_0x5ce92c(0x26f);_0x339fbb[_0x5ce92c(0x358)]=![],this[_0x5ce92c(0x2d7)](_0x339fbb),this[_0x5ce92c(0x29d)][_0x5ce92c(0x2f2)]({'loginError':_0x424162});return;}_0x339fbb['apiUrl']=_0x35a557[_0x5ce92c(0x1c9)][_0x5ce92c(0x377)][_0x5ce92c(0x364)](_0x5ce92c(0x319),'')['replace'](_0x5ce92c(0x3aa),''),this[_0x5ce92c(0x2d7)](_0x339fbb),auth(this[_0x5ce92c(0x351)][_0x5ce92c(0x326)],this[_0x5ce92c(0x351)][_0x5ce92c(0x34c)],this[_0x5ce92c(0x351)]['company'],_0x339fbb[_0x5ce92c(0x374)],this[_0x5ce92c(0x2e3)]);},'authCallback':function authCallback(_0x28f8c8){var _0x22c26f=_0x14d782,_0x2c8096=this[_0x22c26f(0x351)];_0x2c8096['requestInProcess']=![];if(_0x28f8c8[_0x22c26f(0x348)]||_0x28f8c8[_0x22c26f(0x1c9)][_0x22c26f(0x26a)]!=undefined){var _0x64c6d5=_0x22c26f(0x285);if(_0x28f8c8[_0x22c26f(0x348)]==_0x22c26f(0x21f))var _0x64c6d5=_0x22c26f(0x26f);this[_0x22c26f(0x29d)][_0x22c26f(0x2f2)]({'loginError':_0x64c6d5}),this['setState'](_0x2c8096);return;}_0x2c8096[_0x22c26f(0x2de)]='',_0x2c8096[_0x22c26f(0x1ac)]='Home',_0x2c8096[_0x22c26f(0x2ee)]=_0x28f8c8['body'][_0x22c26f(0x24d)],_0x2c8096[_0x22c26f(0x374)]=_0x28f8c8[_0x22c26f(0x1c9)]['apiV3url'],_0x2c8096[_0x22c26f(0x394)]=_0x28f8c8[_0x22c26f(0x1c9)][_0x22c26f(0x29e)],_0x2c8096[_0x22c26f(0x1c7)]=_0x28f8c8['body'][_0x22c26f(0x248)],_0x2c8096[_0x22c26f(0x31b)]=_0x28f8c8[_0x22c26f(0x1c9)][_0x22c26f(0x31b)],_useCustomUrl=this[_0x22c26f(0x351)]['isCustomURL'],savePrefs({'username':this[_0x22c26f(0x351)][_0x22c26f(0x326)],'company':this['state'][_0x22c26f(0x2af)],'apiUrl':this[_0x22c26f(0x351)][_0x22c26f(0x374)],'apiKey':this['state'][_0x22c26f(0x2ee)],'sessionKey':this[_0x22c26f(0x351)][_0x22c26f(0x1c7)],'userUuid':this[_0x22c26f(0x351)]['userUuid'],'isCustomURL':this[_0x22c26f(0x351)]['isCustomURL'],'placeOriginals':this[_0x22c26f(0x29d)][_0x22c26f(0x216)]['placeOriginals'],'showPlaceOptions':this[_0x22c26f(0x29d)]['appState'][_0x22c26f(0x2cf)],'hideUnsupported':this['props']['appState'][_0x22c26f(0x25a)],'customFolder':this[_0x22c26f(0x29d)][_0x22c26f(0x216)][_0x22c26f(0x209)],'useCustomFolder':this[_0x22c26f(0x29d)][_0x22c26f(0x216)][_0x22c26f(0x2b6)]}),this[_0x22c26f(0x29d)][_0x22c26f(0x1d5)](_0x28f8c8['body']['logintimeoutperiod']),this[_0x22c26f(0x29d)][_0x22c26f(0x2f2)](_0x2c8096);},'handleChange':function handleChange(_0x4360c5,_0x520968){var _0x4938e7=_0x14d782,_0x584756=this[_0x4938e7(0x351)];_0x584756[_0x520968]=_0x4360c5[_0x4938e7(0x2dd)]['value'],this[_0x4938e7(0x2d7)](_0x584756);},'toggleCustomUrl':function(){var _0x22649c=_0x14d782,_0x2184a4=this[_0x22649c(0x351)];_0x2184a4[_0x22649c(0x1a6)]=!_0x2184a4[_0x22649c(0x1a6)],_useCustomUrl=_0x2184a4[_0x22649c(0x1a6)],savePrefs({'username':this[_0x22649c(0x351)]['username'],'company':this[_0x22649c(0x351)]['company'],'apiUrl':this[_0x22649c(0x351)]['apiUrl'],'apiKey':this[_0x22649c(0x351)][_0x22649c(0x2ee)],'sessionKey':this[_0x22649c(0x351)][_0x22649c(0x1c7)],'userUuid':this[_0x22649c(0x351)][_0x22649c(0x394)],'isCustomURL':_0x2184a4[_0x22649c(0x1a6)],'placeOriginals':this[_0x22649c(0x29d)][_0x22649c(0x216)][_0x22649c(0x334)],'showPlaceOptions':this[_0x22649c(0x29d)]['appState']['showPlaceOptions'],'hideUnsupported':this[_0x22649c(0x29d)][_0x22649c(0x216)][_0x22649c(0x25a)],'customFolder':this[_0x22649c(0x29d)][_0x22649c(0x216)][_0x22649c(0x209)],'useCustomFolder':this[_0x22649c(0x29d)][_0x22649c(0x216)][_0x22649c(0x2b6)]}),this[_0x22649c(0x2d7)](_0x2184a4);},'getInitialState':function getInitialState(){var _0x502975=_0x14d782,_0x2464f8={'username':'','password':'','company':'','apiUrl':'','sessionKey':'','apiKey':'','requestInProcess':![],'defaultFolderSortOrder':'sortorder','isCustomURL':![]},_0x2f6f62=readPrefs();if(_0x2f6f62){for(var _0x41b55c in _0x2f6f62)if(_0x2f6f62[_0x41b55c]!=undefined)_0x2464f8[_0x41b55c]=_0x2f6f62[_0x41b55c];_useCustomUrl=_0x2464f8[_0x502975(0x1a6)],apiUrl='',sessionKey='',apiKey='',userUuid='';}return _0x2464f8;},'render':function render(){var _0x49b47f=_0x14d782,_0x160602=this;return React[_0x49b47f(0x1ba)](_0x49b47f(0x2bd),{'className':_0x49b47f(0x1e3)},this[_0x49b47f(0x351)]['requestInProcess']?React[_0x49b47f(0x1ba)](CircularPreLoader,null):null,React[_0x49b47f(0x1ba)](_0x49b47f(0x2bd),{'className':_0x49b47f(0x213)},React[_0x49b47f(0x1ba)](_0x49b47f(0x2bd),{'className':_0x49b47f(0x33a)},React[_0x49b47f(0x1ba)](_0x49b47f(0x2bd),{'className':_0x49b47f(0x223)},React[_0x49b47f(0x1ba)](_0x49b47f(0x3a4),{'className':_0x49b47f(0x1f2),'src':'./images/logo.png'}))),React[_0x49b47f(0x1ba)](_0x49b47f(0x2bd),{'className':'row\x20block_login'},React[_0x49b47f(0x1ba)]('p',null,_0x49b47f(0x1af))),this[_0x49b47f(0x29d)][_0x49b47f(0x216)]['loginError']!=''?React[_0x49b47f(0x1ba)](IncorrectLoginWarning,{'errorMessage':this[_0x49b47f(0x29d)][_0x49b47f(0x216)][_0x49b47f(0x2de)]}):null,React[_0x49b47f(0x1ba)](_0x49b47f(0x1fb),{'className':_0x49b47f(0x244),'onSubmit':this[_0x49b47f(0x306)]},React[_0x49b47f(0x1ba)](_0x49b47f(0x2bd),{'className':_0x49b47f(0x272)},React[_0x49b47f(0x1ba)](_0x49b47f(0x2bd),{'className':'col\x20s2\x20pre_post'},_0x49b47f(0x3aa)),React['createElement'](_0x49b47f(0x2bd),{'className':this[_0x49b47f(0x351)][_0x49b47f(0x1a6)]?'input-field\x20col\x20s10':'input-field\x20col\x20s6','style':{'padding':0x0}},React[_0x49b47f(0x1ba)]('input',{'placeholder':this['state'][_0x49b47f(0x1a6)]?'platformurl':'mycompany','id':_0x49b47f(0x375),'type':_0x49b47f(0x335),'className':_0x49b47f(0x2a2),'onChange':function _0x27ce13(_0x34c11c){var _0x19ec85=_0x49b47f;return _0x160602['handleChange'](_0x34c11c,_0x19ec85(0x2af));},'value':this[_0x49b47f(0x351)]['company']}),React[_0x49b47f(0x1ba)]('label',{'htmlFor':_0x49b47f(0x375),'className':_0x49b47f(0x20b)},_0x49b47f(0x3a2))),this[_0x49b47f(0x351)][_0x49b47f(0x1a6)]?null:React[_0x49b47f(0x1ba)](_0x49b47f(0x2bd),{'className':_0x49b47f(0x261),'style':{'padding':0x0}},_0x49b47f(0x2d9))),React[_0x49b47f(0x1ba)](_0x49b47f(0x2bd),{'className':_0x49b47f(0x33a)},React[_0x49b47f(0x1ba)]('div',{'className':'input-field\x20col\x20s12'},React[_0x49b47f(0x1ba)]('input',{'id':'username','type':_0x49b47f(0x335),'className':_0x49b47f(0x2a2),'onChange':function _0x566e23(_0x142aa6){var _0xe5d935=_0x49b47f;return _0x160602[_0xe5d935(0x2ba)](_0x142aa6,'username');},'value':this['state'][_0x49b47f(0x326)]}),React[_0x49b47f(0x1ba)](_0x49b47f(0x33d),{'htmlFor':_0x49b47f(0x326)},_0x49b47f(0x204)))),React['createElement'](_0x49b47f(0x2bd),{'className':_0x49b47f(0x33a)},React['createElement']('div',{'className':'input-field\x20col\x20s12'},React[_0x49b47f(0x1ba)](_0x49b47f(0x2fd),{'id':_0x49b47f(0x34c),'type':_0x49b47f(0x34c),'className':_0x49b47f(0x2a2),'onChange':function _0x1f19c2(_0x3685d2){var _0x5505c4=_0x49b47f;return _0x160602[_0x5505c4(0x2ba)](_0x3685d2,_0x5505c4(0x34c));},'value':this[_0x49b47f(0x351)][_0x49b47f(0x34c)]}),React['createElement'](_0x49b47f(0x33d),{'htmlFor':_0x49b47f(0x34c)},_0x49b47f(0x2cd)))),React[_0x49b47f(0x1ba)](_0x49b47f(0x2bd),{'className':_0x49b47f(0x33a)},React['createElement'](_0x49b47f(0x2bd),{'className':'input-field\x20col\x20s12\x20block_button'},React[_0x49b47f(0x1ba)]('button',{'className':_0x49b47f(0x241)},'Login'))),React[_0x49b47f(0x1ba)](_0x49b47f(0x2bd),{'className':_0x49b47f(0x33a)},React['createElement'](_0x49b47f(0x2bd),{'className':'col\x20s12\x20customUrlLine\x20hand_cursor','onClick':function _0x1c47c6(_0xa5b6a){return _0x160602['toggleCustomUrl']();}},this[_0x49b47f(0x351)]['isCustomURL']?_0x49b47f(0x2ef):_0x49b47f(0x380))),React[_0x49b47f(0x1ba)](_0x49b47f(0x2bd),{'className':_0x49b47f(0x33a)},React[_0x49b47f(0x1ba)]('div',{'className':_0x49b47f(0x27f),'onClick':function _0x112bad(_0x396957){var _0x2206d0=_0x49b47f;return _0x160602[_0x2206d0(0x1c2)]();}},_0x49b47f(0x1bb))))));}}),IncorrectLoginWarning=React[_0x14d782(0x252)]({'displayName':_0x14d782(0x278),'render':function render(){var _0x41e0c1=_0x14d782;return React[_0x41e0c1(0x1ba)](_0x41e0c1(0x2bd),{'className':_0x41e0c1(0x300)},React[_0x41e0c1(0x1ba)](_0x41e0c1(0x2bd),{'className':_0x41e0c1(0x25e)},React['createElement']('i',{'className':'material-icons'},_0x41e0c1(0x226)),React['createElement']('p',null,this[_0x41e0c1(0x29d)][_0x41e0c1(0x25d)])));}}),BrowserLoginScreen=React['createClass']({'displayName':_0x14d782(0x2c7),'getInitialState':function getInitialState(){var _0x2d7913={'loginError':![]};return _0x2d7913;},'backPressed':function backPressed(){var _0x3aa798=_0x14d782;this[_0x3aa798(0x29d)][_0x3aa798(0x2f2)]({'activeScreen':'Login'});},'continuePressed':function continuePressed(){var _0x54fa61=_0x14d782,_0x434f4a=this['props']['appState'][_0x54fa61(0x2af)];if(!this[_0x54fa61(0x29d)]['appState'][_0x54fa61(0x1a6)])_0x434f4a+=_0x54fa61(0x2d9);getKey(_0x434f4a,this[_0x54fa61(0x29d)][_0x54fa61(0x216)][_0x54fa61(0x27c)],this[_0x54fa61(0x279)]);},'continueCallback':function continueCallback(_0x442cb4){var _0x486f23=_0x14d782;if(_0x442cb4['error']||!_0x442cb4[_0x486f23(0x1c9)][_0x486f23(0x377)]||!_0x442cb4[_0x486f23(0x1c9)][_0x486f23(0x377)][_0x486f23(0x33e)]||!_0x442cb4['body']['content']['session'][_0x486f23(0x248)]){this[_0x486f23(0x29d)]['updateAppState']({'activeScreen':_0x486f23(0x38d),'loginError':'You\x20are\x20not\x20currently\x20authenticated\x20via\x20the\x20browser.\x20Click\x20the\x20Browser\x20Login\x20(For\x20SSO)\x20link\x20below\x20to\x20try\x20again.'});return;};var _0xef480f=_0x442cb4['body'][_0x486f23(0x377)]['info'][_0x486f23(0x24d)],_0x49b1c8=_0x442cb4[_0x486f23(0x1c9)][_0x486f23(0x377)][_0x486f23(0x33e)][_0x486f23(0x248)];this[_0x486f23(0x29d)]['updateAppState']({'apiKey':_0xef480f,'sessionKey':_0x49b1c8,'userUuid':_0x442cb4[_0x486f23(0x1c9)]['content']['info'][_0x486f23(0x29e)],'apiUrl':_0x442cb4[_0x486f23(0x1c9)]['content']['info']['apiV3url']}),savePrefs({'username':this[_0x486f23(0x29d)][_0x486f23(0x216)][_0x486f23(0x326)],'company':this['props'][_0x486f23(0x216)][_0x486f23(0x2af)],'apiUrl':this['props'][_0x486f23(0x216)][_0x486f23(0x374)],'apiKey':this[_0x486f23(0x29d)][_0x486f23(0x216)]['apiKey'],'sessionKey':this[_0x486f23(0x29d)][_0x486f23(0x216)][_0x486f23(0x1c7)],'userUuid':this[_0x486f23(0x29d)][_0x486f23(0x216)][_0x486f23(0x394)],'isCustomURL':this['props'][_0x486f23(0x216)][_0x486f23(0x1a6)],'placeOriginals':this[_0x486f23(0x29d)][_0x486f23(0x216)][_0x486f23(0x334)],'showPlaceOptions':this['props']['appState']['showPlaceOptions'],'hideUnsupported':this['props'][_0x486f23(0x216)]['hideUnsupported'],'customFolder':this[_0x486f23(0x29d)][_0x486f23(0x216)][_0x486f23(0x209)],'useCustomFolder':this[_0x486f23(0x29d)][_0x486f23(0x216)]['useCustomFolder']}),this['props'][_0x486f23(0x2f2)]({'activeScreen':_0x486f23(0x303)});},'apiCallback':function apiCallback(_0x32748a){var _0x565c2f=_0x14d782;if(_0x32748a['error']||_0x32748a[_0x565c2f(0x1c9)]['message']!=undefined){var _0x2e752d=_0x565c2f(0x24b);if(_0x32748a['error']=='Timeout')var _0x2e752d='You\x20are\x20not\x20connected\x20to\x20the\x20internet.';this[_0x565c2f(0x2d7)](newState),this[_0x565c2f(0x29d)][_0x565c2f(0x2f2)]({'loginError':_0x2e752d,'activeScreen':_0x565c2f(0x38d)});return;}var _0x20863f=_0x32748a[_0x565c2f(0x1c9)][_0x565c2f(0x377)]['replace'](_0x565c2f(0x319),'')[_0x565c2f(0x364)]('https://','');savePrefs({'username':this[_0x565c2f(0x29d)][_0x565c2f(0x216)][_0x565c2f(0x326)],'company':this[_0x565c2f(0x29d)][_0x565c2f(0x216)]['company'],'apiUrl':_0x20863f,'apiKey':this[_0x565c2f(0x29d)][_0x565c2f(0x216)][_0x565c2f(0x2ee)],'sessionKey':this[_0x565c2f(0x29d)][_0x565c2f(0x216)][_0x565c2f(0x1c7)],'userUuid':this['props'][_0x565c2f(0x216)][_0x565c2f(0x394)],'isCustomURL':this[_0x565c2f(0x29d)][_0x565c2f(0x216)][_0x565c2f(0x1a6)],'placeOriginals':this[_0x565c2f(0x29d)][_0x565c2f(0x216)]['placeOriginals'],'showPlaceOptions':this[_0x565c2f(0x29d)][_0x565c2f(0x216)][_0x565c2f(0x2cf)],'hideUnsupported':this['props']['appState']['hideUnsupported'],'customFolder':this[_0x565c2f(0x29d)][_0x565c2f(0x216)][_0x565c2f(0x209)],'useCustomFolder':this[_0x565c2f(0x29d)][_0x565c2f(0x216)][_0x565c2f(0x2b6)]}),this['props'][_0x565c2f(0x2f2)]({'apiUrl':_0x20863f,'activeScreen':_0x565c2f(0x303)});},'render':function render(){var _0x4e582a=_0x14d782,_0x5bd2ff=this;return React[_0x4e582a(0x1ba)]('div',{'className':_0x4e582a(0x1e3)},React[_0x4e582a(0x1ba)](_0x4e582a(0x2bd),{'className':_0x4e582a(0x213)},React[_0x4e582a(0x1ba)](_0x4e582a(0x2bd),{'className':_0x4e582a(0x33a)},React['createElement'](_0x4e582a(0x2bd),{'className':'col\x20s12\x20block_img_logo'},React[_0x4e582a(0x1ba)]('img',{'className':'img_logo','src':_0x4e582a(0x253)}))),React[_0x4e582a(0x1ba)](_0x4e582a(0x2bd),{'className':_0x4e582a(0x2ae),'style':{'paddingTop':0x28}},React[_0x4e582a(0x1ba)]('p',null,'Once\x20your\x20are\x20logged\x20in\x20via\x20the\x20browser,\x20click\x20',React[_0x4e582a(0x1ba)]('b',null,_0x4e582a(0x265)),_0x4e582a(0x2f1),React[_0x4e582a(0x1ba)]('b',null,_0x4e582a(0x290)),'.')),React[_0x4e582a(0x1ba)](_0x4e582a(0x2bd),{'className':_0x4e582a(0x33a),'style':{'paddingTop':0x28}},React[_0x4e582a(0x1ba)](_0x4e582a(0x2bd),{'className':'input-field\x20col\x20s12\x20block_button'},React[_0x4e582a(0x1ba)](_0x4e582a(0x2e7),{'className':_0x4e582a(0x241),'style':{'marginRight':0x28},'onClick':function _0x12bdaa(_0x1de56e){return _0x5bd2ff['backPressed']();}},_0x4e582a(0x290)),React[_0x4e582a(0x1ba)](_0x4e582a(0x2e7),{'className':_0x4e582a(0x241),'onClick':function _0x100787(_0x711874){return _0x5bd2ff['continuePressed']();}},_0x4e582a(0x265))))));}}),SettingsBar=React[_0x14d782(0x252)]({'displayName':'SettingsBar','render':function render(){var _0x51b5b9=_0x14d782,_0x39ff31=this;return React[_0x51b5b9(0x1ba)](_0x51b5b9(0x2bd),{'className':_0x51b5b9(0x255)},React['createElement'](_0x51b5b9(0x2bd),{'className':this['props'][_0x51b5b9(0x1a5)]==_0x51b5b9(0x1c4)?_0x51b5b9(0x1f5):_0x51b5b9(0x2f8),'onClick':function _0x1c4f09(_0x6bc8f9){var _0x499f3a=_0x51b5b9;_0x39ff31[_0x499f3a(0x29d)][_0x499f3a(0x361)](_0x499f3a(0x1c4));}},React[_0x51b5b9(0x1ba)]('p',null,React[_0x51b5b9(0x1ba)]('i',{'className':_0x51b5b9(0x3a8)},_0x51b5b9(0x286)),_0x51b5b9(0x1b4))),React[_0x51b5b9(0x1ba)](_0x51b5b9(0x2bd),{'className':_0x51b5b9(0x2f8),'onClick':function _0x1e15ff(_0x43f6f1){var _0x4abd87=_0x51b5b9;_0x39ff31[_0x4abd87(0x29d)][_0x4abd87(0x2ea)]();}},React[_0x51b5b9(0x1ba)]('p',null,React[_0x51b5b9(0x1ba)]('i',{'className':_0x51b5b9(0x3a8)},'input'),_0x51b5b9(0x352))));}}),SettingsScreen=React[_0x14d782(0x252)]({'displayName':_0x14d782(0x2ce),'toggleCb':function(_0x4aae5b){var _0x518516=_0x14d782,_0x23f333={'hideUnsupported':this['props'][_0x518516(0x216)][_0x518516(0x25a)],'placeOriginals':this['props'][_0x518516(0x216)][_0x518516(0x334)],'showPlaceOptions':this['props']['appState'][_0x518516(0x2cf)],'useCustomFolder':this['props'][_0x518516(0x216)]['useCustomFolder'],'customFolder':this[_0x518516(0x29d)][_0x518516(0x216)]['customFolder']};switch(_0x4aae5b){case _0x518516(0x25a):_0x23f333[_0x518516(0x25a)]=!this[_0x518516(0x29d)][_0x518516(0x216)][_0x518516(0x25a)];break;case _0x518516(0x334):_0x23f333[_0x518516(0x334)]=!this[_0x518516(0x29d)][_0x518516(0x216)]['placeOriginals'],_0x23f333['showPlaceOptions']=![];break;case _0x518516(0x2cf):_0x23f333[_0x518516(0x2cf)]=!this[_0x518516(0x29d)][_0x518516(0x216)][_0x518516(0x2cf)];break;case _0x518516(0x2b6):_0x23f333[_0x518516(0x2b6)]=!this[_0x518516(0x29d)]['appState'][_0x518516(0x2b6)];break;}savePrefs({'username':this[_0x518516(0x29d)][_0x518516(0x216)][_0x518516(0x326)],'company':this[_0x518516(0x29d)][_0x518516(0x216)][_0x518516(0x2af)],'apiUrl':this['props'][_0x518516(0x216)][_0x518516(0x374)],'apiKey':this[_0x518516(0x29d)][_0x518516(0x216)][_0x518516(0x2ee)],'sessionKey':this[_0x518516(0x29d)][_0x518516(0x216)][_0x518516(0x1c7)],'userUuid':this[_0x518516(0x29d)]['appState']['userUuid'],'isCustomURL':this[_0x518516(0x29d)][_0x518516(0x216)][_0x518516(0x1a6)],'placeOriginals':_0x23f333['placeOriginals'],'showPlaceOptions':_0x23f333[_0x518516(0x2cf)],'hideUnsupported':_0x23f333['hideUnsupported'],'useCustomFolder':_0x23f333[_0x518516(0x2b6)],'customFolder':this[_0x518516(0x29d)][_0x518516(0x216)][_0x518516(0x209)]}),this[_0x518516(0x29d)][_0x518516(0x2f2)](_0x23f333);},'selectPressed':function(_0x5abb91){var _0xc77dcc=_0x14d782,_0x20b4ec=window[_0xc77dcc(0x34a)]['fs'][_0xc77dcc(0x37c)](![],!![],_0xc77dcc(0x2f5));if(!_0x20b4ec[_0xc77dcc(0x20c)]['length'])return;var _0xe348df=_0x20b4ec['data'][0x0],_0x3837e6={};_0x3837e6[_0x5abb91]=_0xe348df,this[_0xc77dcc(0x29d)]['updateAppState'](_0x3837e6),savePrefs({'username':this['props']['appState'][_0xc77dcc(0x326)],'company':this[_0xc77dcc(0x29d)][_0xc77dcc(0x216)][_0xc77dcc(0x2af)],'apiUrl':this['props']['appState'][_0xc77dcc(0x374)],'apiKey':this[_0xc77dcc(0x29d)]['appState'][_0xc77dcc(0x2ee)],'sessionKey':this['props'][_0xc77dcc(0x216)][_0xc77dcc(0x1c7)],'userUuid':this[_0xc77dcc(0x29d)][_0xc77dcc(0x216)][_0xc77dcc(0x394)],'isCustomURL':this[_0xc77dcc(0x29d)][_0xc77dcc(0x216)][_0xc77dcc(0x1a6)],'placeOriginals':this[_0xc77dcc(0x29d)][_0xc77dcc(0x216)][_0xc77dcc(0x334)],'showPlaceOptions':this[_0xc77dcc(0x29d)][_0xc77dcc(0x216)]['showPlaceOptions'],'hideUnsupported':this[_0xc77dcc(0x29d)][_0xc77dcc(0x216)][_0xc77dcc(0x25a)],'useCustomFolder':this[_0xc77dcc(0x29d)][_0xc77dcc(0x216)][_0xc77dcc(0x2b6)],'customFolder':_0x3837e6[_0xc77dcc(0x209)]});},'render':function render(){var _0x3d506f=_0x14d782,_0x3cfb1d=this;return React[_0x3d506f(0x1ba)](_0x3d506f(0x2bd),{'className':'settings'},this[_0x3d506f(0x29d)][_0x3d506f(0x216)][_0x3d506f(0x219)]!=_0x3d506f(0x341)&&this[_0x3d506f(0x29d)][_0x3d506f(0x216)][_0x3d506f(0x219)]!=_0x3d506f(0x3a7)?React[_0x3d506f(0x1ba)]('h2',null,_0x3d506f(0x340)):null,this[_0x3d506f(0x29d)][_0x3d506f(0x216)]['hostName']!=_0x3d506f(0x341)&&this[_0x3d506f(0x29d)][_0x3d506f(0x216)]['hostName']!=_0x3d506f(0x3a7)?React[_0x3d506f(0x1ba)]('p',null,_0x3d506f(0x393)):null,this[_0x3d506f(0x29d)]['appState'][_0x3d506f(0x219)]!=_0x3d506f(0x341)&&this['props'][_0x3d506f(0x216)][_0x3d506f(0x219)]!=_0x3d506f(0x3a7)?React['createElement'](_0x3d506f(0x2fd),{'type':'checkbox','className':'checkbox-green\x20filled-in','id':_0x3d506f(0x23a),'checked':this[_0x3d506f(0x29d)][_0x3d506f(0x216)][_0x3d506f(0x334)],'onClick':function _0x327746(_0x42d110){var _0x9011c0=_0x3d506f;_0x3cfb1d['toggleCb'](_0x9011c0(0x334));}}):null,this['props'][_0x3d506f(0x216)]['hostName']!=_0x3d506f(0x341)&&this['props']['appState'][_0x3d506f(0x219)]!='PHXS'?React[_0x3d506f(0x1ba)](_0x3d506f(0x33d),{'htmlFor':_0x3d506f(0x23a)},''):null,React[_0x3d506f(0x1ba)]('h2',null,_0x3d506f(0x32b)),React[_0x3d506f(0x1ba)]('p',null,_0x3d506f(0x35b)),React[_0x3d506f(0x1ba)](_0x3d506f(0x2fd),{'type':_0x3d506f(0x2db),'className':_0x3d506f(0x1d3),'id':_0x3d506f(0x211),'checked':this[_0x3d506f(0x29d)][_0x3d506f(0x216)][_0x3d506f(0x2b6)],'onClick':function _0x1c5db9(_0x2d6e76){var _0xbb98fc=_0x3d506f;_0x3cfb1d[_0xbb98fc(0x256)]('useCustomFolder');}}),React[_0x3d506f(0x1ba)](_0x3d506f(0x33d),{'htmlFor':'cbUseCustomFolder'},''),this[_0x3d506f(0x29d)]['appState']['useCustomFolder']?React[_0x3d506f(0x1ba)]('h2',null,'Destination\x20Folder'):null,this[_0x3d506f(0x29d)][_0x3d506f(0x216)][_0x3d506f(0x2b6)]?React['createElement'](_0x3d506f(0x2bd),{'style':{'padding':0x0}},React[_0x3d506f(0x1ba)](_0x3d506f(0x2e7),{'className':'btn\x20hand-cursor','style':{'marginRight':0xa},'onClick':function(){var _0x5c8aa2=_0x3d506f;_0x3cfb1d[_0x5c8aa2(0x2a5)]('customFolder');}},_0x3d506f(0x3a5)),this[_0x3d506f(0x29d)][_0x3d506f(0x216)][_0x3d506f(0x209)]):null,this[_0x3d506f(0x29d)][_0x3d506f(0x216)][_0x3d506f(0x334)]&&this[_0x3d506f(0x29d)][_0x3d506f(0x216)][_0x3d506f(0x219)]==_0x3d506f(0x263)?React[_0x3d506f(0x1ba)]('h2',null,_0x3d506f(0x1c5)):null,this[_0x3d506f(0x29d)][_0x3d506f(0x216)][_0x3d506f(0x334)]&&this[_0x3d506f(0x29d)][_0x3d506f(0x216)][_0x3d506f(0x219)]==_0x3d506f(0x263)?React[_0x3d506f(0x1ba)]('p',null,_0x3d506f(0x1d2)):null,this[_0x3d506f(0x29d)]['appState'][_0x3d506f(0x334)]&&this[_0x3d506f(0x29d)][_0x3d506f(0x216)][_0x3d506f(0x219)]==_0x3d506f(0x263)?React['createElement'](_0x3d506f(0x2fd),{'type':_0x3d506f(0x2db),'className':_0x3d506f(0x1d3),'id':_0x3d506f(0x246),'checked':this[_0x3d506f(0x29d)][_0x3d506f(0x216)][_0x3d506f(0x2cf)],'onClick':function _0x5b6dee(_0x5e6040){var _0xfb362c=_0x3d506f;_0x3cfb1d['toggleCb'](_0xfb362c(0x2cf));}}):null,this[_0x3d506f(0x29d)][_0x3d506f(0x216)][_0x3d506f(0x334)]&&this[_0x3d506f(0x29d)][_0x3d506f(0x216)][_0x3d506f(0x219)]=='IDSN'?React[_0x3d506f(0x1ba)]('label',{'htmlFor':_0x3d506f(0x246)},''):null);}});function getApiUrl(_0x317bc5,_0x5a6cdf,_0x3e813d){var _0x129958=_0x14d782,_0x32627b=_0x317bc5;if(!_0x3e813d)_0x32627b+='.intelligencebank.com';var _0x583a60={'hostname':_0x32627b,'port':0x1bb,'method':_0x129958(0x29b),'path':_0x129958(0x1c1)},_0x3877c2=https['request'](_0x583a60,function(_0xe43d99){var _0x4cfafa=_0x129958,_0xada49e='';_0xe43d99['on']('error',function(_0x559a2c){_0x5a6cdf({'error':_0x559a2c});}),_0xe43d99['on'](_0x4cfafa(0x20c),function(_0x7b42fc){_0xada49e+=_0x7b42fc;}),_0xe43d99['on'](_0x4cfafa(0x24c),function(){var _0x37d5f7=_0x4cfafa,_0x1ca9ae=![];try{_0xada49e=JSON['parse'](_0xada49e);}catch(_0x505621){_0x1ca9ae=_0x37d5f7(0x390);}_0x5a6cdf({'error':_0x1ca9ae,'body':_0xada49e,'response':_0xe43d99});});});_0x3877c2[_0x129958(0x317)](_timeoutValue,function(){var _0x24c30c=_0x129958;_0x3877c2[_0x24c30c(0x386)](),_0x5a6cdf({'error':_0x24c30c(0x21f)});}),_0x3877c2['on'](_0x129958(0x348),function(){var _0x19f3a1=_0x129958;_0x5a6cdf({'error':_0x19f3a1(0x3a1)});}),_0x3877c2[_0x129958(0x24c)]();}function auth(_0x24c256,_0x5333b4,_0x22392b,_0x3ce80b,_0x4b57d8){var _0x8a96ea=_0x14d782,_0x1a1c5f=_0x8a96ea(0x1be)+encodeURIComponent(_0x24c256)+_0x8a96ea(0x31a)+encodeURIComponent(_0x5333b4)+'&p90='+platformUrl(_0x22392b),_0x4f3810={'hostname':_0x3ce80b,'port':0x1bb,'method':_0x8a96ea(0x32f),'path':_0x8a96ea(0x1c8),'headers':{'Content-Type':_0x8a96ea(0x22d),'Content-Length':Buffer[_0x8a96ea(0x39c)](_0x1a1c5f)}},_0x3e7b8c=https['request'](_0x4f3810,function(_0x4bf3a7){var _0x39d9fc=_0x8a96ea,_0x57e375='';_0x4bf3a7['on'](_0x39d9fc(0x348),function(_0x431240){_0x4b57d8({'error':_0x431240});}),_0x4bf3a7['on'](_0x39d9fc(0x20c),function(_0x2477d9){_0x57e375+=_0x2477d9;}),_0x4bf3a7['on'](_0x39d9fc(0x24c),function(){var _0x3de67a=_0x39d9fc,_0x56e24e=![];try{_0x57e375=JSON[_0x3de67a(0x39f)](_0x57e375);}catch(_0x172eeb){_0x56e24e=_0x3de67a(0x390);}_0x4b57d8({'error':_0x56e24e,'body':_0x57e375,'response':_0x4bf3a7});});});_0x3e7b8c[_0x8a96ea(0x317)](_timeoutValue,function(){var _0x245520=_0x8a96ea;_0x3e7b8c[_0x245520(0x386)](),_0x4b57d8({'error':_0x245520(0x21f)});}),_0x3e7b8c['on'](_0x8a96ea(0x348),function(){var _0x26f8fd=_0x8a96ea;_0x4b57d8({'error':_0x26f8fd(0x1a9)});}),_0x3e7b8c[_0x8a96ea(0x1ca)](_0x1a1c5f),_0x3e7b8c[_0x8a96ea(0x24c)]();}function loadFolderData(_0x1f2673,_0x492d07,_0x2d9fe8,_0x2caec0,_0x2ea883,_0x26d315,_0x57bb3f,_0x21d781){var _0x366b4a=_0x14d782,_0x23cd1e=_0x366b4a(0x36a),_0x339274={'method':_0x366b4a(0x29b),'version':_0x366b4a(0x37d),'client':_0x492d07,'table':_0x366b4a(0x30d)+_0x57bb3f*_totalPageItems+','+_totalPageItems+')','query_params':{'productkey':_0x366b4a(0x313),'verbose':!![],'searchParams':{'parent':'','extension':extArray[_0x366b4a(0x1d7)](','),'wrapped_conditions':[[]]}}};if(_0x26d315&&_0x26d315!='')_0x339274['query_params'][_0x366b4a(0x1cc)][_0x366b4a(0x292)]=_0x26d315;var _0x3e5a49={'rejectUnauthorized':![],'method':_0x366b4a(0x32f),'path':_0x23cd1e,'url':_0x2caec0+_0x23cd1e,'headers':{'sid':_0x2d9fe8,'Content-Type':_0x366b4a(0x234)},'body':JSON['stringify'](_0x339274)};request[_0x366b4a(0x35c)](_0x3e5a49,function(_0x5a3aae,_0x3f6507,_0x1cca02){var _0x3609d2=_0x366b4a;if(_0x5a3aae){_0x2ea883({'error':_0x3609d2(0x1ab)+_0x5a3aae});return;}var _0x5a3aae=![];try{_0x1cca02=JSON[_0x3609d2(0x39f)](_0x1cca02);if(_0x1cca02[_0x3609d2(0x348)])_0x5a3aae=_0x1cca02[_0x3609d2(0x348)];}catch(_0x17a556){_0x5a3aae=_0x3609d2(0x289),_0x2ea883({'error':_0x5a3aae});return;}_0x2ea883({'error':_0x5a3aae,'body':_0x1cca02});});}function loadFilesData(_0x2cb943,_0x259935,_0x543240,_0x2fcc8c,_0x57fcf5,_0x3aef6d,_0x4131da,_0x48ee70){var _0xf82017=_0x14d782,_0x1aaa18=_0xf82017(0x36a),_0x575557={'method':_0xf82017(0x29b),'version':_0xf82017(0x37d),'client':_0x259935,'table':_0xf82017(0x29a)+_0x4131da*_totalPageItems+','+_totalPageItems+')','query_params':{'productkey':_0xf82017(0x313),'verbose':!![],'searchParams':{'ib_folder_s':'','isSearching':![],'extension':extArray,'wrapped_conditions':[[]]}}};if(_0x3aef6d&&_0x3aef6d!='')_0x575557[_0xf82017(0x32e)]['searchParams'][_0xf82017(0x1dc)]=_0x3aef6d;var _0x1ff1b6={'rejectUnauthorized':![],'method':_0xf82017(0x32f),'path':_0x1aaa18,'url':_0x2fcc8c+_0x1aaa18,'headers':{'sid':_0x543240,'Content-Type':'application/json'},'body':JSON[_0xf82017(0x2e9)](_0x575557)};request[_0xf82017(0x35c)](_0x1ff1b6,function(_0x784d95,_0x32fa09,_0x2e0ff7){var _0x5098a7=_0xf82017;if(_0x784d95){_0x57fcf5({'error':_0x5098a7(0x1ab)+_0x784d95});return;}var _0x784d95=![];try{_0x2e0ff7=JSON[_0x5098a7(0x39f)](_0x2e0ff7);if(_0x2e0ff7['error'])_0x784d95=_0x2e0ff7[_0x5098a7(0x348)];}catch(_0x4a40c6){_0x784d95=_0x5098a7(0x289),_0x57fcf5({'error':_0x784d95});return;}_0x57fcf5({'error':_0x784d95,'body':_0x2e0ff7});});}function loadSearchData(_0x5c42d3,_0x452729,_0x200b46,_0x18ba34,_0x4492a0,_0x2eb18c,_0x3bb8f7){var _0x28c6e7=_0x14d782,_0x2624f7=_0x28c6e7(0x36a),_0x2df5f3={'method':_0x28c6e7(0x29b),'version':'3.0.0','client':_0x452729,'table':_0x28c6e7(0x29a)+_totalPageItems+')','query_params':{'productkey':_0x28c6e7(0x313),'verbose':!![],'searchParams':{'keywords':_0x2eb18c,'isSearching':!![],'extension':extArray,'wrapped_conditions':[[]]}}},_0x3b5b9e={'rejectUnauthorized':![],'method':'POST','path':_0x2624f7,'url':_0x18ba34+_0x2624f7,'headers':{'sid':_0x200b46,'Content-Type':_0x28c6e7(0x234)},'body':JSON[_0x28c6e7(0x2e9)](_0x2df5f3)};request[_0x28c6e7(0x35c)](_0x3b5b9e,function(_0x1160bb,_0x5c6fe7,_0x139c0c){var _0x44df65=_0x28c6e7;if(_0x1160bb){_0x4492a0({'error':_0x44df65(0x1ab)+_0x1160bb});return;}var _0x1160bb=![];try{_0x139c0c=JSON[_0x44df65(0x39f)](_0x139c0c);if(_0x139c0c[_0x44df65(0x348)])_0x1160bb=_0x139c0c[_0x44df65(0x348)];}catch(_0x479a84){_0x1160bb=_0x44df65(0x289),_0x4492a0({'error':_0x1160bb});return;}_0x4492a0({'error':_0x1160bb,'body':_0x139c0c});});}function uploadFile(_0x1ff5d2,_0x3f16c9,_0x516992,_0x4417a7,_0x52adc0,_0x2c8b48,_0x26b3aa,_0x103a0c,_0x1459a4,_0x2a84a9,_0xa40124,_0x34901d,_0x36cdc0){var _0x38aecd=_0x14d782,_0xde628=new CSInterface(),_0x1a90e6=_0xde628[_0x38aecd(0x218)][_0x38aecd(0x2e6)],_0x39f63a=_0x38aecd(0x2a0)+_0x3f16c9+'/file?target=resource&verbose&productkey=0db17b942ed391096168f41f90051acc',_0x2f2319='/api/3.0.0/'+_0x3f16c9+_0x38aecd(0x2e1),_0x3683c4=_0x38aecd(0x2a0)+_0x3f16c9+_0x38aecd(0x315)+_0x26b3aa+'?verbose&bypassWorkflow=true&bypassValidation=true&productkey=0db17b942ed391096168f41f90051acc';if(_0x34901d)_0x3683c4+='&version=true';var _0x43c5c7=new FormData();_0x43c5c7[_0x38aecd(0x310)](_0x38aecd(0x229),fs[_0x38aecd(0x1ad)](_0x52adc0));var _0xc1e97c={'file':fs[_0x38aecd(0x1ad)](_0x52adc0)},_0x58c1eb=![],_0x1ffa33='',_0x371ef6='POST',_0x3f943b={'rejectUnauthorized':![],'method':_0x371ef6,'path':_0x39f63a,'url':_0x4417a7+_0x39f63a,'headers':{'sid':_0x516992},'formData':_0xc1e97c};request[_0x38aecd(0x35c)](_0x3f943b,function(_0x2970d0,_0x44e339,_0x29c757){var _0x49c40a=_0x38aecd;if(_0x2970d0){myAlert(_0x49c40a(0x392)+_0x2970d0),_0x36cdc0(_0x49c40a(0x2be));return;}var _0x1dd60c={'data':{'folder':_0x2c8b48,'type':_0x49c40a(0x229),'name':_0x1459a4,'description':_0x2a84a9,'file':JSON[_0x49c40a(0x39f)](_0x44e339[_0x49c40a(0x1c9)])[_0x49c40a(0x3b1)]}},_0x2cfcdc={'data':{'type':_0x49c40a(0x229),'name':_0x1459a4,'description':_0x2a84a9,'file':JSON[_0x49c40a(0x39f)](_0x44e339[_0x49c40a(0x1c9)])['response']}};if(_0xa40124){var _0x4a9663={'rejectUnauthorized':![],'method':_0x49c40a(0x28d),'path':_0x3683c4,'url':_0x4417a7+_0x3683c4,'headers':{'sid':_0x516992,'Content-Type':_0x49c40a(0x234)},'body':JSON['stringify'](_0x2cfcdc)};request['put'](_0x4a9663,function(_0x362153,_0x1d3625,_0x4d1adb){var _0x2827a3=_0x49c40a;if(_0x362153){myAlert(_0x2827a3(0x392)+_0x362153),_0x36cdc0(_0x2827a3(0x2be));return;}_0x36cdc0(_0x1d3625['body']);});}else{var _0x430e0b={'rejectUnauthorized':![],'method':_0x49c40a(0x32f),'path':_0x2f2319,'url':_0x4417a7+_0x2f2319,'headers':{'sid':_0x516992,'Content-Type':_0x49c40a(0x234)},'body':JSON[_0x49c40a(0x2e9)](_0x1dd60c)};request['post'](_0x430e0b,function(_0x193bda,_0x49a1e8,_0x5ac6f3){var _0x4af2e7=_0x49c40a;if(_0x193bda){myAlert(_0x4af2e7(0x392)+_0x193bda),_0x36cdc0(_0x4af2e7(0x2be));return;}_0x36cdc0(_0x49a1e8[_0x4af2e7(0x1c9)]);});}});}function placePreviewFile(_0x2470bf,_0x5b9617,_0x20aece,_0x35a772,_0x1e40ca,_0x192de2){var _0x2167f8=_0x14d782;try{var _0x3cf167=_imagesDataObj[_0x1e40ca],_0x18edf1=new CSInterface(),_0x1332ff=_0x18edf1['hostEnvironment'][_0x2167f8(0x2e6)],_0x420bb2=createTempFolder(_0x1e40ca+'_'+_0x3cf167[_0x2167f8(0x347)][_0x2167f8(0x364)](/[-: ]/g,'')+'_'+'preview')+'/'+fileNameWithoutExt(_0x3cf167[_0x2167f8(0x229)][_0x2167f8(0x354)])+_0x2167f8(0x26b);if(_0x1332ff==_0x2167f8(0x3a7)||_0x1332ff=='PHSP')createTempFolder(_0x1e40ca+'_'+_0x3cf167['lastUpdateTime'][_0x2167f8(0x364)](/[-: ]/g,'')+'_'+_0x2167f8(0x2b5))+'/'+_0x3cf167['file']['name'];var _0xb96bd8=createTempFolder()+'/'+_0x1e40ca+'_'+_0x3cf167[_0x2167f8(0x347)][_0x2167f8(0x364)](/[-: ]/g,'')+_0x2167f8(0x3ab);if(_0x1332ff=='PHXS'||_0x1332ff==_0x2167f8(0x341))_0xb96bd8=createTempFolder()+'/'+_0x1e40ca+'_'+_0x3cf167[_0x2167f8(0x347)]['replace'](/[-: ]/g,'')+_0x2167f8(0x3af)+fileExtension(_0x3cf167[_0x2167f8(0x229)][_0x2167f8(0x354)]);var _0x295e74=window[_0x2167f8(0x34a)]['fs'][_0x2167f8(0x385)](_0x420bb2);if(_0x295e74[_0x2167f8(0x20c)][_0x2167f8(0x387)]()&&_0x295e74[_0x2167f8(0x378)]==window[_0x2167f8(0x34a)]['fs'][_0x2167f8(0x2c3)]&&getFilesizeInBytes(_0x420bb2)!=0x0){_0x192de2({'uuid':_0x1e40ca,'filePath':_0x420bb2,'error':![]});return;}var _0x295e74=window[_0x2167f8(0x34a)]['fs'][_0x2167f8(0x385)](_0xb96bd8);if(_0x295e74[_0x2167f8(0x20c)][_0x2167f8(0x387)]()&&_0x295e74[_0x2167f8(0x378)]==window['cep']['fs'][_0x2167f8(0x2c3)]&&getFilesizeInBytes(_0xb96bd8)!=0x0){fs['copyFile'](_0xb96bd8,_0x420bb2,_0x1ba416=>{var _0x2232a9=_0x2167f8;if(_0x1ba416){_0x192de2({'error':_0x2232a9(0x1b5)+_0x420bb2});return;}_0x192de2({'uuid':_0x1e40ca,'filePath':_0x420bb2,'error':![]});});return;}}catch(_0x9e00b2){}var _0x441b15=_0x2167f8(0x2a0)+_0x5b9617+_0x2167f8(0x315)+_0x1e40ca+_0x2167f8(0x222)+_0x20aece+'&action=preview&productkey=0db17b942ed391096168f41f90051acc',_0x4775cc={'rejectUnauthorized':![],'method':'GET','path':_0x441b15,'url':_0x35a772+_0x441b15,'headers':{'sid':_0x20aece}},_0x2ff7eb=fs[_0x2167f8(0x345)](_0x420bb2),_0x4dc939=![];_0x2ff7eb['on'](_0x2167f8(0x3a9),function(){if(!_0x4dc939)_0x192de2({'uuid':_0x1e40ca,'filePath':_0x420bb2,'error':![]});}),request[_0x2167f8(0x258)](_0x4775cc,function(_0x4b7b2a,_0x44924e,_0x777d3b){var _0x1a0ec8=_0x2167f8;_0x44924e['on'](_0x1a0ec8(0x348),function(_0x1de6f7){_0x4b7b2a=!![],_0x192de2({'error':_0x1de6f7});});})['pipe'](_0x2ff7eb);}function _0x5842(){var _0x57011f=['The\x20original\x20/\x20high\x20resolution\x20version\x20of\x20this\x20asset\x20has\x20already\x20been\x20downloaded.','Folders','img_container','downloadError','navigation\x20row','downloadsHDPending','1435004qhxfNe','img_logo','documents','Click\x20to\x20place\x20a\x20preview\x20of\x20this\x20asset\x20into\x20your\x20document.','settingsCell\x20active','setIdsCallback','Bytes','placeImageToLayout(\x22','thumbnail','updateLinksEmbed(\x22','form','Sub-Folders','item_box\x20col\x20s6\x20m4\x20l3','Not\x20logged\x20in','block_home\x20hand_cursor','\x20disable_block','activeFolderPage','usePlace','min','Username','top','refreshDocumentInfo','root','\x20assets','customFolder','updatedat','PlatformURL','data','gap-patch','NORMAL','Pre-Package','$._ext.evalFiles(\x22','cbUseCustomFolder','digest-stream','form_body','Folder','Your\x20session\x20has\x20expired.\x20Please\x20login\x20again.','appState','documentOpened','hostEnvironment','hostName','33430beiNXb','Click\x20to\x20download\x20missing\x20original\x20/\x20high\x20resolution\x20versions\x20of\x20your\x20placed\x20assets.','hdFileDownloadSyncCallback','UTC','publish','Timeout','syncRequestCallback','activeSearchPage','?sid=','col\x20s12\x20block_img_logo','nobr','You\x20do\x20not\x20have\x20permission\x20to\x20update\x20this\x20file.','report_problem','text_box','EXTENSION','file','sort','copyFile','url(./images/checkered-background.png)\x20repeat','application/x-www-form-urlencoded','updateTextFields','col\x20s4\x20m3\x20l2\x20block_file_item\x20center-align','project','Click\x20image\x20to\x20place\x20it\x20into\x20your\x20working\x20document.','Document','Page\x20','application/json','#E40000','prePackageDocumentEmbed','request','folders_count','img_box','cbPlaceOriginals','getExtensionID','ProgressBar','Timeout.','prePackageDocument','Cancel\x20Upload','Invalid\x20request','waves-effect\x20waves-light\x20btn\x20hand_cursor','My\x20Document','78fFZzAD','block_form','loadDocumentDataCallback','cbShowPlaceOptions','object','sid','perm','decreaseRequestsCounter','The\x20requested\x20URL\x20was\x20not\x20found.','end','apikey','header','129498xyIZiB','./images/file_fallback_icon.png','getSystemPath','createClass','./images/logo.png','increaseDownloadsCounter','settingsBar','toggleCb','crypto','get','FolderCard','hideUnsupported','NavBar','decreaseSyncDownloadsCounter','errorMessage','valign-wrapper','nameWithExt','524376CCeamR','col\x20s4\x20pre_post','\x22);','IDSN','button\x20waves-effect\x20waves-light\x20btn_pre\x20hand_cursor\x20tooltipped','Continue','back','length','log','circle-clipper\x20left','message','.png','span','~/Documents/IntelligenceBankImages','/v1/auth/app/token','You\x20are\x20not\x20connected\x20to\x20the\x20internet.','pipe','downloadHDError','row\x20form_line','linkData','bullet','hand_cursor','placeFile','resources','IncorrectLoginWarning','continueCallback','resources_count','spinner-layer\x20spinner-green-only','token','toggleSettingsBar','Some\x20document\x20assets\x20could\x20not\x20be\x20found\x20online.','col\x20s12\x20customUrlLine\x20hand_cursor','documentLinks','openFileCallback','selectDestination','form-data','statSync','Your\x20login\x20details\x20are\x20incorrect\x20or\x20your\x20account\x20has\x20been\x20locked.\x20Please\x20try\x20again\x20or\x20go\x20to\x20your\x20login\x20page\x20to\x20reset\x20your\x20password.','build','progressBar','setActivePage','Invalid\x20response','No\x20valid\x20session.\x20Authentication\x20is\x20required','footer_buttons','openFolder','PUT','btn\x20btn_imageCard\x20btn_imageCard_place\x20waves-effect\x20waves-light\x20hand_cursor','sortorder','Back','push','parent','icon_box','LinkCard','isPreview','File\x20deleted\x20or\x20permission\x20missing.','previewFileDownloadCallback','downloadsPending','openURLInDefaultBrowser','resource.limit(','GET','preventDefault','props','clientid','resource','/api/3.0.0/','onClick','validate','Grid','isEmbedded','selectPressed','openFileChecked','/v1/auth/app/info?token=','checkoutTime','place','documentUuid','permissions','toast','homeState','row\x20block_login','company','history','folderPath','/intelligenceBank.json','The\x20document\x20is\x20up\x20to\x20date','849863nqZdRt','preview-ps','useCustomFolder','Embed','LoginScreen','You\x20do\x20not\x20have\x20any\x20open\x20document\x20to\x20place\x20the\x20asset\x20into.','handleChange','fancyFileSize','openDocumentsCheck(\x22','div','Upload\x20error','col\x20s6\x20m4\x20l3\x20valign-wrapper\x20block_topfolder_item','decreaseDownloadsHDCounter','extension','imageCells','NO_ERROR','render','createdtime','50BhQwel','BrowserLoginScreen','Check\x20for\x20any\x20updates\x20in\x20your\x20document\x20(both\x20locally\x20and\x20online).','.tooltipped','The\x20document\x20is\x20up\x20to\x20date.','Search\x20this\x20area...','chevron_left','Password','SettingsScreen','showPlaceOptions','checkoutUserName','folders','Click\x20to\x20save\x20changes\x20made\x20to\x20this\x20file','#offline_page','file_indd','Previous','count','setState','block_img_logo_small','.intelligencebank.com','linkIds','checkbox','The\x20original\x20/\x20high\x20resolution\x20version\x20of\x20this\x20asset\x20has\x20already\x20been\x20embedded.','target','loginError','toastFont','logout\x20hand_cursor','/resource/?verbose&bypassWorkflow=true&bypassValidation=true&productkey=0db17b942ed391096168f41f90051acc','images','authCallback','cloud_upload','/LocalStore/IntelligenceBankImages','appName','button','SelectDestination','stringify','logout','extensionId','value','getParentFolderForFileUUID','apiKey','IntelligenceBank\x20URL','statusCode','.\x20To\x20return\x20to\x20the\x20standard\x20Login\x20page,\x20click\x20','updateAppState','max','search','Please\x20choose\x20folder','prevActiveTab','circularBlock','settingsCell','error.authentication.required','ERR_NOT_FOUND','filePath','block_descript','input','&action=preview&productkey=0db17b942ed391096168f41f90051acc','Files','row\x20block_relogin','Upload\x20completed.','file_name','Home','updateAllDocument','decreaseDownloadsCounter','handleSubmit','activePage','\x20IntelligenceBank\x20link.','increaseSyncDownloadsCounter','No\x20permission','prePackageDocumentCallback','/auth/?login=1&token=','folder.limit(','search_input','Embed\x20not\x20completed.\x20Assets\x20missing\x20or\x20you\x20don\x27t\x20have\x20permission.','append','setTime','APPLICATION','0db17b942ed391096168f41f90051acc','&action=download&productkey=0db17b942ed391096168f41f90051acc','/resource/','material-icons\x20disable\x20tooltipped\x20hand_cursor','setTimeout','folderCells','http://','&p80=','defaultFolderSortOrder','Footer','evalScript','DocumentUploadSelectBar','hdFileDownloadEmbedCallback','Next','Click\x20Pre-Package\x20to\x20download\x20the\x20high\x20resolution\x20version\x20of\x20this\x20file\x20as\x20an\x20external\x20linked\x20layer,\x20or\x20Embed\x20to\x20embed\x20it\x20into\x20the\x20document.','pow','btn\x20btn_paginator\x20hand_cursor','btn\x20btn_imageCard\x20btn_imageCard_open\x20waves-effect\x20waves-light\x20hand_cursor','placeFileChecked','username','split','documentFolderUuid','placeHDCallback','Embed\x20completed.','Use\x20Custom\x20Folder\x20For\x20Originals','./images/folder_fallback_icon.png','IntelligenceApp','query_params','POST','2705400tUhrgR','footer_upload\x20document','updateAllDocumentCallback','Search','placeOriginals','text','saved','substr','Sync\x20not\x20completed.\x20Assets\x20missing\x20or\x20you\x20don\x27t\x20have\x20permission.','EMBEDDED','row','Select\x20Destination','folderName','label','session','search_arrow\x20hand_cursor','Always\x20Place\x20Original','PHSP','items','offline_pin','\x20completed.','createWriteStream','totalItems','lastUpdateTime','error','searchTerm','cep','documentName','password','delete','absolute','Upload\x20as\x20New','ImageCard','state','Logout','Pre-package\x20not\x20completed.\x20Assets\x20missing\x20or\x20you\x20don\x27t\x20have\x20permission.','name','syncDownloadsPending','indexOf','charCode','requestInProcess','prePackageDocumentEmbedCallback','search\x20hand_cursor','Select\x20the\x20local\x20storage\x20location\x20for\x20original\x20assets\x20when\x20they\x20are\x20downloaded.','post','home','uploadDocumentCallback','open','USER_DATA','tabCallback','image/png','selectFolderCells','replace','Search\x20Results','gridData','Click\x20to\x20embed\x20missing\x20or\x20pre-packaged\x20original\x20/\x20high\x20resolution\x20versions\x20of\x20your\x20placed\x20assets.','$._ext_','preview','/api/json','selectFolder','searchGridData','more_vert','fancyFileType','selectedFolderUuid','toFixed','\x20/\x20','documentFolderPermission','toLowerCase','apiUrl','company_name','HomeHeader','content','err','false','alert(\x22','rows','showOpenDialogEx','3.0.0','files','fileUuid','Custom\x20URL','readdir','active','Upload\x20error.','remove','stat','abort','isFile','size','Custom\x20Order','checkout','uploadDocument','folder','Login','getTokenCallback','links','Incorrect\x20URL','Save\x20Changes','Error\x20returned:\x20','When\x20using\x20the\x20Place\x20action\x20to\x20insert\x20a\x20file\x20onto\x20an\x20opened\x20document,\x20a\x20lightweight\x20Preview\x20image\x20is\x20used\x20by\x20default.\x20Enable\x20this\x20option\x20to\x20always\x20download\x20the\x20Original\x20directly\x20when\x20placing\x20files\x20from\x20the\x20Connector.','userUuid','resource.limit(1)','preloader-wrapper\x20active','circle','increaseDownloadsHDCounter','Your\x20document\x20has\x20been\x20updated','Missing\x20local\x20permission\x20to\x20create\x20the\x20destination\x20Folder','deleted','byteLength','linkCells','makedir','parse','This\x20asset\x20is\x20already\x20opened.\x20Close\x20it\x20first\x20and\x20try\x20again.','Auth\x20request\x20error','Platform\x20URL','updatedtime','img','Choose','updateState','PHXS','material-icons','close','https://','-preview.png','Refresh','description','getParentFolderCallback','-preview_ps.','Select\x20upload\x20destination\x20folder','response','image','folder_name','tooltip','paginator','\x20on\x20','uploadFinishedCallback','uuid','openFile','activeTab','isCustomURL','folderUuid','placePreviewCallback','Auth\x20error','status','err:','activeScreen','createReadStream','showSettingsBar','\x20Login\x20to\x20your\x20IntelligenceBank\x20DAM\x20account\x20by\x20entering\x20your\x20credentials\x20below.','A\x20valid\x20Platform\x20URL\x20is\x20required.','_id','BrowserLogin','Open','Settings','Could\x20not\x20copy\x20file\x20to\x20path\x20','allowedActions','Last','permission','material-icons\x20tooltipped\x20hand_cursor','createElement','Browser\x20Login\x20(For\x20SSO)','toastError','File\x20format\x20not\x20supported\x20for\x20placement.','p60=0db17b942ed391096168f41f90051acc&p70=','DocumentBar','1005298wtFuHC','/v1/auth/app/getYapiAddress','browserLoginPressed','3XvzEWk','Options','Show\x20Import\x20Options\x20On\x20Place','admin','sessionKey','/webapp/1.0/login','body','write','CircularPreLoader','searchParams','material-icons\x20left','documentCheck(\x22','ib_uuid','com.adobe.PhotoshopPersistent','writeFile','When\x20using\x20the\x20Place\x20action\x20to\x20insert\x20a\x20file\x20onto\x20an\x20opened\x20document\x20from\x20the\x20Connector,\x20enable\x20Show\x20Import\x20Options\x20as\x20per\x20Adobe’s\x20native\x20functionality.','checkbox-green\x20filled-in','active\x20hand_cursor','logoutCallback','block_docs','join','circular','Select\x20destination\x20folder\x20for\x20this\x20document','increaseRequestsCounter','activeResourcePage','ib_folder_s','block_img\x20valign-wrapper','documentSaved','Get\x20token\x20error','loadCallback','requestsPending','file_param','bg_black','getLinksData();','indeterminate','\x22,\x22','useOpen','\x20IntelligenceBank\x20links.','upload','No\x20upload\x20folder\x20selected.'];_0x5842=function(){return _0x57011f;};return _0x5842();}function placeHDFile(_0x205a02,_0x13d250,_0x41e5c9,_0x1e2ec4,_0x219893,_0x97b26d,_0x644ca8){var _0x12bbbb=_0x14d782;try{var _0x2769e1=_imagesDataObj[_0x219893],_0x4fbe4f=createTempFolder()+'/'+_0x219893+'_'+_0x2769e1['lastUpdateTime'][_0x12bbbb(0x364)](/[-: ]/g,'')+'.'+fileExtension(_0x2769e1[_0x12bbbb(0x229)][_0x12bbbb(0x354)]),_0x57e364=createTempFolder(_0x219893+'_'+_0x2769e1['lastUpdateTime']['replace'](/[-: ]/g,''))+'/'+_0x2769e1[_0x12bbbb(0x229)][_0x12bbbb(0x354)];if(_0x644ca8){var _0x5566cd=createFolder(_0x644ca8+'/'+_0x219893+'_'+_0x2769e1[_0x12bbbb(0x347)][_0x12bbbb(0x364)](/[-: ]/g,''));_0x57e364=_0x5566cd+'/'+_0x2769e1[_0x12bbbb(0x229)]['name'];if(!_0x5566cd){_0x97b26d({'uuid':_0x219893,'filePath':_0x57e364,'error':_0x12bbbb(0x39a)});return;}}var _0x3ddd31=window[_0x12bbbb(0x34a)]['fs'][_0x12bbbb(0x385)](_0x57e364);if(_0x3ddd31[_0x12bbbb(0x20c)][_0x12bbbb(0x387)]()&&_0x3ddd31['err']==window[_0x12bbbb(0x34a)]['fs'][_0x12bbbb(0x2c3)]&&getFilesizeInBytes(_0x57e364)!=0x0){_0x97b26d({'uuid':_0x219893,'filePath':_0x57e364,'error':![]});return;}var _0x3ddd31=window[_0x12bbbb(0x34a)]['fs'][_0x12bbbb(0x385)](_0x4fbe4f);if(_0x3ddd31['data'][_0x12bbbb(0x387)]()&&_0x3ddd31[_0x12bbbb(0x378)]==window[_0x12bbbb(0x34a)]['fs'][_0x12bbbb(0x2c3)]&&getFilesizeInBytes(_0x4fbe4f)!=0x0){fs[_0x12bbbb(0x22b)](_0x4fbe4f,_0x57e364,_0xe8937d=>{var _0x4d012a=_0x12bbbb;if(_0xe8937d){_0x97b26d({'error':_0x4d012a(0x1b5)+_0x57e364});return;}_0x97b26d({'uuid':_0x219893,'filePath':_0x57e364,'error':![]});});return;}}catch(_0x2a8441){}var _0x45a9e7=_0x12bbbb(0x2a0)+_0x13d250+'/resource/'+_0x219893+_0x12bbbb(0x222)+_0x41e5c9+_0x12bbbb(0x314),_0x1a7efa={'rejectUnauthorized':![],'method':'GET','path':_0x45a9e7,'url':_0x1e2ec4+_0x45a9e7,'headers':{'sid':_0x41e5c9}},_0x4d26ad=fs[_0x12bbbb(0x345)](_0x57e364),_0x21ac74=![];_0x4d26ad['on'](_0x12bbbb(0x3a9),function(){if(!_0x21ac74)_0x97b26d({'uuid':_0x219893,'filePath':_0x57e364,'error':![]});}),request[_0x12bbbb(0x258)](_0x1a7efa)['on'](_0x12bbbb(0x348),function(_0xb31695){_0x21ac74=!![],_0x97b26d({'error':_0xb31695});})['on'](_0x12bbbb(0x3b1),function(_0x129a79){var _0x6d0bf3=_0x12bbbb;_0x129a79[_0x6d0bf3(0x2f0)]!=0xc8&&(_0x21ac74=!![],_0x97b26d({'error':'No\x20permission'}));})['pipe'](_0x4d26ad);}function openHDFile(_0x2a4b31,_0x4710cb,_0x4ded60,_0x16e759,_0x1ee792,_0x4ffb4c,_0x4f4864){var _0x42f698=_0x14d782;try{var _0x4d6d12=_imagesDataObj[_0x1ee792],_0x3fe0da=createTempFolder()+'/'+_0x1ee792+'_'+_0x4d6d12[_0x42f698(0x347)]['replace'](/[-: ]/g,'')+'.'+fileExtension(_0x4d6d12[_0x42f698(0x229)][_0x42f698(0x354)]),_0xfd20c6=createTempFolder(_0x1ee792+'_'+_0x4d6d12[_0x42f698(0x347)][_0x42f698(0x364)](/[-: ]/g,''))+'/'+_0x4d6d12[_0x42f698(0x229)][_0x42f698(0x354)];if(_0x4f4864){var _0x3f12d9=createFolder(_0x4f4864+'/'+_0x1ee792+'_'+_0x4d6d12['lastUpdateTime'][_0x42f698(0x364)](/[-: ]/g,''));_0xfd20c6=_0x3f12d9+'/'+_0x4d6d12[_0x42f698(0x229)][_0x42f698(0x354)];if(!_0x3f12d9){_0x4ffb4c({'uuid':_0x1ee792,'filePath':_0xfd20c6,'error':'Missing\x20local\x20permission\x20to\x20create\x20the\x20destination\x20Folder'});return;}}var _0x1535c9=window[_0x42f698(0x34a)]['fs']['stat'](_0xfd20c6);}catch(_0x30af26){}var _0x558f30=_0x42f698(0x2a0)+_0x4710cb+_0x42f698(0x315)+_0x1ee792+'?sid='+_0x4ded60+_0x42f698(0x314),_0x1ff05f={'rejectUnauthorized':![],'method':_0x42f698(0x29b),'path':_0x558f30,'url':_0x16e759+_0x558f30,'headers':{'sid':_0x4ded60}},_0x2be8f8=fs[_0x42f698(0x345)](_0xfd20c6),_0x1f0751=![];_0x2be8f8['on']('close',function(){if(!_0x1f0751)_0x4ffb4c({'uuid':_0x1ee792,'filePath':_0xfd20c6,'error':![]});}),request[_0x42f698(0x258)](_0x1ff05f)['on'](_0x42f698(0x348),function(_0x53966b){_0x1f0751=!![],_0x4ffb4c({'error':_0x53966b});})['on'](_0x42f698(0x3b1),function(_0x30f599){var _0x10eb53=_0x42f698;_0x30f599[_0x10eb53(0x2f0)]!=0xc8&&(_0x1f0751=!![],_0x4ffb4c({'error':_0x10eb53(0x30a)}));})[_0x42f698(0x270)](_0x2be8f8);}function placePreviewFileToLinks(_0x5b072f,_0x38bbba,_0x5981f6,_0x22c2cf,_0x557f78,_0x47eb5d,_0x53e43d){var _0x4404a0=_0x14d782;try{var _0x2add94=_imagesDataObj[_0x557f78],_0x4bff29=new CSInterface(),_0x35172e=_0x4bff29[_0x4404a0(0x218)][_0x4404a0(0x2e6)],_0x5b664c=createTempFolder(_0x557f78+'_'+_0x2add94[_0x4404a0(0x347)][_0x4404a0(0x364)](/[-: ]/g,'')+'_'+_0x4404a0(0x369))+'/'+fileNameWithoutExt(_0x2add94['file'][_0x4404a0(0x354)])+_0x4404a0(0x26b);if(_0x35172e=='PHXS'||_0x35172e==_0x4404a0(0x341))createTempFolder(_0x557f78+'_'+_0x2add94[_0x4404a0(0x347)][_0x4404a0(0x364)](/[-: ]/g,'')+'_'+_0x4404a0(0x2b5))+'/'+_0x2add94[_0x4404a0(0x229)][_0x4404a0(0x354)];var _0x5e575a=createTempFolder()+'/'+_0x557f78+'_'+_0x2add94['lastUpdateTime'][_0x4404a0(0x364)](/[-: ]/g,'')+_0x4404a0(0x3ab);if(_0x35172e==_0x4404a0(0x3a7)||_0x35172e==_0x4404a0(0x341))_0x5e575a=createTempFolder()+'/'+_0x557f78+'_'+_0x2add94['lastUpdateTime'][_0x4404a0(0x364)](/[-: ]/g,'')+_0x4404a0(0x3af)+fileExtension(_0x2add94[_0x4404a0(0x229)][_0x4404a0(0x354)]);var _0x1839bd=window['cep']['fs']['stat'](_0x5b664c);if(_0x1839bd['data'][_0x4404a0(0x387)]()&&_0x1839bd['err']==window[_0x4404a0(0x34a)]['fs']['NO_ERROR']&&getFilesizeInBytes(_0x5b664c)!=0x0){_0x53e43d({'uuid':_0x557f78,'filePath':_0x5b664c,'linkIds':_0x47eb5d,'error':![]});return;}var _0x1839bd=window[_0x4404a0(0x34a)]['fs'][_0x4404a0(0x385)](_0x5e575a);if(_0x1839bd[_0x4404a0(0x20c)][_0x4404a0(0x387)]()&&_0x1839bd[_0x4404a0(0x378)]==window[_0x4404a0(0x34a)]['fs'][_0x4404a0(0x2c3)]&&getFilesizeInBytes(_0x5e575a)!=0x0){fs[_0x4404a0(0x22b)](_0x5e575a,_0x5b664c,_0x233f89=>{if(_0x233f89){_0x53e43d({'error':'Could\x20not\x20copy\x20file\x20to\x20path\x20'+_0x5b664c});return;}_0x53e43d({'uuid':_0x557f78,'filePath':_0x5b664c,'linkIds':_0x47eb5d,'error':![]});});return;}}catch(_0x1ab51b){}var _0x397bd4=_0x4404a0(0x2a0)+_0x38bbba+_0x4404a0(0x315)+_0x557f78+_0x4404a0(0x222)+_0x5981f6+_0x4404a0(0x2fe),_0xf0ea67={'rejectUnauthorized':![],'method':'GET','path':_0x397bd4,'url':_0x22c2cf+_0x397bd4,'headers':{'sid':_0x5981f6}},_0x32d73d=fs[_0x4404a0(0x345)](_0x5b664c),_0x422675=![];_0x32d73d['on'](_0x4404a0(0x3a9),function(){if(!_0x422675)_0x53e43d({'uuid':_0x557f78,'filePath':_0x5b664c,'linkIds':_0x47eb5d,'error':![]});}),request[_0x4404a0(0x258)](_0xf0ea67,function(_0x45cc2b,_0x84a7e3,_0x32a2d0){var _0x2a914d=_0x4404a0;_0x84a7e3['on'](_0x2a914d(0x348),function(_0x3fd234){_0x45cc2b=!![],_0x53e43d({'error':_0x3fd234});});})[_0x4404a0(0x270)](_0x32d73d);}function placeHDFileToLinks(_0x24d3d2,_0x487dfb,_0x4a0488,_0x389d80,_0x4d14b1,_0x354e80,_0x303b2e,_0x4ed13e,_0x242784,_0x35af11){var _0x47d36f=_0x14d782;try{var _0x303b2e=_imagesDataObj[_0x354e80],_0xcc2940=createTempFolder()+'/'+_0x354e80+'_'+_0x303b2e[_0x47d36f(0x347)][_0x47d36f(0x364)](/[-: ]/g,'')+'.'+fileExtension(_0x303b2e[_0x47d36f(0x229)][_0x47d36f(0x354)]),_0x395582=createTempFolder(_0x354e80+'_'+_0x303b2e['lastUpdateTime'][_0x47d36f(0x364)](/[-: ]/g,''))+'/'+_0x303b2e[_0x47d36f(0x229)]['name'];if(_0x4d14b1){var _0x439ff5=createFolder(_0x4d14b1+'/'+_0x354e80+'_'+_0x303b2e[_0x47d36f(0x347)][_0x47d36f(0x364)](/[-: ]/g,''));_0x395582=_0x439ff5+'/'+_0x303b2e[_0x47d36f(0x229)][_0x47d36f(0x354)];if(!_0x439ff5){_0x242784({'uuid':_0x354e80,'filePath':_0x395582,'error':'Missing\x20local\x20permission\x20to\x20create\x20the\x20destination\x20Folder'});return;}}var _0x1b4f32=window['cep']['fs'][_0x47d36f(0x385)](_0x395582);if(_0x1b4f32[_0x47d36f(0x20c)][_0x47d36f(0x387)]()&&_0x1b4f32[_0x47d36f(0x378)]==window[_0x47d36f(0x34a)]['fs'][_0x47d36f(0x2c3)]&&getFilesizeInBytes(_0x395582)!=0x0){_0x242784({'uuid':_0x354e80,'filePath':_0x395582,'linkIds':_0x4ed13e,'error':![]});return;}var _0x1b4f32=window[_0x47d36f(0x34a)]['fs'][_0x47d36f(0x385)](_0xcc2940);if(_0x1b4f32['data'][_0x47d36f(0x387)]()&&_0x1b4f32['err']==window['cep']['fs'][_0x47d36f(0x2c3)]&&getFilesizeInBytes(_0xcc2940)!=0x0){fs[_0x47d36f(0x22b)](_0xcc2940,_0x395582,_0x12d0bc=>{if(_0x12d0bc){_0x242784({'error':'Could\x20not\x20copy\x20file\x20to\x20path\x20'+_0x395582});return;}_0x242784({'uuid':_0x354e80,'filePath':_0x395582,'linkIds':_0x4ed13e,'error':![]});});return;}}catch(_0xc681){}var _0x4a15bc=_0x47d36f(0x2a0)+_0x487dfb+'/resource/'+_0x354e80+_0x47d36f(0x222)+_0x4a0488+_0x47d36f(0x314),_0x596292={'rejectUnauthorized':![],'method':_0x47d36f(0x29b),'path':_0x4a15bc,'url':_0x389d80+_0x4a15bc,'headers':{'sid':_0x4a0488}},_0x468a17=fs['createWriteStream'](_0x395582),_0x98edbd=![];_0x468a17['on'](_0x47d36f(0x3a9),function(){if(!_0x98edbd)_0x242784({'uuid':_0x354e80,'filePath':_0x395582,'linkIds':_0x4ed13e,'error':![]});}),request[_0x47d36f(0x258)](_0x596292)['on'](_0x47d36f(0x348),function(_0x173cb7){_0x98edbd=!![],_0x242784({'error':_0x173cb7});})['on']('response',function(_0x74983a){var _0x47af51=_0x47d36f;_0x74983a[_0x47af51(0x2f0)]!=0xc8&&(_0x98edbd=!![],_0x242784({'error':_0x47af51(0x30a)}));})[_0x47d36f(0x270)](_0x468a17);}function embedHDFile(_0x4d7362,_0x186a39,_0x1b2ed8,_0x6b5449,_0x1c76da,_0x3793fc,_0x280075,_0x9db1da,_0x3f29f4){var _0x324086=_0x14d782;try{var _0x280075=_imagesDataObj[_0x3793fc],_0xc4e28a=createTempFolder()+'/'+_0x3793fc+'_'+_0x280075[_0x324086(0x347)][_0x324086(0x364)](/[-: ]/g,'')+'.'+fileExtension(_0x280075[_0x324086(0x229)][_0x324086(0x354)]),_0x48347f=createTempFolder(_0x3793fc+'_'+_0x280075[_0x324086(0x347)][_0x324086(0x364)](/[-: ]/g,''))+'/'+_0x280075[_0x324086(0x229)][_0x324086(0x354)];if(_0x1c76da){var _0x32a00f=createFolder(_0x1c76da+'/'+_0x3793fc+'_'+_0x280075[_0x324086(0x347)][_0x324086(0x364)](/[-: ]/g,''));_0x48347f=_0x32a00f+'/'+_0x280075[_0x324086(0x229)][_0x324086(0x354)];if(!_0x32a00f){_0x3f29f4({'uuid':_0x3793fc,'filePath':_0x48347f,'error':_0x324086(0x39a)});return;}}var _0x256c80=window[_0x324086(0x34a)]['fs']['stat'](_0x48347f);if(_0x256c80[_0x324086(0x20c)]['isFile']()&&_0x256c80[_0x324086(0x378)]==window[_0x324086(0x34a)]['fs'][_0x324086(0x2c3)]&&getFilesizeInBytes(_0x48347f)!=0x0){_0x3f29f4({'uuid':_0x3793fc,'filePath':_0x48347f,'linkIds':_0x9db1da,'error':![]});return;}var _0x256c80=window[_0x324086(0x34a)]['fs'][_0x324086(0x385)](_0xc4e28a);if(_0x256c80['data'][_0x324086(0x387)]()&&_0x256c80['err']==window[_0x324086(0x34a)]['fs'][_0x324086(0x2c3)]&&getFilesizeInBytes(_0xc4e28a)!=0x0){fs[_0x324086(0x22b)](_0xc4e28a,_0x48347f,_0x13652b=>{var _0x4ac8ad=_0x324086;if(_0x13652b){_0x3f29f4({'error':_0x4ac8ad(0x1b5)+_0x48347f});return;}_0x3f29f4({'uuid':_0x3793fc,'filePath':_0x48347f,'linkIds':_0x9db1da,'error':![]});});return;}}catch(_0x5d8c8d){}var _0x1a98af=_0x324086(0x2a0)+_0x186a39+_0x324086(0x315)+_0x3793fc+_0x324086(0x222)+_0x1b2ed8+_0x324086(0x314),_0x25dc3b={'rejectUnauthorized':![],'method':_0x324086(0x29b),'path':_0x1a98af,'url':_0x6b5449+_0x1a98af,'headers':{'sid':_0x1b2ed8}},_0x229fdf=fs['createWriteStream'](_0x48347f),_0x772d5b=![];_0x229fdf['on']('close',function(){if(!_0x772d5b)_0x3f29f4({'uuid':_0x3793fc,'filePath':_0x48347f,'linkIds':_0x9db1da,'error':![]});}),request[_0x324086(0x258)](_0x25dc3b)['on'](_0x324086(0x348),function(_0x42e547){_0x772d5b=!![],_0x3f29f4({'error':_0x42e547});})['on'](_0x324086(0x3b1),function(_0x1bb610){var _0xa09d73=_0x324086;_0x1bb610['statusCode']!=0xc8&&(_0x772d5b=!![],_0x3f29f4({'error':_0xa09d73(0x30a)}));})[_0x324086(0x270)](_0x229fdf);}function syncRequest(_0x1d3eae,_0x411e99,_0x3ab743,_0x3cbb7d,_0x2d6311,_0x5d90eb,_0x2bf4c7,_0x1534ef,_0x4d8aa7){var _0x5e4132=_0x14d782,_0x45759c={};for(var _0x1f4d76 in _0x2d6311){_0x45759c[_0x1f4d76]=_0x2d6311[_0x1f4d76];}var _0x566c48=[];for(var _0x1f4d76 in _0x45759c){var _0x1b44b6=_0x45759c[_0x1f4d76];_0x566c48[_0x5e4132(0x291)](_0x1f4d76);}if(_0x5d90eb)_0x566c48[_0x5e4132(0x291)](_0x5d90eb);var _0x5216d1='/api/json',_0x2c9ca4={'method':_0x5e4132(0x29b),'version':_0x5e4132(0x37d),'client':_0x411e99,'table':'resource.limit('+_totalPageItems+')','query_params':{'productkey':'0db17b942ed391096168f41f90051acc','verbose':!![],'searchParams':{'keywords':_0x566c48[_0x5e4132(0x1d7)]('\x20'),'content':['ib_uuid'],'isSearching':!![],'extension':'','wrapped_conditions':[[]]}}},_0x2f8f3c={'rejectUnauthorized':![],'method':_0x5e4132(0x32f),'path':_0x5216d1,'url':_0x3cbb7d+_0x5216d1,'headers':{'sid':_0x3ab743,'Content-Type':'application/json'},'body':JSON[_0x5e4132(0x2e9)](_0x2c9ca4)};request[_0x5e4132(0x35c)](_0x2f8f3c,function(_0x80ceb2,_0x2a261a,_0x39b8a1){var _0x1abd54=_0x5e4132;if(_0x80ceb2){_0x2bf4c7({'error':_0x1abd54(0x1ab)+_0x80ceb2});return;}var _0x80ceb2=![];try{_0x39b8a1=JSON[_0x1abd54(0x39f)](_0x39b8a1);if(_0x39b8a1[_0x1abd54(0x348)])_0x80ceb2=_0x39b8a1[_0x1abd54(0x348)];}catch(_0x226cae){_0x80ceb2=_0x1abd54(0x289),_0x2bf4c7({'error':_0x80ceb2});return;}_0x2bf4c7({'error':_0x80ceb2,'body':_0x39b8a1,'links':_0x2d6311,'hideMessage':'test'});});}function parentFolderRequest(_0x5ae48b,_0x5293ea,_0x2e83e1,_0x1d3bce,_0x2086be,_0x420e2a){var _0x1b2403=_0x14d782,_0x3bab15='/api/json',_0x36d9bf={'method':_0x1b2403(0x29b),'version':'3.0.0','client':_0x5293ea,'table':_0x1b2403(0x395),'query_params':{'productkey':_0x1b2403(0x313),'verbose':!![],'searchParams':{'keywords':_0x2086be,'content':[_0x1b2403(0x1cf)],'isSearching':!![],'extension':'','wrapped_conditions':[[]]}}},_0x50a13e={'rejectUnauthorized':![],'method':_0x1b2403(0x32f),'path':_0x3bab15,'url':_0x1d3bce+_0x3bab15,'headers':{'sid':_0x2e83e1,'Content-Type':_0x1b2403(0x234)},'body':JSON[_0x1b2403(0x2e9)](_0x36d9bf)};request[_0x1b2403(0x35c)](_0x50a13e,function(_0x5c421b,_0x160dc3,_0x35626d){var _0x5ab857=_0x1b2403;if(_0x5c421b){_0x420e2a({'error':_0x5ab857(0x1ab)+_0x5c421b});return;}var _0x5c421b=![];try{_0x35626d=JSON['parse'](_0x35626d);if(_0x35626d[_0x5ab857(0x348)])_0x5c421b=_0x35626d[_0x5ab857(0x348)];}catch(_0x2f56a3){_0x5c421b=_0x5ab857(0x289),_0x420e2a({'error':_0x5c421b});return;}_0x420e2a({'error':_0x5c421b,'body':_0x35626d,'hideMessage':'test'});});}function loadDocumentData(_0x47de65,_0x285765,_0x3ebfce){var _0x3fc7af=_0x14d782,_0x36b498=_0x3fc7af(0x1e4);evalScript(_0x36b498,function(_0x525d8d){var _0x382201=_0x3fc7af,_0x529437=JSON[_0x382201(0x39f)](_0x525d8d);_0x47de65(_0x529437,_0x285765,_0x3ebfce);});}function getToken(_0x519aac,_0xb00578){var _0xd232a7=_0x14d782,_0x3ac08c={'hostname':_0x519aac,'port':0x1bb,'method':_0xd232a7(0x29b),'path':_0xd232a7(0x26e)},_0x31d4d8=https['request'](_0x3ac08c,function(_0x32a705){var _0x4e59ba=_0xd232a7,_0x3a5037='';_0x32a705['on'](_0x4e59ba(0x348),function(_0x4093bd){_0xb00578({'error':_0x4093bd});}),_0x32a705['on'](_0x4e59ba(0x20c),function(_0x33a1f7){_0x3a5037+=_0x33a1f7;}),_0x32a705['on'](_0x4e59ba(0x24c),function(){var _0x438a0e=_0x4e59ba,_0x4d6e95=![];try{_0x3a5037=JSON[_0x438a0e(0x39f)](_0x3a5037);}catch(_0x251152){_0x4d6e95=_0x438a0e(0x1df);}_0xb00578({'error':_0x4d6e95,'body':_0x3a5037,'response':_0x32a705});});});_0x31d4d8[_0xd232a7(0x317)](_timeoutValue,function(){var _0x261b56=_0xd232a7;_0x31d4d8[_0x261b56(0x386)](),_0xb00578({'error':_0x261b56(0x21f)});}),_0x31d4d8['on']('error',function(){var _0x1eb67a=_0xd232a7;_0xb00578(_0x1eb67a(0x21f));}),_0x31d4d8[_0xd232a7(0x24c)]();}function getKey(_0x503b2d,_0x1d74af,_0x2f52bc){var _0x35811e=_0x14d782,_0x1a12a9={'hostname':_0x503b2d,'port':0x1bb,'method':_0x35811e(0x29b),'path':_0x35811e(0x2a7)+_0x1d74af},_0x15baf6=https[_0x35811e(0x237)](_0x1a12a9,function(_0xdfa442){var _0x30c7aa=_0x35811e,_0x45663d='';_0xdfa442['on'](_0x30c7aa(0x348),function(_0x4a06a8){_0x2f52bc({'error':_0x4a06a8});}),_0xdfa442['on']('data',function(_0x3fad0d){_0x45663d+=_0x3fad0d;}),_0xdfa442['on'](_0x30c7aa(0x24c),function(){var _0xf1db4f=_0x30c7aa,_0x591593=![];try{_0x45663d=JSON[_0xf1db4f(0x39f)](_0x45663d);}catch(_0x5ca62d){_0x591593=_0xf1db4f(0x1fe);}_0x2f52bc({'error':_0x591593,'body':_0x45663d,'response':_0xdfa442});});});_0x15baf6[_0x35811e(0x317)](_timeoutValue,function(){var _0x56fec8=_0x35811e;_0x15baf6[_0x56fec8(0x386)](),_0x2f52bc({'error':_0x56fec8(0x21f)});}),_0x15baf6['on'](_0x35811e(0x348),function(){var _0x220035=_0x35811e;_0x2f52bc(_0x220035(0x21f));}),_0x15baf6[_0x35811e(0x24c)]();}var sortFunctions={'sortorder':function(_0x2dab64,_0x56bc3){return Number(_0x2dab64['sortorder'])>Number(_0x56bc3['sortorder'])?0x1:-0x1;},'alphabetical':function(_0x501f17,_0x297e6e){var _0x5f46e2=_0x14d782;return _0x501f17['name'][_0x5f46e2(0x373)]()>_0x297e6e['name'][_0x5f46e2(0x373)]()?0x1:-0x1;},'createTime':function(_0x2dc470,_0x239321){var _0x58230b=_0x14d782;return _0x2dc470[_0x58230b(0x2c5)]>_0x239321[_0x58230b(0x2c5)]?0x1:-0x1;},'Resource\x20Date':function(_0x841417,_0x5cb3fc){var _0x55de81=_0x14d782;return _0x841417[_0x55de81(0x2c5)]>_0x5cb3fc[_0x55de81(0x2c5)]?0x1:-0x1;},'Last\x20Updated':function(_0x1c69d2,_0x4ac048){var _0x25f60c=_0x14d782;return _0x1c69d2[_0x25f60c(0x3a3)]>_0x4ac048[_0x25f60c(0x3a3)]?0x1:-0x1;},'Alphabetical':function(_0x43630e,_0x586993){var _0x418698=_0x14d782;return _0x43630e['title'][_0x418698(0x373)]()>_0x586993['title'][_0x418698(0x373)]()?0x1:-0x1;},'Custom\x20Order':function(_0x35eb73,_0x32e5ea){var _0x49a16f=_0x14d782;return Number(_0x35eb73[_0x49a16f(0x28f)])>Number(_0x32e5ea['sortorder'])?-0x1:0x1;}};function _0x2fdc(_0x3307e5,_0x9bb9aa){var _0x5842f5=_0x5842();return _0x2fdc=function(_0x2fdccf,_0x5c6d30){_0x2fdccf=_0x2fdccf-0x1a0;var _0x487df5=_0x5842f5[_0x2fdccf];return _0x487df5;},_0x2fdc(_0x3307e5,_0x9bb9aa);}function sortFiles(_0xa89442,_0x552cef){var _0x29a48f=_0x14d782;if(sortFunctions[_0x552cef]!=undefined)_0xa89442[_0x29a48f(0x22a)](sortFunctions[_0x552cef]);}function sortFolders(_0x284a55,_0x3aad7f){var _0x6e488c=_0x14d782;if(sortFunctions[_0x3aad7f]!=undefined)_0x284a55[_0x6e488c(0x22a)](sortFunctions[_0x3aad7f]);}function createTempFolder(_0x3efd09){var _0x166ac6=_0x14d782,_0x6a19b0=new CSInterface(),_0x1a6d97=_0x6a19b0['getSystemPath'](SystemPath[_0x166ac6(0x360)]);_0x1a6d97+=_0x166ac6(0x2e5);if(_0x3efd09)_0x1a6d97+='/'+_0x3efd09;var _0x77ad0f=window['cep']['fs'][_0x166ac6(0x381)](_0x1a6d97);if(window[_0x166ac6(0x34a)]['fs'][_0x166ac6(0x2fa)]==_0x77ad0f['err'])_0x77ad0f=window[_0x166ac6(0x34a)]['fs'][_0x166ac6(0x39e)](_0x1a6d97);if(_0x77ad0f[_0x166ac6(0x378)]!=0x0)return![];return _0x1a6d97;}function createFolder(_0x45486a){var _0xd9b6b8=_0x14d782;if(!_0x45486a)return;var _0x3796f5=new CSInterface(),_0x14af6d=_0x45486a,_0x300e2b=window[_0xd9b6b8(0x34a)]['fs'][_0xd9b6b8(0x381)](_0x14af6d);if(window['cep']['fs'][_0xd9b6b8(0x2fa)]==_0x300e2b[_0xd9b6b8(0x378)])_0x300e2b=window[_0xd9b6b8(0x34a)]['fs'][_0xd9b6b8(0x39e)](_0x14af6d);if(_0x300e2b[_0xd9b6b8(0x378)]!=0x0)return![];return _0x14af6d;}function loadJSX(){var _0x23b6a5=_0x14d782,_0x50a77c=new CSInterface(),_0x35d3b4=_0x50a77c[_0x23b6a5(0x251)](SystemPath[_0x23b6a5(0x228)])+'/jsx/';_0x50a77c[_0x23b6a5(0x31d)](_0x23b6a5(0x210)+_0x35d3b4+'\x22)');}function evalScript(_0x262cc0,_0x360712){var _0x4ac515=_0x14d782,_0x404598=new CSInterface();_0x404598[_0x4ac515(0x31d)](_0x4ac515(0x368)+_0x404598['hostEnvironment']['appName']+'.'+_0x262cc0,_0x360712);}function evalJSX(_0x5e5315){var _0x460ec5=_0x5e5315['toString']();evalScript(_0x460ec5);}function myAlert(_0x5ef2e6){var _0x283497=_0x14d782,_0x351385=_0x283497(0x37a)+_0x5ef2e6['replace'](/\"/g,'\x27')+_0x283497(0x262),_0xf5c439=new CSInterface();_0xf5c439[_0x283497(0x31d)](_0x351385);}function placeImageToLayout(_0xc943e3,_0x3ce9df,_0x4026c9,_0x42ae8f,_0x20dfda){var _0x1fc120=_0x14d782,_0xe683b1=_0x1fc120(0x1f8)+encodeURIComponent(_0xc943e3)+_0x1fc120(0x1e6)+encodeURIComponent(JSON[_0x1fc120(0x2e9)](_0x4026c9))+'\x22,'+_0x20dfda+');';evalScript(_0xe683b1,_0x42ae8f);}function openImageAsLayout(_0x10ecdf,_0x350fd1,_0x46df9e,_0x3ee248){var _0xedddf9=_0x14d782,_0x4c0fce='openImageAsLayout(\x22'+encodeURIComponent(_0x10ecdf)+_0xedddf9(0x1e6)+encodeURIComponent(JSON[_0xedddf9(0x2e9)](_0x46df9e))+_0xedddf9(0x262);evalScript(_0x4c0fce,_0x3ee248);}function placeFileCheck(_0x26322c,_0x2d7214){var _0x3096b8=_0x14d782,_0x57d224=_0x3096b8(0x1ce)+_0x26322c+_0x3096b8(0x262);evalScript(_0x57d224,_0x2d7214);}function openFileCheck(_0x181103,_0x428f02){var _0x3c3853=_0x14d782,_0x157619=_0x3c3853(0x2bc)+_0x181103+'\x22);';evalScript(_0x157619,_0x428f02);}function updateLinks(_0x156a3f,_0x33b5f0,_0x937005,_0x779df5){var _0x1f899c=_0x14d782,_0xfc8e2c='updateLinks(\x22'+encodeURIComponent(_0x156a3f)+_0x1f899c(0x1e6)+encodeURIComponent(JSON[_0x1f899c(0x2e9)](_0x33b5f0))+_0x1f899c(0x1e6)+encodeURIComponent(JSON[_0x1f899c(0x2e9)](_0x937005))+'\x22);';evalScript(_0xfc8e2c,_0x779df5);}function updateLinksEmbed(_0x480ae6,_0x2c3b92,_0x20d457,_0xef8cff){var _0x2e1069=_0x14d782,_0x40fd43=_0x2e1069(0x1fa)+encodeURIComponent(_0x480ae6)+_0x2e1069(0x1e6)+encodeURIComponent(JSON[_0x2e1069(0x2e9)](_0x2c3b92))+_0x2e1069(0x1e6)+encodeURIComponent(JSON[_0x2e1069(0x2e9)](_0x20d457))+_0x2e1069(0x262);evalScript(_0x40fd43,_0xef8cff);}function setIds(_0xdf077b,_0x237d8f,_0x4cefaa){var _0x43f75c=_0x14d782,_0x59fcfb='setIds(\x22'+_0xdf077b+_0x43f75c(0x1e6)+_0x237d8f+_0x43f75c(0x262);evalScript(_0x59fcfb,_0x4cefaa);}function formatBytes(_0x1fc4ac,_0x4b15f1){var _0x53bfd0=_0x14d782;if(_0x1fc4ac==0x0)return'0\x20Byte';var _0x2f2bd6=0x400,_0x248838=_0x4b15f1+0x1||0x1,_0x3bcefc=[_0x53bfd0(0x1f7),'Kb','Mb','Gb','TB','PB','EB','ZB','YB'],_0x5de09c=Math['floor'](Math[_0x53bfd0(0x268)](_0x1fc4ac)/Math[_0x53bfd0(0x268)](_0x2f2bd6));return parseFloat((_0x1fc4ac/Math[_0x53bfd0(0x322)](_0x2f2bd6,_0x5de09c))[_0x53bfd0(0x370)](_0x248838))+'\x20'+_0x3bcefc[_0x5de09c];}function readPrefs(){var _0x494ab2=_0x14d782,_0x4233c9={},_0x4fac6a=new CSInterface()[_0x494ab2(0x251)](SystemPath['USER_DATA']),_0x4fac6a=_0x4fac6a+'/LocalStore',_0x126d77=window[_0x494ab2(0x34a)]['fs'][_0x494ab2(0x381)](_0x4fac6a);window[_0x494ab2(0x34a)]['fs']['ERR_NOT_FOUND']==_0x126d77['err']&&window[_0x494ab2(0x34a)]['fs']['makedir'](_0x4fac6a),_0x126d77=window[_0x494ab2(0x34a)]['fs']['readFile'](_0x4fac6a+'/intelligenceBank.json');try{_0x126d77[_0x494ab2(0x378)]==window['cep']['fs']['NO_ERROR']&&_0x126d77[_0x494ab2(0x20c)]&&(_0x4233c9=JSON['parse'](_0x126d77[_0x494ab2(0x20c)]));}catch(_0x2788be){}return _0x4233c9;}function savePrefs(_0x10d265){var _0x3e9338=_0x14d782,_0x322510=new CSInterface()[_0x3e9338(0x251)](SystemPath['USER_DATA']),_0x322510=_0x322510+'/LocalStore',_0x567e3b=window[_0x3e9338(0x34a)]['fs'][_0x3e9338(0x381)](_0x322510);window['cep']['fs']['ERR_NOT_FOUND']==_0x567e3b[_0x3e9338(0x378)]&&window[_0x3e9338(0x34a)]['fs'][_0x3e9338(0x39e)](_0x322510),window['cep']['fs'][_0x3e9338(0x1d1)](_0x322510+_0x3e9338(0x2b2),JSON[_0x3e9338(0x2e9)](_0x10d265));}function getFilesizeInBytes(_0x43fb8c){var _0x449ec3=_0x14d782,_0x48ca12=fs[_0x449ec3(0x284)](_0x43fb8c),_0x5ad1d5=_0x48ca12[_0x449ec3(0x388)];return _0x5ad1d5;}function alertDebug(_0x3d189f){if(debug)alert(_0x3d189f);}function fileExtension(_0x2682c0){var _0xdbcfb3=_0x14d782,_0x140512=_0x2682c0['lastIndexOf']('.');return _0x2682c0['substr'](_0x140512+0x1)[_0xdbcfb3(0x373)]();}function fileNameWithoutExt(_0x54637c){var _0x3a0153=_0x14d782,_0x64c95e=_0x54637c['lastIndexOf']('.');return _0x54637c[_0x3a0153(0x337)](0x0,_0x64c95e);}$(_0x14d782(0x2d3))[_0x14d782(0x384)]();try{ReactDOM[_0x14d782(0x2c4)](React['createElement'](IntelligenceApp),document['body']);}catch(_0x5b1e19){}
+var fs = require('fs');
+var crypto = require('crypto');
+var digestStream = require('digest-stream');
+var FormData = require('form-data');
+var https = require('https');
+var request = require('request');
+
+var debug = false;
+
+var _imagesDataObj = {};
+var _folderInfo = {};
+
+var _timeoutValue = 1000 * 10;
+var _tooltipDelay = 2000;
+
+var _totalPageItems = 100;
+
+var _useCustomUrl = false;
+
+var allowedFileTypes = {
+    "IDSN": {
+        "jpg": {
+            "open": false,
+            "place": true
+        },
+        "tiff": {
+            "open": false,
+            "place": true
+        },
+        "tif": {
+            "open": false,
+            "place": true
+        },
+        "gif": {
+            "open": false,
+            "place": true
+        },
+        "jpeg": {
+            "open": false,
+            "place": true
+        },
+        "bmp": {
+            "open": false,
+            "place": true
+        },
+        "eps": {
+            "open": false,
+            "place": true
+        },
+        "png": {
+            "open": false,
+            "place": true
+        },
+        "ai": {
+            "open": false,
+            "place": true
+        },
+        "psd": {
+            "open": false,
+            "place": true
+        },
+        "indd": {
+            "open": true,
+            "place": false
+        },
+        "indt": {
+            "open": true,
+            "place": false
+        },
+        "idml": {
+            "open": true,
+            "place": false
+        },
+        "pdf": {
+            "open": false,
+            "place": true
+        },
+        "svg": {
+            "open": false,
+            "place": true
+        }
+    },
+    "ILST": {
+        "tiff": {
+            "open": false,
+            "place": true
+        },
+        "tif": {
+            "open": false,
+            "place": true
+        },
+        "gif": {
+            "open": false,
+            "place": true
+        },
+        "jpg": {
+            "open": false,
+            "place": true
+        },
+        "jpeg": {
+            "open": false,
+            "place": true
+        },
+        "bmp": {
+            "open": false,
+            "place": true
+        },
+        "png": {
+            "open": false,
+            "place": true
+        },
+        "ai": {
+            "open": true,
+            "place": true
+        },
+        "ait": {
+            "open": true,
+            "place": false
+        },
+        "eps": {
+            "open": true,
+            "place": true
+        },
+        "psd": {
+            "open": false,
+            "place": true
+        },
+        "pdf": {
+            "open": false,
+            "place": true
+        },
+        "svg": {
+            "open": true,
+            "place": true
+        }
+    },
+    "PHXS": {
+        "jpg": {
+            "open": true,
+            "place": true
+        },
+        "tiff": {
+            "open": true,
+            "place": true
+        },
+        "tif": {
+            "open": true,
+            "place": true
+        },
+        "gif": {
+            "open": true,
+            "place": true
+        },
+        "jpeg": {
+            "open": true,
+            "place": true
+        },
+        "bmp": {
+            "open": true,
+            "place": true
+        },
+        "eps": {
+            "open": true,
+            "place": true
+        },
+        "png": {
+            "open": true,
+            "place": true
+        },
+        "ai": {
+            "open": false,
+            "place": true
+        },
+        "psd": {
+            "open": true,
+            "place": true
+        },
+        "pdf": {
+            "open": false,
+            "place": true
+        },
+        "svg": {
+            "open": true,
+            "place": true
+        }
+    },
+    "PHSP": {
+        "jpg": {
+            "open": true,
+            "place": true
+        },
+        "tiff": {
+            "open": true,
+            "place": true
+        },
+        "tif": {
+            "open": true,
+            "place": true
+        },
+        "gif": {
+            "open": true,
+            "place": true
+        },
+        "jpeg": {
+            "open": true,
+            "place": true
+        },
+        "bmp": {
+            "open": true,
+            "place": true
+        },
+        "eps": {
+            "open": true,
+            "place": true
+        },
+        "png": {
+            "open": true,
+            "place": true
+        },
+        "ai": {
+            "open": false,
+            "place": true
+        },
+        "psd": {
+            "open": true,
+            "place": true
+        },
+        "pdf": {
+            "open": false,
+            "place": true
+        },
+        "svg": {
+            "open": true,
+            "place": true
+        }
+    }
+};
+
+
+var csInterface = new CSInterface();
+var appName = csInterface.hostEnvironment.appName;
+
+var extArray = [];
+for(var prop in allowedFileTypes[appName])
+    extArray.push(prop);
+
+function convertDate(myDate)
+{
+    myDate = myDate.replace(/[-:]/g,",").replace("T",",").replace("Z","").split(",");
+  
+    var currDate = new Date();
+    currDate.setTime(Date.UTC(myDate[0],myDate[1]-1,myDate[2],myDate[3],myDate[4],myDate[5]));
+
+    return currDate.toString();
+}
+
+function platformUrl(companyName) {
+    if (_useCustomUrl) return companyName;
+
+    return companyName + ".intelligencebank.com";
+}
+
+var IntelligenceApp = React.createClass({
+    displayName: "IntelligenceApp",
+
+
+    updateState: function updateState(updateData) {
+        var newState = this.state;
+
+        for (var prop in updateData) {
+            newState[prop] = updateData[prop];
+        }
+
+        this.setState(newState);
+    },
+
+    getInitialState: function getInitialState() {
+        var csInterface = new CSInterface();
+        var appName = csInterface.hostEnvironment.appName;
+
+
+        if (appName == "PHSP" || appName == "PHXS") {
+            var extId = csInterface.getExtensionID();
+            var eventPersistent = new CSEvent("com.adobe.PhotoshopPersistent", "APPLICATION");
+            eventPersistent.extensionId = extId;
+           if(!debug) csInterface.dispatchEvent(eventPersistent);
+        }
+        
+
+        
+        var initialState = {
+            activeScreen: "Home",
+            username: "",
+            password: "",
+            company: "",
+            apiUrl: "",
+            sessionKey: "",
+            apiKey: "",
+            token:"",
+            userUuid: "",
+            folderUuid: "",
+            searchTerm: "",
+            loginError: "",
+            hostName: appName,
+            isCustomURL: false,
+            hideUnsupported:false,
+            placeOriginals:false,
+            showPlaceOptions:false,
+            showSettingsBar:false,
+            customFolder:"~/Documents/IntelligenceBankImages",
+            useCustomFolder:false
+        };
+        
+        
+        var prefsData = readPrefs();
+        if (prefsData) {
+            for (var prop in prefsData)
+                if (prefsData[prop]!=undefined) initialState[prop] = prefsData[prop];
+
+            initialState.showSettingsBar = false;
+            initialState.hideUnsupported = false;
+        }
+        
+        if(!initialState.apiUrl || !initialState.sessionKey || !initialState.apiKey || !initialState.userUuid)
+            initialState.activeScreen = "Login"; 
+      
+
+        return initialState;
+    },
+
+    logoutCallback: function logoutCallback(hours) {
+        var value = Number(hours);
+        if (!value || isNaN(value)) return;
+
+        setTimeout(this.logout, value * 60 * 60 * 1000);
+    },
+
+    logout: function logout() {
+        var newState = this.state;
+
+        newState.loginError = "Your session has expired. Please login again.";
+        newState.password = "";
+        newState.sessionKey = "";
+        newState.apiKey = "";
+        newState.userUuid = "";
+
+        savePrefs({
+            username: this.state.username,
+            company: this.state.company,
+            apiUrl:this.state.apiUrl,
+            apiKey:"",
+            sessionKey:"",
+            userUuid:"",
+            isCustomURL: this.state.isCustomURL,
+            placeOriginals:this.state.placeOriginals,
+            showPlaceOptions:this.state.showPlaceOptions,
+            hideUnsupported:this.state.hideUnsupported,
+            customFolder:this.state.customFolder,
+            useCustomFolder:this.state.useCustomFolder
+        });
+        
+        newState.activeScreen = "Login";
+        newState.showSettingsBar = false;
+        this.setState(newState);
+
+    },
+
+    render: function render() {
+
+        switch (this.state.activeScreen) {
+
+            case "Home":
+                return React.createElement(HomeScreen, {
+                    appState: this.state,
+                    updateAppState: this.updateState,
+                    logout: this.logout
+                });
+                break;
+            case "BrowserLogin":
+             
+                return React.createElement(BrowserLoginScreen, {
+                    appState: this.state,
+                    updateAppState: this.updateState
+                });
+                break;
+            case "Login":
+            default:
+
+                return React.createElement(LoginScreen, {
+                    appState: this.state,
+                    updateAppState: this.updateState,
+                    logoutCallback: this.logoutCallback
+                });
+
+        }
+    }
+});
+
+var HomeScreen = React.createClass({
+    displayName: "HomeScreen",
+
+    getInitialState: function getInitialState() {
+        return {
+            folderUuid: "",
+            documentOpened: false,
+            selectedFolderUuid: "",
+            folderName: "",
+            documentLinks: [],
+            documentName: "",
+            documentUuid: "",
+            documentSaved: false,
+            documentFolderUuid: "",
+            documentFolderPermission: {},
+
+            gridData: {
+                folder: [],
+                resource: []
+            },
+
+            searchGridData: [],
+
+            activeSearchPage: 0,
+            activeResourcePage: 0,
+            activeFolderPage: 0,
+
+            history: [],
+            activeTab: "Folder",
+            prevActiveTab: "Folder",
+
+            requestsPending: 0,
+            downloadsPending: 0,
+            downloadsHDPending: 0,
+            syncDownloadsPending: 0,
+
+            requestError: "",
+            downloadError: false,
+            downloadHDError: false,
+
+            defaultFolderSortOrder: "sortorder",
+            defaultOrder: "Custom Order"
+        };
+    },
+
+    componentDidMount: function componentDidMount() {
+        
+    
+        this.updateAllDocument();
+
+        this.increaseRequestsCounter();
+        loadFolderData(this.props.appState.apiKey, this.props.appState.userUuid, this.props.appState.sessionKey, this.props.appState.apiUrl, this.loadCallback, this.state.folderUuid, this.state.activeFolderPage);
+
+
+    },
+
+    setActivePage: function setActivePage(page) {
+        var newState = this.state;
+        switch (this.state.activeTab) {
+            case "Files":
+                this.increaseRequestsCounter();
+                newState.activeResourcePage = page;
+                loadFilesData(this.props.appState.apiKey, this.props.appState.userUuid, this.props.appState.sessionKey, this.props.appState.apiUrl, this.loadFilesCallback, this.state.folderUuid, this.state.activeResourcePage);
+                break;
+            case "Folder":
+                this.increaseRequestsCounter();
+                newState.activeFolderPage = page;
+                loadFolderData(this.props.appState.apiKey, this.props.appState.userUuid, this.props.appState.sessionKey, this.props.appState.apiUrl, this.loadCallback, this.state.folderUuid, this.state.activeFolderPage);
+                break;
+            case "Search":
+                newState.activeSearchPage = page;
+                break;
+            default:
+                break;    
+                /*
+        case "SelectDestination":
+            this.increaseRequestsCounter();
+            newState.activeFolderPage = 0;
+            loadFolderData(this.props.appState.apiKey, this.props.appState.userUuid, this.props.appState.sessionKey, this.props.appState.apiUrl, this.loadCallback, this.state.folderUuid, 0);
+            break;  
+              */
+        }
+        this.setState(newState);
+    },
+
+    tabCallback: function tabCallback(tab, afterUpload) {
+        var newState = this.state;
+        
+        
+        if (newState.activeTab != "Search")
+            newState.prevActiveTab = newState.activeTab;
+
+   
+
+        newState.activeTab = tab;
+        if (tab == "Document")
+            this.updateAllDocument(afterUpload);
+
+        if (tab == "SelectDestination") {
+            this.increaseRequestsCounter();
+            newState.activeFolderPage = 0;
+            loadFolderData(this.props.appState.apiKey, this.props.appState.userUuid, this.props.appState.sessionKey, this.props.appState.apiUrl, this.loadCallback, this.state.folderUuid, 0);
+        }
+        
+        this.props.updateAppState({showSettingsBar:false});
+        this.setState(newState);
+    },
+
+
+
+    increaseRequestsCounter: function increaseRequestsCounter(value) {
+        if (value == undefined) value = 1;
+        var newState = this.state;
+        if(!newState.requestsPending) newState.requestsPending = 0;
+        newState.requestsPending += value;
+        this.setState(newState);
+    },
+
+    decreaseRequestsCounter: function decreaseRequestsCounter(value) {
+     
+        if (value == undefined) value = 1;
+        var newState = this.state;
+        if(!newState.requestsPending) newState.requestsPending = 0;
+        newState.requestsPending -= value;
+ 
+        if (newState.requestsPending < 0) newState.requestsPending = 0;
+        this.setState(newState);
+    },
+
+    increaseDownloadsCounter: function increaseDownloadsCounter(value) {
+        if (value == undefined) value = 1;
+        var newState = this.state;
+        if(!newState.downloadsPending) newState.downloadsPending = 0;
+        newState.downloadsPending += value;
+        this.setState(newState);
+    },
+
+    increaseDownloadsHDCounter: function increaseDownloadsHDCounter(value) {
+        if (value == undefined) value = 1;
+        var newState = this.state;
+        if(!newState.downloadsHDPending) newState.downloadsHDPending = 0;
+        newState.downloadsHDPending += value;
+        this.setState(newState);
+    },
+    
+    increaseSyncDownloadsCounter: function(value) {
+        if (value == undefined) value = 1;
+        var newState = this.state;
+        if(!newState.syncDownloadsPending) newState.syncDownloadsPending = 0;
+        newState.syncDownloadsPending += value;
+        this.setState(newState);
+    },
+
+    decreaseSyncDownloadsCounter: function (value) {
+        if (value == undefined) value = 1;
+        
+        var newState = this.state;
+        if(!newState.syncDownloadsPending) newState.syncDownloadsPending = 0;
+        
+        newState.syncDownloadsPending -= value;
+        if (newState.syncDownloadsPending < 0) newState.syncDownloadsPending = 0;
+
+        
+
+        if (newState.syncDownloadsPending == 0) {
+            if (newState.downloadError) {
+                Materialize.toast('Sync not completed. Assets missing or you don\'t have permission.', 4000, 'toastFont');
+                newState.downloadError = false;
+            } else
+                Materialize.toast('The document is up to date.', 4000, 'toastFont');
+
+            this.setState(newState);
+            this.refreshDocumentInfo();
+        } else
+            this.setState(newState);
+    },
+    
+    decreaseDownloadsCounter: function decreaseDownloadsCounter(value) {
+        if (value == undefined) value = 1;
+        var newState = this.state;
+        if(!newState.downloadsPending) newState.downloadsPending = 0;
+        newState.downloadsPending -= value;
+        if (newState.downloadsPending < 0) newState.downloadsPending = 0;
+
+
+        if (newState.downloadsPending == 0) {
+            if (newState.downloadError) {
+                Materialize.toast('Some document assets could not be found online.', 4000, 'toastFont');
+                newState.downloadError = false;
+            } else
+                Materialize.toast('The document is up to date.', 4000, 'toastFont');
+
+            this.setState(newState);
+            this.refreshDocumentInfo();
+        } else
+            this.setState(newState);
+
+    },
+
+    decreaseDownloadsHDCounter: function decreaseDownloadsHDCounter(value, processName) {
+        if (value == undefined) value = 1;
+        if (!processName) processName = "Pre-package";
+        var newState = this.state;
+        if(!newState.downloadsHDPending) newState.downloadsHDPending = 0;
+        
+        newState.downloadsHDPending -= value;
+        if (newState.downloadsHDPending < 0) newState.downloadsHDPending = 0;
+
+        //  if(debug) alert("decrease hd "+processName+" "+newState.downloadsHDPending);
+
+        if (newState.downloadsHDPending == 0) {
+            if (newState.downloadHDError) {
+                Materialize.toast(processName + ' not completed. Assets missing or you don\'t have permission.', 4000, 'toastFont');
+                newState.downloadHDError = false;
+            } else
+                Materialize.toast(processName + ' completed.', 4000, 'toastFont');
+
+            this.setState(newState);
+            this.refreshDocumentInfo();
+        } else
+            this.setState(newState);
+    },
+
+    //this is called from file download functions to update info in panel
+    loadDocumentDataCallback: function loadDocumentDataCallback(data) {
+
+        this.decreaseRequestsCounter();
+
+        var newState = this.state;
+
+
+        newState.documentName = data.name;
+        newState.documentSaved = data.saved;
+        newState.documentUuid = data.fileUuid;
+        //if(data.fileUuid=="") newState.documentFolderUuid="";
+
+
+        
+        if (data.fileUuid != "")
+            this.getParentFolderForFileUUID(data.fileUuid);
+        else
+            newState.documentFolderUuid = "";
+
+        newState.documentLinks = [];
+
+
+
+        for (var fileUuid in data.links) {
+            var currData = data.links[fileUuid];
+            if (_imagesDataObj[fileUuid] && _imagesDataObj[fileUuid].deleted)
+                currData.linkData.deleted = true;
+            newState.documentLinks.push(currData.linkData);
+
+        }
+
+        this.setState(newState);
+    },
+
+    prePackageDocumentCallback: function prePackageDocumentCallback(data) {
+        //download all links as high res
+
+        //update panel view ?
+        
+        this.decreaseRequestsCounter();
+        
+        var newState = this.state;
+
+        newState.documentName = data.name;
+        newState.documentLinks = [];
+        newState.documentSaved = data.saved;
+
+        var totalDownloads = 0;
+        for (var fileUuid in data.links) {
+            var currData = data.links[fileUuid];
+            if (_imagesDataObj[fileUuid] && _imagesDataObj[fileUuid].deleted) {
+                currData.linkData.deleted = true;
+                newState.downloadHDError = true;
+            } else
+                totalDownloads++;
+
+
+                if (!_imagesDataObj[fileUuid])
+                {
+                    _imagesDataObj[fileUuid] = currData.linkData;
+                    _imagesDataObj[fileUuid].permissions = {};
+                
+                    for(var p=0;p<_imagesDataObj[fileUuid].allowedActions.length;p++)
+                        _imagesDataObj[fileUuid].permissions[_imagesDataObj[fileUuid].allowedActions[p]] = true;
+                }
+
+
+            newState.documentLinks.push(currData.linkData);
+
+        }
+
+        this.setState(newState);
+
+
+
+        if (!data.saved) {
+            myAlert("Please save document first");
+            return;
+        }
+        
+        this.increaseDownloadsHDCounter(totalDownloads);
+        
+        var originalsPath = "";//data.documentLinksPath;
+        if(this.props.appState.useCustomFolder)
+            originalsPath = this.props.appState.customFolder;
+
+        for (var fileUuid in data.links) {
+
+            if (_imagesDataObj[fileUuid] && _imagesDataObj[fileUuid].deleted)
+                continue;
+
+            var currData = data.links[fileUuid];
+            
+            //check permission!
+          //  if (_imagesDataObj[fileUuid].permissions.view)
+            placeHDFileToLinks(this.props.appState.apiKey, this.props.appState.userUuid, this.props.appState.sessionKey, this.props.appState.apiUrl, originalsPath, fileUuid, currData.linkData, currData.linkIds, this.hdFileDownloadCallback);
+           /* else
+            {
+                var newState = this.state;
+                newState.downloadHDError = true;
+                this.setState(newState);
+                this.decreaseDownloadsHDCounter();
+            }
+            */
+                //set state to error
+        }
+
+        if (totalDownloads == 0) {
+            if (this.state.downloadHDError) {
+                var newState = this.state;
+                newState.downloadHDError = false;
+                this.setState(newState);
+                Materialize.toast('Pre-package not completed. Assets missing or you don\'t have permission.', 4000, 'toastFont');
+            } else
+                Materialize.toast('Pre-package completed.', 4000, 'toastFont');
+        }
+
+
+
+    },
+
+    prePackageDocumentEmbedCallback: function prePackageDocumentEmbedCallback(data) {
+
+         this.decreaseRequestsCounter();
+         
+        var newState = this.state;
+
+
+
+        newState.documentName = data.name;
+        newState.documentLinks = [];
+        newState.documentSaved = data.saved;
+
+        var totalDownloads = 0;
+        for (var fileUuid in data.links) {
+            var currData = data.links[fileUuid];
+            if (_imagesDataObj[fileUuid] && _imagesDataObj[fileUuid].deleted) {
+                currData.linkData.deleted = true;
+                newState.downloadHDError = true;
+            } else
+                totalDownloads++;
+
+
+                if (!_imagesDataObj[fileUuid])
+                {
+                    _imagesDataObj[fileUuid] = currData.linkData;
+                    _imagesDataObj[fileUuid].permissions = {};
+                
+                    for(var p=0;p<_imagesDataObj[fileUuid].allowedActions.length;p++)
+                        _imagesDataObj[fileUuid].permissions[_imagesDataObj[fileUuid].allowedActions[p]] = true;
+                }
+
+
+            newState.documentLinks.push(currData.linkData);
+
+        }
+
+        this.setState(newState);
+
+
+
+        //        if(!data.saved) {myAlert("Please save document first"); return}
+
+
+        this.increaseDownloadsHDCounter(totalDownloads);
+        
+        var originalsPath = "";
+        if(this.props.appState.useCustomFolder)
+            originalsPath = this.props.appState.customFolder;
+
+        for (var fileUuid in data.links) {
+
+            if (_imagesDataObj[fileUuid] && _imagesDataObj[fileUuid].deleted)
+                continue;
+
+            var currData = data.links[fileUuid];
+            
+           // if (_imagesDataObj[fileUuid].permissions.view)
+            embedHDFile(this.props.appState.apiKey, this.props.appState.userUuid, this.props.appState.sessionKey, this.props.appState.apiUrl, originalsPath, fileUuid, currData.linkData, currData.linkIds, this.hdFileDownloadEmbedCallback);
+            /*
+            else
+            {
+                var newState = this.state;
+                newState.downloadHDError = true;
+                this.setState(newState);
+                this.decreaseDownloadsHDCounter();
+            }
+            */
+        }
+
+        if (totalDownloads == 0) {
+            if (this.state.downloadHDError) {
+                var newState = this.state;
+                newState.downloadHDError = false;
+                this.setState(newState);
+                Materialize.toast('Embed not completed. Assets missing or you don\'t have permission.', 4000, 'toastFont');
+            } else
+                Materialize.toast('Embed completed.', 4000, 'toastFont');
+        }
+
+
+
+    },
+    
+    
+    uploadDocumentCallback: function uploadDocumentCallback(data, updateVersion) {
+
+        this.decreaseRequestsCounter();
+        if (!data.saved) {
+            myAlert("Please save document first");
+            return;
+        }
+
+   
+        var folderUuid = this.state.selectedFolderUuid;
+        var updateResource = false;
+        
+        
+        //check if it's set 
+        if (this.state.documentFolderUuid != "") {
+            updateResource = true;
+            folderUuid = this.state.documentFolderUuid;
+        } else
+        if (this.state.selectedFolderUuid == "") {
+            Materialize.toast('No upload folder selected.', 4000, 'toastFont');
+            return;
+        }
+//!!!
+      
+
+        if (updateResource && !this.state.documentFolderPermission.admin && !this.state.documentFolderPermission.publish) {
+            Materialize.toast('You do not have permission to update this file.', 4000, 'toastFont');
+            return;
+        }
+
+        var description = data.name;
+        var filename = data.nameWithExt;
+        var title = data.name;
+        
+   
+        
+        if (_imagesDataObj[data.fileUuid])
+
+        {
+            if (_imagesDataObj[data.fileUuid].description)
+                description = _imagesDataObj[data.fileUuid].description;
+
+            if (_imagesDataObj[data.fileUuid].name)
+                title = _imagesDataObj[data.fileUuid].name;
+
+            filename = title + "." + data.extension;
+            
+            if (_imagesDataObj[data.fileUuid].file && _imagesDataObj[data.fileUuid].file.name)
+                filename = _imagesDataObj[data.fileUuid].file.name;
+        }
+
+
+        this.increaseRequestsCounter();
+        
+        uploadFile(this.props.appState.apiKey, this.props.appState.userUuid, this.props.appState.sessionKey, this.props.appState.apiUrl, data.fullName, folderUuid, data.fileUuid, filename, title, description, updateResource, updateVersion, this.uploadFinishedCallback);
+
+       
+    },
+
+    uploadFinishedCallback: function uploadFinishedCallback(data) {
+        
+   
+        this.decreaseRequestsCounter();
+        var jsonData = undefined;
+
+
+        if (data == "Upload error") {
+            Materialize.toast("Upload error.", 4000, 'toastFont');
+            this.tabCallback("Document", true);
+            return;
+        }
+
+
+        try {
+
+            jsonData = JSON.parse(data);
+          
+            if(jsonData.error)
+            {
+                Materialize.toast(jsonData.error, 4000, 'toastFont');
+                this.tabCallback("Document", true);
+                return;
+            }
+            
+            var newState = this.state;
+            newState.documentUuid = jsonData.response._id;
+            newState.documentFolderUuid = jsonData.response.folder;
+            this.setState(newState);
+
+            //save data to file!
+            setIds(newState.documentUuid, newState.documentFolderUuid, this.setIdsCallback);
+
+
+
+            //change tab to Document
+            Materialize.toast("Upload completed.", 4000, 'toastFont');
+        } catch (e) {
+            Materialize.toast("Upload error.", 4000, 'toastFont');
+            this.tabCallback("Document", true);
+        }
+
+
+
+    },
+
+    setIdsCallback: function setIdsCallback() {
+        this.tabCallback("Document", true);
+    },
+
+    updateAllDocumentCallback: function updateAllDocumentCallback(data, updateVersion, afterUpload) {
+ 
+    
+       
+        this.decreaseRequestsCounter();
+
+        var newState = this.state;
+        // myAlert(afterUpload);
+        if (data.documents == false) {
+            newState.documentName = "";
+            newState.documentUuid = "";
+            newState.documentSaved = false;
+            newState.documentLinks = [];
+            newState.documentFolderUuid = "";
+            newState.documentOpened = false;
+            if (this.state.activeTab == "Document") newState.activeTab = "Folder";
+            this.setState(newState);
+            return;
+        }
+
+        newState.documentOpened = true;
+        newState.documentName = data.name;
+        newState.documentUuid = data.fileUuid;
+        newState.documentSaved = data.saved;
+        newState.documentLinks = [];
+        if (data.fileUuid == "") newState.documentFolderUuid = "";
+
+
+        
+        //todo check
+        if (data.fileUuid != "")
+            this.getParentFolderForFileUUID(data.fileUuid);
+
+
+
+        for (var fileUuid in data.links) {
+            var currData = data.links[fileUuid];
+            if (_imagesDataObj[fileUuid] && _imagesDataObj[fileUuid].deleted) {
+                currData.linkData.deleted = true;
+                newState.downloadError = true;
+            }
+            if (!_imagesDataObj[fileUuid])
+            {
+                _imagesDataObj[fileUuid] = currData.linkData;
+                _imagesDataObj[fileUuid].permissions = {};
+                
+                for(var p=0;p<_imagesDataObj[fileUuid].allowedActions.length;p++)
+                    _imagesDataObj[fileUuid].permissions[_imagesDataObj[fileUuid].allowedActions[p]] = true;
+            }
+            newState.documentLinks.push(currData.linkData);
+
+        }
+
+        this.setState(newState);
+
+        var originalsPath = "";
+        if(this.props.appState.useCustomFolder)
+            originalsPath = this.props.appState.customFolder;
+        //run sync
+
+        if (!afterUpload && (data.links != {} || data.fileUuid != "")) {
+            this.increaseRequestsCounter();
+
+            syncRequest(this.props.appState.apiKey, this.props.appState.userUuid, this.props.appState.sessionKey, this.props.appState.apiUrl, data.links, data.fileUuid, this.syncRequestCallback, false, originalsPath);
+        }
+    },
+
+    
+    getParentFolderForFileUUID: function getParentFolderForFileUUID(fileUuid) {
+  
+        parentFolderRequest(this.props.appState.apiKey, this.props.appState.userUuid, this.props.appState.sessionKey, this.props.appState.apiUrl, fileUuid, this.getParentFolderCallback);
+    },
+
+    getParentFolderCallback: function getParentFolderCallback(data) {
+  
+        try {
+
+            //update metadata for file
+            
+                _imagesDataObj[data.body.response.rows[0]._id] = data.body.response.rows[0];
+                
+      
+                
+            //
+            var folderUuid = data.body.response.rows[0].folder;
+            var newState = this.state;
+            newState.documentFolderUuid = folderUuid;
+            
+            //!!!
+            
+            _imagesDataObj[data.body.response.rows[0]._id].permissions = {};
+            
+            for(var p=0;p<_imagesDataObj[data.body.response.rows[0]._id].allowedActions.length;p++)
+                _imagesDataObj[data.body.response.rows[0]._id].permissions[_imagesDataObj[data.body.response.rows[0]._id].allowedActions[p]] = true;
+            
+            newState.documentFolderPermission = _imagesDataObj[data.body.response.rows[0]._id].permissions;
+            
+         
+            this.setState(newState);
+
+
+
+        } catch (e) {}
+    },
+
+    syncRequestCallback: function syncRequestCallback(data) {
+        
+        this.decreaseRequestsCounter();
+        //check if logged out - for shared login, then direct to login screen
+        if (data.error && (data.error == "Invalid request" || data.error == "Invalid response" || data.error == "No valid session. Authentication is required" || data.error=="error.authentication.required"))
+        {
+            savePrefs({
+                username: this.props.appState.username,
+                company: this.props.appState.company,
+                apiUrl:this.props.appState.apiUrl,
+                apiKey:"",
+                sessionKey:"",
+                userUuid:"",
+                isCustomURL: this.props.appState.isCustomURL,
+            placeOriginals:this.props.appState.placeOriginals,
+            showPlaceOptions:this.props.appState.showPlaceOptions,
+            hideUnsupported:this.props.appState.hideUnsupported,
+            customFolder:this.props.appState.customFolder,
+            useCustomFolder:this.props.appState.useCustomFolder
+            });
+            
+            this.props.updateAppState({activeScreen:"Login",apiKey:""});
+            return;
+        }
+        
+        if (data.error) {
+            var toastMessage = data.error + ".";
+
+            if (data.error == "Timeout.")
+                toastMessage = "You are not connected to the internet.";
+
+            Materialize.toast(toastMessage, 4000, 'toastFont');
+            return;
+        }
+
+        var res = data.body.response;
+
+        var updateUuid = [];
+
+        var syncInfo = {};
+
+        for (var i = 0; i < res.rows.length; i++) {
+            var currData = res.rows[i];
+            syncInfo[currData._id] = currData;
+        }
+
+
+        var requiresPanelUpdateFlag = false;
+        var newState = this.state;
+        var totalDownloads = 0;
+        for (var uuid in data.links) {
+            if (!syncInfo[uuid] || syncInfo[uuid].status == "deleted") {
+                _imagesDataObj[uuid].isEmbedded = false;
+
+                if (data.links[uuid].status != "NORMAL" && data.links[uuid].status != "EMBEDDED")
+                    _imagesDataObj[uuid].isPreview = true;
+
+                if (data.links[uuid].status == "EMBEDDED") _imagesDataObj[uuid].isEmbedded = true;
+                newState.downloadError = true;
+
+                _imagesDataObj[uuid].deleted = true;
+                requiresPanelUpdateFlag = true;
+                continue;
+            }
+
+            _imagesDataObj[uuid] = syncInfo[uuid];
+            
+        
+                _imagesDataObj[uuid].permissions = {};
+                
+                for(var p=0;p<_imagesDataObj[uuid].allowedActions.length;p++)
+                    _imagesDataObj[uuid].permissions[_imagesDataObj[uuid].allowedActions[p]] = true;
+            
+
+            if (data.links[uuid].updatedat != syncInfo[uuid].lastUpdateTime || (data.links[uuid].status != "NORMAL" && data.links[uuid].status != "EMBEDDED"))
+                totalDownloads++;
+        }
+
+        if(this.state.documentUuid)
+        {
+        var folderUuid = syncInfo[this.state.documentUuid].folderPath[syncInfo[this.state.documentUuid].folderPath.length-1]._id;
+
+        newState.documentFolderUuid = folderUuid;
+        
+        
+        //permissions - file perms here? folder perms in other cases
+        newState.documentFolderPermission = {};
+        var perm = syncInfo[this.state.documentUuid]; 
+        for(var p=0;p<perm.allowedActions.length;p++)
+            newState.documentFolderPermission[perm.allowedActions[p]] = true;
+        
+        
+        }
+
+
+
+        this.setState(newState);
+
+if (this.props.appState.placeOriginals)
+        this.increaseSyncDownloadsCounter(totalDownloads);
+    else
+        this.increaseDownloadsCounter(totalDownloads);
+    
+    var originalsPath = "";//data.documentLinksPath;
+    if(this.props.appState.useCustomFolder)
+        originalsPath = this.props.appState.customFolder;
+
+   
+        for (var uuid in data.links) {
+
+
+            if (!syncInfo[uuid] || syncInfo[uuid].status == "deleted")
+            {
+                
+                
+                if (this.props.appState.placeOriginals)
+                    this.decreaseSyncDownloadsCounter(); 
+                    else
+                this.decreaseDownloadsCounter();
+                continue;
+            }
+            
+            if (data.links[uuid].updatedat != syncInfo[uuid].lastUpdateTime || (data.links[uuid].status != "NORMAL" && data.links[uuid].status != "EMBEDDED")) {
+                if (this.props.appState.placeOriginals)
+                {
+                placeHDFileToLinks(this.props.appState.apiKey, this.props.appState.userUuid, this.props.appState.sessionKey, this.props.appState.apiUrl, originalsPath, uuid, data.links[uuid].linkData, data.links[uuid].linkIds, this.hdFileDownloadSyncCallback);
+                //this.increaseDownloadsHDCounter();
+                }
+                else
+                {
+                placePreviewFileToLinks(this.props.appState.apiKey, this.props.appState.userUuid, this.props.appState.sessionKey, this.props.appState.apiUrl, uuid, data.links[uuid].linkIds, this.previewFileDownloadCallback);
+                //this.increaseDownloadsCounter();
+                }
+            }
+        }
+
+
+        if (requiresPanelUpdateFlag)
+            this.refreshDocumentInfo();
+
+        if (totalDownloads == 0) {
+            if (this.state.downloadError) {
+                var newState = this.state;
+                newState.downloadError = false;
+                this.setState(newState);
+                Materialize.toast('Some document assets could not be found online.', 4000, 'toastFont');
+            } else
+                Materialize.toast('The document is up to date', 4000, 'toastFont');
+        }
+
+    },
+
+
+
+    //load folder info callback
+    loadCallback: function loadCallback(data) {
+
+        this.decreaseRequestsCounter();
+        //check if logged out - for shared login, then direct to login screen
+        if (data.error && (data.error == "Invalid request" || data.error == "Invalid response" || data.error == "No valid session. Authentication is required" || data.error=="error.authentication.required"))
+        {
+            savePrefs({
+                username: this.props.appState.username,
+                company: this.props.appState.company,
+                apiUrl:this.props.appState.apiUrl,
+                apiKey:"",
+                sessionKey:"",
+                userUuid:"",
+                isCustomURL: this.props.appState.isCustomURL,
+            placeOriginals:this.props.appState.placeOriginals,
+            showPlaceOptions:this.props.appState.showPlaceOptions,
+            hideUnsupported:this.props.appState.hideUnsupported,
+            customFolder:this.props.appState.customFolder,
+            useCustomFolder:this.props.appState.useCustomFolder
+            });
+            
+            this.props.updateAppState({activeScreen:"Login",apiKey:""});
+            return;
+        }
+        
+        if (data.error) {
+             
+            var toastMessage = data.error + ".";
+
+            if (data.error.indexOf("Timeout")==0)
+                toastMessage = "You are not connected to the internet.";
+
+            Materialize.toast(toastMessage, 4000, 'toastFont');
+            return;
+        }
+
+
+
+        var newState = this.state;
+        var response = data.body.response;
+
+
+        newState.gridData.folder = response.rows;
+        
+        if(this.state.folderUuid=="")
+        _folderInfo["root"]={
+            folders:response.count
+        };
+        
+        for(var i=0;i<response.rows.length;i++)
+        {
+            var currRow = response.rows[i];
+            _folderInfo[currRow._id]={
+                folders:currRow.folders_count,
+                resources:currRow.resources_count
+            };
+        }
+        this.setState(newState);
+
+
+    },
+
+    //load files info callback
+    loadFilesCallback: function loadFilesCallback(data) {
+
+        this.decreaseRequestsCounter();
+        //check if logged out - for shared login, then direct to login screen
+        if (data.error && (data.error == "Invalid request" || data.error == "Invalid response"))
+        {
+            savePrefs({
+                username: this.props.appState.username,
+                company: this.props.appState.company,
+                apiUrl:this.props.appState.apiUrl,
+                apiKey:"",
+                sessionKey:"",
+                userUuid:"",
+                isCustomURL: this.props.appState.isCustomURL,
+            placeOriginals:this.props.appState.placeOriginals,
+            showPlaceOptions:this.props.appState.showPlaceOptions,
+            hideUnsupported:this.props.appState.hideUnsupported,
+            customFolder:this.props.appState.customFolder,
+            useCustomFolder:this.props.appState.useCustomFolder
+            });
+            
+            this.props.updateAppState({activeScreen:"Login",apiKey:""});
+            return;
+        }
+        
+        if (data.error) {
+          
+            var toastMessage = data.error + ".";
+
+            if (data.error.indexOf("Timeout")==0)
+                toastMessage = "You are not connected to the internet.";
+
+            Materialize.toast(toastMessage, 4000, 'toastFont');
+            return;
+        }
+
+
+
+        var newState = this.state;
+        var response = data.body.response;
+
+
+        newState.gridData.resource = response.rows;
+
+
+        for (var i = 0; i < response.rows.length; i++) {
+            _imagesDataObj[response.rows[i]._id] = response.rows[i];
+            
+         
+                _imagesDataObj[response.rows[i]._id].permissions = {};
+                
+                for(var p=0;p<_imagesDataObj[response.rows[i]._id].allowedActions.length;p++)
+                    _imagesDataObj[response.rows[i]._id].permissions[_imagesDataObj[response.rows[i]._id].allowedActions[p]] = true;
+            
+            
+        }
+
+
+        this.setState(newState);
+
+
+    },
+
+
+    searchCallback: function searchCallback(data) {
+
+        this.decreaseRequestsCounter();
+      
+        //check if logged out - for shared login, then direct to login screen
+        if (data.error && (data.error == "Invalid request" || data.error == "Invalid response" || data.error == "No valid session. Authentication is required" || data.error=="error.authentication.required"))
+        {
+            savePrefs({
+                username: this.props.appState.username,
+                company: this.props.appState.company,
+                apiUrl:this.props.appState.apiUrl,
+                apiKey:"",
+                sessionKey:"",
+                userUuid:"",
+                isCustomURL: this.props.appState.isCustomURL,
+            placeOriginals:this.props.appState.placeOriginals,
+            showPlaceOptions:this.props.appState.showPlaceOptions,
+            hideUnsupported:this.props.appState.hideUnsupported,
+            customFolder:this.props.appState.customFolder,
+            useCustomFolder:this.props.appState.useCustomFolder
+            });
+            
+            this.props.updateAppState({activeScreen:"Login",apiKey:""});
+            return;
+        }
+        
+        if (data.error) {
+            var toastMessage = data.error + ".";
+
+            if (data.error == "Timeout.")
+                toastMessage = "You are not connected to the internet.";
+
+            Materialize.toast(toastMessage, 4000, 'toastFont');
+            return;
+        }
+
+
+        var newState = this.state;
+        var response = data.body.response;
+        newState.searchGridData = response.rows;
+        newState.activeSearchPage = 0;
+        //newState.activeTab = "Search";
+
+
+    
+            for (var i = 0; i < response.rows.length; i++) {
+                _imagesDataObj[response.rows[i]._id] = response.rows[i];
+                
+                _imagesDataObj[response.rows[i]._id].permissions = {};
+                
+                for(var p=0;p<_imagesDataObj[response.rows[i]._id].allowedActions.length;p++)
+                    _imagesDataObj[response.rows[i]._id].permissions[_imagesDataObj[response.rows[i]._id].allowedActions[p]] = true;
+            
+            
+            }
+      
+
+        this.setState(newState);
+    },
+
+    //called when file is placed from panel to layout
+    placePreviewCallback: function placePreviewCallback(data) {
+
+
+
+        this.decreaseRequestsCounter();
+        
+        //check if logged out - for shared login, then direct to login screen
+        if (data.error && (data.error == "Invalid request" || data.error == "Invalid response" || data.error == "No valid session. Authentication is required" || data.error=="error.authentication.required"))
+        {
+            savePrefs({
+                username: this.props.appState.username,
+                company: this.props.appState.company,
+                apiUrl:this.props.appState.apiUrl,
+                apiKey:"",
+                sessionKey:"",
+                userUuid:"",
+                isCustomURL: this.props.appState.isCustomURL,
+            placeOriginals:this.props.appState.placeOriginals,
+            showPlaceOptions:this.props.appState.showPlaceOptions,
+            hideUnsupported:this.props.appState.hideUnsupported,
+            customFolder:this.props.appState.customFolder,
+            useCustomFolder:this.props.appState.useCustomFolder
+            });
+            
+            this.props.updateAppState({activeScreen:"Login",apiKey:""});
+            return;
+        }
+
+        if (data.error) {
+            var toastMessage = data.error + ".";
+
+            if (data.error == "Timeout.")
+                toastMessage = "You are not connected to the internet.";
+
+            Materialize.toast(toastMessage, 4000, 'toastFont');
+            return;
+        }
+
+        //update link info and refresh info
+        var newState = this.state;
+        _imagesDataObj[data.uuid].isPreview = true;
+
+        //check if the file is already placed
+        var newLinkInfo = [];
+        newLinkInfo.push(_imagesDataObj[data.uuid]);
+
+        for (var u = 0; u < newState.documentLinks.length; u++)
+            if (newState.documentLinks[u].fileUuid != data.uuid)
+                newLinkInfo.push(newState.documentLinks[u]);
+
+
+
+        newState.documentLinks = newLinkInfo;
+        this.setState(newState);
+
+        //place file
+        placeImageToLayout(data.filePath, data.uuid, _imagesDataObj[data.uuid], this.refreshDocumentInfo,this.props.appState.showPlaceOptions);
+
+    },
+    
+    //called when file is placed from panel to layout
+    placeHDCallback: function placeHDCallback(data) {
+
+
+
+        this.decreaseRequestsCounter();
+        
+        //check if logged out - for shared login, then direct to login screen
+        if (data.error && (data.error == "Invalid request" || data.error == "Invalid response" || data.error == "No valid session. Authentication is required" || data.error=="error.authentication.required"))
+        {
+            savePrefs({
+                username: this.props.appState.username,
+                company: this.props.appState.company,
+                apiUrl:this.props.appState.apiUrl,
+                apiKey:"",
+                sessionKey:"",
+                userUuid:"",
+                isCustomURL: this.props.appState.isCustomURL,
+            placeOriginals:this.props.appState.placeOriginals,
+            showPlaceOptions:this.props.appState.showPlaceOptions,
+            hideUnsupported:this.props.appState.hideUnsupported,
+            customFolder:this.props.appState.customFolder,
+            useCustomFolder:this.props.appState.useCustomFolder
+            });
+            
+            this.props.updateAppState({activeScreen:"Login",apiKey:""});
+            return;
+        }
+
+
+        if (data.error) {
+            var toastMessage = data.error + ".";
+
+            if (data.error == "Timeout.")
+                toastMessage = "You are not connected to the internet.";
+
+            var errStyle = 'toastFont';
+            if (data.error == "Missing local permission to create the destination Folder")
+                errStyle = 'toastError';
+            
+            Materialize.toast(toastMessage, 4000, errStyle);
+            return;
+        }
+
+        //update link info and refresh info
+        var newState = this.state;
+        _imagesDataObj[data.uuid].isPreview = false;
+
+        //check if the file is already placed
+        var newLinkInfo = [];
+        newLinkInfo.push(_imagesDataObj[data.uuid]);
+
+        for (var u = 0; u < newState.documentLinks.length; u++)
+            if (newState.documentLinks[u].fileUuid != data.uuid)
+                newLinkInfo.push(newState.documentLinks[u]);
+
+
+
+        newState.documentLinks = newLinkInfo;
+        this.setState(newState);
+
+        //place file
+        placeImageToLayout(data.filePath, data.uuid, _imagesDataObj[data.uuid], this.refreshDocumentInfo,this.props.appState.showPlaceOptions);
+
+    },
+
+    openFileCallback: function openFileCallback(data) {
+
+
+        this.decreaseRequestsCounter();
+        
+        //check if logged out - for shared login, then direct to login screen
+        if (data.error && (data.error == "Invalid request" || data.error == "Invalid response" || data.error == "No valid session. Authentication is required" || data.error=="error.authentication.required"))
+        {
+            savePrefs({
+                username: this.props.appState.username,
+                company: this.props.appState.company,
+                apiUrl:this.props.appState.apiUrl,
+                apiKey:"",
+                sessionKey:"",
+                userUuid:"",
+                isCustomURL: this.props.appState.isCustomURL,
+            placeOriginals:this.props.appState.placeOriginals,
+            showPlaceOptions:this.props.appState.showPlaceOptions,
+            hideUnsupported:this.props.appState.hideUnsupported,
+            customFolder:this.props.appState.customFolder,
+            useCustomFolder:this.props.appState.useCustomFolder
+            });
+            
+            this.props.updateAppState({activeScreen:"Login",apiKey:""});
+            return;
+        }
+
+
+        if (data.error) {
+            var toastMessage = data.error + ".";
+
+            if (data.error == "Timeout.")
+                toastMessage = "You are not connected to the internet.";
+
+            
+            var errStyle = 'toastFont';
+            if (data.error == "Missing local permission to create the destination Folder")
+                errStyle = 'toastError';
+            
+            Materialize.toast(toastMessage, 4000, errStyle);
+            return;
+        }
+
+        //update link info and refresh info
+        var newState = this.state;
+        _imagesDataObj[data.uuid].isPreview = false;
+
+        //check if the file is already placed
+        /*
+         var newLinkInfo = [];
+         newLinkInfo.push(_imagesDataObj[data.uuid]);
+         
+         for(var u=0;u<newState.documentLinks.length;u++)
+             if(newState.documentLinks[u].fileUuid!=data.uuid)
+                 newLinkInfo.push(newState.documentLinks[u]);
+             
+         
+         
+         newState.documentLinks = newLinkInfo;
+		 
+         this.setState(newState);
+         */
+        //place file
+        _imagesDataObj[data.uuid].folderUuid = this.state.folderUuid;
+        openImageAsLayout(data.filePath, data.uuid, _imagesDataObj[data.uuid], this.refreshDocumentInfo);
+
+    },
+
+    hdFileDownloadCallback: function hdFileDownloadCallback(data) {
+
+
+
+        this.decreaseDownloadsHDCounter();
+        
+        //check if logged out - for shared login, then direct to login screen
+        if (data.error && (data.error == "Invalid request" || data.error == "Invalid response" || data.error == "No valid session. Authentication is required" || data.error=="error.authentication.required"))
+        {
+            savePrefs({
+                username: this.props.appState.username,
+                company: this.props.appState.company,
+                apiUrl:this.props.appState.apiUrl,
+                apiKey:"",
+                sessionKey:"",
+                userUuid:"",
+                isCustomURL: this.props.appState.isCustomURL,
+            placeOriginals:this.props.appState.placeOriginals,
+            showPlaceOptions:this.props.appState.showPlaceOptions,
+            hideUnsupported:this.props.appState.hideUnsupported,
+            customFolder:this.props.appState.customFolder,
+            useCustomFolder:this.props.appState.useCustomFolder
+            });
+            
+            this.props.updateAppState({activeScreen:"Login",apiKey:""});
+            return;
+        }
+
+        if (data.error) {
+            var toastMessage = data.error + ".";
+            var newState = this.state;
+            newState.downloadHDError = true;
+            this.setState(newState);
+            if (data.error == "Timeout.")
+                toastMessage = "You are not connected to the internet.";
+
+            var errStyle = 'toastFont';
+            if (data.error == "Missing local permission to create the destination Folder")
+                errStyle = 'toastError';
+            
+            Materialize.toast(toastMessage, 4000, errStyle);
+            return;
+        }
+
+        //update link info and refresh info
+        var newState = this.state;
+        _imagesDataObj[data.uuid].isPreview = false;
+        //  _imagesDataObj[data.uuid].isEmbedded = false;
+
+        //check if the file is already placed
+        var newLinkInfo = [];
+        newLinkInfo.push(_imagesDataObj[data.uuid]);
+
+        for (var u = 0; u < newState.documentLinks.length; u++)
+            if (newState.documentLinks[u].fileUuid != data.uuid)
+                newLinkInfo.push(newState.documentLinks[u]);
+
+
+
+        newState.documentLinks = newLinkInfo;
+        this.setState(newState);
+
+        //place file
+
+        updateLinks(data.filePath, _imagesDataObj[data.uuid], data.linkIds, this.refreshDocumentInfo);
+
+
+    },
+    
+    hdFileDownloadSyncCallback: function (data) {
+
+
+
+        this.decreaseSyncDownloadsCounter();
+        
+        //check if logged out - for shared login, then direct to login screen
+        if (data.error && (data.error == "Invalid request" || data.error == "Invalid response" || data.error == "No valid session. Authentication is required" || data.error=="error.authentication.required"))
+        {
+            savePrefs({
+                username: this.props.appState.username,
+                company: this.props.appState.company,
+                apiUrl:this.props.appState.apiUrl,
+                apiKey:"",
+                sessionKey:"",
+                userUuid:"",
+                isCustomURL: this.props.appState.isCustomURL,
+            placeOriginals:this.props.appState.placeOriginals,
+            showPlaceOptions:this.props.appState.showPlaceOptions,
+            hideUnsupported:this.props.appState.hideUnsupported,
+            customFolder:this.props.appState.customFolder,
+            useCustomFolder:this.props.appState.useCustomFolder
+            });
+            
+            this.props.updateAppState({activeScreen:"Login",apiKey:""});
+            return;
+        }
+
+        if (data.error) {
+            var toastMessage = data.error + ".";
+            var newState = this.state;
+            newState.downloadHDError = true;
+            this.setState(newState);
+            if (data.error == "Timeout.")
+                toastMessage = "You are not connected to the internet.";
+
+            var errStyle = 'toastFont';
+            if (data.error == "Missing local permission to create the destination Folder")
+                errStyle = 'toastError';
+            
+            Materialize.toast(toastMessage, 4000, errStyle);
+            return;
+        }
+
+        //update link info and refresh info
+        var newState = this.state;
+        _imagesDataObj[data.uuid].isPreview = false;
+        //  _imagesDataObj[data.uuid].isEmbedded = false;
+
+        //check if the file is already placed
+        var newLinkInfo = [];
+        newLinkInfo.push(_imagesDataObj[data.uuid]);
+
+        for (var u = 0; u < newState.documentLinks.length; u++)
+            if (newState.documentLinks[u].fileUuid != data.uuid)
+                newLinkInfo.push(newState.documentLinks[u]);
+
+
+
+        newState.documentLinks = newLinkInfo;
+        this.setState(newState);
+
+        //place file
+
+        updateLinks(data.filePath, _imagesDataObj[data.uuid], data.linkIds, this.refreshDocumentInfo);
+
+
+    },
+
+    hdFileDownloadEmbedCallback: function hdFileDownloadEmbedCallback(data) {
+
+
+        this.decreaseDownloadsHDCounter(1, "Embed");
+        
+        //check if logged out - for shared login, then direct to login screen
+        if (data.error && (data.error == "Invalid request" || data.error == "Invalid response" || data.error == "No valid session. Authentication is required" || data.error=="error.authentication.required"))
+        {
+            savePrefs({
+                username: this.props.appState.username,
+                company: this.props.appState.company,
+                apiUrl:this.props.appState.apiUrl,
+                apiKey:"",
+                sessionKey:"",
+                userUuid:"",
+                isCustomURL: this.props.appState.isCustomURL,
+            placeOriginals:this.props.appState.placeOriginals,
+            showPlaceOptions:this.props.appState.showPlaceOptions,
+            hideUnsupported:this.props.appState.hideUnsupported,
+            customFolder:this.props.appState.customFolder,
+            useCustomFolder:this.props.appState.useCustomFolder
+            });
+            
+            this.props.updateAppState({activeScreen:"Login",apiKey:""});
+            return;
+        }
+
+        if (data.error) {
+            
+            var toastMessage = data.error + ".";
+            var newState = this.state;
+            newState.downloadHDError = true;
+            this.setState(newState);
+            if (data.error == "Timeout.")
+                toastMessage = "You are not connected to the internet.";
+
+            var errStyle = 'toastFont';
+            if (data.error == "Missing local permission to create the destination Folder")
+                errStyle = 'toastError';
+            
+            Materialize.toast(toastMessage, 4000, errStyle);
+            return;
+        }
+
+        //update link info and refresh info
+        var newState = this.state;
+        _imagesDataObj[data.uuid].isPreview = false;
+        // _imagesDataObj[data.uuid].isEmbedded = true;
+
+        //check if the file is already placed
+        var newLinkInfo = [];
+        newLinkInfo.push(_imagesDataObj[data.uuid]);
+
+        for (var u = 0; u < newState.documentLinks.length; u++)
+            if (newState.documentLinks[u].fileUuid != data.uuid)
+                newLinkInfo.push(newState.documentLinks[u]);
+
+
+
+        newState.documentLinks = newLinkInfo;
+        this.setState(newState);
+
+        //place file
+        updateLinksEmbed(data.filePath, _imagesDataObj[data.uuid], data.linkIds, this.refreshDocumentInfo);
+
+
+    },
+
+    previewFileDownloadCallback: function previewFileDownloadCallback(data) {
+
+
+        this.decreaseDownloadsCounter();
+        
+        //check if logged out - for shared login, then direct to login screen
+        if (data.error && (data.error == "Invalid request" || data.error == "Invalid response" || data.error == "No valid session. Authentication is required" || data.error=="error.authentication.required"))
+        {
+            savePrefs({
+                username: this.props.appState.username,
+                company: this.props.appState.company,
+                apiUrl:this.props.appState.apiUrl,
+                apiKey:"",
+                sessionKey:"",
+                userUuid:"",
+                isCustomURL: this.props.appState.isCustomURL,
+            placeOriginals:this.props.appState.placeOriginals,
+            showPlaceOptions:this.props.appState.showPlaceOptions,
+            hideUnsupported:this.props.appState.hideUnsupported,
+            customFolder:this.props.appState.customFolder,
+            useCustomFolder:this.props.appState.useCustomFolder
+            });
+            
+            this.props.updateAppState({activeScreen:"Login",apiKey:""});
+            return;
+        }
+
+        if (data.error) {
+            var toastMessage = data.error + ".";
+            var newState = this.state;
+            newState.downloadError = true;
+            this.setState(newState);
+            if (data.error == "Timeout.")
+                toastMessage = "You are not connected to the internet.";
+
+            Materialize.toast(toastMessage, 4000, 'toastFont');
+            return;
+        }
+
+        //update link info and refresh info
+        var newState = this.state;
+        _imagesDataObj[data.uuid].isPreview = true;
+
+        //check if the file is already placed
+        var newLinkInfo = [];
+        newLinkInfo.push(_imagesDataObj[data.uuid]);
+
+        for (var u = 0; u < newState.documentLinks.length; u++)
+            if (newState.documentLinks[u].fileUuid != data.uuid)
+                newLinkInfo.push(newState.documentLinks[u]);
+
+
+
+        newState.documentLinks = newLinkInfo;
+        this.setState(newState);
+
+        //place file
+        updateLinks(data.filePath, _imagesDataObj[data.uuid], data.linkIds, this.refreshDocumentInfo);
+
+    },
+
+
+    refreshDocumentInfo: function refreshDocumentInfo() {
+        //if((this.state.requestsPending+this.state.downloadsPending+this.state.downloadsHDPending)>0) return;
+        //Materialize.toast('refresh', 4000, 'toastFont'); 
+        this.increaseRequestsCounter();
+        loadDocumentData(this.loadDocumentDataCallback);
+    },
+
+
+
+    prePackageDocument: function prePackageDocument() {
+        if ((this.state.requestsPending + this.state.downloadsPending + this.state.downloadsHDPending) > 0) return;
+        
+        this.increaseRequestsCounter();
+        loadDocumentData(this.prePackageDocumentCallback);
+    },
+
+    prePackageDocumentEmbed: function prePackageDocumentEmbed() {
+        if ((this.state.requestsPending + this.state.downloadsPending + this.state.downloadsHDPending) > 0) return;
+        
+        this.increaseRequestsCounter();
+        loadDocumentData(this.prePackageDocumentEmbedCallback);
+    },
+
+    updateAllDocument: function updateAllDocument(afterUpload) {
+        // if((this.state.requestsPending+this.state.downloadsPending+this.state.downloadsHDPending)>0) return;
+       
+        
+        this.increaseRequestsCounter();
+        loadDocumentData(this.updateAllDocumentCallback, undefined, afterUpload);
+
+    },
+
+    uploadDocument: function uploadDocument(updateVersion) {
+        //        if((this.state.requestsPending+this.state.downloadsPending+this.state.downloadsHDPending)>0) return;
+        this.increaseRequestsCounter();
+        loadDocumentData(this.uploadDocumentCallback, updateVersion);
+    },
+
+    search: function search(searchTerm) {
+        if (searchTerm == "") return;
+        this.increaseRequestsCounter();
+        loadSearchData(this.props.appState.apiKey, this.props.appState.userUuid, this.props.appState.sessionKey, this.props.appState.apiUrl, this.searchCallback, searchTerm, this.state.folderUuid);
+    },
+
+    openFolder: function openFolder(folderUuid, folderName, foldersLength, resourcesLength, defaultOrder) {
+ 
+        if(!foldersLength && !resourcesLength) return;
+
+        var newState = this.state;
+        var newHistory = newState.history;
+
+        newState.gridData.folder = [];
+        newState.gridData.resource = [];
+
+
+
+        newHistory.push({
+            folderUuid: this.state.folderUuid,
+            folderName: this.state.folderName,
+            activeResourcePage: this.state.activeResourcePage,
+            activeFolderPage: this.state.activeFolderPage,
+            activeTab:this.state.activeTab
+        });
+        newState.history = newHistory;
+        newState.folderUuid = folderUuid;
+        newState.folderName = folderName;
+      //  newState.defaultOrder = defaultOrder;
+
+        newState.activeResourcePage = 0;
+        newState.activeFolderPage = 0;
+        if(resourcesLength)
+            newState.activeTab = "Files";
+        else
+           newState.activeTab = "Folder"; 
+        this.setState(newState);
+       
+        if(foldersLength)
+        {
+        this.increaseRequestsCounter();
+        loadFolderData(this.props.appState.apiKey, this.props.appState.userUuid, this.props.appState.sessionKey, this.props.appState.apiUrl, this.loadCallback, folderUuid, this.state.activeFolderPage);
+        }
+        
+        if(resourcesLength)
+        {
+        this.increaseRequestsCounter();
+        loadFilesData(this.props.appState.apiKey, this.props.appState.userUuid, this.props.appState.sessionKey, this.props.appState.apiUrl, this.loadFilesCallback, folderUuid, this.state.activeResourcePage);
+        }
+       
+
+    },
+
+    openSelectFolder: function openSelectFolder(folderUuid, folderName, defaultOrder) {
+        var newState = this.state;
+        var newHistory = newState.history;
+
+        newState.gridData.folder = [];
+        newState.gridData.resource = [];
+
+        newHistory.push({
+            folderUuid: this.state.folderUuid,
+            folderName: this.state.folderName
+        });
+
+        newState.history = newHistory;
+        newState.folderUuid = folderUuid;
+        newState.folderName = folderName;
+        newState.defaultOrder = defaultOrder;
+
+        newState.activeResourcePage = 0;
+        newState.activeFolderPage = 0;
+        newState.activeTab = "SelectDestination";
+
+        this.setState(newState);
+
+        this.increaseRequestsCounter();
+        loadFolderData(this.props.appState.apiKey, this.props.appState.userUuid, this.props.appState.sessionKey, this.props.appState.apiUrl, this.loadCallback, folderUuid, 0, defaultOrder);
+    },
+
+
+    selectFolder: function selectFolder(folderUuid) {
+
+        var newState = this.state;
+        newState.selectedFolderUuid = folderUuid;
+        this.setState(newState);
+    },
+
+    placeFile: function placeFile(fileUuid) {
+        
+        placeFileCheck(fileUuid, this.placeFileChecked);
+    },
+
+    openFile: function openFile(fileUuid) {
+        openFileCheck(fileUuid, this.openFileChecked);
+    },
+
+    placeFileChecked: function placeFileChecked(response) {
+        if (response == "false") {
+            var toastMessage = "You do not have any open document to place the asset into.";
+            Materialize.toast(toastMessage, 4000, 'toastFont');
+            return;
+        }
+   
+        var fileUuid = response;
+        this.increaseRequestsCounter();
+        
+        var originalsPath = "";
+        if(this.props.appState.useCustomFolder)
+            originalsPath = this.props.appState.customFolder;
+      
+        if (this.props.appState.placeOriginals/* && _imagesDataObj[fileUuid].permissions.view*/)
+        placeHDFile(this.props.appState.apiKey, this.props.appState.userUuid, this.props.appState.sessionKey, this.props.appState.apiUrl, fileUuid, this.placeHDCallback, originalsPath);
+        else
+        {
+        placePreviewFile(this.props.appState.apiKey, this.props.appState.userUuid, this.props.appState.sessionKey, this.props.appState.apiUrl, fileUuid, this.placePreviewCallback);
+        }
+    },
+
+    openFileChecked: function openFileChecked(response) {
+        if (response == "false") {
+            
+            var toastMessage = "This asset is already opened. Close it first and try again.";
+            Materialize.toast(toastMessage, 4000, 'toastError');
+            return;
+        }
+
+        var originalsPath = "";
+        if(this.props.appState.useCustomFolder)
+            originalsPath = this.props.appState.customFolder;
+        
+        var fileUuid = response;
+        this.increaseRequestsCounter();
+        openHDFile(this.props.appState.apiKey, this.props.appState.userUuid, this.props.appState.sessionKey, this.props.appState.apiUrl, fileUuid, this.openFileCallback, originalsPath);
+    },
+
+    selectDestination: function selectDestination() {
+        var newState = this.state;
+
+        newState.folderUuid = "";
+        newState.documentFolderUuid = ""; //TODO - to disable update if it's called from 'Upload as New' 
+        newState.folderName = "";
+        newState.activeResourcePage = 0;
+        newState.activeFolderPage = 0;
+        this.setState(newState);
+
+        this.increaseRequestsCounter();
+        loadFolderData(this.props.appState.apiKey, this.props.appState.userUuid, this.props.appState.sessionKey, this.props.appState.apiUrl, this.loadCallback, newState.folderUuid, 0);
+
+        this.tabCallback("SelectDestination");
+    },
+
+    back: function back(home) {
+        
+        try{
+        var newState = this.state;
+        
+
+        var newHistory = newState.history;
+        
+        if (newState.activeTab != "SelectDestination")
+            newState.activeTab = "Folder";
+        
+      
+
+        if (home) {
+            newHistory = [];
+            newState.folderUuid = "";
+            newState.folderName = "";
+            newState.activeResourcePage = 0;
+            newState.activeFolderPage = 0;
+        } else
+        if (newHistory.length) {
+            var historyObj = newHistory.pop();
+            newState.folderUuid = historyObj.folderUuid;
+            newState.folderName = historyObj.folderName;
+            newState.activeFolderPage = historyObj.activeFolderPage;
+            newState.activeResourcePage = historyObj.activeResourcePage;
+            if (newHistory.length && newState.activeTab != "SelectDestination")
+                newState.activeTab = historyObj.activeTab;
+        }
+
+        newState.history = newHistory;
+
+        newState.gridData.folder = [];
+        newState.gridData.resource = [];
+
+        this.setState(newState);
+        
+        this.increaseRequestsCounter();
+        
+        if(!historyObj || historyObj.activeTab=="Folder")
+        loadFolderData(this.props.appState.apiKey, this.props.appState.userUuid, this.props.appState.sessionKey, this.props.appState.apiUrl, this.loadCallback, newState.folderUuid, this.state.activeFolderPage);
+        else
+        if(historyObj.activeTab=="Files")
+            loadFilesData(this.props.appState.apiKey, this.props.appState.userUuid, this.props.appState.sessionKey, this.props.appState.apiUrl, this.loadFilesCallback, newState.folderUuid, this.state.activeFolderPage);
+    }catch(e){
+    //    alert(e+":"+e.line)
+    }
+
+    },
+    
+    toggleSettingsBar:function toggleSettingsBar()
+    {
+        this.props.updateAppState({showSettingsBar:!this.props.appState.showSettingsBar});
+    },
+
+    render: function render() {
+
+        var selectFolderCells = [];
+
+        if (this.state.activeTab == "SelectDestination") {
+            var foldersData = this.state.gridData.folder;
+            var startIndex = 0;
+            var endIndex = foldersData.length;
+            
+            
+            
+            for (var i = startIndex; i < endIndex; i++) {
+                var currFolder = foldersData[i];
+                
+                var perms = {};
+                for(var j=0;j<currFolder.allowedActions.length;j++)
+                    perms[currFolder.allowedActions[j]]=true;
+                
+                selectFolderCells.push(React.createElement(SelectFolderCard, {
+                    // image: "https://"+this.props.appState.apiUrl+"/webapp/1.0/icon?p60=0db17b942ed391096168f41f90051acc&p10=" + this.props.appState.apiKey + "&p20=" + this.props.appState.userUuid + "&type=folder&name=" + currFolder.folderuuid,
+                    image: currFolder.thumbnail,
+                    uuid: currFolder._id,
+                    name: currFolder.name,
+                    folders: currFolder.folders_count,
+                    images: currFolder.resources_count,
+                    key: currFolder._id,
+                    perm: perms,
+                    openFolder: this.openSelectFolder,
+                    selectFolder: this.selectFolder,
+                    selectedFolderUuid: this.state.selectedFolderUuid
+                }));
+            }
+        }
+
+        var folderCells = [];
+
+        if (this.state.activeTab == "Folder") {
+            var foldersData = this.state.gridData.folder;
+
+            var startIndex = 0;
+            var endIndex = foldersData.length;
+            
+            
+
+            if (foldersData.length > _totalPageItems) {
+                startIndex = this.state.activeFolderPage * _totalPageItems;
+                endIndex = Math.min(endIndex, startIndex + _totalPageItems);
+            }
+
+            for (var i = startIndex; i < endIndex; i++) {
+                var currFolder = foldersData[i];
+                
+                var perms = {};
+                for(var j=0;j<currFolder.allowedActions.length;j++)
+                    perms[currFolder.allowedActions[j]]=true;
+                
+                folderCells.push(React.createElement(FolderCard, {
+                    //image: "https://"+this.props.appState.apiUrl+"/webapp/1.0/icon?p60=0db17b942ed391096168f41f90051acc&p10=" + this.props.appState.apiKey + "&p20=" + this.props.appState.userUuid + "&type=folder&name=" + currFolder.folderuuid,
+                    image: currFolder.thumbnail,
+                    uuid: currFolder._id,
+                    name: currFolder.name,
+                    folders: currFolder.folders_count,
+                    images: currFolder.resources_count,
+                    key: currFolder._id,
+                    perm: perms,
+                    onClick: this.openFolder
+                }));
+            }
+        }
+
+        var imageCells = [];
+
+        if (this.state.activeTab == "Files" || this.state.activeTab == "Search") {
+            
+            try{
+            var imagesData = this.state.gridData.resource;
+            var activePage = this.state.activeResourcePage;
+
+            if (this.state.activeTab == "Search") {
+           
+                imagesData = this.state.searchGridData;
+                activePage = this.state.activeSearchPage;
+            }
+
+            var startIndex = 0;
+            var endIndex = imagesData.length;
+
+            if (imagesData.length > _totalPageItems) {
+                startIndex = activePage * _totalPageItems;
+                endIndex = Math.min(endIndex, startIndex + _totalPageItems);
+            }
+
+            for (var i = startIndex; i < endIndex; i++) {
+                var currImage = imagesData[i];
+                var disabled = true;
+                var usePlace = false;
+                var useOpen = false;
+                
+                if(!currImage.file) continue;
+                if (allowedFileTypes[this.props.appState.hostName][fileExtension(currImage.file.name)]) {
+                    disabled = false;
+                    useOpen = allowedFileTypes[this.props.appState.hostName][fileExtension(currImage.file.name)].open;
+                    usePlace = allowedFileTypes[this.props.appState.hostName][fileExtension(currImage.file.name)].place;
+                }
+                
+                if(this.props.appState.hideUnsupported && disabled) continue;
+               
+               /*
+When Resource is "checkout": true, a lock icon appears in alert red color on the Resource listed in the Folder. On hover, a tooltip comes up: "Resource checked out by {{checkoutUserName}} on {{checkoutTime}}.
+
+{{checkoutUserName}} and {{checkoutTime}} will be added to the response next week. Details to test on our staging environment are in the comments below.
+
+This is the data to expect in the response:
+
+"checkout": true
+"checkoutUserName": "IntelligenceBank Product",
+"checkoutTime": "2021-11-18T17:54:32Z",
+
+Question: can the time display be automatically adjusted to the timezone of the user based on their system settings?
+
+Example of a "checkout":true resource on evgeny.intelligencebank.com is in the Stock Photography folder (young fitness woman..., 519ef9f648413c673be6486bb99a94b1)
+                */
+
+                imageCells.push(React.createElement(ImageCard, {
+                    image: currImage.thumbnail,
+                    uuid: currImage._id,
+                    name: currImage.name,
+                    description: currImage.fancyFileSize + ", " + currImage.fancyFileType,
+                    key: currImage._id,
+                    disabled: disabled,
+                    placeFile: this.placeFile,
+                    openFile: this.openFile,
+                    useOpen: useOpen,// && _imagesDataObj[currImage._id].permissions.view,
+                    usePlace: usePlace,
+                    checkout: currImage.checkout,
+                    checkoutUserName:currImage.checkoutUserName,
+                    checkoutTime:currImage.checkoutTime
+                }));
+            }
+            
+        }catch(e){}
+        }
+
+        var linkCells = [];
+
+        if (this.state.activeTab == "Document") {
+            var imagesData = this.state.documentLinks;
+
+            for (var i = 0; i < imagesData.length; i++) {
+                var currImage = imagesData[i];
+                linkCells.push(React.createElement(LinkCard, {
+                    // image: "https://"+this.props.appState.apiUrl+"/webapp/1.0/icon?p60=0db17b942ed391096168f41f90051acc&p10=" + this.props.appState.apiKey + "&p20=" + this.props.appState.userUuid + "&type=file&name=" + currImage.fileuuid+"&ver="+currImage.versions.length,
+                    image: currImage.thumbnail,
+                    uuid: currImage._id,
+                    name: currImage.name,
+                    description: currImage.fancyFileSize + ", " + currImage.fancyFileType,
+                    isPreview: currImage.isPreview,
+                    isEmbedded: currImage.isEmbedded,
+                    key: currImage.isPreview + "_" + currImage.isEmbedded + "_" + currImage._id,
+                    deleted: currImage.deleted
+                }));
+            }
+        }
+
+
+        var showPaginator = false;
+        var totalItems = 0;
+        switch (this.state.activeTab) {
+            case "Folder":
+                if(this.state.folderUuid=="" && _folderInfo["root"])
+                    totalItems = _folderInfo["root"].folders;
+                    else
+                if (_folderInfo[this.state.folderUuid]) totalItems = _folderInfo[this.state.folderUuid].folders;
+               
+                break;
+            case "Files":
+               
+                if (_folderInfo[this.state.folderUuid]) totalItems = _folderInfo[this.state.folderUuid].resources;
+                break;
+            case "Search":
+                var totalItems = this.state.searchGridData.length;
+                break;
+            default:
+                break;
+        };
+        showPaginator = totalItems > _totalPageItems;
+ 
+        return React.createElement(
+            "div",
+            null,
+            (this.state.requestsPending + this.state.downloadsPending + this.state.downloadsHDPending) > 0 ? React.createElement(ProgressBar, {
+                homeState: this.state,
+                appState: this.props.appState
+            }) : null,
+
+            React.createElement(HomeHeader, {
+                back: this.back,
+                homeState: this.state,
+                tabCallback: this.tabCallback,
+                toggleSettingsBar: this.toggleSettingsBar,
+                search: this.search,
+                appState: this.props.appState,
+                updateAppState: this.props.updateAppState
+            }),
+            
+            this.state.activeTab == "Options" ? null : React.createElement(NavBar, {
+                homeState: this.state,
+                tabCallback: this.tabCallback
+            }),
+
+            this.state.activeTab == "Document" && this.state.documentOpened ? React.createElement(DocumentBar, {
+                homeState: this.state,
+                appState: this.props.appState,
+                prePackageDocument: this.prePackageDocument,
+                prePackageDocumentEmbed: this.prePackageDocumentEmbed,
+                updateAllDocument: this.updateAllDocument
+            }) : null,
+            
+            this.props.appState.showSettingsBar ? React.createElement(SettingsBar, {
+                appState: this.props.appState,
+                tabCallback: this.tabCallback,
+                logout: this.props.logout,
+                activeTab: this.state.activeTab
+            }) : null,
+            
+            this.state.activeTab == "Options" ? React.createElement(SettingsScreen, {
+                appState: this.props.appState,
+                updateAppState: this.props.updateAppState
+            }) : null,
+            
+            this.state.activeTab == "Options" ? null : React.createElement(Grid, {
+                homeState: this.state,
+                selectFolderCells: selectFolderCells,
+                folderCells: folderCells,
+                imageCells: imageCells,
+                linkCells: linkCells
+            }),
+
+            this.state.activeTab == "Folder" && showPaginator ? React.createElement(Paginator, {
+                homeState: this.state,
+                totalItems: totalItems,
+                activePage: this.state.activeFolderPage,
+                setActivePage: this.setActivePage,
+                type: "folders"
+            }) : null,
+
+            this.state.activeTab == "Files" && showPaginator ? React.createElement(Paginator, {
+                homeState: this.state,
+               totalItems: totalItems,
+                activePage: this.state.activeResourcePage,
+                setActivePage: this.setActivePage,
+                type: "resources"
+            }) : null,
+
+            this.state.activeTab == "Search" && showPaginator ? React.createElement(Paginator, {
+                homeState: this.state,
+                totalItems: totalItems,
+                activePage: this.state.activeSearchPage,
+                setActivePage: this.setActivePage
+            }) : null,
+
+            this.state.activeTab == "Document" && this.state.documentOpened ? React.createElement(DocumentUploadBar, {
+                selectDestination: this.selectDestination,
+                uploadDocument: this.uploadDocument,
+                documentUuid: this.state.documentUuid,
+                documentSaved: this.state.documentSaved,
+                permission: this.state.documentFolderPermission
+            }) : null,
+
+            this.state.activeTab == "SelectDestination" && this.state.documentOpened ? React.createElement(DocumentUploadSelectBar, {
+                uploadDocument: this.uploadDocument,
+                tabCallback: this.tabCallback,
+                selectedFolderUuid: this.state.selectedFolderUuid
+            }) : null
+        );
+    }
+});
+
+var CircularPreLoader = React.createClass({
+    displayName: "CircularPreLoader",
+    render: function render() {
+        return React.createElement(
+            "div", {
+                "className": "circularBlock"
+            },
+            React.createElement(
+                "div", {
+                    "className": "circular"
+                },
+                React.createElement(
+                    "div", {
+                        "className": "preloader-wrapper active"
+                    },
+                    React.createElement(
+                        "div", {
+                            "className": "spinner-layer spinner-green-only"
+                        },
+                        React.createElement(
+                            "div", {
+                                "className": "circle-clipper left"
+                            },
+                            React.createElement("div", {
+                                "className": "circle"
+                            })
+                        ),
+                        React.createElement(
+                            "div", {
+                                "className": "gap-patch"
+                            },
+                            React.createElement("div", {
+                                "className": "circle"
+                            })
+                        ),
+                        React.createElement(
+                            "div", {
+                                "className": "circle-clipper right"
+                            },
+                            React.createElement("div", {
+                                "className": "circle"
+                            })
+                        )
+                    )
+                )
+            )
+        );
+    }
+
+});
+
+var ProgressBar = React.createClass({
+    displayName: "ProgressBar",
+
+    render: function render() {
+        return React.createElement(
+            "div", {
+                "className": "progressBar"
+            },
+            React.createElement(
+                "div", {
+                    "className": "progress"
+                },
+                React.createElement("div", {
+                    "className": "indeterminate"
+                })
+            )
+        )
+    }
+});
+
+var DocumentUploadBar = React.createClass({
+    displayName: "DocumentUploadBar",
+
+    render: function render() {
+        var _this = this;
+        var footerText = "";
+        if (this.props.documentUuid == "")
+            footerText = "You can save this document to your platform";
+        else
+        if (!this.props.documentSaved) footerText = "Your document has been updated";
+
+        return React.createElement(
+            "div", {
+                className: "footer_upload document"
+            },
+            React.createElement(
+                "p", {
+                    className: "footer_text"
+                }, //Your document has been updated
+                footerText
+            ),
+            React.createElement(
+                "div", {
+                    className: "footer_buttons"
+                },
+                this.props.documentUuid != "" && (this.props.permission.admin || this.props.permission.publish) ?
+                React.createElement(
+                    "div", {
+                        className: "button waves-effect waves-light btn_pre hand_cursor tooltipped",
+                        "data-position": "top",
+                        "data-tooltip": "Click to save changes made to this file",
+                        onClick: function onClick(event) {
+                            return _this.props.uploadDocument(false);
+                        }
+                    },
+                    React.createElement(
+                        "i", {
+                            className: "material-icons left"
+                        },
+                        "cloud_upload"
+                    ),
+                    "Save Changes"
+                ) : null,
+                this.props.documentUuid != "" && (this.props.permission.admin || this.props.permission.publish) ? React.createElement(
+                    "div", {
+                        className: "button waves-effect waves-light btn_pre hand_cursor tooltipped",
+                        "data-position": "top",
+                        "data-tooltip": "Click to save changes made to this file as a new version",
+                        onClick: function onClick(event) {
+                            return _this.props.uploadDocument(true);
+                        }
+                    },
+                    React.createElement(
+                        "i", {
+                            className: "material-icons left"
+                        },
+                        "exposure_plus_1"
+                    ),
+                    "New Version"
+                ) : null,
+                React.createElement(
+                    "div", {
+                        className: "button waves-effect waves-light btn_pre hand_cursor tooltipped",
+                        "data-position": "top",
+                        "data-tooltip": "Select upload destination folder",
+                        onClick: function onClick(event) {
+                            return _this.props.selectDestination();
+                        }
+                    },
+                    React.createElement(
+                        "i", {
+                            className: "material-icons left"
+                        },
+                        "folder"
+                    ),
+                    this.props.documentUuid == "" || (this.props.permission.admin && this.props.permission.publish) ? "Select Destination" : "Upload as New"
+                )
+            )
+        );
+    }
+});
+
+
+var DocumentUploadSelectBar = React.createClass({
+    displayName: "DocumentUploadSelectBar",
+
+    render: function render() {
+        var _this = this;
+        return React.createElement(
+            "div", {
+                className: "footer_upload"
+            },
+            React.createElement(
+                "div", {
+                    className: this.props.selectedFolderUuid != "" ? "button waves-effect waves-light btn_pre hand_cursor tooltipped" : "button disabled btn_pre tooltipped",
+                    "data-position": "top",
+                    "data-tooltip": "upload",
+                    disabled: this.props.selectedFolderUuid == "",
+                    onClick: function onClick(event) {
+                        if (_this.props.selectedFolderUuid != "")
+                            return _this.props.uploadDocument(false);
+                    }
+                },
+                React.createElement(
+                    "i", {
+                        className: "material-icons left"
+                    },
+                    "cloud_upload"
+                ),
+                "Upload Document"
+            ),
+            React.createElement(
+                "div", {
+                    className: "button waves-effect waves-light btn_pre hand_cursor tooltipped",
+                    "data-position": "top",
+                    "data-tooltip": "upload",
+                    onClick: function onClick(event) {
+                        return _this.props.tabCallback("Document");
+                    }
+                },
+                React.createElement(
+                    "i", {
+                        className: "material-icons left"
+                    },
+                    "block"
+                ),
+                "Cancel Upload"
+            )
+        );
+    }
+});
+
+var Footer = React.createClass({
+    displayName: "Footer",
+
+    render: function render() {
+        return React.createElement(
+            "div", {
+                className: "footer"
+            },
+            this.props.homeState.activeTab == "Document" ? React.createElement(
+                "p",
+                null,
+                this.props.homeState.documentLinks.length == 1 ? "This document has " + this.props.homeState.documentLinks.length + " IntelligenceBank link." : "The current document has " + this.props.homeState.documentLinks.length + " IntelligenceBank links."
+            ) : null,
+            this.props.homeState.activeTab == "Files" || this.props.homeState.activeTab == "Search" ? React.createElement(
+                "p",
+                null,
+                "Click image to place it into your working document."
+            ) : null
+        );
+    }
+});
+
+
+var Paginator = React.createClass({
+    displayName: "Paginator",
+
+
+    render: function render() {
+        var _this = this;
+        var totalItems = this.props.totalItems;
+
+        var totalPages = Math.ceil(totalItems / _totalPageItems);
+
+        var buttonClass = "btn btn_paginator hand_cursor";
+        return React.createElement(
+            "div", {
+                className: "paginator"
+            },
+            React.createElement(
+                "button", {
+                    className: buttonClass,
+                    disabled: this.props.activePage == 0 || this.props.homeState.requestsPending != 0,
+                    onClick: function onClick() {
+                        _this.props.setActivePage(0)
+                    }
+                },
+                "First"
+            ),
+            React.createElement(
+                "button", {
+                    className: buttonClass,
+                    disabled: this.props.activePage == 0 || this.props.homeState.requestsPending != 0,
+                    onClick: function onClick() {
+                        _this.props.setActivePage(Math.max(_this.props.activePage - 1, 0))
+                    }
+                },
+                "Previous"
+            ),
+            React.createElement(
+                "p",
+                null,
+                "Page " + (this.props.activePage + 1) + " / " + totalPages
+            ),
+            React.createElement(
+                "button", {
+                    className: buttonClass,
+                    disabled: this.props.activePage == (totalPages - 1) || this.props.homeState.requestsPending != 0,
+                    onClick: function onClick() {
+                        _this.props.setActivePage(Math.min(_this.props.activePage + 1, totalPages - 1))
+                    }
+                },
+                "Next"
+            ),
+            React.createElement(
+                "button", {
+                    className: buttonClass,
+                    disabled: this.props.activePage == (totalPages - 1) || this.props.homeState.requestsPending != 0,
+                    onClick: function onClick() {
+                        _this.props.setActivePage(totalPages - 1)
+                    }
+                },
+                "Last"
+            )
+        );
+    }
+});
+
+var DocumentBar = React.createClass({
+    displayName: "DocumentBar",
+
+    componentDidMount: function componentDidMount() {
+        $('.tooltipped').tooltip({
+            delay: _tooltipDelay
+        });
+    },
+
+    componentWillUpdate: function componentWillUpdate() {
+        $('.tooltipped').tooltip('remove');
+    },
+
+    componentWillUnmount: function componentWillUnmount() {
+        $('.tooltipped').tooltip('remove');
+    },
+
+    componentDidUpdate: function componentDidUpdate() {
+        $('.tooltipped').tooltip({
+            delay: _tooltipDelay
+        });
+    },
+
+    render: function render() {
+        var _this = this;
+
+        var docName = this.props.homeState.documentName;
+        if (this.props.homeState.documentUuid != "" && _imagesDataObj[this.props.homeState.documentUuid])
+        {
+            //{"versionNumber":3,"id":"Jykl","defaultIcon":"https://evgeny.intelligencebank.com/images/file-icons/indd-file-icon.png","v3Preview":"https://usprod2usv3.intelligencebank.com/api/3.0.0/6M0B/file?file_hash=c8f0b7f4182a6a83461af678822f5208&resource_uuid=2e9b10ee50274d5fbb59dc8ff991fc5f&sid=d09178bc5b17cd0b04aeb174b022ebb5&watermark_hash=6kh72k2ekqmwdpxicw6dbznfzptlarb5&action=preview&token=SFMyNTY.g2gDbQAAABZJQiBQbGF0Zm9ybSBUb2tlbiBEYXRhbgYATpZAjH4BYgABUYA.vkO-__rTA83ZCT8VA0os32yFJFJVaTV-avZScC5gqJE","autoCheckout":false,"type":"file","folder":"3bdb8b667a2b5df301c863d119cba92d","lastUpdater":"79d14d50e4f77a20ac549c1a62124196","iconType":"default","_id":"2e9b10ee50274d5fbb59dc8ff991fc5f","thumbVersionNumber":1,"preview":{"type":"image"},"matched":{"ib_uuid":["<em>2e9b10ee50274d5fbb59dc8ff991fc5f</em>"]},"lastUpdaterName":"Admin","ownerDivision":"50628e5683fd5118d9ec85b920c861df","fancyFileType":"InDesign (indd)","fancyFileSize":"1.01 MB","lastUpdateTime":"2021-08-19T15:27:19Z","creatorName":"Admin","v3Thumbnail":"https://cdn.intelligencebank.com/us/thumbnail/6M0B/c8f0b7f4182a6a83461af678822f5208/original/2e9b10ee50274d5fbb59dc8ff991fc5f_20210819T090","isPublicUser":false,"resourceAttributes":{"isBrowserNativeImage":false,"isExtensionSupportedByThePlatform":true,"isExtensionSupportedForDocument":false,"isExtensionSupportedForEmbed":false,"isExtensionSupportedForImageTransformation":false,"isExtensionSupportedForShare":false,"isPDFExtension":false,"isRawImage":false,"isVideoExtension":false},"ownerGroups":["862c695bba0e9ee25a4f7f126afb4af9"],"fileHash":"c8f0b7f4182a6a83461af678822f5208","file":{"error":0,"hash":"c8f0b7f4182a6a83461af678822f5208","name":"2e9b10ee50274d5fbb59dc8ff991fc5f_20210819T090312Z.indd","size":1060864,"tmp_name":"c8f0b7f4182a6a83461af678822f5208.indd","toS3SyncStatus":"sent","type":"application/octet-stream"},"creator":"79d14d50e4f77a20ac549c1a62124196","hasAlias":false,"description":"2e9b10ee50274d5fbb59dc8ff991fc5f_20210819T090","allowedActions":["view","publish","list","admin"],"thumbnail":"https://cdn.intelligencebank.com/us/thumbnail/6M0B/c8f0b7f4182a6a83461af678822f5208/original/2e9b10ee50274d5fbb59dc8ff991fc5f_20210819T090","hasRelatedItems":false,"folderPath":[{"_id":"02b0623f66b2c165ad4a86d1a1c1539c","name":"Resources","parent":"00000000000000000000000000000000"},{"_id":"3bdb8b667a2b5df301c863d119cba92d","name":"Folders","parent":"02b0623f66b2c165ad4a86d1a1c1539c"}],"aliasPublicUseTime":[],"name":"2e9b10ee50274d5fbb59dc8ff991fc5f_20210819T090","isPublic":true,"watermarkType":"none","createTime":"2021-08-19T09:03:12Z","assignedDate":"2021-08-19T00:00:00Z","permissions":{"view":true,"publish":true,"list":true,"admin":true}}
+            
+            docName = _imagesDataObj[this.props.homeState.documentUuid].name;
+        }
+        return this.props.homeState.documentOpened ? React.createElement(
+            "div", {
+                className: "project"
+            },
+            React.createElement(
+                "div", {
+                    className: "file_indd"
+                },
+                docName
+            ),
+            React.createElement(
+                "div", {
+                    className: "button waves-effect waves-light btn_ref hand_cursor tooltipped",
+                    "data-position": "top",
+                    "data-tooltip": "Check for any updates in your document (both locally and online).",
+                    onClick: function onClick(event) {
+                        return _this.props.updateAllDocument();
+                    }
+                },
+                React.createElement(
+                    "i", {
+                        className: "material-icons left"
+                    },
+                    "cached"
+                ),
+                "Refresh"
+            ),
+            React.createElement(
+                "div", {
+                    className: "button waves-effect waves-light btn_pre hand_cursor tooltipped",
+                    "data-position": "top",
+                    "data-tooltip": "Click to download missing original / high resolution versions of your placed assets.",
+                    onClick: function onClick(event) {
+                        return _this.props.prePackageDocument();
+                    }
+                },
+                React.createElement(
+                    "i", {
+                        className: "material-icons left"
+                    },
+                    "offline_pin"
+                ),
+                "Pre-Package"
+            ),
+            this.props.appState.hostName != "IDSN" ? React.createElement(
+                "div", {
+                    className: "button waves-effect waves-light btn_pre hand_cursor tooltipped",
+                    "data-position": "top",
+                    "data-tooltip": "Click to embed missing or pre-packaged original / high resolution versions of your placed assets.",
+                    onClick: function onClick(event) {
+                        return _this.props.prePackageDocumentEmbed();
+                    }
+                },
+                React.createElement(
+                    "i", {
+                        className: "material-icons left"
+                    },
+                    "offline_pin"
+                ),
+                "Embed"
+            ) : null
+        ) : null;
+    }
+
+});
+
+
+
+var HomeHeader = React.createClass({
+    displayName: "HomeHeader",
+    handleChange: function handleChange(event, attribute) {
+
+        if (event.charCode == 13)
+            return this.props.search(this.state.searchTerm);
+
+        var newState = this.state;
+        newState[attribute] = event.target.value;
+        this.setState(newState);
+    },
+    getInitialState: function getInitialState() {
+        return {
+            searchTerm: ""
+        };
+    },
+
+    render: function render() {
+
+        var _this = this;
+        switch (this.props.homeState.activeTab) {
+            case "Folder":
+            case "SelectDestination":
+                return React.createElement(
+                    "div", {
+                        className: "header"
+                    },
+                    this.props.homeState.history.length == 0 ? React.createElement(
+                        "div", {
+                            className: "block_img_logo_small"
+                        },
+                        React.createElement("img", {
+                            src: "./images/logo.png"
+                        })
+                    ) : null, // "Version 031221_1820",
+                    this.props.homeState.history.length != 0 ? React.createElement(
+                        "div", {
+                            className: "block_home hand_cursor",
+                            onClick: function onClick(event) {
+                                return _this.props.back(true);
+                            }
+                        },
+                        React.createElement(
+                            "i", {
+                                className: "material-icons"
+                            },
+                            "home"
+                        )
+                    ) : null,
+                    this.props.homeState.history.length != 0 ? React.createElement(
+                        "div", {
+                            className: "search_arrow hand_cursor",
+                            onClick: function onClick(event) {
+                                return _this.props.back(false);
+                            }
+                        },
+
+                        React.createElement(
+                            "i", {
+                                className: "material-icons"
+                            },
+                            "chevron_left"
+                        )
+                    ) : null,
+                    this.props.homeState.history.length != 0 ? React.createElement(
+                        "div", {
+                            className: "folder_name"
+                        },
+                        this.props.homeState.folderName
+                    ) : null,
+                    React.createElement(
+                        "div", {
+                            className: "search hand_cursor",
+                            onClick: function onClick(event) {
+                                return _this.props.tabCallback("Search");
+                            }
+                        },
+                        React.createElement(
+                            "i", {
+                                className: "material-icons"
+                            },
+                            "search"
+                        )
+                    ),
+                    React.createElement(
+                        "div", {
+                            className: "logout hand_cursor",
+                            onClick: function onClick(event) {
+                                return _this.props.toggleSettingsBar();//_this.props.logout();
+                            }
+                        },
+                        React.createElement(
+                            "i", {
+                                className: "material-icons"
+                            },
+                            "more_vert"
+                        )
+                    )
+                );
+
+            case "Files":
+                return React.createElement(
+                    "div", {
+                        className: "header"
+                    },
+                    React.createElement(
+                        "div", {
+                            className: "block_home hand_cursor",
+                            onClick: function onClick(event) {
+                                return _this.props.back(true);
+                            }
+                        },
+
+                        React.createElement(
+                            "i", {
+                                className: "material-icons"
+                            },
+                            "home"
+                        )
+
+                    ),
+                    React.createElement(
+                        "div", {
+                            className: "search_arrow hand_cursor",
+                            onClick: function onClick(event) {
+                                return _this.props.back(false);
+                            }
+                        },
+
+                        React.createElement(
+                            "i", {
+                                className: "material-icons"
+                            },
+                            "chevron_left"
+                        )
+
+                    ),
+                    React.createElement(
+                        "div", {
+                            className: "folder_name"
+                        },
+                        this.props.homeState.folderName
+                    ),
+                    React.createElement(
+                        "div", {
+                            className: "search hand_cursor",
+                            onClick: function onClick(event) {
+                                return _this.props.tabCallback("Search");
+                            }
+                        },
+                        React.createElement(
+                            "i", {
+                                className: "material-icons",
+
+                            },
+                            "search"
+                        )
+                    ),
+                    React.createElement(
+                        "div", {
+                            className: "logout hand_cursor",
+                            onClick: function onClick(event) {
+                                return _this.props.toggleSettingsBar();//_this.props.logout();
+                            }
+                        },
+                        React.createElement(
+                            "i", {
+                                className: "material-icons"
+                            },
+                            "more_vert"
+                        )
+                    )
+                );
+            case "Options":
+                return React.createElement(
+                    "div", {
+                        className: "header"
+                    },
+                    React.createElement(
+                        "div", {
+                            className: "block_home hand_cursor",
+                            onClick: function onClick(event) {
+                                return _this.props.back(true);
+                            }
+                        },
+
+                        React.createElement(
+                            "i", {
+                                className: "material-icons"
+                            },
+                            "home"
+                        )
+
+                    ),
+                    React.createElement(
+                        "div", {
+                            className: "search_arrow hand_cursor",
+                            onClick: function onClick(event) {
+                                return _this.props.tabCallback(_this.props.homeState.prevActiveTab);
+                            }
+                        },
+
+                        React.createElement(
+                            "i", {
+                                className: "material-icons"
+                            },
+                            "chevron_left"
+                        )
+
+                    ),
+                    React.createElement(
+                        "div", {
+                            className: "folder_name"
+                        },
+                        "Settings"
+                    ),
+                    React.createElement(
+                        "div", {
+                            className: "search hand_cursor",
+                            onClick: function onClick(event) {
+                                return _this.props.tabCallback("Search");
+                            }
+                        },
+                        React.createElement(
+                            "i", {
+                                className: "material-icons",
+
+                            },
+                            "search"
+                        )
+                    ),
+                    React.createElement(
+                        "div", {
+                            className: "logout hand_cursor",
+                            onClick: function onClick(event) {
+                                return _this.props.toggleSettingsBar();//_this.props.logout();
+                            }
+                        },
+                        React.createElement(
+                            "i", {
+                                className: "material-icons"
+                            },
+                            "more_vert"
+                        )
+                    )
+                );
+            case "Search":
+                return React.createElement(
+                    "div", {
+                        className: "header"
+                    },
+                    React.createElement(
+                        "div", {
+                            className: "block_home hand_cursor",
+                            onClick: function onClick(event) {
+                                return _this.props.back(true);
+                            }
+                        },
+
+                        React.createElement(
+                            "i", {
+                                className: "material-icons"
+                            },
+                            "home"
+                        )
+
+                    ),
+                    React.createElement(
+                        "div", {
+                            className: "search_arrow hand_cursor",
+                            onClick: function onClick(event) {
+                                return _this.props.tabCallback(_this.props.homeState.prevActiveTab);
+                            }
+                        },
+
+                        React.createElement(
+                            "i", {
+                                className: "material-icons"
+                            },
+                            "chevron_left"
+                        )
+
+                    ),
+                    React.createElement(
+                        "div", {
+                            className: "search_input"
+                        },
+                        React.createElement("input", {
+                            type: "text",
+                            placeholder: "Search this area...",
+                            onChange: function onChange(event) {
+                                return _this.handleChange(event, 'searchTerm');
+                            },
+                            onKeyPress: function onKeyPress(event) {
+                                if (event.charCode == 13)
+                                    return _this.props.search(_this.state.searchTerm)
+                            },
+                            value: this.state.searchTerm
+                        })
+                    ),
+                    React.createElement(
+                        "div", {
+                            className: "search_btn hand_cursor",
+                            onClick: function onClick(event) {
+                                return _this.props.search(_this.state.searchTerm)
+                            },
+                        },
+
+                        React.createElement(
+                            "i", {
+                                className: "material-icons"
+                            },
+                            "search"
+                        )
+
+                    )
+                );
+            case "Document":
+                return React.createElement(
+                    "div", {
+                        className: "header"
+                    },
+                    this.props.homeState.history.length == 0 ? React.createElement(
+                        "div", {
+                            className: "block_img_logo_small"
+                        },
+                        React.createElement("img", {
+                            src: "./images/logo.png"
+                        })
+                    ) : null,
+                    this.props.homeState.history.length != 0 ? React.createElement(
+                        "div", {
+                            className: "block_home hand_cursor",
+                            onClick: function onClick(event) {
+                                return _this.props.back(true);
+                            }
+                        },
+
+                        React.createElement(
+                            "i", {
+                                className: "material-icons"
+                            },
+                            "home"
+                        )
+                    ) : null,
+                    this.props.homeState.history.length != 0 ? React.createElement(
+                        "div", {
+                            className: "search_arrow hand_cursor",
+                            onClick: function onClick(event) {
+                                return _this.props.back(false);
+                            }
+                        },
+
+                        React.createElement(
+                            "i", {
+                                className: "material-icons"
+                            },
+                            "chevron_left"
+                        )
+
+                    ) : null,
+                    this.props.homeState.history.length != 0 ? React.createElement(
+                        "div", {
+                            className: "folder_name"
+                        },
+                        this.props.homeState.folderName
+                    ) : null,
+                    React.createElement(
+                        "div", {
+                            className: "search hand_cursor"
+                        },
+                        React.createElement(
+                            "i", {
+                                className: "material-icons",
+                                onClick: function onClick(event) {
+                                    return _this.props.tabCallback("Search");
+                                }
+                            },
+                            "search"
+                        )
+                    ),
+                    React.createElement(
+                        "div", {
+                            className: "logout hand_cursor",
+                            onClick: function onClick(event) {
+                                return _this.props.toggleSettingsBar();
+                            }
+                        },
+                        React.createElement(
+                            "i", {
+                                className: "material-icons"
+                            },
+                            "more_vert"
+                        )
+                    )
+                );
+        }
+    }
+});
+
+var NavBar = React.createClass({
+    displayName: "NavBar",
+
+
+
+    render: function render() {
+        var _this = this;
+        var totalFiles = this.props.homeState.gridData.resource.length;
+        var totalFolders = this.props.homeState.gridData.folder.length;
+
+        if (_folderInfo[this.props.homeState.folderUuid]) {
+            totalFolders = _folderInfo[this.props.homeState.folderUuid].folders;
+            totalFiles = _folderInfo[this.props.homeState.folderUuid].resources;
+        }
+        
+        if(this.props.homeState.folderUuid=="" && _folderInfo["root"])
+            totalFolders = _folderInfo["root"].folders;
+
+        switch (this.props.homeState.activeTab) {
+            case "SelectDestination":
+                return React.createElement(
+                    "div", {
+                        className: "navigation row"
+                    },
+                    React.createElement(
+                        "div", {
+                            className: "block_docs select_destination_text"
+                        },
+                        React.createElement(
+                            "p",
+                            null,
+                            "Select destination folder for this document"
+                        )
+                    )
+                )
+                break;
+            case "Folder":
+            case "Options":
+                return React.createElement(
+                    "div", {
+                        className: "navigation row"
+                    },
+                    React.createElement(
+                        "div", {
+                            className: "block_docs"
+                        },
+                        this.props.homeState.history.length == 0 ? React.createElement(
+                            "a", {
+                                href: "#",
+                                className: "active hand_cursor",
+                                onClick: function onClick(event) {
+                                    return _this.props.tabCallback("Folder");
+                                }
+                            },
+                            React.createElement(
+                                "nobr",
+                                null,
+                                "Folders"
+                            ),
+                            React.createElement(
+                                "span", {
+                                    className: "bullet"
+                                },
+                                totalFolders
+                            )
+                        ) : null,
+                        this.props.homeState.history.length == 0 ? null : React.createElement(
+                            "a", {
+                                href: "#",
+                                className: "hand_cursor",
+                                onClick: function onClick(event) {
+                                    return _this.props.tabCallback("Files");
+                                }
+                            },
+                            React.createElement(
+                                "nobr",
+                                null,
+                                "Files"
+                            ),
+                            React.createElement(
+                                "span", {
+                                    className: "bullet"
+                                },
+                                totalFiles
+                            )
+                        ),
+                        this.props.homeState.history.length != 0 ? React.createElement(
+                            "a", {
+                                href: "#",
+                                className: "active hand_cursor",
+                                onClick: function onClick(event) {
+                                    return _this.props.tabCallback("Folder");
+                                }
+                            },
+                            React.createElement(
+                                "nobr",
+                                null,
+                                "Sub-Folders"
+                            ),
+                            React.createElement(
+                                "span", {
+                                    className: "bullet"
+                                },
+                                totalFolders
+                            )
+                        ) : null,
+                        React.createElement(
+                            "a", {
+                                href: "#",
+                                className: "hand_cursor",
+                                onClick: function onClick(event) {
+                                    return _this.props.tabCallback("Document");
+                                }
+                            },
+                            React.createElement(
+                                "nobr",
+                                null,
+                                "My Document"
+                            ),
+                            React.createElement(
+                                "span", {
+                                    className: "bullet"
+                                },
+                                this.props.homeState.documentLinks.length
+                            )
+                        )
+                    )
+                );
+
+            case "Files":
+                return React.createElement(
+                    "div", {
+                        className: "navigation row"
+                    },
+                    React.createElement(
+                        "div", {
+                            className: "block_docs"
+                        },
+                        this.props.homeState.history.length == 0 ? React.createElement(
+                            "a", {
+                                href: "#",
+                                className: "hand_cursor",
+                                onClick: function onClick(event) {
+                                    return _this.props.tabCallback("Folder");
+                                }
+                            },
+                            React.createElement(
+                                "nobr",
+                                null,
+                                "Folders"
+                            ),
+                            React.createElement(
+                                "span", {
+                                    className: "bullet"
+                                },
+                                totalFolders
+                            )
+                        ) : null,
+                        React.createElement(
+                            "a", {
+                                href: "#",
+                                className: "active hand_cursor",
+                                onClick: function onClick(event) {
+                                    return _this.props.tabCallback("Files");
+                                }
+                            },
+                            React.createElement(
+                                "nobr",
+                                null,
+                                "Files"
+                            ),
+                            React.createElement(
+                                "span", {
+                                    className: "bullet"
+                                },
+                                totalFiles
+                            )
+                        ),
+                        this.props.homeState.history.length != 0 ? React.createElement(
+                            "a", {
+                                href: "#",
+                                className: "hand_cursor",
+                                onClick: function onClick(event) {
+                                    return _this.props.tabCallback("Folder");
+                                }
+                            },
+                            React.createElement(
+                                "nobr",
+                                null,
+                                "Sub-Folders"
+                            ),
+                            React.createElement(
+                                "span", {
+                                    className: "bullet"
+                                },
+                                totalFolders
+                            )
+                        ) : null,
+                        React.createElement(
+                            "a", {
+                                href: "#",
+                                className: "hand_cursor",
+                                onClick: function onClick(event) {
+                                    return _this.props.tabCallback("Document");
+                                }
+                            },
+                            React.createElement(
+                                "nobr",
+                                null,
+                                "My Document"
+                            ),
+                            React.createElement(
+                                "span", {
+                                    className: "bullet"
+                                },
+                                this.props.homeState.documentLinks.length
+                            )
+                        )
+                    )
+                );
+            case "Search":
+                return React.createElement(
+                    "div", {
+                        className: "navigation row"
+                    },
+                    React.createElement(
+                        "div", {
+                            className: "block_docs"
+                        },
+                        React.createElement(
+                            "a", {
+                                href: "#"
+                            },
+                            React.createElement(
+                                "nobr",
+                                null,
+                                "Search Results"
+                            ),
+                            React.createElement(
+                                "span", {
+                                    className: "bullet"
+                                },
+                                this.props.homeState.searchGridData.length
+                            )
+                        )
+                    )
+                );
+            case "Document":
+                return React.createElement(
+                    "div", {
+                        className: "navigation row"
+                    },
+                    React.createElement(
+                        "div", {
+                            className: "block_docs"
+                        },
+                        this.props.homeState.history.length == 0 ? React.createElement(
+                            "a", {
+                                href: "#",
+                                className: "hand_cursor",
+                                onClick: function onClick(event) {
+                                    return _this.props.tabCallback("Folder");
+                                }
+                            },
+                            React.createElement(
+                                "nobr",
+                                null,
+                                "Folders"
+                            ),
+                            React.createElement(
+                                "span", {
+                                    className: "bullet"
+                                },
+                                totalFolders
+                            )
+                        ) : null,
+                        this.props.homeState.history.length == 0 ? null : React.createElement(
+                            "a", {
+                                href: "#",
+                                className: "hand_cursor",
+                                onClick: function onClick(event) {
+                                    return _this.props.tabCallback("Files");
+                                }
+                            },
+                            React.createElement(
+                                "nobr",
+                                null,
+                                "Files"
+                            ),
+                            React.createElement(
+                                "span", {
+                                    className: "bullet"
+                                },
+                                totalFiles
+                            )
+                        ),
+                        this.props.homeState.history.length != 0 ? React.createElement(
+                            "a", {
+                                href: "#",
+                                className: "hand_cursor",
+                                onClick: function onClick(event) {
+                                    return _this.props.tabCallback("Folder");
+                                }
+                            },
+                            React.createElement(
+                                "nobr",
+                                null,
+                                "Sub-Folders"
+                            ),
+                            React.createElement(
+                                "span", {
+                                    className: "bullet"
+                                },
+                                totalFolders
+                            )
+                        ) : null,
+                        React.createElement(
+                            "a", {
+                                href: "#",
+                                className: "active"
+                            },
+                            React.createElement(
+                                "nobr",
+                                null,
+                                "My Document"
+                            ),
+                            React.createElement(
+                                "span", {
+                                    className: "bullet"
+                                },
+                                this.props.homeState.documentLinks.length
+                            )
+                        )
+                    )
+                );
+        }
+    }
+});
+
+var Grid = React.createClass({
+    displayName: "Grid",
+
+
+    render: function render() {
+        return React.createElement(
+            "div", {
+                className: this.props.homeState.activeTab == "Document" ? "items" : "files"
+            },
+            React.createElement(
+                "div", {
+                    className: "row"
+                },
+                this.props.selectFolderCells,
+                this.props.folderCells,
+                this.props.imageCells,
+                this.props.linkCells
+            )
+        );
+    }
+});
+
+var LinkCard = React.createClass({
+    displayName: "LinkCard",
+
+    componentDidMount: function componentDidMount() {
+        $('.tooltipped').tooltip({
+            delay: _tooltipDelay
+        });
+    },
+
+    render: function render() {
+        var _this = this;
+
+        var hdTooltip = "The original / high resolution version of this asset has already been downloaded.";
+
+        if (this.props.isEmbedded)
+            hdTooltip = "The original / high resolution version of this asset has already been embedded.";
+
+        return React.createElement(
+            "div", {
+                className: "item_box col s6 m4 l3"
+            },
+            React.createElement(
+                "div", {
+                    className: "img_box"
+                },
+                React.createElement("object", {
+                        data: this.props.image,
+                        type: "image/png"
+                    },
+                    React.createElement("img", {
+                        src: "./images/file_fallback_icon.png"
+                    })
+                )
+            ),
+            React.createElement(
+                "div", {
+                    className: "text_box"
+                },
+                React.createElement(
+                    "p", {
+                        className: "file_name"
+                    },
+                    this.props.name
+                ),
+                React.createElement(
+                    "p", {
+                        className: "file_param"
+                    },
+                    this.props.description
+                )
+            ),
+            React.createElement(
+                "div", {
+                    className: "icon_box"
+                },
+                React.createElement(
+                    "i", {
+                        className: this.props.isPreview ? "material-icons disable tooltipped hand_cursor" : "material-icons tooltipped hand_cursor",
+                        "data-position": "top",
+                        "data-tooltip": this.props.isPreview ? "Click Pre-Package to download the high resolution version of this file as an external linked layer, or Embed to embed it into the document." : hdTooltip
+                    },
+                    "offline_pin"
+                ),
+                this.props.deleted ? React.createElement(
+                    "i", {
+                        className: "material-icons tooltipped hand_cursor",
+                        "data-position": "top",
+                        "data-tooltip": "File deleted or permission missing.",
+                    },
+                    "delete"
+                ) : null
+            )
+        );
+    }
+
+});
+
+var SelectFolderCard = React.createClass({
+    displayName: "SelectFolderCard",
+
+    render: function render() {
+        var _this = this;
+        return React.createElement(
+            "div", {
+                className: (!this.props.perm.admin && !this.props.perm.publish) ? "col s6 m4 l3 valign-wrapper block_topfolder_item grayedSelectFolder" : "col s6 m4 l3 valign-wrapper block_topfolder_item"
+            },
+
+            React.createElement(
+                "a", {
+                    className: "hand_cursor",
+                    href: "#"
+
+                },
+                React.createElement(
+                    "div", {
+                        className: "row"
+                    },
+                    React.createElement(
+                        "div", {
+                            className: "block_img valign-wrapper"
+                        },
+
+                        React.createElement(
+                            "div", {
+                                className: "img_container"
+                            },
+                            React.createElement("object", {
+                                    data: this.props.image,
+                                    type: "image/png"
+                                },
+                                React.createElement("img", {
+                                    src: "./images/folder_fallback_icon.png"
+                                })
+                            )
+                        )
+                    ),
+
+
+                    React.createElement(
+                        "div", {
+                            className: "block_descript"
+                        },
+                        React.createElement(
+                            "h3", {
+                                onClick: function onClick(event) {
+                                    if (_this.props.folders != 0)
+                                        return _this.props.openFolder(_this.props.uuid, _this.props.name)
+                                }
+                            },
+                            this.props.name
+                        ),
+                        this.props.folders != 0 ? React.createElement(
+                            "p",
+                            null,
+                            this.props.folders,
+                            " sub-folders"
+                        ) : null,
+                        this.props.perm.admin || this.props.perm.publish ? React.createElement("input", {
+                            type: "checkbox",
+                            className: "checkbox-green filled-in",
+                            id: "cb" + this.props.uuid,
+                            checked: (this.props.uuid == this.props.selectedFolderUuid),
+                            onClick: function onClick(event) {
+                                if (_this.props.uuid != _this.props.selectedFolderUuid) return _this.props.selectFolder(_this.props.uuid);
+                                else return _this.props.selectFolder("");
+                            }
+                        }) : null,
+                        this.props.perm.admin || this.props.perm.publish ? React.createElement(
+                            "label", {
+                                "htmlFor": "cb" + this.props.uuid
+                            },
+                            ""
+                        ) : null
+                    )
+                )
+            )
+        );
+    }
+});
+
+var FolderCard = React.createClass({
+    displayName: "FolderCard",
+
+    render: function render() {
+        var _this = this;
+        return React.createElement(
+            "div", {
+                className: "col s6 m4 l3 valign-wrapper block_topfolder_item"
+
+            },
+            React.createElement(
+                "a", {
+                    className: "hand_cursor",
+                    href: "#",
+                    onClick: function onClick(event) {
+                        
+                        return _this.props.onClick(_this.props.uuid, _this.props.name, _this.props.folders, _this.props.images);
+                    }
+                },
+                React.createElement(
+                    "div", {
+                        className: "row"
+                    },
+                    React.createElement(
+                        "div", {
+                            className: "block_img valign-wrapper"
+                        },
+
+                        React.createElement(
+                            "div", {
+                                className: "img_container"
+                            },
+                            React.createElement("object", {
+                                    data: this.props.image,
+                                    type: "image/png"
+                                },
+                                React.createElement("img", {
+                                    src: "./images/folder_fallback_icon.png"
+                                })
+                            )
+                        )
+                    ),
+                    React.createElement(
+                        "div", {
+                            className: "block_descript"
+                        },
+                        React.createElement(
+                            "h3",
+                            null,
+                            this.props.name
+                        ),
+                        this.props.folders != 0 ? React.createElement(
+                            "p",
+                            null,
+                            this.props.folders,
+                            " sub-folders"
+                        ) : null,
+                        this.props.images != 0 ? React.createElement(
+                            "p",
+                            null,
+                            this.props.images,
+                            " assets"
+                        ) : null
+                    )
+                )
+            )
+        );
+    }
+});
+
+var ImageCard = React.createClass({
+    displayName: "ImageCard",
+
+    componentDidMount: function componentDidMount() {
+        $('.tooltipped').tooltip({
+            delay: _tooltipDelay
+        });
+    },
+
+/*
+When Resource is "checkout": true, a lock icon appears in alert red color on the Resource listed in the Folder. On hover, a tooltip comes up: "Resource checked out by {{checkoutUserName}} on {{checkoutTime}}.
+
+{{checkoutUserName}} and {{checkoutTime}} will be added to the response next week. Details to test on our staging environment are in the comments below.
+
+This is the data to expect in the response:
+
+"checkout": true
+"checkoutUserName": "IntelligenceBank Product",
+"checkoutTime": "2021-11-18T17:54:32Z",
+
+Question: can the time display be automatically adjusted to the timezone of the user based on their system settings?
+
+Example of a "checkout":true resource on evgeny.intelligencebank.com is in the Stock Photography folder (young fitness woman..., 519ef9f648413c673be6486bb99a94b1)
+    */
+    
+    render: function render() {
+        var _this = this;
+        var mainClassName = "col s4 m3 l2 block_file_item center-align";
+        var tipText = "Click to place a preview of this asset into your document.";
+
+        if (this.props.disabled) {
+            mainClassName += " disable_block";
+            tipText = "File format not supported for placement.";
+        }
+        //  else mainClassName+=" hand_cursor";
+
+        return React.createElement(
+            "div", {
+                className: mainClassName,
+
+            },
+            
+            this.props.checkout ?  React.createElement(
+                "i", {
+                    className: "material-icons tooltipped hand_cursor",
+                    style:{color: "#E40000", position: "absolute", top:0, right:0},
+                    "data-position": "top",
+                    "data-tooltip": "Resource checked out by "+this.props.checkoutUserName+" on "+convertDate(this.props.checkoutTime)
+                },
+                "lock_outline"
+            ) : null,
+            
+            React.createElement(
+                "div", {
+                    className: "img_container"
+                },
+                React.createElement("object", {
+                        data: this.props.image,
+                        type: "image/png",
+                        style:{background: "url(./images/checkered-background.png) repeat"}
+                    },
+                    React.createElement("img", {
+                        src: "./images/file_fallback_icon.png"
+                    })
+                )
+            ),
+
+            React.createElement(
+                "h3",
+                null,
+                this.props.name
+            ),
+            React.createElement(
+                "p",
+                null,
+                this.props.description
+            ),
+            React.createElement(
+                "button", {
+                    className: "btn btn_imageCard btn_imageCard_open waves-effect waves-light hand_cursor",
+                    disabled: !this.props.useOpen,
+                    onClick: this.props.useOpen ? function onClick(event) {
+                        return _this.props.openFile(_this.props.uuid)
+                    } : null
+                },
+                "Open"
+            ),
+            React.createElement(
+                "button", {
+                    className: "btn btn_imageCard btn_imageCard_place waves-effect waves-light hand_cursor",
+                    disabled: !this.props.usePlace,
+                    onClick: this.props.usePlace ? function onClick(event) {
+                        return _this.props.placeFile(_this.props.uuid)
+                    } : null
+                },
+                "Place"
+            )
+        );
+    }
+});
+
+var LoginScreen = React.createClass({
+    displayName: "LoginScreen",
+
+    componentDidMount: function componentDidMount() {
+        Materialize.updateTextFields();
+    },
+
+
+    handleSubmit: function handleSubmit(event) {
+        event.preventDefault();
+        var newState = this.state;
+        if (this.state.company == "") {
+            var loginError = "A valid Platform URL is required.";
+            this.props.updateAppState({loginError:loginError});
+            return;
+        }
+
+
+        newState.requestInProcess = true;
+        this.setState(newState);
+        getApiUrl(this.state.company, this.apiCallback, this.state.isCustomURL);
+    },
+    
+    browserLoginPressed: function browserLoginPressed() {
+        if(this.state.company=="") 
+		{
+			var loginError = "A valid Platform URL is required.";
+			this.props.updateAppState({loginError:loginError});
+			return;
+		}
+        var url = this.state.company;
+        if(!this.state.isCustomURL)
+            url+=".intelligencebank.com";
+        this.props.updateAppState({company:this.state.company,isCustomURL:this.state.isCustomURL});
+        
+        getToken(url,this.getTokenCallback);
+       
+    },
+
+    getTokenCallback: function getTokenCallback(data) {
+        
+        if (data.error || data.body.message != undefined) {
+            var loginError = "A valid Platform URL is required.";
+            if (data.error == "Timeout")
+                var loginError = "You are not connected to the internet.";
+            
+            this.props.updateAppState({loginError:loginError});
+            return;
+        }
+     
+        var url = this.state.company;
+        if(!this.state.isCustomURL)
+            url+=".intelligencebank.com";
+        
+        var csInterface = new CSInterface();
+     
+        csInterface.openURLInDefaultBrowser("https://"+url+"/auth/?login=1&token="+data.body.content);
+        
+        this.props.updateAppState({activeScreen:"BrowserLogin",token:data.body.content});
+    },
+    
+    apiCallback: function apiCallback(data) {
+        var newState = this.state;
+        newState.requestInProcess = true;
+        if (data.error || data.body.message != undefined) {
+            var loginError = "The requested URL was not found.";
+            if (data.error == "Timeout")
+                var loginError = "You are not connected to the internet.";
+            
+            newState.requestInProcess = false;
+            this.setState(newState);
+            this.props.updateAppState({loginError:loginError});
+            return;
+        }
+        newState.apiUrl = data.body.content.replace("http://", "").replace("https://", "");
+
+        this.setState(newState);
+
+        auth(this.state.username, this.state.password, this.state.company, newState.apiUrl, this.authCallback);
+    },
+
+    authCallback: function authCallback(data) {
+       
+        /*
+          {"clientname":"IntelligenceBank BrandHub Demo","clientuuid":"5bb0a472e962b96cbfa426868f6c4806","apikey":"75cc197a81565d43addd7e6af1119b83","logintimeoutperiod":1,"adminemail":"apiusdemo@intelligencebank.Com","passwordexpiryperiod":null,"userverificationperiod":null,"offlineexpiryperiod":1,"annotations":"Advanced","comments":"1","passwordexpired":null,"emailexpired":null,"versions":"1","firstname":"IntelligenceBank","lastname":"API","useruuid":"02e8c3a13e903fb74754ca9a3e6fd344","thumbnail":"/uploads/5bb0a472e962b96cbfa426868f6c4806/auto/300x300-t4-02e8c3a13e903fb74754ca9a3e6fd344.png","foldericon":"6319c138c98702a24f099b12bf9496c6","rowsOnPage":"100","colourPrimary":"#000000","colourPrimaryText":"#FFFFFF","colourSecondary":"#79BB53","colourSecondaryText":"#FFFFFF","colourHighlight":"#81C452","enableMasterSync":"0","enableCustomBranding":"1","enableAnnotations":"1","enableImageReader":"1","enableAppOpenIn":"1","isResourceMainAdmin":true,"toolNameMapping":{"resource":{"menu":"Creative Library","module":"Resources"},"agenda":{"menu":"","module":null}},"defaultFolderSortOrder":"sortorder"}
+        
+The following parameters returned in the response are to be used for subsequent V3 calls:
+“apiV3url”
+“clientid”
+“sid” (in headers)
+        
+        {"clientname":"The IntelligenceBank Trial","clientuuid":"70a09b98acf1471b74801b87cf0aed06","clientid":"6M0B","sid":"p5jh5vqth96bo2bhnhbe7o8931","apikey":"4328294b9fafd03ed28ba85c02947829","apiV3url":"https://lbv3us1.intelligencebank.com","logintimeoutperiod":120,"adminemail":"evgenytr@gmail.com","passwordexpiryperiod":null,"userverificationperiod":null,"offlineexpiryperiod":120,"annotations":"Advanced","comments":"1","passwordexpired":null,"emailexpired":null,"versions":"1","firstname":"Evgeny","lastname":"Trefilov","useruuid":"02e8c3a13e903fb74754ca9a3e6fd344","thumbnail":"/uploads/70a09b98acf1471b74801b87cf0aed06/auto/300x300-t7-02e8c3a13e903fb74754ca9a3e6fd344.png","foldericon":"72b777c2e4913b707bbd07fcedcc4634","rowsOnPage":"100","colourPrimary":"#FFFFFF","colourPrimaryText":"#525151","colourSecondary":"#525151","colourSecondaryText":"#FFFFFF","colourHighlight":"#F68D32","enableMasterSync":"0","enableCustomBranding":"1","enableAnnotations":"1","enableImageReader":"1","enableAppOpenIn":"1","enableAgenda":0,"isResourceMainAdmin":true,"toolNameMapping":{"resource":{"menu":"Assets","module":"Resources"}},"defaultFolderSortOrder":"sortorder"}
+          */
+
+        var newState = this.state;
+        newState.requestInProcess = false;
+
+        if (data.error || data.body.message != undefined) {
+            var loginError = "Your login details are incorrect or your account has been locked. Please try again or go to your login page to reset your password.";
+            if (data.error == "Timeout")
+                var loginError = "You are not connected to the internet.";
+            this.props.updateAppState({loginError:loginError});
+            this.setState(newState);
+            return;
+        }
+
+
+
+        /*
+  $.ajax({
+      url:"https://"+this.state.apiUrl+"/webapp/1.0/login?p60=0db17b942ed391096168f41f90051acc&p70=" + encodeURIComponent(this.state.username) + "&p80=" + encodeURIComponent(this.state.password) + "&p90=" + platformUrl(this.state.company),
+  method:"GET",
+  error:function(a,b,c){},
+  success:function(a,b,c){}
+});
+*/
+        newState.loginError = "";
+        newState.activeScreen = "Home";
+        newState.apiKey = data.body.apikey;
+        newState.apiUrl = data.body.apiV3url;
+        //newState.userUuid = data.body.useruuid;
+        newState.userUuid = data.body.clientid;
+        //newState.sessionKey = data.response.headers["set-cookie"][0];
+        newState.sessionKey = data.body.sid;
+        newState.defaultFolderSortOrder = data.body.defaultFolderSortOrder;
+        // newState.isCustomURL = this.state.isCustomURL;
+        _useCustomUrl = this.state.isCustomURL;
+
+        savePrefs({
+            username: this.state.username,
+            company: this.state.company,
+            apiUrl:this.state.apiUrl,
+            apiKey:this.state.apiKey,
+            sessionKey:this.state.sessionKey,
+            userUuid:this.state.userUuid,
+            isCustomURL: this.state.isCustomURL,
+            placeOriginals:this.props.appState.placeOriginals,
+            showPlaceOptions:this.props.appState.showPlaceOptions,
+            hideUnsupported:this.props.appState.hideUnsupported,
+            customFolder:this.props.appState.customFolder,
+            useCustomFolder:this.props.appState.useCustomFolder
+        });
+
+        //   myAlert(JSON.stringify(data.response.headers["set-cookie"]));
+        this.props.logoutCallback(data.body.logintimeoutperiod);
+
+        this.props.updateAppState(newState);
+    },
+
+    handleChange: function handleChange(event, attribute) {
+        var newState = this.state;
+        newState[attribute] = event.target.value;
+        this.setState(newState);
+    },
+
+    toggleCustomUrl: function() {
+        var newState = this.state;
+        newState.isCustomURL = !newState.isCustomURL;
+        _useCustomUrl = newState.isCustomURL;
+
+        savePrefs({
+            username: this.state.username,
+            company: this.state.company,
+            apiUrl:this.state.apiUrl,
+            apiKey:this.state.apiKey,
+            sessionKey:this.state.sessionKey,
+            userUuid:this.state.userUuid,
+            isCustomURL: newState.isCustomURL,
+            placeOriginals:this.props.appState.placeOriginals,
+            showPlaceOptions:this.props.appState.showPlaceOptions,
+            hideUnsupported:this.props.appState.hideUnsupported,
+            customFolder:this.props.appState.customFolder,
+            useCustomFolder:this.props.appState.useCustomFolder
+        });
+
+        this.setState(newState);
+    },
+
+    getInitialState: function getInitialState() {
+
+       
+        var initialState = {
+            username: "",
+            password: "",
+            company: "",
+            apiUrl: "",
+            sessionKey: "",
+            apiKey: "",
+            requestInProcess: false,
+            defaultFolderSortOrder: "sortorder",
+            isCustomURL: false
+        };
+        
+        var prefsData = readPrefs();
+        if (prefsData) {
+            for (var prop in prefsData)
+                if (prefsData[prop]!=undefined) initialState[prop] = prefsData[prop];
+
+            _useCustomUrl = initialState.isCustomURL;
+            apiUrl = "";
+            sessionKey = "";
+            apiKey = "";
+            userUuid = "";
+        }
+
+       
+        
+        return initialState;
+    },
+
+    render: function render() {
+        var _this = this;
+
+        return React.createElement(
+            "div", {
+                className: "bg_black"
+            },
+            this.state.requestInProcess ? React.createElement(CircularPreLoader, null) : null,
+            React.createElement(
+                "div", {
+                    className: "form_body"
+                },
+                React.createElement(
+                    "div", {
+                        className: "row"
+                    },
+                    React.createElement(
+                        "div", {
+                            className: "col s12 block_img_logo"
+                        },
+                        React.createElement("img", {
+                            className: "img_logo",
+                            src: "./images/logo.png"
+                        })
+                    )
+                ),
+                React.createElement(
+                    "div", {
+                        className: "row block_login"
+                    },
+                    React.createElement(
+                        "p",
+                        null,
+                        " Login to your IntelligenceBank DAM account by entering your credentials below."
+                    )
+                ),
+                this.props.appState.loginError != "" ? React.createElement(IncorrectLoginWarning, {
+                    errorMessage: this.props.appState.loginError
+                }) : null,
+
+                React.createElement(
+                    "form", {
+                        className: "block_form",
+                        onSubmit: this.handleSubmit
+                    },
+                    React.createElement(
+                        "div", {
+                            className: "row form_line"
+                        },
+                        React.createElement(
+                            "div", {
+                                className: "col s2 pre_post"
+                            },
+                            "https://"
+                        ),
+                        React.createElement(
+                            "div", {
+                                className: this.state.isCustomURL ? "input-field col s10" : "input-field col s6",
+                                style: {
+                                    padding: 0
+                                }
+                            },
+                            React.createElement("input", {
+                                placeholder: this.state.isCustomURL ? "platformurl" : "mycompany",
+                                id: "company_name",
+                                type: "text",
+                                className: "validate",
+                                onChange: function onChange(event) {
+                                    return _this.handleChange(event, 'company');
+                                },
+                                value: this.state.company
+                            }),
+                            React.createElement(
+                                "label", {
+                                    htmlFor: "company_name",
+                                    className: "PlatformURL"
+                                },
+                                "Platform URL"
+                            )
+                        ),
+                        this.state.isCustomURL ? null : React.createElement(
+                            "div", {
+                                className: "col s4 pre_post",
+                                style: {
+                                    padding: 0
+                                }
+                            },
+                            ".intelligencebank.com"
+                        )
+                    ),
+                    React.createElement(
+                        "div", {
+                            className: "row"
+                        },
+                        React.createElement(
+                            "div", {
+                                className: "input-field col s12"
+                            },
+                            React.createElement("input", {
+                                id: "username",
+                                type: "text",
+                                className: "validate",
+                                onChange: function onChange(event) {
+                                    return _this.handleChange(event, 'username');
+                                },
+                                value: this.state.username
+                            }),
+                            React.createElement(
+                                "label", {
+                                    htmlFor: "username"
+                                },
+                                "Username"
+                            )
+                        )
+                    ),
+                    React.createElement(
+                        "div", {
+                            className: "row"
+                        },
+                        React.createElement(
+                            "div", {
+                                className: "input-field col s12"
+                            },
+                            React.createElement("input", {
+                                id: "password",
+                                type: "password",
+                                className: "validate",
+                                onChange: function onChange(event) {
+                                    return _this.handleChange(event, 'password');
+                                },
+                                value: this.state.password
+                            }),
+                            React.createElement(
+                                "label", {
+                                    htmlFor: "password"
+                                },
+                                "Password"
+                            )
+                        )
+                    ),
+                    React.createElement(
+                        "div", {
+                            className: "row"
+                        },
+                        React.createElement(
+                            "div", {
+                                className: "input-field col s12 block_button"
+                            },
+                            React.createElement(
+                                "button", {
+                                    className: "waves-effect waves-light btn hand_cursor"
+                                },
+                                "Login"
+                            )
+                        )
+
+                    ),
+                    React.createElement(
+                        "div", {
+                            className: "row"
+                        },
+                        React.createElement(
+                            "div", {
+
+                                className: "col s12 customUrlLine hand_cursor",
+                                onClick: function onClick(event) {
+                                    return _this.toggleCustomUrl();
+                                },
+                            },
+                            this.state.isCustomURL ? "IntelligenceBank URL" : "Custom URL"
+                        )
+
+                    ),
+                    React.createElement(
+                        "div", {
+                            className: "row"
+                        },
+                        React.createElement(
+                            "div", {
+
+                                className: "col s12 customUrlLine hand_cursor",
+                                onClick: function onClick(event) {
+                                    return _this.browserLoginPressed();
+                                },
+                            },
+                            "Browser Login (For SSO)"
+                        )
+                    )
+                )
+            )
+        );
+    }
+});
+
+var IncorrectLoginWarning = React.createClass({
+    displayName: "IncorrectLoginWarning",
+    render: function render() {
+        return React.createElement(
+            "div", {
+                className: "row block_relogin"
+            },
+            React.createElement(
+                "div", {
+                    className: "valign-wrapper"
+                },
+                React.createElement(
+                    "i", {
+                        className: "material-icons"
+                    },
+                    "report_problem"
+                ),
+                React.createElement(
+                    "p",
+                    null,
+                    this.props.errorMessage
+                )
+            )
+        );
+    }
+});
+
+
+var BrowserLoginScreen = React.createClass({
+    displayName: "BrowserLoginScreen",
+    
+    getInitialState: function getInitialState() {
+
+        var initialState = {
+            loginError: false
+        };
+
+        return initialState;
+    },
+    
+    backPressed: function backPressed() {
+        this.props.updateAppState({activeScreen:"Login"});
+    },
+    
+    continuePressed: function continuePressed() {
+
+        var url = this.props.appState.company;
+        if(!this.props.appState.isCustomURL)
+            url+=".intelligencebank.com";
+        
+        getKey(url,this.props.appState.token,this.continueCallback);
+
+    },
+    
+    continueCallback: function continueCallback(data)
+    {
+       
+        //alert(JSON.stringify(data));
+      
+        if(data.error || !data.body.content || !data.body.content.session || !data.body.content.session.sid) {
+            this.props.updateAppState({activeScreen:"Login",loginError:"You are not currently authenticated via the browser. Click the Browser Login (For SSO) link below to try again."});
+            return;
+        };
+        
+        
+       /* {'SID':'d159f8e62ad13decd85b40245e20062c','content':{'session':{'sid':'a303f11aac858803fd96435b8869051f','userUuid':'104bd05973d890dce595455822ac452a','originalUserUuid':null,'loginTime':1609227014},'info':{'clientname':'The IntelligenceBank Trial','clientuuid':'70a09b98acf1471b74801b87cf0aed06','clientid':'6M0B','sid':'a303f11aac858803fd96435b8869051f','apikey':'4328294b9fafd03ed28ba85c02947829','apiV3url':'https://usprod2usv3.intelligencebank.com','logintimeoutperiod':120,'adminemail':'evgenytr@gmail.com','passwordexpiryperiod':null,'userverificationperiod':null,'offlineexpiryperiod':120,'annotations':'Advanced','comments':'1','passwordexpired':null,'emailexpired':null,'versions':'0','firstname':'Permission','lastname':'User','useruuid':'104bd05973d890dce595455822ac452a','thumbnail':'/uploads/70a09b98acf1471b74801b87cf0aed06/auto/300x300-t2-104bd05973d890dce595455822ac452a.png','foldericon':'72b777c2e4913b707bbd07fcedcc4634','rowsOnPage':'100','colourPrimary':'#FFFFFF','colourPrimaryText':'#525151','colourSecondary':'#525151','colourSecondaryText':'#FFFFFF','colourHighlight':'#F68D32','enableMasterSync':'0','enableCustomBranding':'1','enableAnnotations':'1','enableImageReader':'1','enableAppOpenIn':'1','enableAgenda':0,'isResourceMainAdmin':false,'toolNameMapping':{'resource':{'menu':'Assets','module':'Resources'}},'defaultFolderSortOrder':'sortorder'}}}
+        */
+   
+        var apiKey = data.body.content.info.apikey;
+        var sessionKey = data.body.content.session.sid;
+        this.props.updateAppState({apiKey:apiKey,sessionKey:sessionKey,userUuid:data.body.content.info.clientid, apiUrl:data.body.content.info.apiV3url});
+        //getApiUrl(this.props.appState.company, this.apiCallback, this.props.appState.isCustomURL);
+        savePrefs({
+            username: this.props.appState.username,
+            company: this.props.appState.company,
+            apiUrl:this.props.appState.apiUrl,
+            apiKey:this.props.appState.apiKey,
+            sessionKey:this.props.appState.sessionKey,
+            userUuid:this.props.appState.userUuid,
+            isCustomURL: this.props.appState.isCustomURL,
+            placeOriginals:this.props.appState.placeOriginals,
+            showPlaceOptions:this.props.appState.showPlaceOptions,
+            hideUnsupported:this.props.appState.hideUnsupported,
+            customFolder:this.props.appState.customFolder,
+            useCustomFolder:this.props.appState.useCustomFolder
+        });
+       
+        this.props.updateAppState({activeScreen:"Home"});
+        
+    
+    },
+    
+    apiCallback: function apiCallback(data) {
+        
+        
+        if (data.error || data.body.message != undefined) {
+            var loginError = "The requested URL was not found.";
+            if (data.error == "Timeout")
+                var loginError = "You are not connected to the internet.";
+            
+            this.setState(newState);
+            this.props.updateAppState({loginError:loginError,activeScreen:"Login"});
+            return;
+        }
+      
+        
+        var apiUrl = data.body.content.replace("http://", "").replace("https://", "");
+        
+        //save to prefs
+        savePrefs({
+            username: this.props.appState.username,
+            company: this.props.appState.company,
+            apiUrl:apiUrl,
+            apiKey:this.props.appState.apiKey,
+            sessionKey:this.props.appState.sessionKey,
+            userUuid:this.props.appState.userUuid,
+            isCustomURL: this.props.appState.isCustomURL,
+            placeOriginals:this.props.appState.placeOriginals,
+            showPlaceOptions:this.props.appState.showPlaceOptions,
+            hideUnsupported:this.props.appState.hideUnsupported,
+            customFolder:this.props.appState.customFolder,
+            useCustomFolder:this.props.appState.useCustomFolder
+        });
+       
+        this.props.updateAppState({apiUrl:apiUrl,activeScreen:"Home"});
+    },
+    
+    render: function render() {
+        var _this = this;
+        
+        return React.createElement(
+            "div", {
+                className: "bg_black"
+            },
+            React.createElement(
+                "div", {
+                    className: "form_body"
+                },
+                React.createElement(
+                    "div", {
+                        className: "row"
+                    },
+                    React.createElement(
+                        "div", {
+                            className: "col s12 block_img_logo"
+                        },
+                        React.createElement("img", {
+                            className: "img_logo",
+                            src: "./images/logo.png"
+                        })
+                    )
+                ),
+                React.createElement(
+                    "div", {
+                        className: "row block_login",
+                        style:{paddingTop:40}
+                    },
+                    React.createElement(
+                        "p",
+                        null,
+                        "Once your are logged in via the browser, click ",
+                        React.createElement(
+                            "b",
+                            null,
+                            "Continue"
+                        ),
+                        ". To return to the standard Login page, click ",
+                        React.createElement(
+                            "b",
+                            null,
+                            "Back"
+                        ),
+                        "."
+                    )
+                ), 
+                    React.createElement(
+                        "div", {
+                            className: "row",
+                            style:{paddingTop:40}
+                        },
+                        React.createElement(
+                            "div", {
+                                className: "input-field col s12 block_button"
+                            },
+                            React.createElement(
+                                "button", {
+                                    className: "waves-effect waves-light btn hand_cursor",
+                                    style:{marginRight:40},
+                                    onClick: function onClick(event) {
+                                        return _this.backPressed();
+                                    },
+                                },
+                                "Back"
+                            ),
+                            React.createElement(
+                                "button", {
+                                    className: "waves-effect waves-light btn hand_cursor",
+                                    onClick: function onClick(event) {
+                                        return _this.continuePressed();
+                                    },
+                                },
+                                "Continue"
+                            )
+                        )
+
+                    )
+            )
+        );
+        
+    }
+});
+
+
+var SettingsBar = React.createClass({
+    displayName: "SettingsBar",
+    
+    render: function render() {
+        var _this = this;
+    
+        return React.createElement(
+            "div", {
+                className: "settingsBar"
+            },
+            React.createElement(
+                        "div", {
+                            className: this.props.activeTab == "Options" ? "settingsCell active" : "settingsCell",
+                            onClick: function onClick(event)
+                            {
+                                _this.props.tabCallback("Options");
+                            }
+                        },
+                        React.createElement(
+                            "p",
+                            null,
+                            React.createElement(
+                                "i", {
+                                    className: "material-icons"
+                                },
+                                "build"
+                            ),
+                            "Settings"
+                        )
+                    ),
+                    React.createElement(
+                                "div", {
+                                    className: "settingsCell",
+                                    onClick: function onClick(event)
+                                    {
+                                        _this.props.logout();
+                                    }
+                                },
+                                React.createElement(
+                                    "p",
+                                    null,
+                                React.createElement(
+                                    "i", {
+                                        className: "material-icons"
+                                    },
+                                    "input"
+                                ),
+                                "Logout"
+                                )
+                               
+                    )
+        );
+    }
+});
+
+
+        
+        
+var SettingsScreen = React.createClass({
+    displayName: "SettingsScreen",
+    
+    toggleCb: function(prop) {
+        var updateObj = {hideUnsupported:this.props.appState.hideUnsupported,
+        placeOriginals:this.props.appState.placeOriginals,
+        showPlaceOptions:this.props.appState.showPlaceOptions,
+        useCustomFolder:this.props.appState.useCustomFolder,
+        customFolder:this.props.appState.customFolder};
+        
+        switch(prop)
+        {
+        case "hideUnsupported":
+            updateObj.hideUnsupported=!this.props.appState.hideUnsupported;
+            break;
+        case "placeOriginals":
+            updateObj.placeOriginals=!this.props.appState.placeOriginals;
+            updateObj.showPlaceOptions = false;
+            break;
+        case "showPlaceOptions":
+            updateObj.showPlaceOptions=!this.props.appState.showPlaceOptions;
+            break;
+        case "useCustomFolder":
+            updateObj.useCustomFolder=!this.props.appState.useCustomFolder;
+            break;
+        }
+        
+        savePrefs({
+            username: this.props.appState.username,
+            company: this.props.appState.company,
+            apiUrl:this.props.appState.apiUrl,
+            apiKey:this.props.appState.apiKey,
+            sessionKey:this.props.appState.sessionKey,
+            userUuid:this.props.appState.userUuid,
+            isCustomURL: this.props.appState.isCustomURL,
+        placeOriginals:updateObj.placeOriginals,
+        showPlaceOptions:updateObj.showPlaceOptions,
+        hideUnsupported:updateObj.hideUnsupported,
+            useCustomFolder:updateObj.useCustomFolder,
+            customFolder:this.props.appState.customFolder
+        });
+        
+        this.props.updateAppState(updateObj);
+    },
+
+    selectPressed: function(attribute)
+    {
+        var a = window.cep.fs.showOpenDialogEx(false, true, "Please choose folder");
+        
+        if(!a.data.length) return;
+        var folderPath = a.data[0];
+        var myObj = {};
+        myObj[attribute] = folderPath;
+        this.props.updateAppState(myObj);
+        
+        savePrefs({
+            username: this.props.appState.username,
+            company: this.props.appState.company,
+            apiUrl:this.props.appState.apiUrl,
+            apiKey:this.props.appState.apiKey,
+            sessionKey:this.props.appState.sessionKey,
+            userUuid:this.props.appState.userUuid,
+            isCustomURL: this.props.appState.isCustomURL,
+        placeOriginals:this.props.appState.placeOriginals,
+        showPlaceOptions:this.props.appState.showPlaceOptions,
+        hideUnsupported:this.props.appState.hideUnsupported,
+            useCustomFolder:this.props.appState.useCustomFolder,
+            customFolder:myObj.customFolder
+        });
+        
+    },
+    
+    render: function render() {
+        var _this = this;
+        
+        
+        
+        return React.createElement(
+            "div", {
+                className: "settings"
+            },/*
+            React.createElement(
+                            "h2",
+                            null,
+                            "Hide Unsupported Files"
+                        ),
+            React.createElement(
+                "p",
+                null,
+                "Unsupported files from the Adobe application can be either disabled (default), or entirely hidden. Note that the Folder count will still include them."
+            ),
+            React.createElement("input", {
+                type: "checkbox",
+                className: "checkbox-green filled-in",
+                id: "cbHideUnsupported",
+                checked: this.props.appState.hideUnsupported,
+                onClick: function onClick(event) {
+                    _this.toggleCb("hideUnsupported");
+                }
+            }),
+            React.createElement(
+                "label", {
+                    "htmlFor": "cbHideUnsupported"
+                },
+                ""
+            ),*/
+           this.props.appState.hostName!="PHSP" && this.props.appState.hostName !="PHXS" ? React.createElement(
+                            "h2",
+                            null,
+                             "Always Place Original"
+                        ) : null,
+            this.props.appState.hostName!="PHSP" && this.props.appState.hostName !="PHXS" ? React.createElement(
+                "p",
+                null,
+                 "When using the Place action to insert a file onto an opened document, a lightweight Preview image is used by default. Enable this option to always download the Original directly when placing files from the Connector."
+            ) : null,
+            this.props.appState.hostName!="PHSP" && this.props.appState.hostName !="PHXS" ? React.createElement("input", {
+                type: "checkbox",
+                className: "checkbox-green filled-in",
+                id: "cbPlaceOriginals",
+                checked: this.props.appState.placeOriginals,
+                onClick: function onClick(event) {
+                    _this.toggleCb("placeOriginals");
+                }
+            }): null,
+            this.props.appState.hostName!="PHSP" && this.props.appState.hostName !="PHXS" ? React.createElement(
+                "label", {
+                    "htmlFor": "cbPlaceOriginals"
+                },
+                ""
+            ) : null,
+            
+            React.createElement(
+                            "h2",
+                            null,
+                            "Use Custom Folder For Originals"
+                        ),
+            React.createElement(
+                "p",
+                null,
+                "Select the local storage location for original assets when they are downloaded."
+            ),
+            React.createElement("input", {
+                type: "checkbox",
+                className: "checkbox-green filled-in",
+                id: "cbUseCustomFolder",
+                checked: this.props.appState.useCustomFolder,
+                onClick: function onClick(event) {
+                    _this.toggleCb("useCustomFolder");
+                }
+            }),
+            React.createElement(
+                "label", {
+                    "htmlFor": "cbUseCustomFolder"
+                },
+                ""
+            ),
+            
+            this.props.appState.useCustomFolder ? React.createElement(
+                "h2",
+                null,
+                "Destination Folder"
+            ) : null,
+            
+            
+            
+            this.props.appState.useCustomFolder ? React.createElement(
+                "div", {
+                    style: {
+                        padding: 0
+                    }
+                },
+                React.createElement(
+                    "button", {
+                        className: "btn hand-cursor",
+                        style: {
+                            marginRight: 10
+                        },
+                        onClick:function()
+                        {
+                            _this.selectPressed("customFolder");
+                        }
+                    },
+                    "Choose"
+                ),
+                
+                this.props.appState.customFolder
+               
+            ) : null,
+            
+            
+            this.props.appState.placeOriginals && this.props.appState.hostName=="IDSN" ? React.createElement(
+                "h2",
+                null,
+                "Show Import Options On Place"
+            ) : null,
+            this.props.appState.placeOriginals && this.props.appState.hostName=="IDSN" ? React.createElement(
+                "p",
+                null,
+                "When using the Place action to insert a file onto an opened document from the Connector, enable Show Import Options as per Adobe’s native functionality."
+            ) : null,
+            this.props.appState.placeOriginals && this.props.appState.hostName=="IDSN" ? React.createElement("input", {
+                type: "checkbox",
+                className: "checkbox-green filled-in",
+                id: "cbShowPlaceOptions",
+                checked: this.props.appState.showPlaceOptions,
+                onClick: function onClick(event) {
+                    _this.toggleCb("showPlaceOptions");
+                }
+            }) : null,
+            this.props.appState.placeOriginals && this.props.appState.hostName=="IDSN" ? React.createElement(
+                "label", {
+                    "htmlFor": "cbShowPlaceOptions"
+                },
+                ""
+            ) : null
+        );
+        
+        
+    }
+});
+
+function getApiUrl(companyName, apiCallback, isCustomUrl) {
+    
+    var hostname = companyName;
+    if (!isCustomUrl) hostname += ".intelligencebank.com";
+    var options = {
+        hostname: hostname,
+        port: 443,
+        method: 'GET',
+        path: "/v1/auth/app/getYapiAddress"
+    };
+
+    var authRequest = https.request(options, function(response) {
+
+        var body = "";
+
+        response.on('error', function(err) {
+
+            apiCallback({
+                error: err
+            })
+        });
+
+        response.on('data', function(chunk) {
+            body += chunk;
+
+        });
+
+        response.on('end', function() {
+            var error = false;
+
+            try {
+                body = JSON.parse(body);
+            } catch (e) {
+                error = "Incorrect URL"
+            }
+
+            apiCallback({
+                error: error,
+                body: body,
+                response: response
+            })
+
+        });
+
+    });
+
+    authRequest.setTimeout(_timeoutValue, function() {
+        authRequest.abort();
+        apiCallback({
+            error: "Timeout"
+        })
+    });
+    
+    authRequest.on('error', function() {
+                apiCallback({error:"Auth request error"});
+            });
+            
+    authRequest.end();
+
+}
+
+function auth(username, password, companyName, apiUrl, authCallback) {
+
+    var postData = "p60=0db17b942ed391096168f41f90051acc&p70=" + encodeURIComponent(username) + "&p80=" + encodeURIComponent(password) + "&p90=" + platformUrl(companyName);
+
+    var options = {
+        hostname: apiUrl,
+        port: 443,
+        method: 'POST',
+        path: "/webapp/1.0/login",
+        headers: {
+
+            'Content-Type': 'application/x-www-form-urlencoded',
+            'Content-Length': Buffer.byteLength(postData)
+        }
+    };
+
+    var authRequest = https.request(options, function(response) {
+
+        var body = "";
+
+        response.on('error', function(err) {
+
+            authCallback({
+                error: err
+            })
+        });
+
+        response.on('data', function(chunk) {
+            body += chunk;
+
+        });
+
+        response.on('end', function() {
+            var error = false;
+
+            try {
+      
+                body = JSON.parse(body);
+            } catch (e) {
+                error = "Incorrect URL"
+            }
+
+            authCallback({
+                error: error,
+                body: body,
+                response: response
+            })
+
+        });
+
+    });
+
+    authRequest.setTimeout(_timeoutValue, function() {
+        authRequest.abort();
+        authCallback({
+            error: "Timeout"
+        })
+    });
+    
+    authRequest.on('error', function() {
+                authCallback({error:"Auth error"});
+            });
+
+    authRequest.write(postData);
+
+    authRequest.end();
+
+}
+
+function loadFolderData(apiKey, userUuid, sessionKey, apiUrl, loadCallback, folderUuid, pageNum, defaultOrder) {
+    
+
+   
+    var path = "/api/json";
+
+    var json = {
+        "method": "GET",
+        "version": "3.0.0",
+        "client":userUuid,
+        "table": "folder.limit("+pageNum * _totalPageItems+","+_totalPageItems+")",
+        "query_params": {
+                 "productkey": "0db17b942ed391096168f41f90051acc", 
+                 "verbose": true,
+    		"searchParams": {
+        	"parent": "",
+        	"extension":extArray.join(","),
+        	"wrapped_conditions": [
+        	 []
+        	 ]
+    		}
+    	}
+    };
+
+
+  
+  if (folderUuid && folderUuid != "")
+          json.query_params.searchParams.parent = folderUuid;
+  
+  var options = {
+      rejectUnauthorized:false,
+      method: 'POST',
+      path: path,
+      'url': apiUrl + path,
+      headers: {
+          "sid": sessionKey,
+          "Content-Type":"application/json"
+      },
+      body:JSON.stringify(json)
+  };
+  
+  
+  
+
+    request.post(options, function(error, response, body) {
+
+        if (error) {
+            loadCallback({
+                error: "err:"+error
+            })
+            return;
+        }
+
+        var error = false;
+
+        try{
+
+          
+        body = JSON.parse(body);
+       // body.defaultOrder = defaultOrder;
+        if (body.error) error = body.error; //?
+        }catch(e){
+         
+            error = "Invalid response";
+            loadCallback({
+                error: error
+            });
+            return;
+        }
+
+        loadCallback({
+            error: error,
+            body: body
+        });
+        
+        
+    })
+    
+
+}
+
+function loadFilesData(apiKey, userUuid, sessionKey, apiUrl, loadCallback, folderUuid, pageNum, defaultOrder) {
+    
+    //resources
+    //{{apiV3url}}/api/3.0.0/{{clientid}}/resource.limit(100).order(createTime:-1)?searchParams[ib_folder_s]={{folder_id}}&searchParams[isSearching]=&searchParams[keywords]=&searchParams[content]=&searchParams[extension]=&verbose
+
+
+//productkey=0db17b942ed391096168f41f90051acc
+    
+
+   
+    var path = "/api/json";
+    //productkey=0db17b942ed391096168f41f90051acc&verbose";
+
+       // else
+        //    path += "&searchParams[parent]";
+       
+var json = {
+    "method": "GET",
+    "version": "3.0.0",
+    "client":userUuid,
+    "table": "resource.limit("+pageNum * _totalPageItems+","+_totalPageItems+")",
+    "query_params": {
+             "productkey": "0db17b942ed391096168f41f90051acc", 
+             "verbose": true,
+		"searchParams": {
+    	"ib_folder_s": "",
+    	"isSearching": false,
+    	"extension":extArray,
+    	"wrapped_conditions": [
+    	 []
+    	 ]
+		}
+	}
+};
+
+if (folderUuid && folderUuid != "")
+        json.query_params.searchParams.ib_folder_s = folderUuid;
+   
+    var options = {
+        rejectUnauthorized:false,
+        method: 'POST',
+        path: path,
+        'url': apiUrl + path,
+        headers: {
+            "sid": sessionKey,
+            "Content-Type":"application/json"
+        },
+        body:JSON.stringify(json)
+    };
+    
+    request.post(options, function(error, response, body) {
+
+        if (error) {
+            loadCallback({
+                error: "err:"+error
+            })
+            return;
+        }
+
+        var error = false;
+
+        try{
+     
+        body = JSON.parse(body);
+       // body.defaultOrder = defaultOrder;
+        if (body.error) error = body.error; //?
+        }catch(e){
+         
+            error = "Invalid response";
+            loadCallback({
+                error: error
+            });
+            return;
+        }
+
+        loadCallback({
+            error: error,
+            body: body
+        });
+        
+        
+    })
+    
+
+}
+
+function loadSearchData(apiKey, userUuid, sessionKey, apiUrl, searchCallback, searchTerm, folderUuid) {
+
+  // searchTerm = encodeURIComponent(searchTerm);
+
+       
+       var path = "/api/json";
+
+         // else
+          //    path += "&searchParams[parent]";
+
+  var json = {
+      "method": "GET",
+      "version": "3.0.0",
+      "client":userUuid,
+      "table": "resource.limit("+_totalPageItems+")",
+      "query_params": {
+             "productkey": "0db17b942ed391096168f41f90051acc", 
+             "verbose": true,
+  		"searchParams": {
+            "keywords":searchTerm,
+      	"isSearching": true,
+      	"extension":extArray,
+      	"wrapped_conditions": [
+      	 []
+      	 ]
+  		}
+  	}
+  };
+
+ 
+  
+   var options = {
+       rejectUnauthorized:false,
+       method: 'POST',
+       path: path,
+       'url': apiUrl + path,
+       headers: {
+           "sid": sessionKey,
+           "Content-Type":"application/json"
+       },
+       body:JSON.stringify(json)
+   };
+
+   request.post(options, function(error, response, body) {
+
+       if (error) {
+           searchCallback({
+               error: "err:"+error
+           })
+           return;
+       }
+
+       var error = false;
+
+       try{
+ 
+       body = JSON.parse(body);
+      // body.defaultOrder = defaultOrder;
+       if (body.error) error = body.error; //?
+       }catch(e){
+        
+           error = "Invalid response";
+           searchCallback({
+               error: error
+           });
+           return;
+       }
+
+       searchCallback({
+           error: error,
+           body: body
+       });
+       
+       
+   })
+
+}
+
+
+function uploadFile(apiKey, userUuid, sessionKey, apiUrl, filePath, folderUuid, fileUuid, filename, title, description, updateResource, updateVersion, uploadCallback) {
+    var csInterface = new CSInterface();
+    var appName = csInterface.hostEnvironment.appName;
+    //p60=0db17b942ed391096168f41f90051acc&
+    
+    /*
+    When user creates or updates a Resource, a Name and Description fields are displayed allowing them to set (Create) or update (Update) these metadata fields
+    
+Once the new logic for how we name placed and opened assets locally has been implemented, we can switch to always use the current local filename as the default value (without the extension).
+Name is mandatory and cannot be empty. Automatically fallback to local file name (without extension) instead of validation (?).
+    */
+    
+      var path = "/api/3.0.0/"+userUuid+"/file?target=resource&verbose&productkey=0db17b942ed391096168f41f90051acc";
+      
+      var resourcePath = "/api/3.0.0/"+userUuid+"/resource/?verbose&bypassWorkflow=true&bypassValidation=true&productkey=0db17b942ed391096168f41f90051acc";
+      var resourceUpdatePath = "/api/3.0.0/"+userUuid+"/resource/"+fileUuid+"?verbose&bypassWorkflow=true&bypassValidation=true&productkey=0db17b942ed391096168f41f90051acc";
+      
+      if(updateVersion) resourceUpdatePath +="&version=true";
+ 
+  
+
+    var form = new FormData();
+
+    form.append('file', fs.createReadStream(filePath));
+    
+    
+    var formData = {
+      file: fs.createReadStream(filePath)
+    };
+    
+  
+    var error = false;
+    var body = "";
+
+    var myMethod = "POST";
+
+    var options = {
+        rejectUnauthorized:false,
+        method: myMethod,
+        path: path,
+        'url': apiUrl + path,
+        headers: {
+            "sid": sessionKey
+        },
+        formData: formData
+    };
+    
+    
+    request.post(options, function(err, response, body) {
+      if (err) {
+          myAlert("Error returned: " + err);
+          uploadCallback("Upload error");
+        return;
+      }
+      
+
+      
+      var createData = 
+      {
+      "data": {
+      "folder": folderUuid,
+      "type": "file",
+      "name": title,
+          "description":description,
+          "file": JSON.parse(response.body).response
+      }
+      };
+      
+      var updateData = 
+      {
+      "data": {
+      "type": "file",
+      "name": title,
+          "description":description,
+          "file": JSON.parse(response.body).response
+      }
+      };
+
+      
+      if(updateResource)
+      {
+          var updateOptions = {
+              rejectUnauthorized:false,
+              method: 'PUT',
+              path: resourceUpdatePath,
+              'url': apiUrl + resourceUpdatePath,
+              headers: {
+                  "sid": sessionKey,
+                  "Content-Type":"application/json"
+              },
+              body:JSON.stringify(updateData)
+          };
+          
+          
+         
+          
+          request.put(updateOptions, function(err, response, body) {
+            if (err) {
+                myAlert("Error returned: " + err);
+                uploadCallback("Upload error");
+              return;
+            }
+ 
+            
+    uploadCallback(response.body);
+            
+            });
+         
+      }
+      else
+      {
+      var createOptions = {
+          rejectUnauthorized:false,
+          method: 'POST',
+          path: resourcePath,
+          'url': apiUrl + resourcePath,
+          headers: {
+              "sid": sessionKey,
+              "Content-Type":"application/json"
+          },
+          body:JSON.stringify(createData)
+      };
+      
+      request.post(createOptions, function(err, response, body) {
+        if (err) {
+            myAlert("Error returned: " + err);
+            uploadCallback("Upload error");
+          return;
+        }
+    uploadCallback(response.body);
+      //  alert(JSON.stringify(response));
+        
+
+        });
+     }
+
+     
+    });
+    
+}
+
+
+
+function placePreviewFile(apiKey, userUuid, sessionKey, apiUrl, fileUuid, placePreviewCallback) {
+
+    try{
+    var imageData = _imagesDataObj[fileUuid];
+
+    
+    
+    var csInterface = new CSInterface();
+    var appName = csInterface.hostEnvironment.appName;
+    
+    
+    var fullPath = createTempFolder(fileUuid + "_" + imageData.lastUpdateTime.replace(/[-: ]/g, '') + "_" + "preview") + "/" +  fileNameWithoutExt(imageData.file.name)+".png";
+   
+    if (appName == "PHXS" || appName == "PHSP")
+        createTempFolder(fileUuid + "_" + imageData.lastUpdateTime.replace(/[-: ]/g, '') + "_" + "preview-ps") + "/" +  imageData.file.name;
+    
+
+    var fullOldPath = createTempFolder() + "/" + fileUuid + "_" + imageData.lastUpdateTime.replace(/[-: ]/g, '') + "-preview.png";
+    if (appName == "PHXS" || appName == "PHSP")
+        fullOldPath = createTempFolder() + "/" + fileUuid + "_" + imageData.lastUpdateTime.replace(/[-: ]/g, '') + "-preview_ps." + fileExtension(imageData.file.name);
+
+    
+    //check if we have HD file already at new path, place it then
+
+    var check = window.cep.fs.stat(fullPath);
+
+    if (check.data.isFile() && check.err == window.cep.fs.NO_ERROR && getFilesizeInBytes(fullPath) != 0) {
+
+        placePreviewCallback({
+            uuid: fileUuid,
+            filePath: fullPath,
+            error: false
+        });
+
+
+        return;
+    }
+    
+    //check if we have HD(?) file already at old path, move to new path and place it
+
+    var check = window.cep.fs.stat(fullOldPath);
+    
+    
+
+    if (check.data.isFile() && check.err == window.cep.fs.NO_ERROR && getFilesizeInBytes(fullOldPath) != 0) {
+
+
+        //copy to new path
+        fs.copyFile(fullOldPath, fullPath,(err) => {
+                if (err) {
+                    placePreviewCallback({
+                    error: "Could not copy file to path "+fullPath
+                        });
+                    return;
+                    }
+  
+                placePreviewCallback({
+                        uuid: fileUuid,
+                        filePath: fullPath,
+                        error: false
+                    });
+                });
+                
+                return;
+    }
+    //
+
+   }catch(e){}
+   
+    var path = "/api/3.0.0/"+userUuid+"/resource/"+fileUuid+"?sid="+sessionKey+"&action=preview&productkey=0db17b942ed391096168f41f90051acc";
+   // if (appName == "PHXS" || appName == "PHSP")
+     //   path = "/webapp/1.0/resources?p60=0db17b942ed391096168f41f90051acc&p10=" + apiKey + "&p20=" + userUuid + "&fileuuid=" + fileUuid;
+    //+"&ext="+imageData.filetype.toString().toLowerCase();
+ 
+
+    var options = {
+        rejectUnauthorized:false,
+        method: 'GET',
+        path: path,
+        'url': apiUrl + path,
+        headers: {
+            "sid": sessionKey
+        }
+    };
+
+    var file = fs.createWriteStream(fullPath);
+    var error = false;
+    
+    file.on('close', function() {
+
+ 
+
+        if (!error)
+            placePreviewCallback({
+                uuid: fileUuid,
+                filePath: fullPath,
+                error: false
+            });
+
+    });
+
+    request.get(options, function(error, response, body) {
+
+
+        // ensure file is complete before importing  
+        response.on('error', function(err) {
+        
+            error = true;
+
+            placePreviewCallback({
+                error: err
+            })
+        });
+
+
+    
+       
+       
+    }).pipe(file);
+    
+  
+
+}
+
+
+function placeHDFile(apiKey, userUuid, sessionKey, apiUrl, fileUuid, placeHDCallback, imagePath) 
+{
+
+    try{
+    var imageData = _imagesDataObj[fileUuid];
+
+    
+    
+    //old path
+    var fullOldPath = createTempFolder() + "/" + fileUuid + "_" + imageData.lastUpdateTime.replace(/[-: ]/g, '') + "." + fileExtension(imageData.file.name);
+    //new path
+    var fullPath = createTempFolder(fileUuid + "_" + imageData.lastUpdateTime.replace(/[-: ]/g, '')) + "/" + imageData.file.name;
+    if(imagePath)
+    {
+        var myFolder = createFolder(imagePath+"/"+fileUuid + "_" + imageData.lastUpdateTime.replace(/[-: ]/g, ''));
+        fullPath =  myFolder + "/" + imageData.file.name;
+        
+        if(!myFolder)
+        {
+        placeHDCallback({
+            uuid: fileUuid,
+            filePath: fullPath,
+            error: "Missing local permission to create the destination Folder"
+        });
+        return;
+        }
+            
+        
+    }
+    //check if we have HD file already at new path, place it then
+
+    var check = window.cep.fs.stat(fullPath);
+
+    if (check.data.isFile() && check.err == window.cep.fs.NO_ERROR && getFilesizeInBytes(fullPath) != 0) {
+
+        placeHDCallback({
+            uuid: fileUuid,
+            filePath: fullPath,
+            error: false
+        });
+
+
+        return;
+    }
+    
+    //check if we have HD file already at old path, move to new path and place it
+    
+    
+    var check = window.cep.fs.stat(fullOldPath);
+    
+    
+
+    if (check.data.isFile() && check.err == window.cep.fs.NO_ERROR && getFilesizeInBytes(fullOldPath) != 0) {
+
+
+        //copy to new path
+        fs.copyFile(fullOldPath, fullPath,(err) => {
+                if (err) {
+                    placeHDCallback({
+                    error: "Could not copy file to path "+fullPath
+                        });
+                    return;
+                    }
+  
+                placeHDCallback({
+                        uuid: fileUuid,
+                        filePath: fullPath,
+                        error: false
+                    });
+                });
+                
+                return;
+    
+    
+
+    }
+    //
+
+
+   
+       //{{apiV3url}}/api/3.0.0/{{clientid}}/resource/{{resource_id}}?action=download&sid={{sid}}&version=&verbose&ext=
+    
+   // if (appName == "PHXS" || appName == "PHSP")
+     //   path = "/webapp/1.0/resources?p60=0db17b942ed391096168f41f90051acc&p10=" + apiKey + "&p20=" + userUuid + "&fileuuid=" + fileUuid;
+    //+"&ext="+imageData.filetype.toString().toLowerCase();
+ 
+    }catch(e){}
+    
+    
+    var path = "/api/3.0.0/"+userUuid+"/resource/"+fileUuid+"?sid="+sessionKey+"&action=download&productkey=0db17b942ed391096168f41f90051acc";
+    
+    
+    var options = {
+        rejectUnauthorized:false,
+        method: 'GET',
+        path: path,
+        'url': apiUrl + path,
+        headers: {
+            "sid": sessionKey
+        }
+    };
+
+    var file = fs.createWriteStream(fullPath);
+    var error = false;
+    
+    file.on('close', function() {
+
+ 
+
+        if (!error)
+            placeHDCallback({
+                uuid: fileUuid,
+                filePath: fullPath,
+                error: false
+            });
+
+    });
+
+    request.get(options).on('error', function(err) {
+        error = true;
+
+        placeHDCallback({
+            error: err
+        });
+  }).on('response', function(response) {
+      if(response.statusCode!=200)
+      {
+        error = true;
+
+        placeHDCallback({
+            error: "No permission"
+        });
+    }
+  }).pipe(file);
+    
+  
+
+}
+
+
+function openHDFile(apiKey, userUuid, sessionKey, apiUrl, fileUuid, openHDCallback, imagePath) 
+{
+
+    try{
+    var imageData = _imagesDataObj[fileUuid];
+
+
+    //old path
+    var fullOldPath = createTempFolder() + "/" + fileUuid + "_" + imageData.lastUpdateTime.replace(/[-: ]/g, '') + "." + fileExtension(imageData.file.name);
+    //new path
+    var fullPath = createTempFolder(fileUuid + "_" + imageData.lastUpdateTime.replace(/[-: ]/g, '')) + "/" + imageData.file.name;
+
+    //check if we have HD file already at new path, place it then
+    
+    if(imagePath)
+    {
+        var myFolder = createFolder(imagePath+"/"+fileUuid + "_" + imageData.lastUpdateTime.replace(/[-: ]/g, ''));
+        fullPath =  myFolder + "/" + imageData.file.name;
+        
+        if(!myFolder)
+        {
+        openHDCallback({
+            uuid: fileUuid,
+            filePath: fullPath,
+            error: "Missing local permission to create the destination Folder"
+        });
+        return;
+        }
+            
+        
+    }
+
+  
+    var check = window.cep.fs.stat(fullPath);
+/*
+    if (check.data.isFile() && check.err == window.cep.fs.NO_ERROR && getFilesizeInBytes(fullPath) != 0) {
+        openHDCallback({
+            uuid: fileUuid,
+            filePath: fullPath,
+            error: false
+        });
+
+
+        return;
+    }
+    
+    //check if we have HD file already at old path, move to new path and place it    
+    
+    
+    var check = window.cep.fs.stat(fullOldPath);
+    
+    
+
+    if (check.data.isFile() && check.err == window.cep.fs.NO_ERROR && getFilesizeInBytes(fullOldPath) != 0) {
+        //copy to new path
+        fs.copyFile(fullOldPath, fullPath,(err) => {
+                if (err) {
+                    openHDCallback({
+                    error: "Could not copy file to path "+fullPath
+                        });
+                    return;
+                    }
+  
+                openHDCallback({
+                        uuid: fileUuid,
+                        filePath: fullPath,
+                        error: false
+                    });
+                });
+                
+                return;
+            }
+
+    //
+    
+*/
+
+   
+       //{{apiV3url}}/api/3.0.0/{{clientid}}/resource/{{resource_id}}?action=download&sid={{sid}}&version=&verbose&ext=
+
+ 
+}catch(e){}
+
+    var path = "/api/3.0.0/"+userUuid+"/resource/"+fileUuid+"?sid="+sessionKey+"&action=download&productkey=0db17b942ed391096168f41f90051acc";
+
+
+    var options = {
+        rejectUnauthorized:false,
+        method: 'GET',
+        path: path,
+        'url': apiUrl + path,
+        headers: {
+            "sid": sessionKey
+        }
+    };
+
+    var file = fs.createWriteStream(fullPath);
+    var error = false;
+    
+    file.on('close', function() {
+
+ 
+
+        if (!error)
+            openHDCallback({
+                uuid: fileUuid,
+                filePath: fullPath,
+                error: false
+            });
+
+    });
+
+    request.get(options).on('error', function(err) {
+        error = true;
+
+        openHDCallback({
+            error: err
+        });
+  }).on('response', function(response) {
+      if(response.statusCode!=200)
+      {
+        error = true;
+
+        openHDCallback({
+            error: "No permission"
+        });
+    }
+  }).pipe(file);
+    
+  
+
+}
+
+
+//called from syncRequest callback
+
+
+function placePreviewFileToLinks(apiKey, userUuid, sessionKey, apiUrl, fileUuid, linkIds, placePreviewCallback)
+{
+
+    try{
+    var imageData = _imagesDataObj[fileUuid];
+    
+    var csInterface = new CSInterface();
+    var appName = csInterface.hostEnvironment.appName;
+    
+    
+    var fullPath = createTempFolder(fileUuid + "_" + imageData.lastUpdateTime.replace(/[-: ]/g, '') + "_" + "preview") + "/" +  fileNameWithoutExt(imageData.file.name)+".png";
+   
+    if (appName == "PHXS" || appName == "PHSP")
+        createTempFolder(fileUuid + "_" + imageData.lastUpdateTime.replace(/[-: ]/g, '') + "_" + "preview-ps") + "/" +  imageData.file.name;
+    
+
+    var fullOldPath = createTempFolder() + "/" + fileUuid + "_" + imageData.lastUpdateTime.replace(/[-: ]/g, '') + "-preview.png";
+    if (appName == "PHXS" || appName == "PHSP")
+        fullOldPath = createTempFolder() + "/" + fileUuid + "_" + imageData.lastUpdateTime.replace(/[-: ]/g, '') + "-preview_ps." + fileExtension(imageData.file.name);
+
+    
+    //check if we have HD file already at new path, place it then
+
+    var check = window.cep.fs.stat(fullPath);
+
+    if (check.data.isFile() && check.err == window.cep.fs.NO_ERROR && getFilesizeInBytes(fullPath) != 0) {
+
+        placePreviewCallback({
+            uuid: fileUuid,
+            filePath: fullPath,
+            linkIds: linkIds,
+            error: false
+        });
+
+
+        return;
+    }
+    
+    //check if we have HD file already at old path, move to new path and place it
+    
+    var check = window.cep.fs.stat(fullOldPath);
+    
+    
+
+    if (check.data.isFile() && check.err == window.cep.fs.NO_ERROR && getFilesizeInBytes(fullOldPath) != 0) {
+        //copy to new path
+        fs.copyFile(fullOldPath, fullPath,(err) => {
+                if (err) {
+                    placePreviewCallback({
+                    error: "Could not copy file to path "+fullPath
+                        });
+                    return;
+                    }
+  
+                placePreviewCallback({
+                        uuid: fileUuid,
+                        filePath: fullPath,
+                        linkIds: linkIds,
+                        error: false
+                    });
+                });
+                
+                return;
+            }
+    
+    
+    
+    //
+    
+
+
+   
+   
+    
+   // if (appName == "PHXS" || appName == "PHSP")
+     //   path = "/webapp/1.0/resources?p60=0db17b942ed391096168f41f90051acc&p10=" + apiKey + "&p20=" + userUuid + "&fileuuid=" + fileUuid;
+    //+"&ext="+imageData.filetype.toString().toLowerCase();
+ 
+    }catch(e){}
+
+    var path = "/api/3.0.0/"+userUuid+"/resource/"+fileUuid+"?sid="+sessionKey+"&action=preview&productkey=0db17b942ed391096168f41f90051acc";
+
+    var options = {
+        rejectUnauthorized:false,
+        method: 'GET',
+        path: path,
+        'url': apiUrl + path,
+        headers: {
+            "sid": sessionKey
+        }
+    };
+
+    var file = fs.createWriteStream(fullPath);
+    var error = false;
+    
+    file.on('close', function() {
+
+ 
+
+        if (!error)
+            placePreviewCallback({
+                uuid: fileUuid,
+                filePath: fullPath,
+                linkIds: linkIds,
+                error: false
+            });
+
+    });
+
+    request.get(options, function(error, response, body) {
+
+
+        // ensure file is complete before importing  
+        response.on('error', function(err) {
+        
+            error = true;
+
+            placePreviewCallback({
+                error: err
+            })
+        });
+
+
+    
+       
+       
+    }).pipe(file);
+    
+  
+
+}
+
+
+function placeHDFileToLinks(apiKey, userUuid, sessionKey, apiUrl, imagePath, fileUuid, imageData, linkIds, placeHDCallback, documentLinksPath)
+{
+
+    try{
+    var imageData = _imagesDataObj[fileUuid];
+
+    
+    
+    var fullOldPath = createTempFolder() + "/" + fileUuid + "_" + imageData.lastUpdateTime.replace(/[-: ]/g, '') + "." + fileExtension(imageData.file.name);
+    //new path
+    var fullPath = createTempFolder(fileUuid + "_" + imageData.lastUpdateTime.replace(/[-: ]/g, '')) + "/" + imageData.file.name;
+    
+    
+    if(imagePath)
+    {
+        var myFolder = createFolder(imagePath+"/"+fileUuid + "_" + imageData.lastUpdateTime.replace(/[-: ]/g, ''));
+        fullPath =  myFolder + "/" + imageData.file.name;
+        
+        if(!myFolder)
+        {
+        placeHDCallback({
+            uuid: fileUuid,
+            filePath: fullPath,
+            error: "Missing local permission to create the destination Folder"
+        });
+        return;
+        }
+            
+        
+    }
+    
+    ///Users/evgenytrefilov/Library/Application Support/LocalStore/IntelligenceBankImages/058b0a023e9c66a8f4efe7fb32d33680_20201125T134210Z.jpg
+    ///Users/evgenytrefilov/Library/Application Support/LocalStore/IntelligenceBankImages/058b0a023e9c66a8f4efe7fb32d33680_20201125T134210Z/IMG_20190108_123802.jpg
+    
+    
+    //check if we have HD file already at new path, place it then
+
+    var check = window.cep.fs.stat(fullPath);
+
+    if (check.data.isFile() && check.err == window.cep.fs.NO_ERROR && getFilesizeInBytes(fullPath) != 0) {
+
+        placeHDCallback({
+            uuid: fileUuid,
+            filePath: fullPath,
+            linkIds: linkIds,
+            error: false
+        });
+
+
+        return;
+    }
+    
+    //check if we have HD file already at old path, move to new path and place it
+    
+    var check = window.cep.fs.stat(fullOldPath);
+    
+    
+
+    if (check.data.isFile() && check.err == window.cep.fs.NO_ERROR && getFilesizeInBytes(fullOldPath) != 0) {
+        //copy to new path
+        fs.copyFile(fullOldPath, fullPath,(err) => {
+                if (err) {
+                    placeHDCallback({
+                    error: "Could not copy file to path "+fullPath
+                        });
+                    return;
+                    }
+  
+                placeHDCallback({
+                        uuid: fileUuid,
+                        filePath: fullPath,
+                        linkIds: linkIds,
+                        error: false
+                    });
+                });
+                
+                return;
+    }
+    
+    
+
+    //
+
+ 
+}catch(e){}
+
+    var path = "/api/3.0.0/"+userUuid+"/resource/"+fileUuid+"?sid="+sessionKey+"&action=download&productkey=0db17b942ed391096168f41f90051acc";
+
+    var options = {
+        rejectUnauthorized:false,
+        method: 'GET',
+        path: path,
+        'url': apiUrl + path,
+        headers: {
+            "sid": sessionKey
+        }
+    };
+
+    var file = fs.createWriteStream(fullPath);
+    var error = false;
+    
+    file.on('close', function() {
+
+ 
+
+        if (!error)
+            placeHDCallback({
+                uuid: fileUuid,
+                filePath: fullPath,
+                linkIds: linkIds,
+                error: false
+            });
+
+    });
+
+    request.get(options).on('error', function(err) {
+        error = true;
+
+        placeHDCallback({
+            error: err
+        });
+  }).on('response', function(response) {
+      if(response.statusCode!=200)
+      {
+        error = true;
+
+        placeHDCallback({
+            error: "No permission"
+        });
+    }
+  }).pipe(file);
+    
+  
+
+}
+
+
+//check headers - it could be error
+
+
+function embedHDFile(apiKey, userUuid, sessionKey, apiUrl, imagePath, fileUuid, imageData, linkIds, placeHDEmbedCallback)
+{
+
+    try{
+    var imageData = _imagesDataObj[fileUuid];
+
+    
+    //old path
+    var fullOldPath = createTempFolder() + "/" + fileUuid + "_" + imageData.lastUpdateTime.replace(/[-: ]/g, '') + "." + fileExtension(imageData.file.name);
+    //new path
+    var fullPath = createTempFolder(fileUuid + "_" + imageData.lastUpdateTime.replace(/[-: ]/g, '')) + "/" + imageData.file.name;
+    
+    if(imagePath)
+    {
+        var myFolder = createFolder(imagePath+"/"+fileUuid + "_" + imageData.lastUpdateTime.replace(/[-: ]/g, ''));
+        fullPath =  myFolder + "/" + imageData.file.name;
+        
+        if(!myFolder)
+        {
+        placeHDEmbedCallback({
+            uuid: fileUuid,
+            filePath: fullPath,
+            error: "Missing local permission to create the destination Folder"
+        });
+        return;
+        }
+            
+        
+    }
+    
+    //check if we have HD file already at new path, place it then
+
+    var check = window.cep.fs.stat(fullPath);
+
+    if (check.data.isFile() && check.err == window.cep.fs.NO_ERROR && getFilesizeInBytes(fullPath) != 0) {
+
+        placeHDEmbedCallback({
+            uuid: fileUuid,
+            filePath: fullPath,
+            linkIds: linkIds,
+            error: false
+        });
+
+
+        return;
+    }
+    
+    //check if we have HD file already at old path, move to new path and place it
+    
+    var check = window.cep.fs.stat(fullOldPath);
+    
+    
+
+    if (check.data.isFile() && check.err == window.cep.fs.NO_ERROR && getFilesizeInBytes(fullOldPath) != 0) {
+        //copy to new path
+        fs.copyFile(fullOldPath, fullPath,(err) => {
+                if (err) {
+                    placeHDEmbedCallback({
+                    error: "Could not copy file to path "+fullPath
+                        });
+                    return;
+                    }
+  
+                placeHDEmbedCallback({
+                        uuid: fileUuid,
+                        filePath: fullPath,
+                        linkIds: linkIds,
+                        error: false
+                    });
+                });
+                
+                return;
+        
+    }
+    
+    
+    
+
+   
+   
+   
+   // if (appName == "PHXS" || appName == "PHSP")
+     //   path = "/webapp/1.0/resources?p60=0db17b942ed391096168f41f90051acc&p10=" + apiKey + "&p20=" + userUuid + "&fileuuid=" + fileUuid;
+    //+"&ext="+imageData.filetype.toString().toLowerCase();
+ 
+}catch(e){}
+
+
+    var path = "/api/3.0.0/"+userUuid+"/resource/"+fileUuid+"?sid="+sessionKey+"&action=download&productkey=0db17b942ed391096168f41f90051acc";
+     
+     
+    var options = {
+        rejectUnauthorized:false,
+        method: 'GET',
+        path: path,
+        'url': apiUrl + path,
+        headers: {
+            "sid": sessionKey
+        }
+    };
+
+    var file = fs.createWriteStream(fullPath);
+    var error = false;
+    
+    file.on('close', function() {
+
+ 
+
+        if (!error)
+            placeHDEmbedCallback({
+                uuid: fileUuid,
+                filePath: fullPath,
+                linkIds: linkIds,
+                error: false
+            });
+
+    });
+
+    request.get(options).on('error', function(err) {
+        error = true;
+
+        placeHDEmbedCallback({
+            error: err
+        });
+  }).on('response', function(response) {
+      if(response.statusCode!=200)
+      {
+        error = true;
+
+        placeHDEmbedCallback({
+            error: "No permission"
+        });
+    }
+  }).pipe(file);
+    
+  
+
+}
+
+
+
+function syncRequest(apiKey, userUuid, sessionKey, apiUrl, linksData, fileUuid, syncCallback, hideMessage, documentLinksPath) {
+    
+    //resources
+    //{{apiV3url}}/api/3.0.0/{{clientid}}/resource.limit(100).order(createTime:-1)?searchParams[ib_folder_s]={{folder_id}}&searchParams[isSearching]=&searchParams[keywords]=&searchParams[content]=&searchParams[extension]=&verbose
+
+
+//productkey=0db17b942ed391096168f41f90051acc
+ 
+
+    var syncJsonRequestObj = {};
+    for (var uuid in linksData) {
+        syncJsonRequestObj[uuid] = linksData[uuid];
+
+
+    }
+
+    var uuidArray = [];
+    
+    for (var uuid in syncJsonRequestObj) {
+        var currData = syncJsonRequestObj[uuid];
+        uuidArray.push(uuid);
+    }
+    
+    
+    if (fileUuid)
+        uuidArray.push(fileUuid);
+   
+     var path = "/api/json";
+
+   
+     var json = {
+         "method": "GET",
+         "version": "3.0.0",
+         "client":userUuid,
+         "table": "resource.limit("+_totalPageItems+")",
+         "query_params": {
+             "productkey": "0db17b942ed391096168f41f90051acc", 
+             "verbose": true,
+     		"searchParams": {
+               "keywords":uuidArray.join(" "),
+                "content":["ib_uuid"],
+         	"isSearching": true,
+         	"extension":"",
+         	"wrapped_conditions": [
+         	 []
+         	 ]
+     		}
+     	}
+     };
+   
+    var options = {
+        rejectUnauthorized:false,
+        method: 'POST',
+        path: path,
+        'url': apiUrl + path,
+        headers: {
+            "sid": sessionKey,
+            "Content-Type":"application/json"
+        },
+        body:JSON.stringify(json)
+    };
+
+    request.post(options, function(error, response, body) {
+
+        if (error) {
+            syncCallback({
+                error: "err:"+error
+            })
+            return;
+        }
+
+        var error = false;
+
+        try{
+           // myAlert(body);
+        body = JSON.parse(body);
+       // body.defaultOrder = defaultOrder;
+        if (body.error) error = body.error; //?
+        }catch(e){
+         
+            error = "Invalid response";
+            syncCallback({
+                error: error
+            });
+            return;
+        }
+
+
+        syncCallback({
+            error: error,
+            body: body,
+            links: linksData,
+            hideMessage: "test"
+          //  documentLinksPath: documentLinksPath //20/09/22 removed, we don't use local document links folder anymore
+        });
+        
+        
+    })
+    
+
+}
+
+
+function parentFolderRequest(apiKey, userUuid, sessionKey, apiUrl, fileUuid, syncCallback) {
+
+
+    var path = "/api/json";
+
+  
+    var json = {
+        "method": "GET",
+        "version": "3.0.0",
+        "client":userUuid,
+        "table": "resource.limit(1)",
+        "query_params": {
+            "productkey": "0db17b942ed391096168f41f90051acc", 
+            "verbose": true,
+    		"searchParams": {
+              "keywords":fileUuid,
+               "content":["ib_uuid"],
+        	"isSearching": true,
+        	"extension":"",
+        	"wrapped_conditions": [
+        	 []
+        	 ]
+    		}
+    	}
+    };
+
+    var options = {
+        rejectUnauthorized:false,
+        method: 'POST',
+        path: path,
+        'url': apiUrl + path,
+        headers: {
+            "sid": sessionKey,
+            "Content-Type":"application/json"
+        },
+        body:JSON.stringify(json)
+    };
+
+    request.post(options, function(error, response, body) {
+
+        if (error) {
+            syncCallback({
+                error: "err:"+error
+            })
+            return;
+        }
+
+        var error = false;
+
+        try{
+           // myAlert(body);
+        body = JSON.parse(body);
+       // body.defaultOrder = defaultOrder;
+        if (body.error) error = body.error; //?
+        }catch(e){
+         
+            error = "Invalid response";
+            syncCallback({
+                error: error
+            });
+            return;
+        }
+
+
+        syncCallback({
+            error: error,
+            body: body,
+            hideMessage: "test"
+        });
+        
+        
+    })
+
+
+
+}
+
+
+
+function loadDocumentData(loadDocumentDataCallback, updateVersion, afterUpload) {
+    //get links data
+    var extScript = 'getLinksData();';
+
+    evalScript(extScript, function(linksDataStr) {
+
+        var linksData = JSON.parse(linksDataStr);
+
+
+        loadDocumentDataCallback(linksData, updateVersion, afterUpload);
+    });
+}
+
+//SSO login token
+function getToken(url,apiCallback)
+{
+   
+    var options = {
+        hostname: url,
+        port: 443,
+        method: 'GET',
+        path: "/v1/auth/app/token"
+    };
+
+    var authRequest = https.request(options, function(response) {
+
+        var body = "";
+
+        response.on('error', function(err) {
+
+            apiCallback({
+                error: err
+            })
+        });
+
+        response.on('data', function(chunk) {
+            body += chunk;
+
+        });
+
+        response.on('end', function() {
+            var error = false;
+            try {
+                body = JSON.parse(body);
+                
+            } catch (e) {
+                error = "Get token error";
+            }
+
+            apiCallback({
+                error: error,
+                body: body,
+                response: response
+            })
+
+        });
+
+    });
+
+    authRequest.setTimeout(_timeoutValue, function() {
+        authRequest.abort();
+        apiCallback({
+            error: "Timeout"
+        })
+    });
+
+    authRequest.on('error', function() {
+                apiCallback("Timeout");
+            });
+            
+    authRequest.end();
+}
+
+function getKey(url,token,apiCallback)
+{
+   
+    var options = {
+        hostname: url,
+        port: 443,
+        method: 'GET',
+        path: "/v1/auth/app/info?token="+token
+    };
+
+    var authRequest = https.request(options, function(response) {
+
+        var body = "";
+
+        response.on('error', function(err) {
+
+            apiCallback({
+                error: err
+            })
+        });
+
+        response.on('data', function(chunk) {
+            body += chunk;
+
+        });
+
+        response.on('end', function() {
+            var error = false;
+      
+            try {
+           
+                body = JSON.parse(body);
+                
+            } catch (e) {
+                error = "Not logged in";
+            }
+          
+            apiCallback({
+                error: error,
+                body: body,
+                response: response
+            })
+
+        });
+
+    });
+
+    authRequest.setTimeout(_timeoutValue, function() {
+        authRequest.abort();
+        apiCallback({
+            error: "Timeout"
+        })
+    });
+    
+    authRequest.on('error', function() {
+                apiCallback("Timeout");
+            });
+
+    authRequest.end();
+    
+}
+
+/*
+
+-	Implement folder order as per web. There is one global setting which defines how folders AND sub-folders are ordered. Folder ordering type is in Login response (defaultFolderSortOrder):
+
+1.	“sortorder”: the order of folders is custom – use sortorder value in folder information. E.g. "sortorder":"0" (smallest to largest)
+2.	“alphabetical”: the order of folders is alphabetical (0 to 9, a to z). 
+3.	“createTime”: the order of folders is by date/time created (most recent first). Use createdtime value (always UTC). E.g. "createdtime":"2016-08-05 04:22:03"
+
+-	Implement files order as per web. Each folder has a setting, which defines how files are ordered (only applies to the files within a folder, not the sub-folder). Files ordering type is in Folder information: “defaultOrder”:
+
+1.	“Resource Date”: Use “resourcedate” file info (most recent date first).
+2.	“Last Updated”: Use “updatedat” file info (most recent date first).
+3.	“Alphabetical”: the files are listed alphabetically (0 to 9, a to z).
+4.	“Custom Order”: use the “sortorder” file info value (smallest to largest).
+
+    
+    */
+
+var sortFunctions = {
+    "sortorder": function(a, b) {
+        return Number(a.sortorder) > Number(b.sortorder) ? 1 : -1;
+    },
+    "alphabetical": function(a, b) {
+        return a.name.toLowerCase() > b.name.toLowerCase() ? 1 : -1;
+    },
+    "createTime": function(a, b) {
+        return a.createdtime > b.createdtime ? 1 : -1;
+    },
+    "Resource Date": function(a, b) {
+        return a.createdtime > b.createdtime ? 1 : -1;
+    },
+    "Last Updated": function(a, b) {
+        return a.updatedtime > b.updatedtime ? 1 : -1;
+    },
+    "Alphabetical": function(a, b) {
+        return a.title.toLowerCase() > b.title.toLowerCase() ? 1 : -1;
+    },
+    "Custom Order": function(a, b) {
+        return Number(a.sortorder) > Number(b.sortorder) ? -1 : 1;
+    }
+};
+
+function sortFiles(arr, sortorder) {
+    if (sortFunctions[sortorder] != undefined)
+        arr.sort(sortFunctions[sortorder]);
+}
+
+function sortFolders(arr, sortorder) {
+    if (sortFunctions[sortorder] != undefined)
+        arr.sort(sortFunctions[sortorder]);
+}
+
+function createTempFolder(folderName) {
+    var csInterface = new CSInterface();
+
+    var prefsFile = csInterface.getSystemPath(SystemPath.USER_DATA);
+    prefsFile += "/LocalStore/IntelligenceBankImages";
+    
+    if(folderName)
+        prefsFile += "/"+folderName;
+
+    var result = window.cep.fs.readdir(prefsFile);
+    if (window.cep.fs.ERR_NOT_FOUND == result.err)
+       result =  window.cep.fs.makedir(prefsFile);
+
+    if(result.err!=0) return false;
+    
+    return prefsFile;
+}
+
+function createFolder(folderName) {
+    if(!folderName) return;
+    
+    var csInterface = new CSInterface();
+
+    var prefsFile = folderName;
+
+    var result = window.cep.fs.readdir(prefsFile);
+    if (window.cep.fs.ERR_NOT_FOUND == result.err)
+      result =  window.cep.fs.makedir(prefsFile);
+
+    if(result.err!=0) return false;
+    
+    return prefsFile;
+}
+
+/**
+ * Load JSX file into the scripting context of the product. All the jsx files in 
+ * folder [ExtensionRoot]/jsx will be loaded. 
+ */
+function loadJSX() {
+    var csInterface = new CSInterface();
+    var extensionRoot = csInterface.getSystemPath(SystemPath.EXTENSION) + "/jsx/";
+    csInterface.evalScript('$._ext.evalFiles("' + extensionRoot + '")');
+}
+
+function evalScript(script, callback) {
+    var csInterface = new CSInterface();
+
+    csInterface.evalScript("$._ext_" + csInterface.hostEnvironment.appName + "." + script, callback);
+}
+
+function evalJSX(func) {
+    var extScript = func.toString();
+    evalScript(extScript);
+}
+
+
+
+function myAlert(msg) {
+
+    var extScript = "alert(\"" + msg.replace(/\"/g, "'") + "\");";
+
+    var csInterface = new CSInterface();
+
+    csInterface.evalScript(extScript);
+}
+
+function placeImageToLayout(file, uuid, imageData, reloadInfoCallback, showPlaceOptions) {
+   
+   
+    var extScript = 'placeImageToLayout("' + encodeURIComponent(file) + '","' + encodeURIComponent(JSON.stringify(imageData)) + '",'+showPlaceOptions+');';
+
+    evalScript(extScript, reloadInfoCallback);
+ 
+}
+
+function openImageAsLayout(file, uuid, imageData, reloadInfoCallback) {
+
+    var extScript = 'openImageAsLayout("' + encodeURIComponent(file) + '","' + encodeURIComponent(JSON.stringify(imageData)) + '");';
+    evalScript(extScript, reloadInfoCallback);
+}
+
+
+function placeFileCheck(fileUuid, placeFileCheckedCallback) {
+    var extScript = 'documentCheck("' + fileUuid + '");';
+
+    evalScript(extScript, placeFileCheckedCallback);
+}
+
+function openFileCheck(fileUuid, openFileCheckedCallback) {
+    var extScript = 'openDocumentsCheck("' + fileUuid + '");';
+
+    evalScript(extScript, openFileCheckedCallback);
+}
+
+function updateLinks(file, imageData, linkIds, reloadInfoCallback) {
+
+    var extScript = 'updateLinks("' + encodeURIComponent(file) + '","' + encodeURIComponent(JSON.stringify(imageData)) + '","' + encodeURIComponent(JSON.stringify(linkIds)) + '");';
+
+
+    evalScript(extScript, reloadInfoCallback);
+}
+
+function updateLinksEmbed(file, imageData, linkIds, reloadInfoCallback) {
+
+    var extScript = 'updateLinksEmbed("' + encodeURIComponent(file) + '","' + encodeURIComponent(JSON.stringify(imageData)) + '","' + encodeURIComponent(JSON.stringify(linkIds)) + '");';
+
+    evalScript(extScript, reloadInfoCallback);
+}
+
+function setIds(fileUuid, folderUuid, callback) {
+    var extScript = 'setIds("' + fileUuid + '","' + folderUuid + '");';
+
+    evalScript(extScript, callback);
+}
+
+function formatBytes(bytes, decimals) {
+    if (bytes == 0) return '0 Byte';
+    var k = 1024;
+    var dm = decimals + 1 || 1;
+    var sizes = ['Bytes', 'Kb', 'Mb', 'Gb', 'TB', 'PB', 'EB', 'ZB', 'YB'];
+    var i = Math.floor(Math.log(bytes) / Math.log(k));
+    return parseFloat((bytes / Math.pow(k, i)).toFixed(dm)) + ' ' + sizes[i];
+}
+
+function readPrefs() {
+    var a = {},
+        b = (new CSInterface).getSystemPath(SystemPath.USER_DATA),
+        b = b + "/LocalStore",
+        c = window.cep.fs.readdir(b);
+    window.cep.fs.ERR_NOT_FOUND == c.err && window.cep.fs.makedir(b);
+    c = window.cep.fs.readFile(b + "/intelligenceBank.json");
+    try {
+        c.err == window.cep.fs.NO_ERROR && c.data && (a = JSON.parse(c.data))
+    } catch (d) {}
+    return a
+}
+
+function savePrefs(a) {
+    var b = (new CSInterface).getSystemPath(SystemPath.USER_DATA),
+        b = b + "/LocalStore",
+        c = window.cep.fs.readdir(b);
+    window.cep.fs.ERR_NOT_FOUND == c.err && window.cep.fs.makedir(b);
+    window.cep.fs.writeFile(b + "/intelligenceBank.json", JSON.stringify(a))
+}
+
+function getFilesizeInBytes(filename) {
+    var stats = fs.statSync(filename);
+    var fileSizeInBytes = stats["size"];
+    return fileSizeInBytes;
+}
+
+function alertDebug(msg) {
+    if (debug) alert(msg);
+}
+
+function fileExtension(str)
+{
+	var dotPosition=str.lastIndexOf(".");
+	return str.substr(dotPosition+1).toLowerCase();
+}
+
+function fileNameWithoutExt(str)
+{
+	var dotPosition=str.lastIndexOf(".");
+	return str.substr(0,dotPosition);
+}
+
+
+$("#offline_page").remove();
+try{
+ReactDOM.render(React.createElement(IntelligenceApp), document.body);
+}catch(e){
+//    alert(e+":"+e.line)
+}
