@@ -257,7 +257,6 @@ function convertDate(myDate)
 function platformUrl(companyName) {
     if (_useCustomUrl) return companyName;
 
-    if (urlMapping[companyName]) return urlMapping[companyName];
     return companyName + ".intelligencebank.com";
 }
 
@@ -443,7 +442,18 @@ var HomeScreen = React.createClass({
     },
 
     componentDidMount: function componentDidMount() {
-        
+        // Initialize filters
+        if (window.Filters && typeof window.Filters.init === 'function') {
+            // Initialize global variable for tracking filter visibility
+            window.filtersVisible = false;
+            
+            window.Filters.init(this.props.appState, function(success) {
+                if (!success) {
+                    console.error('Failed to initialize filters');
+                }
+            });
+        }
+    
     
         this.updateAllDocument();
 
@@ -1884,7 +1894,7 @@ if (this.props.appState.placeOriginals)
     },
 
     search: function search(searchTerm) {
-        if (searchTerm == "") return;
+        // Allow empty search term (removed the check)
         this.increaseRequestsCounter();
         loadSearchData(this.props.appState.apiKey, this.props.appState.userUuid, this.props.appState.sessionKey, this.props.appState.apiUrl, this.searchCallback, searchTerm, this.state.folderUuid);
     },
@@ -2200,8 +2210,6 @@ if (this.props.appState.placeOriginals)
                /*
 When Resource is "checkout": true, a lock icon appears in alert red color on the Resource listed in the Folder. On hover, a tooltip comes up: "Resource checked out by {{checkoutUserName}} on {{checkoutTime}}.
 
-{{checkoutUserName}} and {{checkoutTime}} will be added to the response next week. Details to test on our staging environment are in the comments below.
-
 This is the data to expect in the response:
 
 "checkout": true
@@ -2210,7 +2218,6 @@ This is the data to expect in the response:
 
 Question: can the time display be automatically adjusted to the timezone of the user based on their system settings?
 
-Example of a "checkout":true resource on evgeny.intelligencebank.com is in the Stock Photography folder (young fitness woman..., 519ef9f648413c673be6486bb99a94b1)
                 */
 
                 imageCells.push(React.createElement(ImageCard, {
@@ -2660,12 +2667,13 @@ var Paginator = React.createClass({
 
 var DocumentBar = React.createClass({
     displayName: "DocumentBar",
-
-    componentDidMount: function componentDidMount() {
-        $('.tooltipped').tooltip({
-            delay: _tooltipDelay
-        });
-    },
+componentDidMount: function componentDidMount() {
+    // Initialize tooltips only for this component's elements to reduce console messages
+    var domNode = ReactDOM.findDOMNode(this);
+    $(domNode).find('.tooltipped').tooltip({
+        delay: _tooltipDelay
+    });
+},
 
     componentWillUpdate: function componentWillUpdate() {
         $('.tooltipped').tooltip('remove');
@@ -2687,8 +2695,6 @@ var DocumentBar = React.createClass({
         var docName = this.props.homeState.documentName;
         if (this.props.homeState.documentUuid != "" && _imagesDataObj[this.props.homeState.documentUuid])
         {
-            //{"versionNumber":3,"id":"Jykl","defaultIcon":"https://evgeny.intelligencebank.com/images/file-icons/indd-file-icon.png","v3Preview":"https://usprod2usv3.intelligencebank.com/api/3.0.0/6M0B/file?file_hash=c8f0b7f4182a6a83461af678822f5208&resource_uuid=2e9b10ee50274d5fbb59dc8ff991fc5f&sid=d09178bc5b17cd0b04aeb174b022ebb5&watermark_hash=6kh72k2ekqmwdpxicw6dbznfzptlarb5&action=preview&token=SFMyNTY.g2gDbQAAABZJQiBQbGF0Zm9ybSBUb2tlbiBEYXRhbgYATpZAjH4BYgABUYA.vkO-__rTA83ZCT8VA0os32yFJFJVaTV-avZScC5gqJE","autoCheckout":false,"type":"file","folder":"3bdb8b667a2b5df301c863d119cba92d","lastUpdater":"79d14d50e4f77a20ac549c1a62124196","iconType":"default","_id":"2e9b10ee50274d5fbb59dc8ff991fc5f","thumbVersionNumber":1,"preview":{"type":"image"},"matched":{"ib_uuid":["<em>2e9b10ee50274d5fbb59dc8ff991fc5f</em>"]},"lastUpdaterName":"Admin","ownerDivision":"50628e5683fd5118d9ec85b920c861df","fancyFileType":"InDesign (indd)","fancyFileSize":"1.01 MB","lastUpdateTime":"2021-08-19T15:27:19Z","creatorName":"Admin","v3Thumbnail":"https://cdn.intelligencebank.com/us/thumbnail/6M0B/c8f0b7f4182a6a83461af678822f5208/original/2e9b10ee50274d5fbb59dc8ff991fc5f_20210819T090","isPublicUser":false,"resourceAttributes":{"isBrowserNativeImage":false,"isExtensionSupportedByThePlatform":true,"isExtensionSupportedForDocument":false,"isExtensionSupportedForEmbed":false,"isExtensionSupportedForImageTransformation":false,"isExtensionSupportedForShare":false,"isPDFExtension":false,"isRawImage":false,"isVideoExtension":false},"ownerGroups":["862c695bba0e9ee25a4f7f126afb4af9"],"fileHash":"c8f0b7f4182a6a83461af678822f5208","file":{"error":0,"hash":"c8f0b7f4182a6a83461af678822f5208","name":"2e9b10ee50274d5fbb59dc8ff991fc5f_20210819T090312Z.indd","size":1060864,"tmp_name":"c8f0b7f4182a6a83461af678822f5208.indd","toS3SyncStatus":"sent","type":"application/octet-stream"},"creator":"79d14d50e4f77a20ac549c1a62124196","hasAlias":false,"description":"2e9b10ee50274d5fbb59dc8ff991fc5f_20210819T090","allowedActions":["view","publish","list","admin"],"thumbnail":"https://cdn.intelligencebank.com/us/thumbnail/6M0B/c8f0b7f4182a6a83461af678822f5208/original/2e9b10ee50274d5fbb59dc8ff991fc5f_20210819T090","hasRelatedItems":false,"folderPath":[{"_id":"02b0623f66b2c165ad4a86d1a1c1539c","name":"Resources","parent":"00000000000000000000000000000000"},{"_id":"3bdb8b667a2b5df301c863d119cba92d","name":"Folders","parent":"02b0623f66b2c165ad4a86d1a1c1539c"}],"aliasPublicUseTime":[],"name":"2e9b10ee50274d5fbb59dc8ff991fc5f_20210819T090","isPublic":true,"watermarkType":"none","createTime":"2021-08-19T09:03:12Z","assignedDate":"2021-08-19T00:00:00Z","permissions":{"view":true,"publish":true,"list":true,"admin":true}}
-            
             docName = _imagesDataObj[this.props.homeState.documentUuid].name;
         }
         return this.props.homeState.documentOpened ? React.createElement(
@@ -3030,6 +3036,23 @@ var HomeHeader = React.createClass({
                         "div", {
                             className: "search_arrow hand_cursor",
                             onClick: function onClick(event) {
+                                // Clear filters when exiting search
+                                if (window.Filters && typeof window.Filters.clear === 'function') {
+                                    window.Filters.clear();
+                                }
+                                
+                                // Hide filters panel
+                                if (window.Filters && typeof window.Filters.hide === 'function' && window.filtersVisible) {
+                                    window.Filters.hide();
+                                    window.filtersVisible = false;
+                                    
+                                    // Remove active class from filter toggle button
+                                    const filterToggle = document.querySelector('.filter-toggle');
+                                    if (filterToggle) {
+                                        filterToggle.classList.remove('active');
+                                    }
+                                }
+                                
                                 return _this.props.tabCallback(_this.props.homeState.prevActiveTab);
                             }
                         },
@@ -3044,7 +3067,8 @@ var HomeHeader = React.createClass({
                     ),
                     React.createElement(
                         "div", {
-                            className: "search_input"
+                            className: "search_input",
+                            style: { position: "relative" }
                         },
                         React.createElement("input", {
                             type: "text",
@@ -3057,23 +3081,51 @@ var HomeHeader = React.createClass({
                                     return _this.props.search(_this.state.searchTerm)
                             },
                             value: this.state.searchTerm
-                        })
-                    ),
-                    React.createElement(
-                        "div", {
-                            className: "search_btn hand_cursor",
-                            onClick: function onClick(event) {
-                                return _this.props.search(_this.state.searchTerm)
-                            },
-                        },
-
+                        }),
                         React.createElement(
-                            "i", {
-                                className: "material-icons"
-                            },
-                            "search"
+                             "div", {
+                                 className: "input-field-icons"
+                             },
+                             React.createElement(
+                                 "a", {
+                                     className: "btn-flat waves-effect waves-light filter-toggle-btn",
+                                    onClick: function onClick(event) {
+                                        if (window.Filters) {
+                                            if (window.filtersVisible) {
+                                                window.Filters.hide();
+                                                window.filtersVisible = false;
+                                                event.currentTarget.classList.remove('active');
+                                            } else {
+                                                window.Filters.show();
+                                                window.filtersVisible = true;
+                                                event.currentTarget.classList.add('active');
+                                            }
+                                            event.stopPropagation();
+                                        }
+                                    }
+                                },
+                                React.createElement(
+                                    "i", {
+                                        className: "material-icons"
+                                    },
+                                    "filter_list"
+                                )
+                            ),
+                            React.createElement(
+                                "a", {
+                                    className: "btn-flat waves-effect waves-light search-btn",
+                                    onClick: function onClick(event) {
+                                        return _this.props.search(_this.state.searchTerm)
+                                    }
+                                },
+                                React.createElement(
+                                    "i", {
+                                        className: "material-icons"
+                                    },
+                                    "search"
+                                )
+                            )
                         )
-
                     )
                 );
             case "Document":
@@ -3524,9 +3576,16 @@ var LinkCard = React.createClass({
     displayName: "LinkCard",
 
     componentDidMount: function componentDidMount() {
-        $('.tooltipped').tooltip({
+        // Initialize tooltips only for this component's elements
+        var domNode = ReactDOM.findDOMNode(this);
+        $(domNode).find('.tooltipped').tooltip({
             delay: _tooltipDelay
         });
+    },
+
+    componentWillUnmount: function componentWillUnmount() {
+        var domNode = ReactDOM.findDOMNode(this);
+        $(domNode).find('.tooltipped').tooltip('remove');
     },
 
     render: function render() {
@@ -3754,9 +3813,16 @@ var ImageCard = React.createClass({
     displayName: "ImageCard",
 
     componentDidMount: function componentDidMount() {
-        $('.tooltipped').tooltip({
+        // Initialize tooltips only for this component's elements
+        var domNode = ReactDOM.findDOMNode(this);
+        $(domNode).find('.tooltipped').tooltip({
             delay: _tooltipDelay
         });
+    },
+
+    componentWillUnmount: function componentWillUnmount() {
+        var domNode = ReactDOM.findDOMNode(this);
+        $(domNode).find('.tooltipped').tooltip('remove');
     },
 
 /*
@@ -3949,7 +4015,7 @@ The following parameters returned in the response are to be used for subsequent 
         newState.requestInProcess = false;
 
         if (data.error || data.body.message != undefined) {
-            var loginError = "Your login details are incorrect or your account has been locked. Please try again or go to your login page to reset your password.";
+            var loginError = "Your login details are incorrect or your account has been locked. Please try again or go to your login page to reset your password.";
             if (data.error == "Timeout")
                 var loginError = "You are not connected to the internet.";
             this.props.updateAppState({loginError:loginError});
@@ -4094,7 +4160,7 @@ The following parameters returned in the response are to be used for subsequent 
                     React.createElement(
                         "p",
                         null,
-                        " Login to your IntelligenceBank DAM account by entering your credentials below."
+                        " Login to your IntelligenceBank DAM account by entering your credentials below."
                     )
                 ),
                 this.props.appState.loginError != "" ? React.createElement(IncorrectLoginWarning, {
@@ -4315,7 +4381,7 @@ var BrowserLoginScreen = React.createClass({
         //alert(JSON.stringify(data));
       
         if(data.error || !data.body.content || !data.body.content.session || !data.body.content.session.sid) {
-            this.props.updateAppState({activeScreen:"Login",loginError:"You are not currently authenticated via the browser. Click the Browser Login (For SSO) link below to try again."});
+            this.props.updateAppState({activeScreen:"Login",loginError:"You are not currently authenticated via the browser. Click the Browser Login (For SSO) link below to try again."});
             return;
         };
         
@@ -5044,85 +5110,93 @@ if (folderUuid && folderUuid != "")
     
 
 }
-
 function loadSearchData(apiKey, userUuid, sessionKey, apiUrl, searchCallback, searchTerm, folderUuid) {
-
-  // searchTerm = encodeURIComponent(searchTerm);
-
        
        var path = "/api/json";
 
-         // else
-          //    path += "&searchParams[parent]";
-
-  var json = {
-      "method": "GET",
-      "version": "3.0.0",
-      "client":userUuid,
-      "table": "resource.limit("+_totalPageItems+")",
-      "query_params": {
-             "productkey": "0db17b942ed391096168f41f90051acc", 
-             "verbose": true,
-  		"searchParams": {
-            "keywords":searchTerm,
-      	"isSearching": true,
-      	"extension":extArray,
-      	"wrapped_conditions": [
-      	 []
-      	 ]
-  		}
-  	}
-  };
-
- 
-  
-   var options = {
-       rejectUnauthorized:false,
-       method: 'POST',
-       path: path,
-       'url': apiUrl + path,
-       headers: {
-           "sid": sessionKey,
-           "Content-Type":"application/json"
-       },
-       body:JSON.stringify(json)
+   var json = {
+       "method": "GET",
+       "version": "3.0.0",
+       "client":userUuid,
+       "table": "resource.limit("+_totalPageItems+")",
+       "query_params": {
+              "productkey": "0db17b942ed391096168f41f90051acc",
+              "verbose": true,
+   		"searchParams": {
+             "keywords": searchTerm || "", // Allow empty search term
+       	"isSearching": true,
+       	"extension":extArray,
+       	"wrapped_conditions": [
+       	 []
+       	 ]
+   		}
+   	}
    };
-
-   request.post(options, function(error, response, body) {
-
-       if (error) {
-           searchCallback({
-               error: "err:"+error
-           })
-           return;
+   
+   // Apply filters if available
+   if (window.Filters && typeof window.Filters.apply === 'function') {
+       json.query_params.searchParams = window.Filters.apply(json.query_params.searchParams);
+       
+       // Hide filters after search is performed
+       if (window.filtersVisible) {
+           window.Filters.hide();
+           window.filtersVisible = false;
+           
+           // Remove active class from filter toggle button
+           const filterToggle = document.querySelector('.filter-toggle-btn');
+           if (filterToggle) {
+               filterToggle.classList.remove('active');
+           }
        }
+   }
 
-       var error = false;
+   
+    var options = {
+        rejectUnauthorized:false,
+        method: 'POST',
+        path: path,
+        'url': apiUrl + path,
+        headers: {
+            "sid": sessionKey,
+            "Content-Type":"application/json"
+        },
+        body:JSON.stringify(json)
+    };
 
-       try{
- 
-       body = JSON.parse(body);
-      // body.defaultOrder = defaultOrder;
-       if (body.error) error = body.error; //?
-       }catch(e){
+    request.post(options, function(error, response, body) {
+
+        if (error) {
+            searchCallback({
+                error: "err:"+error
+            })
+            return;
+        }
+
+        var error = false;
+
+        try{
+  
+        body = JSON.parse(body);
+       // body.defaultOrder = defaultOrder;
+        if (body.error) error = body.error; //?
+        }catch(e){
+         
+            error = "Invalid response";
+            searchCallback({
+                error: error
+            });
+            return;
+        }
+
+        searchCallback({
+            error: error,
+            body: body
+        });
         
-           error = "Invalid response";
-           searchCallback({
-               error: error
-           });
-           return;
-       }
-
-       searchCallback({
-           error: error,
-           body: body
-       });
-       
-       
-   })
+        
+    })
 
 }
-
 
 function uploadFile(apiKey, userUuid, sessionKey, apiUrl, filePath, folderUuid, fileUuid, filename, title, description, updateResource, updateVersion, uploadCallback) {
     var csInterface = new CSInterface();

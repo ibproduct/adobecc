@@ -1,0 +1,381 @@
+/* Custom styles for filters functionality */
+
+/* Filter indicator in search input */
+.search_input input.has-filters {
+    background-image: url('../images/ic_filter.png');
+    background-repeat: no-repeat;
+    background-position: right 80px center;
+    background-size: 16px;
+    padding-right: 90px !important;
+}
+
+/* Ensure search elements are always visible and properly spaced */
+.search-btn, .filter-toggle-btn {
+    z-index: 1001 !important;
+    margin-right: 0 !important;
+    position: relative !important;
+}
+/* Fix spacing between filter and search icons */
+.filter-toggle-btn {
+    padding: 0 5px !important;
+    z-index: 1001 !important;
+    height: 36px !important;
+    line-height: 36px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.filter-toggle-btn i, .search-btn i {
+    color: #9acc65 !important;
+    font-size: 24px !important;
+}
+
+/* Search button styling */
+.search-btn {
+    padding: 0 5px !important;
+    z-index: 1001 !important;
+    height: 36px !important;
+    line-height: 36px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+/* Input field icons container */
+.input-field-icons {
+    position: absolute !important;
+    right: 0 !important;
+    top: 0 !important;
+    height: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
+.search_input {
+    z-index: 1001 !important;
+    position: relative !important;
+    background-color: white !important;
+}
+
+.header {
+    z-index: 1001 !important;
+    position: relative !important;
+    margin-bottom: 0 !important;
+}
+
+/* Style for the filter toggle button when active */
+.filter-toggle-btn.active {
+    background-color: rgba(154, 204, 101, 0.1) !important;
+    border-radius: 4px;
+}
+
+/* Standard Materialize checkbox styling */
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+[type="checkbox"] + label {
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+    display: inline-block;
+    height: 25px;
+    line-height: 25px;
+    font-size: 1rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Unchecked styles */
+[type="checkbox"] + label:before,
+[type="checkbox"] + label:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 4px;
+    width: 16px;
+    height: 16px;
+    z-index: 0;
+    border: 2px solid #5a5a5a;
+    border-radius: 1px;
+    transition: .2s;
+}
+
+/* Checked styles */
+[type="checkbox"]:checked + label:before {
+    top: -4px;
+    left: -5px;
+    width: 10px;
+    height: 18px;
+    border-top: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-right: 2px solid #9acc65;
+    border-bottom: 2px solid #9acc65;
+    transform: rotate(40deg);
+    backface-visibility: hidden;
+    transform-origin: 100% 100%;
+}
+
+/* Fix dropdown styling */
+.dropdown-content li > span {
+    color: #333 !important;
+}
+
+.dropdown-content li.active,
+.dropdown-content li:hover {
+    background-color: rgba(154, 204, 101, 0.1) !important;
+}
+
+.select-wrapper span.caret {
+    color: #9acc65 !important;
+}
+
+/* Fix selected item in dropdown */
+.dropdown-content li.active.selected {
+    background-color: rgba(154, 204, 101, 0.25) !important;
+}
+
+/* Fix checkbox in dropdown - already handled by general checkbox styling */
+
+/* Filter badge customization */
+.filter-badge.new.badge {
+    font-weight: 500;
+    font-size: 0.8rem;
+    color: white;
+    background-color: #9acc65;
+    border-radius: 2px;
+}
+/* Filters container positioning - position is set inline in JS */
+#filters-container {
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    position: fixed !important;
+    top: 46px !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100%;
+    height: calc(100% - 46px) !important;
+    background-color: white;
+    overflow-y: auto;
+    margin: 0 !important;
+    padding-bottom: 40px; /* Add space at the bottom to ensure content isn't cut off */
+}
+/* Filter panel header */
+#filters-container .filters-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    border-bottom: 1px solid #f5f5f5;
+    position: relative;
+    height: 60px;
+}
+
+#filters-container .filters-header h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #4a4a4a;
+}
+/* Filter panel controls */
+.filter-controls {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    display: flex;
+    align-items: center;
+    transform: translateY(-50%);
+}
+
+/* Clear All button */
+.clear-all-btn {
+    color: #333 !important;
+    font-weight: 500 !important;
+    text-transform: uppercase !important;
+    font-size: 0.8rem !important;
+    display: inline-block !important;
+    padding: 0px 10px !important;
+    cursor: pointer;
+    margin-right: 15px;
+    border: none;
+    background: transparent;
+    line-height: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+/* Close button */
+.close-filters-btn {
+    color: #333 !important;
+    cursor: pointer;
+    font-size: 16px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    height: 30px !important;
+    width: 30px !important;
+    border: none;
+    background-color: #f1f8eb !important;
+    border-radius: 3px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+/* Customize Materialize selects for filters */
+#filters-container .select-wrapper input.select-dropdown {
+    border-color: #9acc65;
+    font-size: 14px;
+    color: #757575; /* Default placeholder color */
+}
+
+/* Style for placeholder text in select dropdowns */
+#filters-container .select-wrapper input.select-dropdown::placeholder,
+#filters-container .select-wrapper input.select-dropdown::-webkit-input-placeholder {
+    color: #9e9e9e;
+    font-style: italic;
+}
+
+#filters-container .select-wrapper span.caret {
+    color: #9acc65;
+}
+
+/* Dropdown styling */
+#filters-container .dropdown-content {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+#filters-container .dropdown-content li {
+    min-height: 36px;
+}
+
+#filters-container .dropdown-content li span {
+    font-size: 12px;
+    color: #333;
+    padding: 8px 16px;
+}
+
+/* Style for the select dropdown text */
+#filters-container .select-dropdown li.disabled span {
+    color: #9e9e9e !important;
+    font-style: italic;
+}
+
+/* Selected state styling */
+#filters-container .dropdown-content li.active span {
+    color: #333;
+    font-weight: normal;
+}
+
+#filters-container .dropdown-content li.selected span {
+    color: #9acc65;
+    font-weight: 500;
+}
+
+#filters-container .dropdown-content li:hover {
+    background-color: rgba(154, 204, 101, 0.1);
+}
+
+#filters-container .dropdown-content li.selected {
+    background-color: rgba(154, 204, 101, 0.1);
+}
+
+/* Checkbox styling for filter items */
+#filters-container [type="checkbox"] + label {
+    padding-left: 25px;
+    line-height: 20px;
+    height: 20px;
+    font-size: 14px;
+}
+
+#filters-container [type="checkbox"] + label:before,
+#filters-container [type="checkbox"] + label:after {
+    margin-top: 0;
+    top: 2px;
+    left: -10px;
+    width: 15px;
+    height: 15px;
+}
+#filters-container [type="checkbox"]:checked + label:before {
+    border-right: 2px solid #9acc65;
+    border-bottom: 2px solid #9acc65;
+    top: -2px;
+    left: -13px;
+    width: 7px;
+    height: 12px;
+}
+/* Fix checkbox alignment in dropdown */
+#filters-container .dropdown-content li [type="checkbox"] + label {
+    padding-left: 25px;
+    line-height: 20px;
+    height: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+#filters-container .dropdown-content li [type="checkbox"] + label:before,
+#filters-container .dropdown-content li [type="checkbox"] + label:after {
+    margin-top: 0;
+    top: 10px;
+    left: -10px;
+}
+
+#filters-container .dropdown-content li [type="checkbox"]:checked + label:before {
+    top: 6px;
+    left: -13px;
+    width: 7px;
+    height: 12px;
+}
+
+/* Card title customization */
+#filters-container .card-title {
+    color: #4a4a4a;
+    font-size: 16px;
+    margin-top: 0;
+}
+
+/* Input field label color */
+#filters-container .input-field label {
+    color: #4a4a4a;
+    font-size: 14px;
+}
+
+/* Active label color */
+#filters-container .input-field label.active {
+    color: #9acc65;
+    font-size: 12px;
+}
+
+/* Card content styling */
+#filters-container .card-content {
+    padding: 15px;
+    overflow-y: auto;
+    height: calc(100% - 60px); /* Account for header height */
+}
+
+/* Search results positioning */
+.navigation {
+    position: relative;
+    z-index: 999;
+}
+
+/* Fix for body scrolling when filters are open */
+body.filters-open {
+    overflow: hidden !important;
+}
+
+/* Ensure header stays fixed at the top */
+.header {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    z-index: 1001 !important;
+}
